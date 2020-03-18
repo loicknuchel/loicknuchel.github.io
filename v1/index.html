@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Loïc Knuchel - Développeur et formateur Scala</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" >
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/font/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/libs/materialize/css/materialize.min.css" media="screen,projection" />
+  <link rel="stylesheet" href="assets/css/bootstrap.css" media="screen,projection" />
+
+  <link rel="stylesheet" href="assets/css/animate.min.css" media="screen,projection" />
+  <link rel="stylesheet" href="assets/libs/sweetalert/sweet-alert.css" media="screen,projection" />
+
+  <link rel="stylesheet" href="assets/libs/owl-carousel/owl.carousel.css" media="screen,projection" />
+  <link rel="stylesheet" href="assets/libs/owl-carousel/owl.transitions.css" media="screen,projection" />
+  <link rel="stylesheet" href="assets/libs/owl-carousel/owl.theme.css" media="screen,projection" />
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/colors/color1.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+
+  <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!-- Preloader --> 
+  <div id="preloader">
+    <div class="loader">
+          <svg class="circle-loader" height="50" width="50">
+            <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="6" stroke-miterlimit="10" />
+          </svg>
+      </div>    
+  </div><!--preloader end-->
+  
+  <!-- Main Container -->
+  <main id="app" class="main-section">
+    <!-- header navigation start -->
+    <header id="navigation" class="root-sec white nav">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="nav-inner">
+              <nav class="primary-nav">
+                <div class="clearfix nav-wrapper">
+                  <a href="#home" class="left brand-logo menu-smooth-scroll" data-section="#home"><img src="images/logo.png" alt="">
+                  </a>
+                  <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                  <ul class="inline-menu side-nav" id="mobile-demo">
+                    <!-- Mini Profile // only visible in Tab and Mobile -->
+                    <li class="mobile-profile">
+                     <div class="profile-inner">
+                        <div class="pp-container">
+                            <img src="images/person.png" alt="">
+                        </div>
+                        <h3>Loïc Knuchel</h3>
+                        <h5>Développeur et formateur Scala</h5>
+                      </div>
+                    </li><!-- mini profile end-->
+                    <li><a href="#about" data-section="#about" class="menu-smooth-scroll"><i class="fa fa-user fa-fw"></i>Qui suis-je?</a></li>
+                    <li><a href="#portfolio" data-section="#portfolio" class="menu-smooth-scroll"><i class="fa fa-briefcase fa-fw"></i>Projets</a></li>
+                    <li><a href="#testimonial" data-section="#testimonial" class="menu-smooth-scroll"><i class="fa fa-comments fa-fw"></i>Recommandations</a></li>
+                    <li><a href="#blog" data-section="#blog" class="menu-smooth-scroll"><i class="fa fa-pencil fa-fw"></i>Blog</a></li>
+                    <li><a href="#contact" data-section="#contact" class="menu-smooth-scroll"><i class="fa fa-paper-plane fa-fw"></i>Contact</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- .container end -->
+    </header>
+    <!-- #header  navigation end -->
+
+    <!-- Home Section start -->
+    <section id="home" class="scroll-section root-sec grey lighten-5 home-wrap">
+      <div class="sec-overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="home-inner">
+                  <div class="center-align home-content">
+                    <h1 class="home-title"><span>Loïc Knuchel</span></h1>
+                    <h2 class="home-subtitle">Développeur et formateur Scala, Paris</h2>
+                    <a href="#contact" class="hire-me-btn btn waves-effect waves-light btn-large brand-bg white-text regular-text">Me contacter <i class="mdi-content-send left"></i>
+                    </a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- .container end -->
+        <div class="section-call-to-area">
+          <div class="container">
+            <div class="row">
+              <a href="#about" class="btn-floating btn-large button-middle call-to-about section-call-to-btn animated btn-up btn-hidden" data-section="#about">
+                <i class="mdi-navigation-expand-more"></i>
+              </a>
+            </div>
+          </div>
+          <!-- .container end -->
+        </div>
+      </div>
+    </section>
+    <!-- #home Section end -->
+
+    <!-- About Section start -->
+    <section id="about" class="scroll-section root-sec padd-tb-60 grey lighten-5 about-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="clearfix about-inner">
+
+            <div class="col-sm-12 col-md-4">
+              <div class="person-about">
+                <h3 class="about-subtitle">Bio</h3>
+                <p>Développeur Scala chez Criteo, formateur Scala indépendant.<br>
+                Après un rapide passage en SSII dans la finance, j'ai découvert la liberté du statut de freelance puis d'entrepreneur (<a href="https://github.com/cookersapp/cookers-app" target="_blank">Cookers</a> / <a href="http://saloonapp.co/" target="_blank">SalooN</a>). Au delà du développement, je m'intéresse énormément aux problématiques métier et business des projets sur lesquels je travaille, cela passe notamment par une réflexion sur l'UX et les données du produit. Je suis aussi organisateur des <a href="http://www.meetup.com/HumanTalks-Paris/" target="_blank">HumanTalks Paris</a> et des <a href="http://www.meetup.com/Ionic-Workshops-Paris/" target="_blank">Ionic Workshops</a>.</p>
+              </div>
+            </div>
+            <!-- about me description -->
+
+            <div class="col-sm-6 col-md-4">
+              <div class="person-img wow fadeIn">
+                <img class="z-depth-1" src="images/person.png" alt="">
+              </div>
+            </div>
+            <!-- about me image -->
+
+            <div class="col-sm-6 col-md-4">
+              <div class="person-info">
+                <h3 class="about-subtitle">Technologies</h3>
+                <h5><b>Base de données :</b> MongoDB, SQL</h5>
+                <h5><b>Backend :</b> Scala, Play Framework</h5>
+                <h5><b>Frontend :</b> Angular, HTML5, CSS3</h5>
+                <h5><b>Mobile :</b> Ionic Framework, Cordova</h5>
+              </div>
+
+              <div class="about-social">
+                <ul>
+                  <li><a href="https://www.linkedin.com/in/loicknuchel" class="btn-floating waves-effect waves-light white" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="http://loic.knuchel.org/blog/" class="btn-floating waves-effect waves-light white" target="_blank"><i class="fa fa-pencil-square-o"></i></a></li>
+                  <li><a href="https://github.com/loicknuchel" class="btn-floating waves-effect waves-light white" target="_blank"><i class="fa fa-github"></i></a></li>
+                  <li><a href="http://fr.slideshare.net/loicknuchel" class="btn-floating waves-effect waves-light white" target="_blank"><i class="fa fa-slideshare"></i></a></li>
+                  <li><a href="https://twitter.com/loicknuchel" class="btn-floating waves-effect waves-light white" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="https://www.pinterest.com/loicknuchel/" class="btn-floating waves-effect waves-light white" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- about me info -->
+
+          </div>
+        </div>
+      </div>
+      <!-- .container end -->
+    </section>
+    <!-- #about Section end -->
+
+    <!-- Funfacts Section end -->
+    <section id="funfacts" class="root-sec grey lighten-5 funfact-wrap">
+    <div class="sec-inner padd-tb-120">
+      <div class="container">
+        <div class="row">
+          <div class="funfact-inner">
+            <div class="col-sm-4 funfact-box">
+              <div class="center-align card-panel white">
+                <div class="feature-box-outer">
+                  <div class="funfact-box-inner">
+                    <div class="clearfix ">
+                      <i class="fa fa-diamond"></i>
+                      <span class="num">2</span>
+                    </div>
+                    <div class="context">Startup lancées</div>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- ./single fun fact box -->
+            <div class="col-sm-4 funfact-box">
+              <div class="center-align card-panel white">
+                <div class="feature-box-outer">
+                  <div class="funfact-box-inner">
+                    <div class="clearfix ">
+                      <i class="mdi-editor-insert-emoticon"></i>
+                      <span class="num countNumb">7</span>
+                    </div>
+                    <div class="context">Clients statisfaits</div>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- ./single fun fact box -->
+            <div class="col-sm-4 funfact-box">
+              <div class="center-align card-panel white">
+                <div class="feature-box-outer">
+                  <div class="funfact-box-inner">
+                    <div class="clearfix ">
+                      <i class="fa fa-bullhorn"></i>
+                      <span class="num countNumb">27</span>
+                    </div>
+                    <div class="context">Talks présentés</div>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- ./single fun fact box -->
+          </div>
+        </div>
+
+      </div>  <!-- .container end -->
+    </div>
+    </section>
+    <!-- #funfacts Section end -->
+
+    <!-- Portfolio Section start -->
+    <section id="portfolio" class="scroll-section root-sec white portfolio-wrap">
+      <div class="padd-tb-120 brand-bg portfolio-top">
+        <div class="portfolio-inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h2 class="title">Projets</h2>
+                <ul class="inline-menu clearfix portfolio-category" id="portfolio-msnry-sort">
+                  <li class="active"><a href="#" data-target="*">All</a></li>
+                  <li><a href="#" data-target=".category-startup">Startup</a></li>
+                  <li><a href="#" data-target=".category-freelance">Freelance</a></li> <!-- Perf IMMO, PopChef, Stimshop -->
+                  <li><a href="#" data-target=".category-communaute">Communauté</a></li> <!-- Blog -->
+                  <li><a href="#" data-target=".category-talk">Talk</a></li> <!-- Amundi, Viseo Technologies -->
+                  <li><a href="#" data-target=".category-autre">Autre</a></li> <!-- Ionic starter, Personnal CRM, SfeirSchool -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- .container end -->
+      </div>
+      <div id="portfolioModal" class="modal white">
+        <div class="model-img"></div>
+        <div class="modal-content">
+          <h2 class="title"></h2>
+          <p class="m-content"></p>
+        </div>
+        <div class="modal-footer">
+          <a href="#" target="_blank" class="waves-effect btn-flat brand-text modal-action">Plus d'informations</a>
+          <a href="#" class="waves-effect btn-flat brand-text modal-action modal-close">annuler</a>
+        </div>
+      </div>
+
+      <div class="portfolio-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <ul class="clearfix protfolio-item" id="protfolio-msnry">
+
+                <!-- Single Portfolio-->
+                <li class="single-port-item category-talk">
+                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="images/portfolio/chtijug_big.png" data-title="Ch'ti JUG" data-content="J'ai eu la chance d'être invité au Ch'ti JUG pour présenter Ionic Framework. Je me suis principalement focalisé sur les outils que Ionic a créé pour facilité le développement et ai montré les possibilités du framework en codant en live une application de chat." data-demo-link="http://loic.knuchel.org/blog/2015/04/18/chti-jug-le-developpement-mobile-hybride-sort-du-bois/">
+                    <div class="protfolio-image">
+                      <img src="images/portfolio/chtijug.png" alt="portfolio">
+                      <div class="protfolio-content waves-effect waves-block waves-light">
+                        <div class="protfolio-content__inner">
+                          <h2 class="p-title">Ch'ti JUG</h2>
+                        </div>
+                      </div>
+                      <div class="p-overlay"></div>
+                    </div>
+                  </a>
+                </li>
+                <!--/ single portfolio -->
+
+                <!-- Single Portfolio-->
+                <li class="single-port-item category-talk">
+                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="images/portfolio/devoxx_big.png" data-title="Devoxx France" data-content="Pour la deuxième année consécutive j'ai eu la chance d'être sélectionné comme speaker à Devoxx \o/. En 2015 je présenterais donc un atelier : '3h pour créer votre application mobile de chat'. Bien entendu, ce sera basé sur Ionic ;)" data-demo-link="http://loic.knuchel.org/blog/2015/04/13/devoxxfr-3h-pour-creer-votre-application-mobile-de-chat/">
+                    <div class="protfolio-image">
+                      <img src="images/portfolio/devoxx.png" alt="portfolio">
+                      <div class="protfolio-content waves-effect waves-block waves-light">
+                        <div class="protfolio-content__inner">
+                          <h2 class="p-title">Devoxx France</h2>
+                        </div>
+                      </div>
+                      <div class="p-overlay"></div>
+                    </div>
+                  </a>
+                </li>
+                <!--/ single portfolio -->
+              
+              <!-- Single Portfolio-->
+                <li class="single-port-item category-startup">
+                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="images/portfolio/saloon_big.png" data-title="SalooN" data-content="Application mobile de networking pour les conférences et événements professionnels." data-demo-link="http://saloonapp.co/">
+                    <div class="protfolio-image">
+                      <img src="images/portfolio/saloon.png" alt="portfolio">
+                      <div class="protfolio-content waves-effect waves-block waves-light">
+                        <div class="protfolio-content__inner">
+                          <h2 class="p-title">SalooN,<br><br>Echanger avec les bonnes personnes autour de vous !</h2>
+                        </div>
+                      </div>
+                      <div class="p-overlay"></div>
+                    </div>
+                  </a>
+                </li>
+                <!--/ single portfolio -->
+
+                <!-- Single Portfolio-->
+                <li class="single-port-item category-communaute">
+                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="images/portfolio/ionicworkshop_big.png" data-title="Ionic Workshops" data-content="Les workshops Ionic permettent à tout le monde de venir coder des applications avec Ionic. L'exercice se fait a plusieurs et dans l'entre-aide, tout le monde est le bienvenu, peut importe son niveau !" data-demo-link="http://www.meetup.com/Ionic-Workshops-Paris/">
+                    <div class="protfolio-image">
+                      <img src="images/portfolio/ionicworkshop.png" alt="portfolio">
+                      <div class="protfolio-content waves-effect waves-block waves-light">
+                        <div class="protfolio-content__inner">
+                          <h2 class="p-title">Ionic Workshops</h2>
+                        </div>
+                      </div>
+                      <div class="p-overlay"></div>
+                    </div>
+                  </a>
+                </li>
+                <!--/ single portfolio -->
+
+                <!-- Single Portfolio-->
+                <li class="single-port-item category-startup">
+                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="images/portfolio/cookers_big.png" data-title="Cookers" data-content="Cookers propose chaque semaine 10 recettes simples et rapides pour ne plus se prendre la tête. L'objectif est aussi de faciliter au maximum les courses en proposant une liste de course intuitive, des informations complémentaires sur les produits et pourquoi pas, un jour, intégrer du self-scan et des suggestions de promos !" data-demo-link="http://cookers.io/">
+                    <div class="protfolio-image">
+                      <img src="images/portfolio/cookers.png" alt="portfolio">
+                      <div class="protfolio-content waves-effect waves-block waves-light">
+                        <div class="protfolio-content__inner">
+                          <h2 class="p-title">Cookers,<br><br>Un quotidien culinaire sans prise de tête !</h2>
+                        </div>
+                      </div>
+                      <div class="p-overlay"></div>
+                    </div>
+                  </a>
+                </li>
+                <!--/ single portfolio -->
+
+                <!-- Single Portfolio-->
+                <li class="single-port-item category-talk">
+                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="images/portfolio/humantalks_speaker_big.png" data-title="HumanTalks" data-content="En tant qu'organisateur on essaie de ne pas trop prendre la parole à notre événements mais il nous arrive de faire quelques entorses. J'ai donc fait seulement deux présentations aux HumanTalks, une première sur les failles XSS (les possibilités qu'elles offrent à un attantquant) et une seconde sur Ionic (introduction globale)." data-demo-link="http://loic.knuchel.org/blog/2015/03/12/humantalks-paris-introduction-a-ionic-framework/">
+                    <div class="protfolio-image">
+                      <img src="images/portfolio/humantalks_speaker.png" alt="portfolio">
+                      <div class="protfolio-content waves-effect waves-block waves-light">
+                        <div class="protfolio-content__inner">
+                          <h2 class="p-title">HumanTalks</h2>
+                        </div>
+                      </div>
+                      <div class="p-overlay"></div>
+                    </div>
+                  </a>
+                </li>
+                <!--/ single portfolio -->
+
+                <!-- Single Portfolio-->
+                <li class="single-port-item category-autre">
+                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="images/portfolio/koudetat_big.png" data-title="Koudetat" data-content="Quand, après avoir regardé l'intégralité de la chaine youtube de TheFamily (startupfood), j'ai appris qu'ils lançaient une formation pour entrepreneur, j'ai (presque) pas hésité et je me suis embarqué pour la saison 1 de koudetat ! C'est tout ce dont j'avais besoin pour me lancer dans l'entrepreunariat : un grand bol d'air frais et de motivation ! Mangez-en, c'est bon ;)" data-demo-link="http://www.koudetat.co/">
+                    <div class="protfolio-image">
+                      <img src="images/portfolio/koudetat.png" alt="portfolio">
+                      <div class="protfolio-content waves-effect waves-block waves-light">
+                        <div class="protfolio-content__inner">
+                          <h2 class="p-title">Koudetat,<br><br>Anyone can become an entrepreneur</h2>
+                        </div>
+                      </div>
+                      <div class="p-overlay"></div>
+                    </div>
+                  </a>
+                </li>
+                <!--/ single portfolio -->
+
+                <!-- Single Portfolio-->
+                <li class="single-port-item category-freelance">
+                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="images/portfolio/gutenbergtechnology_big.png" data-title="Gutenberg Technology" data-content="J'ai réalisé plusieurs Proof Of Concept chez Gutenberg Technology durant leur phase de levée de fonds. L'objectif étant, à l'époque, d'améliorer la valorisation de la société grâce à la technologie développée." data-demo-link="https://www.linkedin.com/in/loicknuchel#experience-532569534">
+                    <div class="protfolio-image">
+                      <img src="images/portfolio/gutenbergtechnology.png" alt="portfolio">
+                      <div class="protfolio-content waves-effect waves-block waves-light">
+                        <div class="protfolio-content__inner">
+                          <h2 class="p-title">Gutenberg Technology</h2>
+                        </div>
+                      </div>
+                      <div class="p-overlay"></div>
+                    </div>
+                  </a>
+                </li>
+                <!--/ single portfolio -->
+
+                <!-- Single Portfolio-->
+                <li class="single-port-item category-communaute">
+                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="images/portfolio/brownbaglunch_big.png" data-title="Brown Bag Lunch" data-content="Les Brown Bag Lunch sont une excellente initiative de Nathaniel Richand et François Sarradin. Le concept est simple : un bagger vient parler dans votre entreprise d'un sujet qui vous intéresse en échange d'un repas. Pour l'entreprise, c'est un bon moyen de faire de la veille, de dynamiser les équipes ou d'échanger avec des personnes ayant des expériences (très) différentes. Pour le bagger, ça permet de s'entraîner en tant que speaker, d'approfondir certains sujets en particulier, de voir des contextes et des pratiques variées ou tout simplement de passer un bon moment avec d'autres développeurs." data-demo-link="http://www.brownbaglunch.fr/baggers.html#Loïc_Knuchel_Paris">
+                    <div class="protfolio-image">
+                      <img src="images/portfolio/brownbaglunch.png" alt="portfolio">
+                      <div class="protfolio-content waves-effect waves-block waves-light">
+                        <div class="protfolio-content__inner">
+                          <h2 class="p-title">Brown Bag Lunch</h2>
+                        </div>
+                      </div>
+                      <div class="p-overlay"></div>
+                    </div>
+                  </a>
+                </li>
+                <!--/ single portfolio -->
+
+                <!-- Single Portfolio-->
+                <li class="single-port-item category-freelance">
+                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="images/portfolio/kpler_big.png" data-title="Kpler" data-content="Kpler a été mon premier client en tant que freelance. J'ai eu pour mission de migrer leur application (Scala + templates Play) vers une Single Page Application utilisant Angular pour rendre l'application plus riche et flexible." data-demo-link="https://www.linkedin.com/in/loicknuchel#experience-524100088">
+                    <div class="protfolio-image">
+                      <img src="images/portfolio/kpler.png" alt="portfolio">
+                      <div class="protfolio-content waves-effect waves-block waves-light">
+                        <div class="protfolio-content__inner">
+                          <h2 class="p-title">Kpler</h2>
+                        </div>
+                      </div>
+                      <div class="p-overlay"></div>
+                    </div>
+                  </a>
+                </li>
+                <!--/ single portfolio -->
+
+                <!-- Single Portfolio-->
+                <li class="single-port-item category-communaute">
+                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="images/portfolio/humantalks_big.png" data-title="HumanTalks Paris" data-content="Les HumanTalks sont des conférences mensuelles pour tous les développeurs. Les talks sont courts et variés, seule contrainte : rester vaguement dans le 'domaine' du développement. Concrètement, ça peut aller du sujet spécialisé sur un langage ou un framework aux sciences cognitives en passant par le design et la gestion de projet ! En tous cas, la bonne humeur est toujours au rendez-vous :D" data-demo-link="http://www.meetup.com/HumanTalks-Paris/">
+                    <div class="protfolio-image">
+                      <img src="images/portfolio/humantalks.png" alt="portfolio">
+                      <div class="protfolio-content waves-effect waves-block waves-light">
+                        <div class="protfolio-content__inner">
+                          <h2 class="p-title">HumanTalks Paris,<br><br>Des talks pour tous les développeurs</h2>
+                        </div>
+                      </div>
+                      <div class="p-overlay"></div>
+                    </div>
+                  </a>
+                </li>
+                <!--/ single portfolio -->
+
+                <!-- Single Portfolio-->
+                <li class="single-port-item category-talk">
+                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="images/portfolio/parisjug_big.png" data-title="Paris JUG" data-content="A l'occasion de la première édition des 'Young Blood', j'ai présenté au Paris JUG un talk sur les systèmes de recommandations : 'Des recommandations au service du business'. L'objectif était de montrer en quoi un système de recommandations peut (et doit !) d'abord répondre à un objectif business (satisfaction utilisateurs, engagement, découverte...). Sans rentrer dans la technique, j'ai expliqué les grands principes d'un tel système et comment le biaiser pour atteindre son objectif." data-demo-link="http://www.parisjug.org/xwiki/wiki/oldversion/view/Meeting/20140114">
+                    <div class="protfolio-image">
+                      <img src="images/portfolio/parisjug.png" alt="portfolio">
+                      <div class="protfolio-content waves-effect waves-block waves-light">
+                        <div class="protfolio-content__inner">
+                          <h2 class="p-title">Paris JUG</h2>
+                        </div>
+                      </div>
+                      <div class="p-overlay"></div>
+                    </div>
+                  </a>
+                </li>
+                <!--/ single portfolio -->
+
+                <!-- Single Portfolio-->
+                <li class="single-port-item category-talk">
+                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="images/portfolio/nexeo_big.png" data-title="Nexeo" data-content="Lors de mon premier emploi, chez Nexeo, j'ai eu l'opportunité de monter le pôle Java de la société : JavaNex. L'objectif était d'échanger entre développeurs Java et de partager nos connaissances. Dans ce cadre j'ai fait plusieurs présentations sur Java et le web (une tous les deux mois environ) et écrit quelques articles. Ce fut mes premiers pas en tant que speaker ;)" data-demo-link="http://nexeo.fr/javanex/">
+                    <div class="protfolio-image">
+                      <img src="images/portfolio/nexeo.png" alt="portfolio">
+                      <div class="protfolio-content waves-effect waves-block waves-light">
+                        <div class="protfolio-content__inner">
+                          <h2 class="p-title">Nexeo</h2>
+                        </div>
+                      </div>
+                      <div class="p-overlay"></div>
+                    </div>
+                  </a>
+                </li>
+                <!--/ single portfolio -->
+
+              </ul>
+              <!-- portfolio load more button-->
+              <!--<a id="portfolio-item-loader" href="#" class="btn-floating btn-large waves-effect waves-light brand-bg"><i class="mdi-content-add"></i></a>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #portfolio Section end -->
+
+    <!-- Testimonial Section end -->
+    <section id="testimonial" class="scroll-section root-sec brand-bg padd-tb-120 testimonial-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="testimonial-inner">
+            <div class="col-sm-12 col-md-10 card-box-wrap">
+              <div class="row">
+                <div class="clearfix section-head testimonial-text">
+                  <div class="col-sm-12">
+                    <h2 class="title">Recommandations</h2>
+                    <p class="regular-text">Travailler sur des projets intéressants avec des personnes motivées et souhaitant faire avancer les choses est toujours un plaisir :)</p>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="overflow-hidden">
+                    <div class="row">
+                      <div id="testimonialSlider" class="clearfix card-element-wrapper">
+                        <div class="col-sm-6 single-card-box wow fadeInUpSmall" data-wow-duration=".7s">
+                          <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <div class="card-img-wrap">
+                                <img class="activator" src="images/avatars/jean-maynier.jpeg" alt="Jean Maynier">
+                                <p class="saying-about">Loïc has been a key player to build new features to our front-end app and make it more reactive. He is very professional and passionate about his work. He always has the big picture in mind and knows when to do technical trade off to speed up time to market.<br>We will definitely work with him again in the future.</p>
+                              </div>
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator brand-text">Jean Maynier -</span>
+                              <a href="#">Co-Founder & CTO at Kpler</a>
+                            </div>
+                          </div>
+                        </div> <!-- ./single testimonial box -->
+                        <div class="col-sm-6 single-card-box wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration=".7s">
+                          <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <div class="card-img-wrap">
+                                <img class="activator" src="images/avatars/hadil-filali.jpeg" alt="Hadil Filali">
+                                <p class="saying-about">Loïc s'est très vite démarqué des autres consultants de Nexeo, tant chez son client Amundi par la qualité de son travail et sa personnalité et aussi chez Nexeo par son investissement sur différents projets internes (coaching technique, création et animation du pôle d'expertise Java).</p>
+                              </div>
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator brand-text">Hadil Filali -</span>
+                              <a href="#">Recruteur - Chasseur de jobs @ SPARKLINE</a>
+                            </div>
+                          </div>
+                        </div> <!-- ./single testimonial box -->
+                        <div class="col-sm-6 single-card-box">
+                          <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <div class="card-img-wrap">
+                                <img class="activator" src="images/avatars/quentin-valmori.jpeg" alt="Quentin Valmori">
+                                <p class="saying-about">Loïc a fait preuve, durant 2 mois d'une grande rigueur, d'un grand professionnalisme mais aussi d'une très grande autonomie. En résumé, c'est quelqu'un qui aime et qui est passionné par son boulot. Il trouve toujours des solutions aux problèmes et n'hésite pas à faire des propositions.</p>
+                              </div>
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator brand-text">Quentin Valmori -</span>
+                              <a href="#">CTO</a>
+                            </div>
+                          </div>
+                        </div> <!-- ./single testimonial box -->
+                        <div class="col-sm-6 single-card-box">
+                          <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <div class="card-img-wrap">
+                                <img class="activator" src="images/avatar.png" alt="Antoine Body">
+                                <p class="saying-about">Loïc a travaillé sous ma tutelle pendant 1 an et demi et c'est avec la plus grande peine que j'ai du le laisser partir afin qu'il puisse assouvir sa soif inaltérable de nouvelles technologies. Non seulement il est passionné par la technique et possède un bagage impressionnant mais il est également force de proposition sur tous les aspects de la gestion de projet. Chose notable, il possède un sens de l'ergonomie impressionnant lui permettant de développer des applications de qualité mais également extrêmement agréables à utiliser. Pour finir ses qualités humaines et relationnelles indéniables ont fait de lui un collaborateur fortement apprécié de l'ensemble des équipes d'Amundi.</p>
+                              </div>
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator brand-text">Antoine Body -</span>
+                              <a href="#">Pôle d'expertise Java chez Amundi</a>
+                            </div>
+                          </div>
+                        </div> <!-- ./single testimonial box -->
+                        <div class="col-sm-6 single-card-box">
+                          <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <div class="card-img-wrap">
+                                <img class="activator" src="images/avatars/antoine-darcet.jpeg" alt="Antoine Darcet">
+                                <p class="saying-about">Loïc est un collaborateur extrêment compétent et qui plus est très impliqué dabs son travail et dans la vie de l'entreprise. Toujours prêt à prendre des projets et à les mener à bien, il est aussi force de proposition. Toujours constructif il est capable de fédérer autour de lui sur une idée ou un projet.</p>
+                              </div>
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator brand-text">Antoine Darcet -</span>
+                              <a href="#">PDG de Nexeo</a>
+                            </div>
+                          </div>
+                        </div> <!-- ./single testimonial box -->
+                        <div class="col-sm-6 single-card-box">
+                          <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <div class="card-img-wrap">
+                                <img class="activator" src="images/avatars/emmanuel-asfar.jpeg" alt="Emmanuel Asfar">
+                                <p class="saying-about">Travailler avec Loïc est très agréable : il est force de proposition, capable de proposer des alternatives élégantes et innovantes. Il travaille rapidement pour un produit fini soigné. Tout cela avec enthousiasme bien sûr !</p>
+                              </div>
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator brand-text">Emmanuel Asfar -</span>
+                              <a href="#">IT Project Manager chez Amundi</a>
+                            </div>
+                          </div>
+                        </div> <!-- ./single testimonial box -->
+                      </div> <!-- #testimonialSlider end -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-wrapp tmo-ctrl">
+              <a class="btn-floating waves-effect waves-light btn-large white go go-left"><i class="mdi-navigation-chevron-left brand-text"></i></a>
+              <a class="btn-floating waves-effect waves-light btn-large white go go-right"><i class="mdi-navigation-chevron-right brand-text"></i></a>
+            </div>
+          </div>
+        </div>
+      </div> <!-- ./container end -->
+    </section>
+    <!-- #testimonial Section end -->
+
+    <!-- Blog Section end -->
+    <section id="blog" class="scroll-section root-sec grey lighten-5 padd-tb-120 blog-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="blog-inner">
+            <div class="col-sm-12 card-box-wrap">
+              <div class="row">
+                <div class="clearfix section-head blog-text">
+                  <div class="col-sm-10">
+                    <h2 class="title">Blog</h2>
+                    <p class="regular-text"></p>
+                  </div>
+                </div>
+                <div class="clearfix card-element-wrapper" id="blog-posts">
+                  <article class="col-sm-6 col-md-4 single-card-box single-post">
+                    <div class="card wow fadeInUpSmall" data-wow-duration=".7s">
+                      <div class="card-image">
+                        <div class="card-img-wrap">
+                          <div class="blog-post-thumb waves-effect waves-block waves-light">
+                            <a href="http://loic.knuchel.org/blog/2015/03/23/lancement-des-workshops-ionic/" target="_blank"><img class="activator" src="http://loic.knuchel.org/blog/wp-content/uploads/2015/03/ionic-workshop-750x290.png" alt=""></a>
+                          </div>
+                          <div class="post-body">
+                            <a href="http://loic.knuchel.org/blog/2015/03/23/lancement-des-workshops-ionic/" class="post-title-link brand-text" target="_blank"><h2 class="post-title">Lancement des Workshops Ionic</h2></a>
+                            <p class="post-content">
+                              Bonjour à tous, aujourd’hui je vous annonce le lancement d’un nouveau type de meetup : le collaborative-coding-workshop :D<br>
+                              Le principe est de se réunir autour d’une table avec un PC et un rétroprojecteur et de coder ensemble une application ou une fonctionnalité. Le but est de passer un bon moment ensemble et d’apprendre de nouvelles choses en étant actif et entouré.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="clearfix card-content">
+                        <a href="http://loic.knuchel.org/blog/2015/03/23/lancement-des-workshops-ionic/" class="brand-text right waves-effect" target="_blank">Lire la suite</a>
+                      </div>
+                    </div>
+                  </article> <!-- ./single blog post end -->
+                  <article class="col-sm-6 col-md-4  single-card-box single-post">
+                    <div class="card wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration=".7s">
+                      <div class="card-image">
+                        <div class="card-img-wrap">
+                          <div class="blog-post-thumb waves-effect waves-block waves-light">
+                            <a href="http://loic.knuchel.org/blog/2015/02/26/faire-un-client-twitter-avec-ionic/" target="_blank"><img class="activator" src="http://loic.knuchel.org/blog/wp-content/uploads/2015/02/ionic-twitter-app-750x290-750x290.jpg" alt="">
+                            </a>
+                          </div>
+                          <div class="post-body">
+                            <a href="http://loic.knuchel.org/blog/2015/02/26/faire-un-client-twitter-avec-ionic/" class="post-title-link brand-text" target="_blank"><h2 class="post-title">Faire un client Twitter avec Ionic</h2></a>
+                            <p class="post-content">
+                              Si vous avez lu mes précédents articles, vous savez maintenant que je suis plutôt fan de Ionic et que ce framework permet de faire de bonnes applications très facilement et rapidement :)<br>
+                              Je vous propose donc de faire le tour des composants Ionic en créant un client twitter.<br>
+                              C’est parti !
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="clearfix card-content">
+                        <a href="http://loic.knuchel.org/blog/2015/02/26/faire-un-client-twitter-avec-ionic/" class="brand-text right waves-effect" target="_blank">Lire la suite</a>
+                      </div>
+                    </div>
+                  </article> <!-- ./single blog post end -->
+                  <article class="col-sm-6 col-md-4 single-card-box single-post">
+                    <div class="card wow fadeInUpSmall" data-wow-delay=".4s" data-wow-duration=".7s">
+                      <div class="card-image">
+                        <div class="card-img-wrap">
+                          <div class="blog-post-thumb waves-effect waves-block waves-light">
+                            <a href="http://loic.knuchel.org/blog/2015/03/26/publier-son-application-cordova-sur-google-play/" target="_blank"><img class="activator" src="http://loic.knuchel.org/blog/wp-content/uploads/2015/03/publish-cordova-app-750x290.png" alt="">
+                            </a>
+                          </div>
+                          <div class="post-body">
+                            <a href="http://loic.knuchel.org/blog/2015/03/26/publier-son-application-cordova-sur-google-play/" class="post-title-link brand-text" target="_blank"><h2 class="post-title">Publier son application Cordova sur Google Play</h2></a>
+                            <p class="post-content">
+                              Ça y est, tu as fini le dév et ton application révolutionnaire et prête à conquérir le monde ! Mais avant de devenir millionnaire et de te la couler douce, il te reste une “petite” chose à faire : la publier sur les stores !<br>
+                              Dans cet article je ne m’intéresserais uniquement à la partie Android et donc au Play Store.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="clearfix card-content">
+                        <a href="http://loic.knuchel.org/blog/2015/03/26/publier-son-application-cordova-sur-google-play/" class="brand-text right waves-effect" target="_blank">Lire la suite</a>
+                      </div>
+                    </div>
+                  </article> <!-- ./single blog post end -->
+                </div>
+                <div class="clearfix left-align">
+                  <div class="col-sm-12">
+                    <a href="http://loic.knuchel.org/blog/" class="waves-effect waves-light btn-large load-more" target="_blank">Voir le blog</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- ./container -->
+    </section>
+    <!-- #blog Section end -->
+
+    <!-- Contact Section end -->
+    <section id="contact" class="scroll-section root-sec brand-bg padd-tb-120 contact-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="contact-inner">
+            <div class="col-sm-12 card-box-wrap">
+              <div class="row">
+                <div class="clearfix section-head contact-text">
+                  <div class="col-sm-12">
+                    <h2 class="title">Contact</h2>
+                  </div>
+                </div> <!-- contact text end -->
+
+                <div class="clearfix contact-form">
+
+                <!-- Map Start -->
+                  <div class="col-sm-7">
+                    <div class="contact-image"></div>
+                  </div> <!-- Map end -->
+
+                <!-- Contact Form start -->
+                  <div class="col-sm-5">
+                    <div class="clearfix card-panel grey lighten-5 cform-wrapper">
+                      <form action="http://loic.knuchel.org" id="contactForm" novalidate>
+                        <div class="input-field">
+                          <input id="contact_name" type="text" name="contactName" class="validate input-box">
+                          <label for="contact_name" class="input-label">Name</label>
+                        </div>
+                        <div class="input-field">
+                          <input id="email" type="email" name="contactEmail" class="validate input-box">
+                          <label for="email" class="input-label">Email</label>
+                        </div>
+                        <div class="input-field">
+                          <input id="subject" type="text" name="contactSubject" class="validate input-box">
+                          <label for="subject" class="input-label">Subject</label>
+                        </div>
+                        <div class="input-field textarea-input">
+                          <textarea id="textarea1" name="contactMessage" class="validate materialize-textarea" style="height: 22px;"></textarea>
+                          <label for="textarea1" class="input-label">Message</label>
+                        </div>
+                        <div class="input-field submit-wrap clearfix">
+                          <button type="submit" class="left waves-effect btn-flat brand-text submit-btn">send message</button>
+                          <div class="right form-loader-area">
+                            <svg class="circular size-20" height="20" width="20">
+                              <circle class="path" cx="10" cy="10" r="7" fill="none" stroke-width="3" stroke-miterlimit="10" />
+                            </svg>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div> <!-- ./contact form end -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- ./container end -->
+      <div class="section-call-to-area">
+        <div class="container">
+          <div class="row">
+            <a href="#home" class="btn-floating btn-large button-middle call-to-home section-call-to-btn animated btn-up btn-hidden" data-section="#home">
+              <i class="mdi-navigation-expand-less"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #contact Section end -->
+
+    <!-- Footer Section end -->
+    <footer id="footer" class="root-sec white root-sec footer-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="clearfix footer-inner">
+              <ul class="left social-icons">
+                <li><a href="https://www.linkedin.com/in/loicknuchel" class="tooltips tooltipped" data-position="top" data-tooltip="Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="http://loic.knuchel.org/blog/" class="tooltips tooltipped" data-position="top" data-tooltip="Blog" target="_blank"><i class="fa fa-pencil-square-o"></i></a></li>
+                <li><a href="https://github.com/loicknuchel" class="tooltips tooltipped" data-position="top" data-tooltip="Github" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="http://fr.slideshare.net/loicknuchel" class="tooltips tooltipped" data-position="top" data-tooltip="Slideshare" target="_blank"><i class="fa fa-slideshare"></i></a></li>
+                <li><a href="https://twitter.com/loicknuchel" class="tooltips tooltipped" data-position="top" data-tooltip="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.pinterest.com/loicknuchel/" class="tooltips tooltipped" data-position="top" data-tooltip="Pinterest" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+              </ul> <!-- ./social icons end -->
+              <div class="right copyright">
+                <p>Think it, Build it, Use it</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- ./container end-->
+    </footer>
+    <!-- #footer end -->
+
+  </main>
+  <!-- Main Container end-->
+
+
+  <!-- JavaScripts -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="assets/js/jquery.easing.1.3.js"></script>
+  <script src="assets/js/detectmobilebrowser.js"></script>
+  <script src="assets/js/isotope.pkgd.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/waypoints.js"></script>
+  <script src="assets/js/jquery.counterup.min.js"></script>
+  <script src="assets/js/jquery.nicescroll.min.js"></script>
+  <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
+  <script src="assets/js/gmaps.js"></script>
+  <script src="assets/libs/owl-carousel/owl.carousel.min.js"></script>
+  <script src="assets/libs/materialize/js/materialize.min.js"></script>
+  <script src="assets/libs/jwplayer/jwplayer.js"></script>
+  <script src="assets/libs/sweetalert/sweet-alert.min.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

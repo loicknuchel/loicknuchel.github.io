@@ -1,0 +1,9 @@
+b {
+  font-weight: bold;
+}
+
+.contact-image {
+  height: 474px;
+  background-image: url(../../images/contact.jpg);
+  background-size: cover;
+}
