@@ -2,6 +2,10 @@ button {
     cursor: pointer;
 }
 
+.resume-list__block-title {
+    margin-bottom: 0;
+}
+
 .resume-list__block-logo {
     float: right;
     /* float: left;
