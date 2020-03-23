@@ -1,0 +1,15 @@
+button {
+    cursor: pointer;
+}
+
+.resume-list__block-logo {
+    float: right;
+    /* float: left;
+    margin-left: -100px;
+    margin-top: -20px; */
+}
+
+.resume-list__block-logo img {
+    height: 50px;
+    border-radius: 5px;
+}

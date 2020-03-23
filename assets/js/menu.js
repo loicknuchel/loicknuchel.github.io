@@ -4,7 +4,9 @@
 $(function(){
     $('a[href^="#"]').click(function(){
         var target = $(this).attr('href');
-        $('html, body').animate({scrollTop: $(target).offset().top - 50}, 800);
+        var offset = 50;
+        if(target.indexOf('#employment-') === 0 || target.indexOf('#education-') === 0) { offset = 100; }
+        $('html, body').animate({scrollTop: $(target).offset().top - offset}, 800);
         return false;
     });
 });

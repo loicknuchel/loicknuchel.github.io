@@ -9,10 +9,11 @@
     <meta name="description" content="Loïc Knuchel - Scala developer & trainer, Gospeak founder, conference speaker and Meetup organizer">
     <meta name="author" content="Loïc Knuchel">
 
-    <link rel="stylesheet" href="assets/css/color.css">
-    <link rel="stylesheet" href="assets/css/fontawesome-5.12.1-all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Inconsolata">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Inconsolata">
+    <link rel="stylesheet" href="assets/css/fontawesome-5.12.1-all.min.css">
+    <link rel="stylesheet" href="assets/css/color.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
 
     <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
@@ -202,26 +203,20 @@
             <div class="col-md-7 col-lg-5">
                 <div class="contacts__form">
                     <p class="contacts__form-title">Or just write me a letter here_</p>
-                    <form class="js-form">
+                    <form class="contact-form" method="POST" action="https://formspree.io/xpzlojjz">
                         <div class="form-group">
-                            <label for="contact.name" class="sr-only">Your name</label>
-                            <input id="contact.name" class="form-field js-field-name" type="text" placeholder="Your name" required>
+                            <label class="sr-only" for="contact-email">Your e-mail</label>
+                            <input class="form-field js-field-email" type="email" id="contact-email" name="_replyto" placeholder="Your e-mail" required>
                             <span class="form-validation"></span>
                             <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
                         </div>
                         <div class="form-group">
-                            <label for="contact.email" class="sr-only">Your e-mail</label>
-                            <input id="contact.email" class="form-field js-field-email" type="email" placeholder="Your e-mail" required>
+                            <label class="sr-only" for="contact-message">Your message</label>
+                            <textarea class="form-field js-field-message" id="contact-message" name="message" placeholder="Type the message here" required></textarea>
                             <span class="form-validation"></span>
                             <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
                         </div>
-                        <div class="form-group">
-                            <label for="contact.message" class="sr-only">Your message</label>
-                            <textarea id="contact.message" class="form-field js-field-message" placeholder="Type the message here" required></textarea>
-                            <span class="form-validation"></span>
-                            <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
-                        </div>
-                        <button class="site-btn site-btn--form" type="submit" value="Send">Send</button>
+                        <button class="site-btn site-btn--form" type="submit">Send</button>
                     </form>
                 </div>
                 <div class="footer">

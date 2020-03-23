@@ -1,54 +1,24 @@
 'use strict';
 
-//Validation forms
-function validateForm(selector) {
-    Array.from(document.querySelectorAll(selector)).forEach(item => {
-        item.addEventListener('input', (e) => {
-            if(e.target.value === ''){
-            item.dataset.touched = false;
-            }
-        });
-        item.addEventListener('invalid', () => {
-            item.dataset.touched = true;
-        });
-        item.addEventListener('blur', () => {
-            if (item.value !== '') item.dataset.touched = true;
-        });
-    });
-};
-
-validateForm('.js-form .form-field');
-
-var form = document.querySelector('.js-form');
-var formName = '.js-form';
-
-form.addEventListener('submit', function(e){
-    submitForm(e, formName);
-});
-
-function submitForm(e, formName) {
+$('form.contact-form').submit(function (e) {
     e.preventDefault();
-    var name = $(formName + ' .js-field-name').val();
-    var email = $(formName + ' .js-field-email').val();
-    var message = $(formName + ' .js-field-message').val();
-
-    var formData = {
-        name: name,
-        email: email,
-        message: message
-    };
-
-    $.ajax({
-        type: "POST",
-        url: 'mail.php',
-        data: formData,
-        success: function () {
-            console.log('success');
-            //...
-        },
-        error: function () {
-            console.log('error');
-            //...
-        }
+    var $form = $(this);
+    var data = {};
+    $form.find('input, textarea').each(function () {
+        data[$(this).attr('name')] = $(this).val();
     });
-}
+    var opts = {
+        type: $form.attr('method'),
+        url: $form.attr('action'),
+        headers: {'Accept': 'application/json'},
+        data: data,
+        success: function () {
+            $form.html('<h3>Well done, message sent <i class="fas fa-thumbs-up"></i></h3>');
+        },
+        error: function (xhr, status, error) {
+            console.error('Ajax options', opts);
+            alert('Ooops, an error occured: ' + error);
+        }
+    };
+    $.ajax(opts);
+});
