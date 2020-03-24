@@ -2,11 +2,6 @@ button {
     cursor: pointer;
 }
 
-.resume-shortcuts img {
-    height: 50px;
-    border-radius: 5px;
-}
-
 .resume-list__block-title {
     margin-bottom: 0;
 }
