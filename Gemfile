@@ -1,7 +1,7 @@
-# gh-pages versions: https://pages.github.com/versions
 source "https://rubygems.org"
 
-# To upgrade, run `bundle update github-pages`.
+# gh-pages versions: https://pages.github.com/versions
+# to upgrade, run `bundle update github-pages`
 gem "github-pages", group: :jekyll_plugins
 
 # If you have any plugins, put them here!

@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Loïc Knuchel - Scala developer & trainer, Gospeak founder, conference speaker and Meetup organizer</title>
-    <meta name="description" content="Loïc Knuchel - Scala developer & trainer, Gospeak founder, conference speaker and Meetup organizer">
+    <title>Loïc Knuchel 👨‍💻 Scala developer & trainer, Gospeak founder, conference speaker and Meetup organizer</title>
+    <meta name="description" content="Loïc Knuchel 👨‍💻 Scala developer & trainer, Gospeak founder, conference speaker and Meetup organizer">
     <meta name="author" content="Loïc Knuchel">
 
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css">
@@ -110,12 +112,12 @@
                     <a href="https://github.com/loicknuchel" target="_blank" title="Github" data-toggle="tooltip"><i class="fab fa-github"></i></a>
                     <a href="https://slideshare.net/loicknuchel" target="_blank" title="SlideShare" data-toggle="tooltip"><i class="fab fa-slideshare"></i></a>
                     <a href="https://gospeak.io/speakers/loicknuchel" target="_blank" title="Gospeak" data-toggle="tooltip"><i class="fas fa-microphone"></i></a>
-                    <!--<a href="#" target="_blank" title="Blog" data-toggle="tooltip"><i class="fas fa-comment"></i></i></a>
                     <a href="http://www.brownbaglunch.fr/baggers.html#Lo%C3%AFc_Knuchel_Paris" target="_blank" title="Brown Bag Lunch" data-toggle="tooltip"><i class="fas fa-cookie-bite"></i></a>
+                    <a href="https://www.malt.fr/profile/loicknuchel" target="_blank" title="Malt" data-toggle="tooltip"><i class="fas fa-hashtag"></i></a>
+                    <!--<a href="#" target="_blank" title="Blog" data-toggle="tooltip"><i class="fas fa-comment"></i></i></a>
                     <a href="#" target="_blank" title="dev.to" data-toggle="tooltip"><i class="fab fa-dev"></i></a>
                     <a href="#" target="_blank" title="Medium" data-toggle="tooltip"><i class="fab fa-medium"></i></a>
-                    <a href="#" target="_blank" title="Twitch" data-toggle="tooltip"><i class="fab fa-twitch"></i></a>
-                    <a href="https://www.malt.fr/profile/loicknuchel" target="_blank" title="Malt" data-toggle="tooltip"><i class="fas fa-hashtag"></i></a>-->
+                    <a href="#" target="_blank" title="Twitch" data-toggle="tooltip"><i class="fab fa-twitch"></i></a>-->
                 </p>
             </div>
         </div>
@@ -144,6 +146,7 @@
                     Git, DDD
             -->
             <a href="https://linkedin.com/in/loicknuchel" class="section_btn site-btn" target="_blank">LinkedIn profile <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://anchor.fm/parcoursdev/episodes/Parcours-de-Loc-Knuchel--dveloppeur-Scala-et-Technical-Leader-ea72m0" class="section_btn site-btn" target="_blank">Podcast Parcours Dev</a>
         </div>
     </div>
 </section>
@@ -166,293 +169,57 @@
     <div class="row">
         <div class="col-md-12 section__resume resume-list">
             <h3 class="resume-list_title">Employment</h3>
-            <div id="employment-gospeak" class="resume-list__block" data-twitter="https://twitter.com/gospeak_io">
-                <a class="resume-list__block-logo" href="https://gospeak.io" target="_blank"><img src="assets/img/logos/gospeak.jpg" alt="Gospeak logo"></a>
-                <h4 class="resume-list__block-title">Gospeak</h4>
-                <p class="resume-list__block-date">janv. 2019 - now</p>
-                <p>
-                    Founder<br>
-                    All the code is open source, you can see it on <a href="https://github.com/gospeak-io" target="_blank">github.com/gospeak-io</a>
-                </p>
-                <ul class="tags">
-                    <li>Startup founder</li>
-                </ul>
+            {% assign sorted_work_experiences = site.work_experiences | sort: 'date' | reverse %}
+            {% for exp in sorted_work_experiences %}
+            <div id="{{exp.slug}}" class="resume-list__block" data-twitter="{{exp.twitter}}">
+                <a class="resume-list__block-logo" href="{{exp.website}}" target="_blank"><img src="{{exp.logo}}" alt="{{exp.name}} logo"></a>
+                <div data-toggle="collapse" href="#{{exp.slug}}-collapse">
+                    <h4 class="resume-list__block-title">{{exp.name}}</h4>
+                    <p class="resume-list__block-date">{{exp.duration}}</p>
+                </div>
+                <div class="collapse show" id="{{exp.slug}}-collapse">
+                    <p>{{exp.content | markdownify}}</p>
+                    <ul class="tags">
+                        {% for tag in exp.tags %}
+                        <li>{{tag}}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
             </div>
-            <div id="employment-zeenea" class="resume-list__block" data-twitter="https://twitter.com/ZeeneaSoftware">
-                <a class="resume-list__block-logo" href="https://zeenea.com" target="_blank"><img src="assets/img/logos/zeenea.png" alt="Zeenea logo"></a>
-                <h4 class="resume-list__block-title">Zeenea</h4>
-                <p class="resume-list__block-date">janv. 2019 - may 2020, 1 year and 4 months</p>
-                <p>Team lead</p>
-                <ul class="tags">
-                    <li>Team lead</li>
-                    <li>Scrum master</li>
-                    <li>Scala developer</li>
-                </ul>
-            </div>
-            <div id="employment-criteo" class="resume-list__block" data-twitter="https://twitter.com/CriteoEng">
-                <a class="resume-list__block-logo" href="https://www.criteo.com" target="_blank"><img src="assets/img/logos/criteo.png" alt="Criteo logo"></a>
-                <h4 class="resume-list__block-title">Criteo</h4>
-                <p class="resume-list__block-date">oct. 2016 - dec. 2018, 2 years and 3 months</p>
-                <p>Scala developer</p>
-                <ul class="tags">
-                    <li>Scala developer</li>
-                    <li>Scrum master</li>
-                </ul>
-            </div>
-            <div id="employment-mfglabs" class="resume-list__block" data-twitter="https://twitter.com/mfg_labs">
-                <a class="resume-list__block-logo" href="https://mfglabs.com" target="_blank"><img src="assets/img/logos/mfg-labs.jpg" alt="MFG Labs logo"></a>
-                <h4 class="resume-list__block-title">MFG Labs</h4>
-                <p class="resume-list__block-date">mars 2016 - may 2016, 3 months</p>
-                <p>Scala developer</p>
-                <ul class="tags">
-                    <li>Scala developer</li>
-                </ul>
-            </div>
-            <div id="employment-sidexa" class="resume-list__block" data-twitter="https://twitter.com/SIDEXA_">
-                <a class="resume-list__block-logo" href="https://www.sidexa.fr"><img src="assets/img/logos/sidexa.png" alt="Sidexa logo"></a>
-                <h4 class="resume-list__block-title">Sidexa</h4>
-                <p class="resume-list__block-date">oct. 2015 - feb. 2016, 5 months</p>
-                <p>Ionic developer</p>
-                <ul class="tags">
-                    <li>Scala developer</li>
-                </ul>
-            </div>
-            <div id="employment-stimshop" class="resume-list__block" data-twitter="https://twitter.com/STIMSHOP">
-                <a class="resume-list__block-logo" href="https://popchef.com" target="_blank"><img src="assets/img/logos/stimshop.jpg" alt="Stimshop logo"></a>
-                <h4 class="resume-list__block-title">Stimshop</h4>
-                <p class="resume-list__block-date">apr. 2015, 4 days</p>
-                <p>
-                    Cordova plugin
-                </p>
-                <ul class="tags">
-                    <li>Mobile developer</li>
-                </ul>
-            </div>
-            <div id="employment-popchef" class="resume-list__block" data-twitter="https://twitter.com/popchef">
-                <a class="resume-list__block-logo" href="https://popchef.com" target="_blank"><img src="assets/img/logos/popchef.jpg" alt="Popchef logo"></a>
-                <h4 class="resume-list__block-title">Popchef</h4>
-                <p class="resume-list__block-date">mars 2015, 3 days</p>
-                <p>
-                    Mobile dev
-                </p>
-                <ul class="tags">
-                    <li>Mobile developer</li>
-                </ul>
-            </div>
-            <div id="employment-saloon" class="resume-list__block" data-twitter="https://twitter.com/getSalooN">
-                <a class="resume-list__block-logo" href="https://saloonapp.herokuapp.com" target="_blank"><img src="assets/img/logos/saloon.png" alt="SalooN logo"></a>
-                <h4 class="resume-list__block-title">SalooN</h4>
-                <p class="resume-list__block-date">mars 2015 - oct. 2015, 8 months</p>
-                <p>Founder</p>
-                <ul class="tags">
-                    <li>Startup founder</li>
-                </ul>
-            </div>
-            <div id="employment-performanceimmo" class="resume-list__block" data-twitter="https://twitter.com/performance_imm">
-                <a class="resume-list__block-logo" href="https://www.performance-immo.com" target="_blank"><img src="assets/img/logos/performance-immo.jpg" alt="Performance IMMO logo"></a>
-                <h4 class="resume-list__block-title">Performance IMMO</h4>
-                <p class="resume-list__block-date">janv. 2015 - mars 2015, 3 months</p>
-                <p>
-                    With the end of <a href="#employment-cookers">Cookers</a>, I returned to freelancing to earned some money.
-                    I have met <a href="https://linkedin.com/in/nicolasmarx" target="_blank">Nicolas Marx</a> a year before and had recommended
-                    <a href="https://linkedin.com/in/nmartignole" target="_blank">Nicolas Martignole</a> to work together but the project did not start back then.
-                    Luckily for me, it started at the end of 2014 and I could on-board a few months later with <a href="https://linkedin.com/in/ugo-bourdon-41587438" target="_blank">Ugo Bourdon</a>.<br>
-                    The product was a ticketing platform for joint property managers, starting from the beginning with a few clients.
-                    A nice opportunity to re-start my freelance experiences from which I keep very good memories.
-                </p>
-                <ul class="tags">
-                    <li>Scala developer</li>
-                    <li>Scala</li>
-                    <li>Play framework</li>
-                    <li>Elastic search</li>
-                    <li>PostgreSQL</li>
-                    <li>Freelance</li>
-                </ul>
-            </div>
-            <div id="employment-gutenbergtech" class="resume-list__block" data-twitter="https://twitter.com/GutenbergTech">
-                <a class="resume-list__block-logo" href="https://www.gutenberg-technology.com" target="_blank"><img src="assets/img/logos/gutenberg-technology.jpg" alt="Gutenberg Technology logo"></a>
-                <h4 class="resume-list__block-title">Gutenberg Technology</h4>
-                <p class="resume-list__block-date">apr. 2014 - may 2014, 2 months</p>
-                <p>
-                    Same as <a href="#employment-kpler">Kpler</a>, I have done this mission during the launch of <a href="#employment-cookers">Cookers</a>.
-                    But this time it was to do a favor to a friend.<br>
-                    I had to make a working prototype for an investor.
-                    I worked with a designer and had to integrate his design and develop the frontend interactions and some backend features.
-                </p>
-                <ul class="tags">
-                    <li>Front-end developer</li>
-                    <li>Node.js</li>
-                    <li>AngularJS</li>
-                    <li>Freelance</li>
-                </ul>
-            </div>
-            <div id="employment-kpler" class="resume-list__block" data-twitter="https://twitter.com/Kpler">
-                <a class="resume-list__block-logo" href="https://www.kpler.com" target="_blank"><img src="assets/img/logos/kpler.jpg" alt="Kpler logo"></a>
-                <h4 class="resume-list__block-title">Kpler</h4>
-                <p class="resume-list__block-date">mars 2014, 1 months</p>
-                <p>
-                    My first freelance mission! <i class="fas fa-dollar-sign"></i> <i class="fas fa-dollar-sign"></i> <i class="fas fa-dollar-sign"></i><br>
-                    It was a short mission done in the same time as <a href="#employment-cookers">Cookers</a> to earn some money.<br>
-                    <i><b>Kpler</b></i> is a small startup (3 people at that time) which track gaz boats around the globe for traders.<br>
-                    I helped them to migrate their app from server side rendering using <i><b>Twirl</b></i> to an <i><b>AngularJS</b></i> SPA.
-                </p>
-                <ul class="tags">
-                    <li>Scala developer</li>
-                    <li>Scala</li>
-                    <li>Play framework</li>
-                    <li>JavaScript</li>
-                    <li>AngularJS</li>
-                    <li>Freelance</li>
-                </ul>
-            </div>
-            <div id="employment-cookers" class="resume-list__block" data-twitter="https://twitter.com/cookersapp">
-                <a class="resume-list__block-logo" href="http://cookers.mystrikingly.com" target="_blank"><img src="assets/img/logos/cookers.png" alt="Cookers logo"></a>
-                <h4 class="resume-list__block-title">Cookers</h4>
-                <p class="resume-list__block-date">feb. 2014 - janv. 2015, 1 year</p>
-                <p>
-                    During my 6 month personal training on <i><b>Scala</b></i>, <i><b>Play framework</b></i>, <i><b>machine learning</b></i> and <i><b>recommender systems</b></i>
-                    I discovered <i><b>TheFamily</b></i> and their <a href="https://www.youtube.com/user/Startupfood" target="_blank">youtube channel</a>.
-                    When they launched <a href="#education-koudetat">Koudetat</a> I could not resist, I had to take this opportunity and launch my own startup.
-                    After a few classes I settle down for <i><b>Cookers</b></i>, an app to enhance customer experience in retail.
-                    I already knew the area a bit, had a few connections thanks to <a href="#employment-trfretail">TRF Retail</a> and food shopping was a daily struggle for me as it can be for many others.<br>
-                    The idea was to build a nice self-scan experience using consumer smartphone. So he could build his shopping list at home based on basic recipes suggestions,
-                    make his shopping using the app as an assistant (lists, nutrition, recipe suggestions, promos...) and skip checkout lines to go out.<br>
-                    Existing self-scan app were made by hardware industrial, with an horrible UI, UX and even blocking bugs.
-                    They were focused on the scan action for a single store and filled with shop ads.
-                    Our goal was to make a global experience, from ideas, to store and cooking with an awesome UX <i class="fas fa-magic"></i><br>
-                    We launched a recipe app with a shopping list and started negotiations with some retailers to work with them (Intermarché, Casino, Naturalia...) but we were not at the same pace (obviously!).
-                    We stopped after one year of intense work and learnings. We earned no money but it was really worth the time invested to develop an understanding
-                    of what is it to launch a business and have a much more open view than just the developer one.
-                    Meeting a lot of diverse people (other entrepreneurs, retailer directors, competition...) was also a big win and it makes me realize that networking
-                    is key but you need a good reason to do it seriously (startup or freelance is <i class="far fa-smile-wink"></i>).<br>
-                    All the code is open source, you can see it on <a href="https://github.com/cookersapp" target="_blank">github.com/cookersapp</a>.
-                </p>
-                <ul class="tags">
-                    <li>Startup founder</li>
-                    <li>Retail</li>
-                    <li>Scala</li>
-                    <li>Play framework</li>
-                    <li>AngularJS</li>
-                    <li>Ionic framework</li>
-                </ul>
-            </div>
-            <div id="employment-amundi" class="resume-list__block" data-twitter="https://twitter.com/Amundi_ENG">
-                <a class="resume-list__block-logo" href="https://legroupe.amundi.com" target="_blank"><img src="assets/img/logos/amundi.jpg" alt="Amundi logo"></a>
-                <h4 class="resume-list__block-title">Amundi</h4>
-                <p class="resume-list__block-date">janv. 2012 - juil. 2013, 1 year and 7 months</p>
-                <p>
-                    My past experiences were all a bit eccentric, so I decided to go more mainstream to become a real software engineer <i class="far fa-grin-beam-sweat"></i><br>
-                    It took me 3 months to decide what I wanted to do and, as the world was going threw a massive crisis, I wanted to understand finance from the inside.
-                    After a few months (whole departments were laid of at this time), I landed at <i><b>Amundi</b></i> (through <i><b>Nexeo</b></i>).
-                    My team was transverse and worked for other tech teams (mainly ops). So, not much to see about finance
-                    but I could discuss with people to know more and <i><b>Nexeo</b></i> being a finance centric SSII, I had a two day finance training and a (big) book.
-                    So, in the end, I learned quite a lot about finance <i class="far fa-grin-hearts"></i><br>
-                    I did several projects using <i><b>Java</b></i>, <i><b>Struts2</b></i>, <i><b>Oracle</b></i>, <i><b>Bootstrap</b></i> and <i><b>jQuery</b></i>,
-                    such as monitoring and administrating network equipments, editing and deploying file transfer configurations or managing database access rights using a custom driver.<br>
-                    I worked under the guidance of <i><b>Antoine Body</b></i>, Amundi architect and go-to person for every technical problem,
-                    who gave me a lot of autonomy alongside some close mentoring with code reviews.
-                    I had a complete ownership on various projects: collect client needs, propose solutions then design, implement and deploy them.
-                    Feedback loop was very small (about a day) and projects were a real success! This gave me a big ego boost, I got to be a real software engineer ^^<br>
-                    Some years later, Antoine told me that <i>the biggest project I worked on, worked like a charm, without any maintenance for some years.
-                    And when they needed to do an evolution it was straightforward.</i> He could not do a biggest compliment to me.
-                    This is exactly what I'm aiming for <i class="fas fa-rocket"></i>
-                </p>
-                <p>
-                    On <i><b>Nexeo</b></i> side, I launched the "<i><b>pôle Java</b></i>" where I did several internal presentations to other consultants about Java and Web technologies.
-                    I was also involved into recruiting and coaching consultants to help them find missions.
-                    Pretty amazing opportunities to learn and meet interesting people.<br>
-                    At <i><b>Amundi</b></i>, I launched <i><b>TechLunch</b></i>, to share knowledge. I personally talked about <i><b>MongoDB</b></i> and <i><b>Neo4j</b></i> there and invited many BBLs to introduce new things.
-                </p>
-                <p>
-                    But one day, I discovered <i><b>Scala</b></i> <i class="fas fa-heart"></i> (thanks to <i><b>Play framework</b></i>) and, after some learning time, I decided to work with it.
-                    As it was impossible at <i><b>Amundi</b></i>, I decided to do some freelancing. I took 6 months to learn it deeper and look into machine learning and recommender systems.
-                </p>
-                <ul class="tags">
-                    <li>Java/JEE developer</li>
-                    <li>Java</li>
-                    <li>Struts2</li>
-                    <li>jQuery</li>
-                    <li>Bootstrap</li>
-                </ul>
-            </div>
-            <div id="employment-sfeir" class="resume-list__block" data-twitter="https://twitter.com/SFEIR">
-                <a class="resume-list__block-logo" href="https://www.sfeir.com" target="_blank"><img src="assets/img/logos/sfeir.jpg" alt="SFEIR logo"></a>
-                <h4 class="resume-list__block-title">SFEIR</h4>
-                <p class="resume-list__block-date">feb. 2011 - juil. 2011, 6 months</p>
-                <p>
-                    I left <a href="#employment-trfretail">TRF Retail</a> for a special year at <a href="#education-ensimag">ENSIMAG</a> to learn programming basics which promised to be very intensive.
-                    After that, I wanted a well established company for my final internship to learn from others in a professional environment.<br>
-                    <i><b>SFEIR</b></i> was a good choice for that. I was very lucky to have <a href="https://linkedin.com/in/didiergirard" target="_blank">Didier Girard</a> as mentor and a nice team of interns.
-                    We worked on many projects, discovering <i><b>GWT</b></i> and <i><b>Android</b></i> development together. But most importantly, I discovered Java meetups
-                    (<b><a href="https://www.parisjug.org" target="_blank">Paris JUG</a></b> and <b><a href="https://chtijug.org" target="_blank">Ch'ti JUG</a></b>) as well as internal tech talks every week.<br>
-                    I discovered many things, but the most important one was obviously the <i><b>tech community</b></i>.
-                    I think my connection with the community comes from here and I owns to this experience to
-                    organize <b><a href="https://gospeak.io/groups/humantalks-paris" target="_blank">HumanTalks Paris</a></b> and
-                    give <b><a href="https://gospeak.io/speakers/loicknuchel#speaking-history" target="_blank">many talks</a></b> since then.
-                </p>
-                <ul class="tags">
-                    <li>Java developer</li>
-                    <li>Android</li>
-                    <li>GWT</li>
-                    <li>Google App Engine</li>
-                    <li>BigTable</li>
-                </ul>
-            </div>
-            <div id="employment-omiino" class="resume-list__block">
-                <a class="resume-list__block-logo" href="https://www.linkedin.com/company/omiino" target="_blank"><img src="assets/img/logos/omiino.png" alt="Omiino logo"></a>
-                <h4 class="resume-list__block-title">Omiino</h4>
-                <p class="resume-list__block-date">jun. 2010 - aug. 2010, 3 months</p>
-                <p>
-                    Micro-electronic engineer
-                </p>
-                <ul class="tags">
-                    <li>Micro-electronic engineer</li>
-                    <li>VHDL</li>
-                    <li>FPGA</li>
-                </ul>
-            </div>
-            <div id="employment-trfretail" class="resume-list__block" data-twitter="https://twitter.com/TRFRetail">
-                <a class="resume-list__block-logo" href="https://www.trfretail.com" target="_blank"><img src="assets/img/logos/trf-retail.jpg" alt="TRF Retail logo"></a>
-                <h4 class="resume-list__block-title">TRF Retail</h4>
-                <p class="resume-list__block-date">june 2009 - nov. 2011, 1 year and 3 months</p>
-                <p>
-                    After discovering <i><b>C</b></i> programming in my first year at engineering school and doing some <i><b>HTML</b></i>/<i><b>CSS</b></i>/<i><b>JS</b></i> to build a website for my BDE list (which lost <i class="far fa-sad-tear"></i>).
-                    I decided to go ahead with programming and found this awesome opportunity for my first internship.<br>
-                    It was a very young startup in retail doing store optimizations based on assortment data (inventory, sells, position...). I wrote a <i><b>C</b></i> program to
-                    compute product KPIs and generate recommendations as well as a <i><b>PHP</b></i>/<i><b>MySQL</b></i> website to expose them to clients and collect their feedback through an iterative workflow.<br>
-                    The internship was an amazing experience so I accepted to stay and work their in the same time of my second year at my engineering school.
-                    I worked every evening and weekends and it was really pleasant as I could build a useful service out of my owns hands.
-                    Pushing features everyday to answer client needs and fixing bugs in real time, everything in full remote ^^<br>
-                    Thinking about it again, it was probably my most agile experience, done without any formal knowledge about it...
-                </p>
-                <ul class="tags">
-                    <li>PHP/MySQL developer</li>
-                    <li>C developer</li>
-                    <li>jQuery</li>
-                    <li>Startup</li>
-                </ul>
-            </div>
+            {% endfor %}
+        </div>
+        <div class="col-lg-10">
+            <p class="section__description">
+                You are still here??? <i><b>Awesome!</b></i> So I suppose you like reading things here.<br>
+                Here are a few thoughts about all of my experiences:<br>
+                - Networking is really important, but you need a pretext for doing it. For that, freelancing and launching a startup are awesome.
+                I saw myself quite lazy about it when I was in a full time contract. I lost a big part of my network when I was very comfortable at Criteo.<br>
+                - Paradoxically, some of less promising experiences were the most interesting ones and some awesome experiences on paper turned pretty bad.
+                Maybe when the expectations a low you can be happier. Or maybe when the competence gap is big, you can make awesome things.<br>
+                Un podcast sur mon parcours: <a href="https://anchor.fm/parcoursdev/episodes/Parcours-de-Loc-Knuchel--dveloppeur-Scala-et-Technical-Leader-ea72m0">Parcours Dev</a><br>
+                TODO
+            </p>
         </div>
         <div class="col-md-12 section__resume resume-list">
             <h3 class="resume-list_title">Education</h3>
-            <div id="education-koudetat" class="resume-list__block" data-twitter="https://twitter.com/_Koudetat">
+            <div id="koudetat" class="resume-list__block" data-twitter="https://twitter.com/_Koudetat">
                 <a class="resume-list__block-logo" href="https://www.koudetat.co" target="_blank"><img src="assets/img/logos/koudetat.jpg" alt="Koudetat logo"></a>
                 <h4 class="resume-list__block-title">Koudetat</h4>
                 <p class="resume-list__block-date">janv. 2014 - may 2014</p>
             </div>
-            <div id="education-ensimag" class="resume-list__block" data-twitter="https://twitter.com/Ensimag">
+            <div id="ensimag" class="resume-list__block" data-twitter="https://twitter.com/Ensimag">
                 <a class="resume-list__block-logo" href="http://ensimag.grenoble-inp.fr" target="_blank"><img src="assets/img/logos/ensimag.png" alt="Ensimag logo"></a>
                 <h4 class="resume-list__block-title">ENSIMAG</h4>
                 <p class="resume-list__block-date">2010 - 2011</p>
                 <p>Special year</p>
             </div>
-            <div id="education-phelma" class="resume-list__block" data-twitter="https://twitter.com/Phelma_ecole">
+            <div id="phelma" class="resume-list__block" data-twitter="https://twitter.com/Phelma_ecole">
                 <a class="resume-list__block-logo" href="http://phelma.grenoble-inp.fr" target="_blank"><img src="assets/img/logos/phelma.jpg" alt="Phelma logo"></a>
                 <h4 class="resume-list__block-title">PHELMA</h4>
                 <p class="resume-list__block-date">2008 - 2010</p>
                 <p>Micro-electronics</p>
             </div>
-            <div id="education-massena" class="resume-list__block">
+            <div id="massena" class="resume-list__block">
                 <a class="resume-list__block-logo" href="http://www.lycee-massena.fr/les-cpge" target="_blank"><img src="assets/img/logos/massena.png" alt="Massena logo"></a>
                 <h4 class="resume-list__block-title">Massena Prepa</h4>
                 <p class="resume-list__block-date">2006 - 2008</p>

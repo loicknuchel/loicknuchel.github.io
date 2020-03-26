@@ -1,1 +1,12 @@
 exclude: ['.idea']
+
+collections:
+  work_experiences:
+    date: true
+    slug: true
+    name: true
+    duration: true
+    website: true
+    logo: true
+    twitter: true
+    tags: true
