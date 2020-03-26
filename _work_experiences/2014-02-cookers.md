@@ -1,18 +1,12 @@
 ---
-date: 2014-02-01
-slug: cookers
-name: Cookers
+date:     2014-02-01 00:00:00 +0100
+slug:     cookers
+name:     Cookers
 duration: feb. 2014 - janv. 2015, 1 year
-website: http://cookers.mystrikingly.com
-logo: assets/img/logos/cookers.png
-twitter: https://twitter.com/cookersapp
-tags:
-    - Startup founder
-    - Retail
-    - Scala
-    - Play framework
-    - AngularJS
-    - Ionic framework
+website:  http://cookers.mystrikingly.com
+logo:     assets/img/logos/cookers.png
+twitter:  https://twitter.com/cookersapp
+tags:     [Startup founder, Retail, Scala, Play framework, AngularJS, Ionic framework]
 ---
 
 During my 6 month personal training on **Scala**, **Play framework**, **machine learning** and **recommender systems**

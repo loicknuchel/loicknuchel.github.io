@@ -1,12 +1,12 @@
 ---
-date: 2019-01-14
-slug: gospeak
-name: Gospeak
+date:     2019-01-14 00:00:00 +0100
+slug:     gospeak
+name:     Gospeak
 duration: janv. 2019 - now
-website: https://gospeak.io
-logo: assets/img/logos/gospeak.jpg
-twitter: https://twitter.com/gospeak_io
-tags: Startup founder
+website:  https://gospeak.io
+logo:     assets/img/logos/gospeak.jpg
+twitter:  https://twitter.com/gospeak_io
+tags:     [Startup founder]
 ---
 
 Founder

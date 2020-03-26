@@ -1,16 +1,12 @@
 ---
-date: 2009-06-01
-slug: trfretail
-name: TRF Retail
+date:     2009-06-01 00:00:00 +0100
+slug:     trfretail
+name:     TRF Retail
 duration: june 2009 - nov. 2011, 1 year and 3 months
-website: https://www.trfretail.com
-logo: assets/img/logos/trf-retail.jpg
-twitter: https://twitter.com/TRFRetail
-tags: 
-    - PHP/MySQL developer
-    - C developer
-    - jQuery
-    - Startup
+website:  https://www.trfretail.com
+logo:     assets/img/logos/trf-retail.jpg
+twitter:  https://twitter.com/TRFRetail
+tags:     [PHP/MySQL developer, C developer, jQuery, Startup]
 ---
 
 After discovering **C** programming in my first year at engineering school and doing some **HTML**/**CSS**/**JS** to build a website for my BDE list (which lost <i class="far fa-sad-tear"></i>).

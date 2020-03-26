@@ -1,16 +1,12 @@
 ---
-date: 2015-04-01
-slug: stimshop
-name: Stimshop
+date:     2015-04-01 00:00:00 +0100
+slug:     stimshop
+name:     Stimshop
 duration: apr. 2015, 4 days
-website: http://www.stimshop.com
-logo: assets/img/logos/stimshop.jpg
-twitter: https://twitter.com/STIMSHOP
-tags:
-    - Mobile developer
-    - Ionic framework
-    - AngularJS
-    - Freelance
+website:  http://www.stimshop.com
+logo:     assets/img/logos/stimshop.jpg
+twitter:  https://twitter.com/STIMSHOP
+tags:     [Mobile developer, Ionic framework, AngularJS, Freelance]
 ---
 
 **Stimshop** is a company building a location system based on ultrasound. 

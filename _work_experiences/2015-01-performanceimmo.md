@@ -1,18 +1,12 @@
 ---
-date: 2015-01-01
-slug: performanceimmo
-name: Performance IMMO
+date:     2015-01-01 00:00:00 +0100
+slug:     performanceimmo
+name:     Performance IMMO
 duration: janv. 2015 - mars 2015, 3 months
-website: https://www.performance-immo.com
-logo: assets/img/logos/performance-immo.jpg
-twitter: https://twitter.com/performance_imm
-tags:
-    - Scala developer
-    - Scala
-    - Play framework
-    - Elastic search
-    - PostgreSQL
-    - Freelance
+website:  https://www.performance-immo.com
+logo:     assets/img/logos/performance-immo.jpg
+twitter:  https://twitter.com/performance_imm
+tags:     [Scala developer, Scala, Play framework, Elastic search, PostgreSQL, Freelance]
 ---
 
 With the end of [Cookers](#cookers), I returned to freelancing to earned some money.

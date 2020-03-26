@@ -570,54 +570,20 @@
     </div>
 
     <div class="row post-cards">
+        {% for post in site.posts limit:3 %}
         <div class="col-md-4">
-            <a href="blog.html">
+            <a href="{{post.url}}">
                 <div class="post-cards__card">
-                    <div class="post-cards__img">
-                        <img src="assets/img/sample_blog.png" alt="blog_img">
-                    </div>
+                    <div class="post-cards__img"><img src="{{post.banner_1_1}}" alt="article banner"></div>
                     <div class="post-cards__info">
-                        <p class="post-cards__date">October 22, 2017</p>
-                        <h3 class="post-cards_title">How to use css-preprocessor</h3>
-                        <p class="post-cards_description">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit, sed do eiusmod tempr incididunt...
-                        </p>
+                        <p class="post-cards__date">{{post.date | date: "%B %-d, %Y"}}</p>
+                        <h3 class="post-cards_title">{{post.title}}</h3>
+                        <div class="post-cards_description">{{post.excerpt}}</div>
                     </div>
                 </div>
             </a>
         </div>
-        <div class="col-md-4">
-            <a href="blog.html">
-                <div class="post-cards__card">
-                    <div class="post-cards__img">
-                        <img src="assets/img/sample_blog.png" alt="blog_img">
-                    </div>
-                    <div class="post-cards__info">
-                        <p class="post-cards__date">October 22, 2017</p>
-                        <h3 class="post-cards_title">How I organize my work with code</h3>
-                        <p class="post-cards_description">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit, sed do eiusmod tempr incididu...
-                        </p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-md-4">
-            <a href="blog.html">
-                <div class="post-cards__card">
-                    <div class="post-cards__img">
-                        <img src="assets/img/sample_blog.png" alt="blog_img">
-                    </div>
-                    <div class="post-cards__info">
-                        <p class="post-cards__date">October 22, 2017</p>
-                        <h3 class="post-cards_title">SVG sprites vs Icon Font</h3>
-                        <p class="post-cards_description">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit, sed do eiusmod tempr incididu...
-                        </p>
-                    </div>
-                </div>
-            </a>
-        </div>
+        {% endfor %}
     </div>
 </section>-->
 <!--Blog-->

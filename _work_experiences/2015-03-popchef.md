@@ -1,16 +1,12 @@
 ---
-date: 2015-03-02
-slug: popchef
-name: Popchef
+date:     2015-03-02 00:00:00 +0100
+slug:     popchef
+name:     Popchef
 duration: mars 2015, 3 days
-website: https://popchef.com
-logo: assets/img/logos/popchef.jpg
-twitter: https://twitter.com/popchef
-tags:
-    - Mobile developer
-    - Ionic framework
-    - AngularJS
-    - Freelance
+website:  https://popchef.com
+logo:     assets/img/logos/popchef.jpg
+twitter:  https://twitter.com/popchef
+tags:     [Mobile developer, Ionic framework, AngularJS, Freelance]
 ---
 
 **Popchef** is a food delivery startup which was just launched and they needed an app for delivery men so they could get assigned to missions, 

@@ -17,3 +17,17 @@ button {
     height: 50px;
     border-radius: 5px;
 }
+
+.post-cards_description {
+    height: 60px;
+    overflow: hidden;
+    display: -webkit-box;
+    box-orient: vertical;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+}
+
+.post-cards_description p {
+    margin-bottom: 0;
+}
