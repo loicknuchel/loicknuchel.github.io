@@ -1,7 +1,5 @@
 ---
 layout:      post
-date:        2020-03-24 16:07:24 +0100
-title:       My first article
 banner_1_1:  assets/img/sample_blog.png
 banner_16_9: assets/img/sample_blog.png
 categories:  [sample]
