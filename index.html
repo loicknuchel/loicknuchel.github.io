@@ -11,15 +11,24 @@ menus:
 <head>
     {% include common-metas.html %}
     {% include styles.html %}
-    {%- if jekyll.environment == 'production' -%}
+    {% if jekyll.environment == 'production' %}
         {% include analytics.html %}
-    {%- endif -%}
+    {% endif %}
+
+    <meta name="og:type" content="profile">
+    <meta name="og:locale" content="en_US">
+    <meta name="author" content="Loïc Knuchel">
+    <meta name="twitter:site" content="@loicknuchel">
+    <meta name="twitter:creator" content="@loicknuchel">
 
     <title>Loïc Knuchel 👨‍💻 Scala developer & trainer, Gospeak founder, conference speaker and Meetup organizer</title>
+    <meta name="og:title" content="Loïc Knuchel 👨‍💻 Scala developer & trainer, Gospeak founder, speaker...">
     <meta name="description" content="Loïc Knuchel 👨‍💻 Scala developer & trainer, Gospeak founder, conference speaker and Meetup organizer">
-    <meta name="author" content="Loïc Knuchel">
+    <meta name="og:description" content="Loïc Knuchel 👨‍💻 Scala developer & trainer, Gospeak founder, conference speaker and Meetup organizer">
+    <meta name="og:url" content="{{page.url | absolute_url}}">
 
-    <!-- TODO add social meta -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="og:image" content="/assets/img/avatar.jpg"> <!-- TODO: nice image for blog posts, 1200 pixels x 627 pixels, < 5MB -->
 </head>
 <body>
 <!--Menu-->
