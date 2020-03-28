@@ -1,0 +1,20 @@
+[
+  {"name": "Functional programming", "logo": "/assets/img/logos/functional-programming.png", "link": "http://www.lihaoyi.com/post/WhatsFunctionalProgrammingAllAbout.html"},
+  {"name": "Scala", "logo": "/assets/img/logos/scala.png", "link": "https://scala-lang.org"},
+  {"name": "Play framework", "logo": "/assets/img/logos/play-framework.png", "link": "https://www.playframework.com"},
+  {"name": "Cats", "logo": "/assets/img/logos/cats.png", "link": "https://typelevel.org/cats"},
+  {"name": "PureConfig", "logo": "/assets/img/logos/pureconfig.png", "link": "https://pureconfig.github.io"},
+  {"name": "Circe", "logo": "/assets/img/logos/circe.png", "link": "https://circe.github.io/circe"},
+  {"name": "Doobie", "logo": "/assets/img/logos/doobie.png", "link": "https://tpolecat.github.io/doobie"},
+  {"name": "http4s", "logo": "/assets/img/logos/http4s.png", "link": "https://http4s.org"},
+  {"name": "Sbt", "logo": "/assets/img/logos/sbt.png", "link": "https://www.scala-sbt.org"},
+  {"name": "SQL", "logo": "/assets/img/logos/sql.png", "link": "https://fr.wikipedia.org/wiki/Structured_Query_Language"},
+  {"name": "PostgreSQL", "logo": "/assets/img/logos/postgresql.png", "link": "https://www.postgresql.org"},
+  {"name": "TypeScript", "logo": "/assets/img/logos/typescript.png", "link": "https://www.typescriptlang.org"},
+  {"name": "React", "logo": "/assets/img/logos/react.png", "link": "https://reactjs.org"},
+  {"name": "Bootstrap", "logo": "/assets/img/logos/bootstrap.png", "link": "https://getbootstrap.com"},
+  {"name": "SASS", "logo": "/assets/img/logos/sass.png", "link": "https://sass-lang.com"},
+  {"name": "JavaScript", "logo": "/assets/img/logos/javascript.png", "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"},
+  {"name": "HTML", "logo": "/assets/img/logos/html.png", "link": "https://developer.mozilla.org/en-US/docs/Web/HTML"},
+  {"name": "CSS", "logo": "/assets/img/logos/css.png", "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"}
+]
