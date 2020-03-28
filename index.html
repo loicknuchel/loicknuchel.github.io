@@ -1,4 +1,59 @@
 ---
+technos:
+  - name: Functional programming
+    logo: assets/img/logos/functional-programming.png
+    link: http://www.lihaoyi.com/post/WhatsFunctionalProgrammingAllAbout.html
+  - name: Scala
+    logo: assets/img/logos/scala.png
+    link: https://scala-lang.org
+  - name: Play framework
+    logo: assets/img/logos/play-framework.png
+    link: https://www.playframework.com
+  - name: Cats
+    logo: assets/img/logos/cats.png
+    link: https://typelevel.org/cats/
+  - name: PureConfig
+    logo: assets/img/logos/pureconfig.png
+    link: https://pureconfig.github.io
+  - name: Circe
+    logo: assets/img/logos/circe.png
+    link: https://circe.github.io/circe
+  - name: Doobie
+    logo: assets/img/logos/doobie.png
+    link: https://tpolecat.github.io/doobie
+  - name: http4s
+    logo: assets/img/logos/http4s.png
+    link: https://http4s.org
+  - name: Sbt
+    logo: assets/img/logos/sbt.png
+    link: https://www.scala-sbt.org
+  - name: SQL
+    logo: assets/img/logos/sql.png
+    link: https://fr.wikipedia.org/wiki/Structured_Query_Language
+  - name: PostgreSQL
+    logo: assets/img/logos/postgresql.png
+    link: https://www.postgresql.org
+  - name: TypeScript
+    logo: assets/img/logos/typescript.png
+    link: https://www.typescriptlang.org
+  - name: React
+    logo: assets/img/logos/react.png
+    link: https://reactjs.org
+  - name: Bootstrap
+    logo: assets/img/logos/bootstrap.png
+    link: https://getbootstrap.com
+  - name: SASS
+    logo: assets/img/logos/sass.png
+    link: https://sass-lang.com
+  - name: JavaScript
+    logo: assets/img/logos/javascript.png
+    link: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  - name: HTML
+    logo: assets/img/logos/html.png
+    link: https://developer.mozilla.org/en-US/docs/Web/HTML
+  - name: CSS
+    logo: assets/img/logos/css.png
+    link: https://developer.mozilla.org/en-US/docs/Web/CSS
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -50,7 +105,7 @@
     <div class="container">
         <div class="row">
             <div class="menu__wrapper d-none d-lg-block col-md-12">
-                <nav>
+                <nav class="d-flex justify-content-between align-items-center">
                     <ul>
                         <li><a href="#hello">Hello</a></li>
                         <li><a href="#resume">Resume</a></li>
@@ -58,6 +113,9 @@
                         <!--<li><a href="#testimonials">Testimonials</a></li>-->
                         <!--<li><a href="#blog">Blog</a></li>-->
                         <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#hire-me" class="highlight no-underscore">Hire me 🎉</a></li>
                     </ul>
                 </nav>
             </div>
@@ -82,6 +140,9 @@
                 <!--<li><a href="#testimonials">Testimonials</a></li>-->
                 <!--<li><a href="#blog">Blog</a></li>-->
                 <li><a href="#contact">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="#hire-me" class="highlight no-underscore">Hire me 🎉</a></li>
             </ul>
         </nav>
     </div>
@@ -112,7 +173,7 @@
                     <a href="https://github.com/loicknuchel" target="_blank" title="Github" data-toggle="tooltip"><i class="fab fa-github"></i></a>
                     <a href="https://slideshare.net/loicknuchel" target="_blank" title="SlideShare" data-toggle="tooltip"><i class="fab fa-slideshare"></i></a>
                     <a href="https://gospeak.io/speakers/loicknuchel" target="_blank" title="Gospeak" data-toggle="tooltip"><i class="fas fa-microphone"></i></a>
-                    <a href="http://www.brownbaglunch.fr/baggers.html#Lo%C3%AFc_Knuchel_Paris" target="_blank" title="Brown Bag Lunch" data-toggle="tooltip"><i class="fas fa-cookie-bite"></i></a>
+                    <a href="http://www.brownbaglunch.fr/baggers.html#loic-knuchel" target="_blank" title="Brown Bag Lunch" data-toggle="tooltip"><i class="fas fa-cookie-bite"></i></a>
                     <a href="https://www.malt.fr/profile/loicknuchel" target="_blank" title="Malt" data-toggle="tooltip"><i class="fas fa-hashtag"></i></a>
                     <!--<a href="#" target="_blank" title="Blog" data-toggle="tooltip"><i class="fas fa-comment"></i></i></a>
                     <a href="#" target="_blank" title="dev.to" data-toggle="tooltip"><i class="fab fa-dev"></i></a>
@@ -138,15 +199,10 @@
                 organizing <b><a href="https://gospeak.io/groups/humantalks-paris" target="_blank">HumanTalks Paris</a></b>,
                 give <b><a href="https://www.humancoders.com/formations/scala" target="_blank">Scala trainings</a></b>,
                 give talks at <b><a href="https://gospeak.io/speakers/loicknuchel#speaking-history" target="_blank">conferences</a></b>
-                or at <b><a href="http://www.brownbaglunch.fr/baggers.html#Lo%C3%AFc_Knuchel_Paris" target="_blank">your company</a></b>.
+                or at <b><a href="http://www.brownbaglunch.fr/baggers.html#loic-knuchel" target="_blank">your company</a></b>.
             </p>
-            <!-- Technos:
-                    Scala, Play Framework, sbt, cats, doobie, HOCON, pureconfig, circe, SQL, flyway, PostgreSQL,
-                    JavaScript, React, HTML, CSS, sass, Bootstrap, jQuery, markdown, REST,
-                    Git, DDD
-            -->
-            <a href="https://linkedin.com/in/loicknuchel" class="section_btn site-btn" target="_blank">LinkedIn profile <i class="fas fa-external-link-alt"></i></a>
-            <a href="https://anchor.fm/parcoursdev/episodes/Parcours-de-Loc-Knuchel--dveloppeur-Scala-et-Technical-Leader-ea72m0" class="section_btn site-btn" target="_blank">Podcast Parcours Dev</a>
+            <a href="https://docs.google.com/document/d/1m0mq129cJOSfQZIqe35O0zOk20Ej05bWsCEPV_yoyK4" class="section_btn site-btn" target="_blank"><i class="fas fa-download"></i> Download CV</a>
+            <a href="https://anchor.fm/parcoursdev/episodes/Parcours-de-Loc-Knuchel--dveloppeur-Scala-et-Technical-Leader-ea72m0" class="section_btn site-btn" target="_blank"><i class="fas fa-volume-up"></i> Listen career interview</a>
         </div>
     </div>
 </section>
@@ -154,11 +210,26 @@
 
 <hr>
 
+<div class="hire-me__container">
+    <section id="hire-me" class="container section">
+        <div class="row">
+            <div class="col-lg-10">
+                <h2 id="hire-me_header" class="section__title" data-typing-effect="90%">Hire me_</h2>
+                <p class="mb-0">
+                    I'm looking for a new job!
+                </p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<hr>
+
 <!--Resume-->
 <section id="resume" class="container section">
     <div class="row">
         <div class="col-lg-10">
-            <h2 id="resume_header" class="section__title" data-typing-effect="70%">Resume_</h2>
+            <h2 id="resume_header" class="section__title" data-typing-effect="90%">Resume_</h2>
             <p class="section__description">
                 I do programming since more than <i><b>10 years</b></i>.
                 I started with C, PHP and Java but since I discovered <i><b>Scala</b></i> and <i><b>functional programming</b></i>, I stick with them!
@@ -225,6 +296,13 @@
                 <p class="resume-list__block-date">2006 - 2008</p>
                 <p>PCSI and PC*</p>
             </div>
+        </div>
+        <div class="col-md-12 d-flex justify-content-center flex-wrap">
+            {% for techno in page.technos %}
+            <a href="{{techno.link}}" target="_blank" class="techno gray-on-hover" title="{{techno.name}}" data-toggle="tooltip">
+                <img class="" src="{{techno.logo}}" alt="{{techno.name}} logo">
+            </a>
+            {% endfor %}
         </div>
     </div>
     <!--<div class="row section__resume progress-list js-progress-list">
@@ -323,7 +401,7 @@
 <!--<section id="portfolio" class="container section">
     <div class="row">
         <div class="col-md-12">
-            <h2 id="portfolio_header" class="section__title" data-typing-effect="70%">My projects_</h2>
+            <h2 id="portfolio_header" class="section__title" data-typing-effect="90%">My projects_</h2>
         </div>
     </div>
     <div class="row portfolio-menu">
@@ -565,7 +643,7 @@
 <!--<section id="blog" class="container section">
     <div class="row">
         <div class="col-md-12">
-            <h2 id="blog_header" class="section__title" data-typing-effect="70%">Latest Posts_</h2>
+            <h2 id="blog_header" class="section__title" data-typing-effect="90%">Latest Posts_</h2>
         </div>
     </div>
 
@@ -593,7 +671,7 @@
     <div id="contact" class="container section">
         <div class="row">
             <div class="col-md-12">
-                <p id="contacts_header" class="section__title" data-typing-effect="70%">Get in touch_</p>
+                <p id="contacts_header" class="section__title" data-typing-effect="90%">Get in touch_</p>
             </div>
         </div>
         <div class="row contacts">

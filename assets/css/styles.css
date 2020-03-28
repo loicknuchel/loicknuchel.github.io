@@ -2,6 +2,30 @@ button {
     cursor: pointer;
 }
 
+.gray-on-hover:hover {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .8s;
+    transition: .8s;
+}
+
+/* index.html specifics */
+
+.menu a.no-underscore:hover:after,
+.mobile-menu a.no-underscore:hover:after{
+    content: none;
+}
+
+.menu a.highlight,
+.mobile-menu a.highlight {
+    border: 2px solid #fff;
+    padding: 10px 15px;
+}
+
+.hire-me__container {
+    background: #f8f9fc;
+}
+
 .resume-list__block-title {
     margin-bottom: 0;
 }
@@ -26,6 +50,18 @@ button {
     -webkit-box-orient: vertical;
     line-clamp: 3;
     -webkit-line-clamp: 3;
+}
+
+.techno {
+    margin: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px rgba(134, 72, 219, .2);
+    -webkit-box-shadow: 0 0 3px rgba(134, 72, 219, .2);
+}
+
+.techno img {
+    width: 50px;
 }
 
 .post-cards_description p {
