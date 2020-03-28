@@ -1,46 +1,17 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% include common-metas.html %}
+    {% include styles.html %}
+    {% include analytics.html %}
 
     <title>Loïc Knuchel - Scala developer & trainer, Gospeak founder, conference speaker and Meetup organizer</title>
     <meta name="description" content="Loïc Knuchel - Scala developer & trainer, Gospeak founder, conference speaker and Meetup organizer">
     <meta name="author" content="Loïc Knuchel">
 
-    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Inconsolata">
-    <link rel="stylesheet" href="assets/css/fontawesome-5.12.1-all.min.css">
-    <link rel="stylesheet" href="assets/css/theme.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#6d56c1">
-    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#6d56c1">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-44862027-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-44862027-2');
-    </script>
+    <!-- TODO add social meta -->
 </head>
 <body>
 <!--Menu-->
@@ -184,64 +155,7 @@
 </section>
 <!--Other Posts-->
 
-<!--Contact-->
-<div class="background" style="background-image: url(assets/img/texture.jpg)">
-    <div id="contact" class="container section">
-        <div class="row">
-            <div class="col-md-12">
-                <p id="contacts_header" class="section__title" data-typing-effect="70%">Get in touch_</p>
-            </div>
-        </div>
-        <div class="row contacts">
-            <div class="col-md-5 col-lg-4">
-                <div class="contacts__list">
-                    <dl class="contact-list">
-                        <dt>Email:</dt><dd>loi<i></i>cknuc<b></b>hel<span>@g</span>mai<span>l.c</span>om</dd>
-                        <dt>Twitter:</dt><dd><a href="https://twitter.com/loicknuchel" target="_blank">@loicknuchel</a></dd>
-                        <dt>LinkedIn:</dt><dd><a href="https://linkedin.com/in/loicknuchel" target="_blank">loicknuchel</a></dd>
-                    </dl>
-                </div>
-                <div class="contacts__social">
-                    <ul>
-                        <li><a href="https://github.com/loicknuchel" target="_blank">GitHub</a></li>
-                        <li><a href="https://gospeak.io/speakers/loicknuchel" target="_blank">Gospeak</a></li>
-                        <li><a href="https://slideshare.net/loicknuchel" target="_blank">SlideShare</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-7 col-lg-5">
-                <div class="contacts__form">
-                    <p class="contacts__form-title">Or just write me a letter here_</p>
-                    <form class="contact-form" method="POST" action="https://formspree.io/xpzlojjz">
-                        <div class="form-group">
-                            <label class="sr-only" for="contact-email">Your e-mail</label>
-                            <input class="form-field js-field-email" type="email" id="contact-email" name="_replyto" placeholder="Your e-mail" required>
-                            <span class="form-validation"></span>
-                            <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
-                        </div>
-                        <div class="form-group">
-                            <label class="sr-only" for="contact-message">Your message</label>
-                            <textarea class="form-field js-field-message" id="contact-message" name="message" placeholder="Type the message here" required></textarea>
-                            <span class="form-validation"></span>
-                            <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
-                        </div>
-                        <button class="site-btn site-btn--form" type="submit">Send</button>
-                    </form>
-                </div>
-                <div class="footer">
-                    <p>© 2020 Loïc Knuchel. All Rights Reserved</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--Contact-->
-
-<script src="assets/js/jquery-2.2.4.min.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/jquery.waypoints.js"></script>
-<script src="assets/js/mbclicker.min.js"></script>
-<script src="assets/js/scripts.js"></script>
+{% include contact-section.html %}
+{% include scripts.html %}
 </body>
 </html>
