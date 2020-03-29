@@ -13,6 +13,57 @@ button {
   transition: .8s;
 }
 
+.tags li a {
+  color: inherit;
+}
+
+.twitter-tweet {
+  margin-bottom: 20px !important;
+}
+
+/* un-rendered tweet: twitter widgets will insert <twitter-widget> instead of <blockquote> */
+blockquote.twitter-tweet {
+  position: relative;
+  max-width: 500px;
+  padding: 20px;
+  border: 1px solid #e1e8ed;
+  border-radius: 5px;
+  font: normal normal 16px/1.2 Helvetica, Roboto, "Segoe UI", Calibri, sans-serif;
+  color: #1c2022;
+
+  a {
+    position: absolute;
+    top: 20px;
+    right: 21px;
+    font-size: 18px;
+    color: #1da1f2;
+  }
+
+  img {
+    float: left;
+    height: 36px;
+    margin-right: 9px;
+    border-radius: 50%;
+  }
+
+  .name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 700;
+  }
+
+  .screenName {
+    font-size: 14px;
+    color: #697882;
+  }
+
+  p {
+    margin: 11px 0 0 0;
+    line-height: 1.4;
+  }
+}
+
 /* index.html specifics */
 
 .menu, .mobile-menu {
@@ -69,5 +120,68 @@ button {
 
   p {
     margin-bottom: 0;
+  }
+}
+
+/* post specifics */
+
+.article {
+  p {
+    clear: both;
+  }
+
+  img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 500px;
+
+    &.full-width {
+      width: 100%;
+    }
+
+    &.pull-right {
+      float: right;
+      margin-left: 20px;
+    }
+
+    &.pull-left {
+      float: left;
+      margin-right: 20px;
+    }
+  }
+
+  strong {
+    color: #333;
+  }
+
+  ol, ul {
+    list-style: inside;
+  }
+
+  blockquote:not(.twitter-tweet) {
+    padding: 0 1em;
+    border-left: .25em solid #dfe2e5;
+    color: #6a737d;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    blockquote {
+      display: block;
+      padding: 0;
+      border: none;
+      font-size: 80%;
+      color: #868e96;
+
+      &:before {
+        content: "\2014 \00A0"
+      }
+
+      p {
+        display: inline;
+      }
+    }
   }
 }

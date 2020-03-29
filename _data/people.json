@@ -2,5 +2,9 @@
   "loic": {
     "name": "Loïc Knuchel",
     "twitter": "@loicknuchel"
+  },
+  "john": {
+    "name": "John Doe",
+    "twitter": "@johndoe"
   }
 }

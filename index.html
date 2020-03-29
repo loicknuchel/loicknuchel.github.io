@@ -5,7 +5,7 @@ menus:
     - {name: Resume, link: "#resume"}
 #   - {name: Projects, link: "#portfolio"}
 #   - {name: Testimonials, link: "#testimonials"}
-#   - {name: Blog, link: "#blog"}
+    - {name: Blog, link: "#blog"}
     - {name: Contact, link: "#contact"}
 ---
 {% assign author = site.data.people[page.author] | default: site.data.people.loic %}
@@ -566,7 +566,7 @@ menus:
 <!--Testimonials-->
 
 <!--Blog-->
-<!--<section id="blog" class="container section">
+<section id="blog" class="container section">
     <div class="row">
         <div class="col-md-12">
             <h2 id="blog_header" class="section__title" data-typing-effect="90%">Latest Posts_</h2>
@@ -578,18 +578,18 @@ menus:
         <div class="col-md-4">
             <a href="{{post.url}}">
                 <div class="post-cards__card">
-                    <div class="post-cards__img"><img src="{{post.banner_1_1}}" alt="article banner"></div>
+                    <div class="post-cards__img"><img src="{{post.banner_1_1 | default: '/assets/img/default/blog_banner_1_1.jpg'}}" alt="article banner"></div>
                     <div class="post-cards__info">
                         <p class="post-cards__date">{{post.date | date: "%B %-d, %Y"}}</p>
                         <h3 class="post-cards_title">{{post.title}}</h3>
-                        <div class="post-cards_description">{{post.excerpt}}</div>
+                        <div class="post-cards_description">{{post.excerpt | strip_html | truncatewords: 30}}</div>
                     </div>
                 </div>
             </a>
         </div>
         {% endfor %}
     </div>
-</section>-->
+</section>
 <!--Blog-->
 
 {% include contact-section.html %}

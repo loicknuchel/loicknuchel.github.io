@@ -99,12 +99,23 @@ menus:
                         {% if author %}
                         <p itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{author.name}}</span></p>
                         {% endif %}
+                        {% if page.banner_21_9 %}
+                        <p><img class="full-width" src="{{page.banner_21_9}}" alt="{{page.title}} banner"></p>
+                        {% endif %}
                     </header>
                     <div itemprop="articleBody">
                         {{content}}
                     </div>
                     <a class="u-url" href="{{page.url | relative_url}}" hidden></a>
                 </article>
+                <div>
+                    Tags:
+                    <ul class="tags" style="display: inline-block; margin-bottom: 20px">
+                        {% for tag in page.tags %}
+                        <li><a href="#">{{tag}}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
                 <p class="article__share">
                     Share this post:
                     <a><i class="fab fa-twitter"></i></a>
