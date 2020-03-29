@@ -5,6 +5,7 @@ menus:
   - {name: Other posts, link: "#posts"}
   - {name: Contact, link: "#contact"}
 ---
+{% assign author = site.data.people[page.author] | default: site.data.people.loic %}
 <head>
     {% include common-metas.html %}
     {% include styles.html %}
@@ -14,25 +15,25 @@ menus:
 
     <meta name="og:type" content="article">
     <meta name="og:locale" content="{{page.locale | default: 'en_US'}}">
-    <meta name="author" content="Loïc Knuchel">
     <meta name="twitter:site" content="@loicknuchel">
-    <meta name="twitter:creator" content="@loicknuchel">
+    <meta name="twitter:creator" content="{{author.twitter}}">
+    <meta name="author" content="{{author.name}}">
 
-    <title>{{page.title}} 👨‍💻 Loïc Knuchel</title>
-    <meta name="og:title" content="{{page.title | truncate: 53}} 👨‍💻 Loïc Knuchel">
+    <title>{{page.title}} 👨‍💻 {{author.name}}</title>
+    <meta name="og:title" content="{{page.title | truncate: 53}} 👨‍💻 {{author.name}}">
     <meta name="description" content="{{page.excerpt | strip_html | truncate: 200}}">
     <meta name="og:description" content="{{page.excerpt | strip_html | truncate: 200}}">
     <meta name="og:url" content="{{page.url | absolute_url}}">
 
-    {% if page.banner_16_9 %}
+    {% if page.banner_2_1 %}
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="og:image" content="{{page.banner_16_9}}">
+    <meta name="og:image" content="{{page.banner_2_1}}">
     {% elsif site.banner_1_1 %}
     <meta name="twitter:card" content="summary">
     <meta name="og:image" content="{{page.banner_1_1}}">
     {% else %}
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="og:image" content="/assets/img/avatar.jpg"> <!-- TODO: nice image for blog posts, 1200 pixels x 627 pixels, < 5MB -->
+    <meta name="og:image" content="/assets/img/default/blog_banner_2_1.jpg">
     {% endif %}
 </head>
 <body>
@@ -95,8 +96,8 @@ menus:
                     <header>
                         <p class="article__title" itemprop="name headline">{{page.title | escape}}</p>
                         <p class="article_date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{page.date | date: "%B %-d, %Y"}}</p>
-                        {% if page.author %}
-                        <p itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{page.author}}</span></p>
+                        {% if author %}
+                        <p itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{author.name}}</span></p>
                         {% endif %}
                     </header>
                     <div itemprop="articleBody">

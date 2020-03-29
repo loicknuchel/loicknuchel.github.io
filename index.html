@@ -8,6 +8,7 @@ menus:
 #   - {name: Blog, link: "#blog"}
     - {name: Contact, link: "#contact"}
 ---
+{% assign author = site.data.people[page.author] | default: site.data.people.loic %}
 <head>
     {% include common-metas.html %}
     {% include styles.html %}
@@ -17,18 +18,18 @@ menus:
 
     <meta name="og:type" content="profile">
     <meta name="og:locale" content="en_US">
-    <meta name="author" content="Loïc Knuchel">
     <meta name="twitter:site" content="@loicknuchel">
-    <meta name="twitter:creator" content="@loicknuchel">
+    <meta name="twitter:creator" content="{{author.twitter}}">
+    <meta name="author" content="{{author.name}}">
 
     <title>Loïc Knuchel 👨‍💻 Scala developer & trainer, Gospeak founder, conference speaker and Meetup organizer</title>
     <meta name="og:title" content="Loïc Knuchel 👨‍💻 Scala developer & trainer, Gospeak founder, speaker...">
-    <meta name="description" content="Loïc Knuchel 👨‍💻 Scala developer & trainer, Gospeak founder, conference speaker and Meetup organizer">
-    <meta name="og:description" content="Loïc Knuchel 👨‍💻 Scala developer & trainer, Gospeak founder, conference speaker and Meetup organizer">
+    <meta name="description" content="Gospeak.io founder and conference speaker, I focus on software craft and team alignment">
+    <meta name="og:description" content="Gospeak.io founder and conference speaker, I focus on software craft and team alignment">
     <meta name="og:url" content="{{page.url | absolute_url}}">
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="og:image" content="/assets/img/avatar.jpg"> <!-- TODO: nice image for blog posts, 1200 pixels x 627 pixels, < 5MB -->
+    <meta name="twitter:card" content="summary">
+    <meta name="og:image" content="/assets/img/avatar.jpg">
 </head>
 <body>
 <!--Menu-->
@@ -79,7 +80,7 @@ menus:
     <div class="container">
         <div class="row personal-profile">
             <div class="col-md-4 personal-profile__avatar">
-                <img src="assets/img/avatar.jpg" alt="avatar">
+                <img src="/assets/img/avatar-hero.jpg" alt="avatar">
             </div>
             <div class="col-md-8">
                 <p class="personal-profile__name">Loïc Knuchel_</p>
