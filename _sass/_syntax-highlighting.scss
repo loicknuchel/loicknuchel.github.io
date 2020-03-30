@@ -1,6 +1,13 @@
 /**
  * Syntax highlighting styles
  */
+
+.language-error {
+  display: block;
+  background: #F9EBEB;
+  color: #B72E29;
+}
+
 .highlight {
   background: #fff;
 

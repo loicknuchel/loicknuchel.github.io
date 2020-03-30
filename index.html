@@ -10,26 +10,26 @@ menus:
 ---
 {% assign author = site.data.people[page.author] | default: site.data.people.loic %}
 <head>
-    {% include common-metas.html %}
-    {% include styles.html %}
-    {% if jekyll.environment == 'production' %}
-        {% include analytics.html %}
-    {% endif %}
-
     <meta name="og:type" content="profile">
     <meta name="og:locale" content="en_US">
     <meta name="twitter:site" content="@loicknuchel">
     <meta name="twitter:creator" content="{{author.twitter}}">
     <meta name="author" content="{{author.name}}">
 
-    <title>Loïc Knuchel 👨‍💻 Scala developer & trainer, Gospeak founder, conference speaker and Meetup organizer</title>
-    <meta name="og:title" content="Loïc Knuchel 👨‍💻 Scala developer & trainer, Gospeak founder, speaker...">
+    <title>Loïc Knuchel &#x1F468;&#x200D;&#x1F4BB; Scala developer & trainer, Gospeak founder, conference speaker and Meetup organizer</title>
+    <meta name="og:title" content="Loïc Knuchel &#x1F468;&#x200D;&#x1F4BB; Scala developer & trainer, Gospeak founder, speaker...">
     <meta name="description" content="Gospeak.io founder and conference speaker, I focus on software craft and team alignment">
     <meta name="og:description" content="Gospeak.io founder and conference speaker, I focus on software craft and team alignment">
     <meta name="og:url" content="{{page.url | absolute_url}}">
 
     <meta name="twitter:card" content="summary">
     <meta name="og:image" content="/assets/img/avatar.jpg">
+
+    {% include common-metas.html %}
+    {% include styles.html %}
+    {% if jekyll.environment == 'production' %}
+        {% include analytics.html %}
+    {% endif %}
 </head>
 <body>
 <!--Menu-->
@@ -44,7 +44,7 @@ menus:
                         {% endfor %}
                     </ul>
                     <ul>
-                        <li><a href="#hire-me" class="hero no-underscore">Hire me 🎉</a></li>
+                        <li><a href="#hire-me" class="hero no-underscore">Hire me <i class="emoji party-popper"></i></a></li>
                     </ul>
                 </nav>
             </div>
@@ -68,7 +68,7 @@ menus:
                 {% endfor %}
             </ul>
             <ul>
-                <li><a href="#hire-me" class="hero no-underscore">Hire me 🎉</a></li>
+                <li><a href="#hire-me" class="hero no-underscore">Hire me <i class="emoji party-popper"></i></a></li>
             </ul>
         </nav>
     </div>
@@ -576,7 +576,7 @@ menus:
     <div class="row post-cards">
         {% for post in site.posts limit:3 %}
         <div class="col-md-4">
-            <a href="{{post.url}}">
+            <a href="{{post.id}}">
                 <div class="post-cards__card">
                     <div class="post-cards__img"><img src="{{post.banner_1_1 | default: '/assets/img/default/blog_banner_1_1.jpg'}}" alt="article banner"></div>
                     <div class="post-cards__info">

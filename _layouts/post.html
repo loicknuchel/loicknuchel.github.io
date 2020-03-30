@@ -1,26 +1,20 @@
 ---
 layout: default
 menus:
-  - {name: Home, link: "/"}
-  - {name: Other posts, link: "#posts"}
-  - {name: Contact, link: "#contact"}
+    - {name: Home, link: "/"}
+    - {name: Other posts, link: "#posts"}
+    - {name: Contact, link: "#contact"}
 ---
 {% assign author = site.data.people[page.author] | default: site.data.people.loic %}
 <head>
-    {% include common-metas.html %}
-    {% include styles.html %}
-    {% if jekyll.environment == 'production' %}
-        {% include analytics.html %}
-    {% endif %}
-
     <meta name="og:type" content="article">
     <meta name="og:locale" content="{{page.locale | default: 'en_US'}}">
     <meta name="twitter:site" content="@loicknuchel">
     <meta name="twitter:creator" content="{{author.twitter}}">
     <meta name="author" content="{{author.name}}">
 
-    <title>{{page.title}} 👨‍💻 {{author.name}}</title>
-    <meta name="og:title" content="{{page.title | truncate: 53}} 👨‍💻 {{author.name}}">
+    <title>{{page.title}} - {{author.name}} &#x1F468;&#x200D;&#x1F4BB;</title>
+    <meta name="og:title" content="{{page.title | truncate: 51}} - {{author.name}} &#x1F468;&#x200D;&#x1F4BB;">
     <meta name="description" content="{{page.excerpt | strip_html | truncate: 200}}">
     <meta name="og:description" content="{{page.excerpt | strip_html | truncate: 200}}">
     <meta name="og:url" content="{{page.url | absolute_url}}">
@@ -34,6 +28,12 @@ menus:
     {% else %}
     <meta name="twitter:card" content="summary_large_image">
     <meta name="og:image" content="/assets/img/default/blog_banner_2_1.jpg">
+    {% endif %}
+
+    {% include common-metas.html %}
+    {% include styles.html %}
+    {% if jekyll.environment == 'production' %}
+        {% include analytics.html %}
     {% endif %}
 </head>
 <body>
@@ -94,7 +94,7 @@ menus:
                 </div>
                 <article itemscope itemtype="http://schema.org/BlogPosting">
                     <header>
-                        <p class="article__title" itemprop="name headline">{{page.title | escape}}</p>
+                        <h1 class="article__title" itemprop="name headline">{{page.title}}</h1>
                         <p class="article_date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{page.date | date: "%B %-d, %Y"}}</p>
                         {% if author %}
                         <p itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{author.name}}</span></p>
@@ -141,7 +141,7 @@ menus:
         {% for post in page.related %}
         <div class="col-md-5 mr-auto">
             <div class="posts__item">
-                <a href="{{post.url}}">
+                <a href="{{post.id}}">
                     <h3 class="posts__title">{{post.title}}</h3>
                     <p class="posts__description">{{post.excerpt | strip_html | truncatewords: 30}}</p>
                 </a>
@@ -152,7 +152,7 @@ menus:
         {% for post in site.related_posts %}
         <div class="col-md-5 mr-auto">
             <div class="posts__item">
-                <a href="{{post.url}}">
+                <a href="{{post.id}}">
                     <h3 class="posts__title">{{post.title}}</h3>
                     <p class="posts__description">{{post.excerpt | strip_html | truncatewords: 30}}</p>
                 </a>

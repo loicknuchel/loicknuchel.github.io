@@ -8,13 +8,13 @@ author:      loic
 categories:  [coding]
 tags:        [functional programming, software craft]
 related:
-    - {url: "/coding/2017/06/01/imperatif-vs-fonctionnel-fight.html", title: "Impératif vs Fonctionnel : Fight !", excerpt: "Salut ! Ca fait un moment que je n'ai plus écrit d'articles ici mais je compte bien m'y remettre avec pas mal de choses sur la programmation fonctionnelle et Scala 😉"}
-    - {url: "/coding/2015/09/01/eviter-toujours-plus-de-bugs-grace-au-typage.html", title: "Éviter toujours plus de bugs grâce au typage", excerpt: "Ceux qui me connaissent savent que je suis un grand fan des langages typés, de programmation fonctionnelle et de Scala. Pourquoi ?"}
+    - {id: "/coding/2017/06/01/imperatif-vs-fonctionnel-fight", title: "Impératif vs Fonctionnel : Fight !", excerpt: "Salut ! Ca fait un moment que je n'ai plus écrit d'articles ici mais je compte bien m'y remettre avec pas mal de choses sur la programmation fonctionnelle et Scala"}
+    - {id: "/coding/2015/09/01/eviter-toujours-plus-de-bugs-grace-au-typage", title: "Éviter toujours plus de bugs grâce au typage", excerpt: "Ceux qui me connaissent savent que je suis un grand fan des langages typés, de programmation fonctionnelle et de Scala. Pourquoi ?"}
 ---
 
 Lately I discussed a lot about software engineering and advocated (as usual) for typed functional programming among other things. 
 I noticed that I talked a lot about what and how but not so much about why, especially from a high level view. 
-So this article is here to step back from our daily coding tasks and draw the big picture of software engineering as I see it; and for once, in english 😉
+So this article is here to step back from our daily coding tasks and draw the big picture of software engineering as I see it; and for once, in english <i class="emoji winking-face"></i>
 
 As a starting point, I would say that our industry is still pretty young and it evolved a lot over the years. 
 From a very experimental field to a dominant one (which impacts everybody daily life and has created world biggest companies). 
@@ -25,7 +25,7 @@ So now we all agree that "software is eating the world" quoting the famous Marc 
 At some point, everything will rely on software (if it's not already the case), so we (developers) need to produce rock solid applications 
 using state of the art knowledge to avoid dramatic failures. But not only, quality code is also essential to keep moving and innovating at high speed :
 
-{% include embed-tweet.html id="763442655632224256" date="August 10, 2016" user="brianm" name="Brian McCallister" content="Current development speed is a function of past development quality." %}
+{% include embed-tweet.html id="763442655632224256" user="brianm" name="Brian McCallister" content="Current development speed is a function of past development quality." %}
 
 Every developer and software company should be aware of this and take very seriously all theses aspects. And that's exactly what everybody is doing... right ?
 Obviously no application looks like this today :
@@ -37,7 +37,7 @@ often having some shitty code supporting an approximately working application.
 The result is that at some point of the application life, we always propose a full-rewrite as we cannot manage to implement any new change without tremendous effort. 
 So we start over and create a very similar monster from scratch !
 
-{% include embed-tweet.html id="654710109214371841" date="Oct 15, 2015" user="malk_zameth" name="Romeu Moura" content="If you remake awful software from scratch without changing the culture that created it : you'll remake awful software" %}
+{% include embed-tweet.html id="654710109214371841" user="malk_zameth" name="Romeu Moura" content="If you remake awful software from scratch without changing the culture that created it : you'll remake awful software" %}
 
 BTW, even if sometimes rewriting is the only way to move forward, we have to agree that it's a big failure as it screams that application went out of control
 just like the Frankenstein's creature (but the fault is not only to the developers's, it's to the whole company).
@@ -47,13 +47,13 @@ Theses problems are so common in our everyday work that some people suggests to 
 Or other people come to the joke "today bugs are tomorrow work".
 To me, this is the symptom that we are not able to make and maintain working software on the (not so) long term, which is pretty sad.
 
-As the current situation is well defined now, let's inspect the cause and draft some solutions.  
-So, why these results ? Are we all bad developers ? I don't think so !  
+As the current situation is well defined now, let's inspect the cause and draft some solutions.<br>
+So, why these results ? Are we all bad developers ? I don't think so !<br>
 I think things have evolved and what worked not so bad years ago starts to crack and urge us to find new way of building software. 
 The actual number one task of a developer is managing the complexity of the application to not let it evolve in an horrible monster that nobody can/want control. 
 Today, the number one answer I see is stacking developers and hoping it will work... 
-Which will not, obviously, because complexity and maintenance costs grow exponentially while work done by adding more people evolves logarithmically 🙁  
-And contrary to what you may think, this problem is quite old as it was nicely highlighted by Dijkstra in... 1972 !  
+Which will not, obviously, because complexity and maintenance costs grow exponentially while work done by adding more people evolves logarithmically <i class="emoji slightly-frowning-face"></i><br>
+And contrary to what you may think, this problem is quite old as it was nicely highlighted by Dijkstra in... 1972 !<br>
 
 <figure>
   <img src="/assets/img/posts/2017-06-25/dijkstra-quotes.jpg" alt="Dijkstra quotes">
@@ -86,7 +86,7 @@ I can also add **living documentation** as good practice which encourage doing c
 
 As a conclusion I would say that we have to learn, a lot, 
 not only about new shinny frameworks but also and more importantly about how to design application to easily handle complexity and changes. 
-So now the time has come to level up, learning how to do our job well and ride the digital revolution 😉
+So now the time has come to level up, learning how to do our job well and ride the digital revolution <i class="emoji winking-face"></i>
 
 ![Happy Homer Simpson](/assets/img/posts/2017-06-25/happy.jpg)
 

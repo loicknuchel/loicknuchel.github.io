@@ -1,5 +1,6 @@
 ---
 layout:      post
+locale:      fr_FR
 title:       Éviter toujours plus de bugs grâce au typage
 banner_1_1:  /assets/img/posts/2015-09-01/eviter-toujours-plus-de-bugs-grace-au-typage_1_1.jpg
 banner_2_1:  /assets/img/posts/2015-09-01/eviter-toujours-plus-de-bugs-grace-au-typage_2_1.jpg
@@ -14,7 +15,7 @@ tags:        [bug free, play framework, scala, typage, value classe]
 
 Ceux qui me connaissent savent que je suis un grand fan des langages typés, de programmation fonctionnelle et de Scala. Pourquoi ?
 Tout simplement parce qu'ils permettent de coder de manière concise tout en évitant un grand nombre de bugs que nous, 
-développeurs distraits, avons l'habitude de laisser derrière nous 😉
+développeurs distraits, avons l'habitude de laisser derrière nous <i class="emoji winking-face"></i>
 
 ![Static typing](/assets/img/posts/2015-09-01/static-typing-lesson.jpg)
 
@@ -46,7 +47,7 @@ En même temps, comme ce sont des types primitifs, c'est logique de les utiliser
 Mais les effets peuvent être ravageurs et difficiles à identifier. Par exemple :
 
 - Se tromper dans ses IDs (comme dans l'exemple) => j'utilise des UUIDs donc j'avais un NotFound alors que je n'aurais pas du (pas toujours évident à voir) mais si vous utilisez des IDs qui se suivent (auto-increment), vous récupérerez juste les mauvais objets (très difficile à identifier !)
-- Inverser deux champs dans une fonction (ex : Nom / Prénom d'un utilisateur) => en fonction de où et quand l'utilisateur a été créé/modifié, il aura ce problème qui n'est pas évident à identifier et impossible à corriger après coup 🙁
+- Inverser deux champs dans une fonction (ex : Nom / Prénom d'un utilisateur) => en fonction de où et quand l'utilisateur a été créé/modifié, il aura ce problème qui n'est pas évident à identifier et impossible à corriger après coup <i class="emoji slightly-frowning-face"></i>
 - ...
 
 ![Dynamic typing](/assets/img/posts/2015-09-01/dynamic-typing.jpg)
@@ -80,12 +81,12 @@ case class EventId(id: String) extends AnyVal
 
 Il suffit maintenant de remplacer `Event(uuid: String, ...)` par `Event(uuid: EventId, ...)`, de répercuter ce changement partout dans le code et voilà ! Simple non ?
 
-Oui... Et non 🙁
+Oui... Et non <i class="emoji slightly-frowning-face"></i>
 
 **Play framework** possède un certain nombre de fonctionnalités avec des bindings vers les objets communs (`String`, `Int`, `Long`, `Date`...) 
 mais nous venons justement de transformer un objet commun (`String`) en une classe custom que Play framework ne sait pas utiliser directement. 
 Il va donc falloir définir nous même ces bindings pour que tout fonctionne au mieux (ce qui est assez rare habituellement, en tous cas, c'était une première pour moi !).
-Et au lieu de se plaindre de devoir bosser un peu plus, prenons-le comme une opportunité d'en apprendre d'avantage sur notre framework préféré 😀
+Et au lieu de se plaindre de devoir bosser un peu plus, prenons-le comme une opportunité d'en apprendre d'avantage sur notre framework préféré <i class="emoji grinning-face"></i>
 
 Tout d'abord les routes. En effet, les IDs étant généralement utilisés comme paramètre dans les URLs, on va enfin pouvoir mieux les typer :
 
@@ -134,15 +135,17 @@ object EventId {
 Mettre le binding dans l'objet compagnon de l'`EventId` permet de l'importer en même temps que le type. Il est donc maintenant accessible dans le fichier de routes.
 
 Et voilà... Maintenant vous avez des routes correctement typées avec la vérification du format des IDs !!! 
-Et sans alourdir le code de l'application (`EventId` à la place de `String`). Mais il est probable que votre projet ne compile toujours pas 🙁
+Et sans alourdir le code de l'application (`EventId` à la place de `String`). Mais il est probable que votre projet ne compile toujours pas <i class="emoji slightly-frowning-face"></i>
 
 Si comme moi vous utilisez MongoDB ou que vous exposez une API et que vous sérialisez en JSON votre objet `Event` vous devriez voir un joli :
 
-`No implicit format for common.models.event.EventId available.`
+```error
+No implicit format for common.models.event.EventId available.
+```
 
 Et oui, il faut écrire des [Reads](https://www.playframework.com/documentation/2.3.4/api/scala/index.html#play.api.libs.json.Reads){:target="_blank"} et 
 [Writes](https://www.playframework.com/documentation/2.3.4/api/scala/index.html#play.api.libs.json.Writes){:target="_blank"}... 
-Et malheureusement l'habituel `implicit val format = Json.format[EventId]` ne vous aidera pas cette fois-ci 🙁
+Et malheureusement l'habituel `implicit val format = Json.format[EventId]` ne vous aidera pas cette fois-ci <i class="emoji slightly-frowning-face"></i>
 
 En effet, même si on utilise une Value Classe qui sera traitée uniquement comme une `String` à l'exécution, ça n'en reste pas moins une classe.
 Du coup, la macro la sérialisera sous la forme `{id: "0000"}` au lieu de simplement `"0000"`. On va donc devoir passer par des Reads/Writes custom.
@@ -224,7 +227,7 @@ qu'avec une simple `String` ! Plus aucun soucis pour utiliser des types custom d
 et surtout diminuer drastiquement la probabilité de bugs dûs à des erreurs d'inattention ou de copier/coller.
 
 Autre petite anecdote : dans le processus, j'ai trouvé 2 autres endroits où je m'étais emmêlé les pinceaux avec les IDs. 
-Donc soit je suis vraiment pas doué (ce qui est bien possible !). Soit vous feriez bien de checker vos app 😉
+Donc soit je suis vraiment pas doué (ce qui est bien possible !). Soit vous feriez bien de checker vos app <i class="emoji winking-face"></i>
 
 ### Is this real life ?
 
@@ -262,7 +265,7 @@ object GenericId {
 
 J'ai donc maintenant un `def favorite(itemType: String, itemId: GenericId)` qui indique clairement que cette fonction prend différents types d'ID.
 On pourrait pousser le vice en créant un `ItemId` qui serait compatible (conversions implicites) qu'avec les ID acceptables.
-À voir à l'usage... Mais je n'y suis pas encore 😉
+À voir à l'usage... Mais je n'y suis pas encore <i class="emoji winking-face"></i>
 
 ### Take Away
 
@@ -352,10 +355,10 @@ object EventId extends tStringHelper[EventId] {
 }
 ```
 
-Voilà voilà, vous avez tout maintenant !!! 😀
+Voilà voilà, vous avez tout maintenant !!! <i class="emoji grinning-face"></i>
 
 Comme je le disais en préambule, ce n'est pas forcément la technique ultime mais simplement ce que j'ai mis en place dans mon application. 
-Si vous voyez des moyens de faire mieux, je suis preneur 🙂
+Si vous voyez des moyens de faire mieux, je suis preneur <i class="emoji smile"></i>
 
 Comme piste d'amélioration, la fonction `build()` pourrait renvoyer un `Either` au lieu d'une `Option` et on pourrait ajouter des messages d'erreur custom pour 
 les différents mappers... À voir à l'usage...
@@ -375,6 +378,6 @@ si besoin (compatibilité autres libs/parties du code).
 
 J'espère que cet article vous aura été bénéfique et que vous y avez appris quelque chose. 
 En tous cas, moi, je suis très content d'avoir eu l'occasion d'avancer un peu plus sur mes connaissances de Play framework (qui est très puissant !) et 
-de pouvoir toujours plus typer mes applications 😀
+de pouvoir toujours plus typer mes applications <i class="emoji grinning-face"></i>
 
 ![Baby coder](/assets/img/posts/2015-09-01/baby-coder.png)

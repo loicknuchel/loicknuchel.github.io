@@ -1,25 +1,26 @@
 ---
 layout:      post
+locale:      fr_FR
 title:       "Impératif vs Fonctionnel : Fight !"
-banner_1_1:  /assets/img/posts/2017-06-01/imperatif-vs-fonctionnel-fight_1_1.jpg # for lists & twitter summary card
-banner_2_1:  /assets/img/posts/2017-06-01/imperatif-vs-fonctionnel-fight_2_1.jpg # for twitter summary_large_image card
-banner_21_9: /assets/img/posts/2017-06-01/imperatif-vs-fonctionnel-fight_21_9.jpg # for article banner
+banner_1_1:  /assets/img/posts/2017-06-01/imperatif-vs-fonctionnel-fight_1_1.jpg
+banner_2_1:  /assets/img/posts/2017-06-01/imperatif-vs-fonctionnel-fight_2_1.jpg
+banner_21_9: /assets/img/posts/2017-06-01/imperatif-vs-fonctionnel-fight_21_9.jpg
 author:      loic
 categories:  [coding]
 tags:        [functional programming, JavaScript, Scala]
 ---
 
-Salut ! Ca fait un moment que je n'ai plus écrit d'articles ici mais je compte bien m'y remettre avec pas mal de choses sur la programmation fonctionnelle et Scala 😉
+Salut ! Ca fait un moment que je n'ai plus écrit d'articles ici mais je compte bien m'y remettre avec pas mal de choses sur la programmation fonctionnelle et Scala <i class="emoji winking-face"></i>
 
 Il y a quelques jours j'ai participé à [NCrafts](https://ncrafts.io){:target="_blank"} et en particulier au workshop 
 **[Playing with projections](https://github.com/michelgrootjans/playing_with_projections){:target="_blank"}** de [Michel Grootjans](https://twitter.com/michelgrootjans){:target="_blank"}
-et [Thomas Coopman](https://twitter.com/tcoopman){:target="_blank"}; je l'ai trouvé génial et je vous le recommande sans réserve !!!  
+et [Thomas Coopman](https://twitter.com/tcoopman){:target="_blank"}; je l'ai trouvé génial et je vous le recommande sans réserve !!!<br>
 Son but est d'analyser une liste d'événements d'une application afin d'en extraire différentes informations (projections dans le jargon).
 Pour cela, on se base sur les événements d'une application où des joueurs peuvent s'enregistrer,
-créer des quiz puis y répondre ([schéma global des événements](https://github.com/michelgrootjans/playing_with_projections/wiki){:target="_blank"}).  
+créer des quiz puis y répondre ([schéma global des événements](https://github.com/michelgrootjans/playing_with_projections/wiki){:target="_blank"}).<br>
 Mais, dans cet article, je vais détourner son but et m'en servir pour comparer le style impératif et fonctionnel en essayant d'avoir 
-le code le plus clair et intuitif à chaque fois (au passage, si vous voyez des améliorations je suis preneur ^^).  
-Et le tout en JavaScript 🙁 puisque c'est le langage que nous avions choisi lors du workshop...
+le code le plus clair et intuitif à chaque fois (au passage, si vous voyez des améliorations je suis preneur ^^).<br>
+Et le tout en JavaScript <i class="emoji slightly-frowning-face"></i> puisque c'est le langage que nous avions choisi lors du workshop...
 
 Bon, commençons très simple, la première tâche est de déterminer le nombre total d'inscriptions. Pour cela, il suffit de compter les événements `PlayerHasRegistered`,
 le code est donc plutôt trivial.
@@ -47,8 +48,8 @@ const registeredPlayers = events => {
 ```
 
 Quand on compare les deux codes, a différence la plus visible est bien sûr le nombre de lignes : 1 vs 7 !
-C'est déjà un gros point mais, le plus important est que le code fonctionnel reflète bien plus l'intention initiale (compter les événements `PlayerHasRegistered`).  
-On peut considérer ça comme un détail mais du code court et expressif facilite grandement la compréhension du code 🙂  
+C'est déjà un gros point mais, le plus important est que le code fonctionnel reflète bien plus l'intention initiale (compter les événements `PlayerHasRegistered`).<br>
+On peut considérer ça comme un détail mais du code court et expressif facilite grandement la compréhension du code <i class="emoji smile"></i><br>
 Bien sûr, il faut connaître la fonction `filter` mais elle est très simple et son nom est plutôt explicite...
 Pour ceux qui ne la connaitraient pas, elle créée simplement un nouveau tableau à partir de l'ancien en conservant uniquement les éléments
 pour lesquels la fonction passée en paramètre renvoi `true`. Si elle n'existait pas en JavaScript, on pourrait la coder très simplement :
@@ -69,9 +70,9 @@ On voit ici qu'elle est très similaire au code impératif écrit précédemment
 permet de définir un comportement habituel (ici, filtrer un tableau) qui pourra être réutilisé à volonté. Plus besoin de le coder à chaque fois \o/
 
 Par ailleurs, le code fonctionnel reflète bien les deux étapes de calcul : filtrer les événements puis les compter, alors que le code impératif fait tout en même temps.
-Ce qui semble plus "logique" au regard du résultat attendu mais tends à complexifier le code (même si ici ça reste tout à fait acceptable ^^).  
+Ce qui semble plus "logique" au regard du résultat attendu mais tends à complexifier le code (même si ici ça reste tout à fait acceptable ^^).<br>
 Sur un exemple aussi simple que ça, on voit déjà que le code fonctionnel encourage à séparer un algorithme en sous-parties (éventuellement réutilisables)
-alors que le code impératif encourage à créer du code spécifique qu'il faudra réécrire à chaque fois (notamment pour des comportement très communs comme le `filter`).  
+alors que le code impératif encourage à créer du code spécifique qu'il faudra réécrire à chaque fois (notamment pour des comportement très communs comme le `filter`).<br>
 Enfin, on peut noter que la fonction `filter` prends une autre fonction en paramètre, c'est ce qu'on appelle une **fonction d'ordre supérieur** (buzzword powaaa).
 
 Passons maintenant à l'étape suivante, nous voulons faire la même chose mais pour chaque mois et renvoyer une tableau avec le mois et le nombre d'inscriptions.
@@ -115,7 +116,7 @@ const registeredPlayersPerMonth = events => {
 };
 ```
 
-Même si on ne comprends pas exactement ce que font les méthodes, grâce à leur nom on imagine bien l'intention voulue 🙂  
+Même si on ne comprends pas exactement ce que font les méthodes, grâce à leur nom on imagine bien l'intention voulue <i class="emoji smile"></i><br>
 Encore une fois, la comparaison est sans appel, autant sur la taille (4 lignes vs 19) que sur la lisibilité.
 On commence aussi à voir que le style impératif est susceptible d'accueillir bien plus de bugs...
 
@@ -137,12 +138,12 @@ Object.prototype.map = function(func /* (T, string) => U */) {
 ```
 
 La fonction `groupBy` groupe les éléments d'un tableau en fonction d'une clé (chaîne de caractère) et renvoit une `Map` (objet JavaScript) 
-qui a pour valeur la liste des éléments ayant la même clé.  
+qui a pour valeur la liste des éléments ayant la même clé.<br>
 La fonction `map` existe sur les tableaux (elle permet de créer un nouveau tableau en modifiant chaque élément) mais pas sur les `Map` (objets JavaScript). 
 Je l'ai donc ajoutée pour permettre d'obtenir un tableau à partir des valeurs de la `Map` (et éventuellement la clé, en deuxième paramètre).
 
 Nous venons de résoudre les deux premiers challenges du workshop et on a bien vu que le code impératif se complexifie bien plus vite que le code fonctionnel.
-Voyons ce que ça peut donner avec le challenge suivant... On doit lister les 10 quiz les plus populaires avec leur id, nom et nombre de fois qu'ils ont été joués.  
+Voyons ce que ça peut donner avec le challenge suivant... On doit lister les 10 quiz les plus populaires avec leur id, nom et nombre de fois qu'ils ont été joués.<br>
 Regardons d'abord le code fonctionnel cette fois-ci :
 
 ```javascript
@@ -247,7 +248,7 @@ def registeredPlayersPerMonth(events: Stream[Event]): Stream[RegisteredPlayers] 
 Bref, le code change très peu (y compris entre JavaScript et Scala) alors qu'on a des exécutions très différentes.
 
 De plus, on voit bien que beaucoup de bugs / fautes d'inattention peuvent se glisser dans le code impératif alors que le code fonctionnel, 
-reste bien plus concis, clair et bien moins sujet à erreurs; et ce, d'autant plus si on bénéficie d'un bon système de types 😉  
+reste bien plus concis, clair et bien moins sujet à erreurs; et ce, d'autant plus si on bénéficie d'un bon système de types <i class="emoji winking-face"></i><br>
 Essayez d'introduire un bug dans le code Scala qui ne soit pas identifié par le compilateur...
 
 On a principalement vu ici les fonctions de chaînage sur les collections et c'est clairement celles-ci qui m'ont fait accrocher à la programmation fonctionnelle 

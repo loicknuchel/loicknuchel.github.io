@@ -1,6 +1,9 @@
 @charset "utf-8";
 
 @import "syntax-highlighting";
+@import "emoji";
+
+$default-spacing: 20px;
 
 button {
   cursor: pointer;
@@ -18,14 +21,14 @@ button {
 }
 
 .twitter-tweet {
-  margin-bottom: 20px !important;
+  margin-bottom: $default-spacing !important;
 }
 
 /* un-rendered tweet: twitter widgets will insert <twitter-widget> instead of <blockquote> */
 blockquote.twitter-tweet {
   position: relative;
   max-width: 500px;
-  padding: 20px;
+  padding: $default-spacing;
   border: 1px solid #e1e8ed;
   border-radius: 5px;
   font: normal normal 16px/1.2 Helvetica, Roboto, "Segoe UI", Calibri, sans-serif;
@@ -87,9 +90,6 @@ blockquote.twitter-tweet {
 
 .resume-list__block-logo {
   float: right;
-  /* float: left;
-  margin-left: -100px;
-  margin-top: -20px; */
 
   img {
     height: 50px;
@@ -98,7 +98,7 @@ blockquote.twitter-tweet {
 }
 
 .techno {
-  margin: 20px;
+  margin: $default-spacing;
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 0 3px rgba(134, 72, 219, .2);
@@ -126,6 +126,10 @@ blockquote.twitter-tweet {
 /* post specifics */
 
 .article {
+  .article__title {
+    font-size: 1em;
+  }
+
   p {
     clear: both;
   }
@@ -142,12 +146,14 @@ blockquote.twitter-tweet {
 
     &.pull-right {
       float: right;
-      margin-left: 20px;
+      margin-left: $default-spacing;
+      margin-bottom: $default-spacing;
     }
 
     &.pull-left {
       float: left;
-      margin-right: 20px;
+      margin-right: $default-spacing;
+      margin-bottom: $default-spacing;
     }
   }
 
@@ -157,6 +163,39 @@ blockquote.twitter-tweet {
 
   ol, ul {
     list-style: inside;
+    margin-bottom: $default-spacing;
+
+    ol, ul {
+      margin-bottom: 0;
+      padding-left: $default-spacing;
+    }
+  }
+
+  table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    margin-bottom: $default-spacing;
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    tr {
+      background-color: #fff;
+      border-top: 1px solid #c6cbd1;
+    }
+
+    tr:nth-child(2n) {
+      background-color: #f6f8fa;
+    }
+
+    th, td {
+      padding: 6px 13px;
+      border: 1px solid #dfe2e5;
+    }
+
+    th {
+      font-weight: 600;
+    }
   }
 
   blockquote:not(.twitter-tweet) {
