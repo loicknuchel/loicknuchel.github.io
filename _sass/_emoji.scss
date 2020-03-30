@@ -8,11 +8,11 @@
   &.beaming-face-with-smiling-eyes:before { content: '\01F601'; }
   &.grinning-squinting-face:before { content: '\01F606'; }
   &.grinning-face-with-sweat:before { content: '\01F605'; }
-  &.rolling-on-the-floor-laughing:before { content: '\01F923'; }
+  &.rolling-on-the-floor-laughing:before, &.laugh:before { content: '\01F923'; }
   &.face-with-tears-of-joy:before { content: '\01F602'; }
   &.slightly-smiling-face:before, &.smile:before { content: '\01F642'; }
-  &.upside-down-face:before, &.smile:before { content: '\01f643'; }
-  &.winking-face:before { content: '\01F609'; }
+  &.upside-down-face:before { content: '\01f643'; }
+  &.winking-face:before, &.wink:before { content: '\01F609'; }
   &.smiling-face-with-smiling-eyes:before { content: '\01F60A'; }
   &.smiling-face-with-halo:before { content: '\01f607'; }
   &.smiling-face-with-hearts:before { content: '\01f970'; }
@@ -52,7 +52,7 @@
   &.face-vomiting:before { content: '\01f92e'; }
   &.partying-face:before { content: '\01f973'; }
   &.smiling-face-with-sunglasses:before { content: '\01f60e'; }
-  &.nerd-face:before { content: '\01f913'; }
+  &.nerd-face:before, &.geek:before { content: '\01f913'; }
   &.slightly-frowning-face:before { content: '\01F641'; }
   &.face-with-open-mouth:before { content: '\01f62e'; }
   &.sad-but-relieved-face:before { content: '\01f625'; }

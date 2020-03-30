@@ -7,9 +7,6 @@ banner_21_9: /assets/img/posts/2017-06-25/why-functional-programming_21_9.jpg
 author:      loic
 categories:  [coding]
 tags:        [functional programming, software craft]
-related:
-    - {id: "/coding/2017/06/01/imperatif-vs-fonctionnel-fight", title: "Impératif vs Fonctionnel : Fight !", excerpt: "Salut ! Ca fait un moment que je n'ai plus écrit d'articles ici mais je compte bien m'y remettre avec pas mal de choses sur la programmation fonctionnelle et Scala"}
-    - {id: "/coding/2015/09/01/eviter-toujours-plus-de-bugs-grace-au-typage", title: "Éviter toujours plus de bugs grâce au typage", excerpt: "Ceux qui me connaissent savent que je suis un grand fan des langages typés, de programmation fonctionnelle et de Scala. Pourquoi ?"}
 ---
 
 Lately I discussed a lot about software engineering and advocated (as usual) for typed functional programming among other things. 

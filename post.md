@@ -38,11 +38,11 @@ Emojis works use `<i class="emoji $name"></i>` (see [full list](https://unicode.
     <i class="emoji beaming-face-with-smiling-eyes" title="beaming-face-with-smiling-eyes" data-toggle="tooltip"></i>
     <i class="emoji grinning-squinting-face" title="grinning-squinting-face" data-toggle="tooltip"></i>
     <i class="emoji grinning-face-with-sweat" title="grinning-face-with-sweat" data-toggle="tooltip"></i>
-    <i class="emoji rolling-on-the-floor-laughing" title="rolling-on-the-floor-laughing" data-toggle="tooltip"></i>
+    <i class="emoji rolling-on-the-floor-laughing" title="rolling-on-the-floor-laughing / laugh" data-toggle="tooltip"></i>
     <i class="emoji face-with-tears-of-joy" title="face-with-tears-of-joy" data-toggle="tooltip"></i>
-    <i class="emoji slightly-smiling-face" title="slightly-smiling-face" data-toggle="tooltip"></i>
+    <i class="emoji slightly-smiling-face" title="slightly-smiling-face / smile" data-toggle="tooltip"></i>
     <i class="emoji upside-down-face" title="upside-down-face" data-toggle="tooltip"></i>
-    <i class="emoji winking-face" title="winking-face" data-toggle="tooltip"></i>
+    <i class="emoji winking-face" title="winking-face / wink" data-toggle="tooltip"></i>
     <i class="emoji smiling-face-with-smiling-eyes" title="smiling-face-with-smiling-eyes" data-toggle="tooltip"></i>
     <i class="emoji smiling-face-with-halo" title="smiling-face-with-halo" data-toggle="tooltip"></i>
     <i class="emoji smiling-face-with-hearts" title="smiling-face-with-hearts" data-toggle="tooltip"></i>
@@ -79,7 +79,7 @@ Emojis works use `<i class="emoji $name"></i>` (see [full list](https://unicode.
     <i class="emoji face-vomiting" title="face-vomiting" data-toggle="tooltip"></i>
     <i class="emoji partying-face" title="partying-face" data-toggle="tooltip"></i>
     <i class="emoji smiling-face-with-sunglasses" title="smiling-face-with-sunglasses" data-toggle="tooltip"></i>
-    <i class="emoji nerd-face" title="nerd-face" data-toggle="tooltip"></i>
+    <i class="emoji nerd-face" title="nerd-face / geek" data-toggle="tooltip"></i>
     <i class="emoji slightly-frowning-face" title="slightly-frowning-face" data-toggle="tooltip"></i>
     <i class="emoji face-with-open-mouth" title="face-with-open-mouth" data-toggle="tooltip"></i>
     <i class="emoji sad-but-relieved-face" title="sad-but-relieved-face" data-toggle="tooltip"></i>
