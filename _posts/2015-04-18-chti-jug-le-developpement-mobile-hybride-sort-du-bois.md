@@ -24,7 +24,7 @@ Bien sûr, la partie UI et composants étant incontournable, j’ai décidé de 
 
 Voici mes slides :
 
-{% include embed-slideshare.html url="//www.slideshare.net/slideshow/embed_code/key/iqcSltuMajsq9e" %}
+{% include embed-slideshare.html code="iqcSltuMajsq9e" url="//www.slideshare.net/loicknuchel/le-dveloppement-mobile-hybride-sort-du-bois-chti-jug-le-15042015" title="Le développement mobile hybride sort du bois, Ch'ti JUG le 15-04-2015" %}
 
 La vidéo devrait bientôt être disponible (j’espère <i class="emoji wink"></i>) et je la publierais ici dès que possible.
 

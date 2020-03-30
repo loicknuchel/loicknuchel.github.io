@@ -1,9 +1,8 @@
-<iframe src="{{include.url}}"
-        width="{{include.width | default: 970}}"
-        height="{{include.height | default: 585}}"
-        frameborder="0"
-        marginwidth="0"
-        marginheight="0"
-        scrolling="no"
-        style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;"
-        allowfullscreen></iframe>
+<div class="slideshare-embed">
+    <div class="iframe-container" style="padding-top: {{include.ratio | default: 60.2}}%;">
+        <iframe src="//www.slideshare.net/slideshow/embed_code/key/{{include.code}}" allowfullscreen></iframe>
+    </div>
+    {% if include.url && include.title %}
+    <strong><a href="{{include.url}}" target="_blank">{{include.title}}</a></strong>
+    {% endif %}
+</div>
