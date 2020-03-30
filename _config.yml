@@ -1,5 +1,7 @@
 exclude: ['.idea']
 
+hireme: true
+
 collections:
   work_experiences:
     date: true

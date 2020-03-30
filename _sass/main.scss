@@ -9,6 +9,14 @@ button {
   cursor: pointer;
 }
 
+/* trick to make anchor scroll works with fixed header */
+.anchor-trick {
+  display: block;
+  position: relative;
+  top: -100px; /* 70px for header + 30px for padding */
+  visibility: hidden;
+}
+
 .gray-on-hover:hover {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);

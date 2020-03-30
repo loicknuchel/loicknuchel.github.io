@@ -43,9 +43,11 @@ menus:
                         <li><a href="{{menu.link}}">{{menu.name}}</a></li>
                         {% endfor %}
                     </ul>
+                    {% if site.hireme %}
                     <ul>
                         <li><a href="#hire-me" class="hero no-underscore">Hire me <i class="emoji party-popper"></i></a></li>
                     </ul>
+                    {% endif %}
                 </nav>
             </div>
             <div class="menu__wrapper col-md-12 d-lg-none">
@@ -67,9 +69,11 @@ menus:
                 <li><a href="{{menu.link}}">{{menu.name}}</a></li>
                 {% endfor %}
             </ul>
+            {% if site.hireme %}
             <ul>
                 <li><a href="#hire-me" class="hero no-underscore">Hire me <i class="emoji party-popper"></i></a></li>
             </ul>
+            {% endif %}
         </nav>
     </div>
 </div>
@@ -116,7 +120,7 @@ menus:
 <section class="container section">
     <div class="row">
         <div class="col-lg-10">
-            <h2 id="hello_header" class="section__title" data-typing-effect="90%">Hi_</h2>
+            <h2 class="section__title" data-typing-effect="90%">Hi_</h2>
             <p class="section__description">
                 I am Software engineer, passionated about building reliable and maintainable app using functional programming and static types.
                 Beyond code, I value collaboration and cross department synergies.
@@ -136,11 +140,13 @@ menus:
 
 <hr>
 
+{% if site.hireme %}
 <div class="hire-me__container">
-    <section id="hire-me" class="container section">
+    <section class="container section">
+        <span class="anchor-trick" id="hire-me"></span>
         <div class="row">
             <div class="col-lg-10">
-                <h2 id="hire-me_header" class="section__title" data-typing-effect="90%">Hire me_</h2>
+                <h2 class="section__title" data-typing-effect="90%">Hire me_</h2>
                 <p class="mb-0">
                     I'm looking for a new job!
                 </p>
@@ -150,12 +156,14 @@ menus:
 </div>
 
 <hr>
+{% endif %}
 
 <!--Resume-->
-<section id="resume" class="container section">
+<section class="container section">
+    <span class="anchor-trick" id="resume"></span>
     <div class="row">
         <div class="col-lg-10">
-            <h2 id="resume_header" class="section__title" data-typing-effect="90%">Resume_</h2>
+            <h2 class="section__title" data-typing-effect="90%">Resume_</h2>
             <p class="section__description">
                 I do programming since more than <i><b>10 years</b></i>.
                 I started with C, PHP and Java but since I discovered <i><b>Scala</b></i> and <i><b>functional programming</b></i>, I stick with them!
@@ -168,7 +176,8 @@ menus:
             <h3 class="resume-list_title">Employment</h3>
             {% assign sorted_work_experiences = site.work_experiences | sort: 'date' | reverse %}
             {% for exp in sorted_work_experiences %}
-            <div id="{{exp.slug}}" class="resume-list__block" data-twitter="{{exp.twitter}}">
+            <div class="resume-list__block" data-twitter="{{exp.twitter}}">
+                <span class="anchor-trick" id="{{exp.slug}}"></span>
                 <a class="resume-list__block-logo" href="{{exp.website}}" target="_blank"><img src="{{exp.logo}}" alt="{{exp.name}} logo"></a>
                 <div data-toggle="collapse" href="#{{exp.slug}}-collapse">
                     <h4 class="resume-list__block-title">{{exp.name}}</h4>
@@ -199,24 +208,28 @@ menus:
         </div>
         <div class="col-md-12 section__resume resume-list">
             <h3 class="resume-list_title">Education</h3>
-            <div id="koudetat" class="resume-list__block" data-twitter="https://twitter.com/_Koudetat">
+            <div class="resume-list__block" data-twitter="https://twitter.com/_Koudetat">
+                <span class="anchor-trick" id="koudetat"></span>
                 <a class="resume-list__block-logo" href="https://www.koudetat.co" target="_blank"><img src="assets/img/logos/koudetat.jpg" alt="Koudetat logo"></a>
                 <h4 class="resume-list__block-title">Koudetat</h4>
                 <p class="resume-list__block-date">janv. 2014 - may 2014</p>
             </div>
-            <div id="ensimag" class="resume-list__block" data-twitter="https://twitter.com/Ensimag">
+            <div class="resume-list__block" data-twitter="https://twitter.com/Ensimag">
+                <span class="anchor-trick" id="ensimag"></span>
                 <a class="resume-list__block-logo" href="http://ensimag.grenoble-inp.fr" target="_blank"><img src="assets/img/logos/ensimag.png" alt="Ensimag logo"></a>
                 <h4 class="resume-list__block-title">ENSIMAG</h4>
                 <p class="resume-list__block-date">2010 - 2011</p>
                 <p>Special year</p>
             </div>
-            <div id="phelma" class="resume-list__block" data-twitter="https://twitter.com/Phelma_ecole">
+            <div class="resume-list__block" data-twitter="https://twitter.com/Phelma_ecole">
+                <span class="anchor-trick" id="phelma"></span>
                 <a class="resume-list__block-logo" href="http://phelma.grenoble-inp.fr" target="_blank"><img src="assets/img/logos/phelma.jpg" alt="Phelma logo"></a>
                 <h4 class="resume-list__block-title">PHELMA</h4>
                 <p class="resume-list__block-date">2008 - 2010</p>
                 <p>Micro-electronics</p>
             </div>
-            <div id="massena" class="resume-list__block">
+            <div class="resume-list__block">
+                <span class="anchor-trick" id="massena"></span>
                 <a class="resume-list__block-logo" href="http://www.lycee-massena.fr/les-cpge" target="_blank"><img src="assets/img/logos/massena.png" alt="Massena logo"></a>
                 <h4 class="resume-list__block-title">Massena Prepa</h4>
                 <p class="resume-list__block-date">2006 - 2008</p>
@@ -324,10 +337,11 @@ menus:
 <!--Resume-->
 
 <!--Portfolio-->
-<!--<section id="portfolio" class="container section">
+<!--<section class="container section">
+    <span class="anchor-trick" id="portfolio"></span>
     <div class="row">
         <div class="col-md-12">
-            <h2 id="portfolio_header" class="section__title" data-typing-effect="90%">My projects_</h2>
+            <h2 class="section__title" data-typing-effect="90%">My projects_</h2>
         </div>
     </div>
     <div class="row portfolio-menu">
@@ -480,7 +494,8 @@ menus:
 <!-- Portfolio Modal -->
 
 <!--Testimonials-->
-<!--<div id="testimonials" class="section">
+<!--<div class="section">
+    <span class="anchor-trick" id="testimonials" style="top: -70px;"></span>
     <div class="background slider-carousel" style="background-image: url(assets/img/texture.jpg);">
         <div class="container">
             <div id="carouselTestimonials" class="carousel slide" data-ride="carousel">
@@ -566,10 +581,11 @@ menus:
 <!--Testimonials-->
 
 <!--Blog-->
-<section id="blog" class="container section">
+<section class="container section">
+    <span class="anchor-trick" id="blog"></span>
     <div class="row">
         <div class="col-md-12">
-            <h2 id="blog_header" class="section__title" data-typing-effect="90%">Latest Posts_</h2>
+            <h2 class="section__title" data-typing-effect="90%">Latest Posts_</h2>
         </div>
     </div>
 
