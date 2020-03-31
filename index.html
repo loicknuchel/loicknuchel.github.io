@@ -590,21 +590,26 @@ menus:
         </div>
     </div>
 
-    <div class="row post-cards">
-        {% for post in site.posts limit:3 %}
-        <div class="col-md-4">
-            <a href="{{post.url}}">
-                <div class="post-cards__card">
-                    <div class="post-cards__img"><img src="{{post.banner_1_1 | default: '/assets/img/default/blog_banner_1_1.jpg'}}" alt="article banner"></div>
-                    <div class="post-cards__info">
-                        <p class="post-cards__date">{{post.date | date: "%B %-d, %Y"}}</p>
-                        <h3 class="post-cards_title">{{post.title}}</h3>
-                        <div class="post-cards_description">{{post.excerpt | strip_html | truncatewords: 30}}</div>
+    <div class="post-cards">
+        <div class="row mb-3">
+            {% for post in site.posts limit:3 %}
+            <div class="col-md-4">
+                <a href="{{post.url}}">
+                    <div class="post-cards__card">
+                        <div class="post-cards__img"><img src="{{post.banner_1_1 | default: '/assets/img/default/blog_banner_1_1.jpg'}}" alt="article banner"></div>
+                        <div class="post-cards__info">
+                            <p class="post-cards__date">{{post.date | date: "%B %-d, %Y"}}</p>
+                            <h3 class="post-cards_title">{{post.title}}</h3>
+                            <div class="post-cards_description">{{post.excerpt | strip_html | truncatewords: 30}}</div>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
+        <div style="text-align: right">
+            <a href="/blog" class="btn btn-material">See all post</a>
+        </div>
     </div>
 </section>
 <!--Blog-->

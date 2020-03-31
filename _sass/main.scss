@@ -28,6 +28,21 @@ button {
   color: inherit;
 }
 
+.btn-material {
+  text-transform: uppercase;
+  color: #555;
+  border: 1px solid #f1f1f1;
+  border-radius: 0;
+  padding: 1rem 1.2rem;
+
+  &:hover, &:focus {
+    color: #555;
+    -webkit-box-shadow: 0 1px 31px rgba(0, 0, 0, .09);
+    -moz-box-shadow: 0 1px 31px rgba(0, 0, 0, .09);
+    box-shadow: 0 1px 31px rgba(0, 0, 0, .09);
+  }
+}
+
 .twitter-tweet {
   margin-bottom: $default-spacing !important;
 }
@@ -136,17 +151,33 @@ blockquote.twitter-tweet {
   }
 }
 
-.post-cards_description {
-  height: 60px;
-  overflow: hidden;
-  display: -webkit-box;
-  box-orient: vertical;
-  -webkit-box-orient: vertical;
-  line-clamp: 3;
-  -webkit-line-clamp: 3;
+.post-cards {
+  .post-cards__info {
+    padding: 20px 20px 40px 20px;
+  }
 
-  p {
-    margin-bottom: 0;
+  .post-cards_title {
+    height: 40px;
+    overflow: hidden;
+    display: -webkit-box;
+    box-orient: vertical;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+  }
+
+  .post-cards_description {
+    height: 60px;
+    overflow: hidden;
+    display: -webkit-box;
+    box-orient: vertical;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+
+    p {
+      margin-bottom: 0;
+    }
   }
 }
 
