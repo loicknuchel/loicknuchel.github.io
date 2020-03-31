@@ -8,7 +8,7 @@ menus:
     - {name: Blog, link: "#blog"}
     - {name: Contact, link: "#contact"}
 ---
-{% assign author = site.data.people[page.author] | default: site.data.people.loic %}
+{% assign author = site.data.people.loic %}
 <head>
     <meta name="og:type" content="profile">
     <meta name="og:locale" content="en_US">
@@ -24,7 +24,7 @@ menus:
     <link rel="canonical" href="{{page.url | absolute_url}}">
 
     <meta name="twitter:card" content="summary">
-    <meta name="og:image" content="{{'/assets/img/avatar.jpg' | absolute_url}}">
+    <meta name="og:image" content="{{author.avatar | absolute_url}}">
 
     {% include common-metas.html %}
     {% include styles.html %}
@@ -185,7 +185,7 @@ menus:
                     <p class="resume-list__block-date">{{exp.duration}}</p>
                 </div>
                 <div class="collapse show" id="{{exp.slug}}-collapse">
-                    <p>{{exp.content | markdownify}}</p>
+                    <div class="resume-list__block-description">{{exp.content | markdownify}}</div>
                     <ul class="tags">
                         {% for tag in exp.tags %}
                         <li>{{tag}}</li>
@@ -214,27 +214,28 @@ menus:
                 <a class="resume-list__block-logo" href="https://www.koudetat.co" target="_blank"><img src="assets/img/logos/koudetat.jpg" alt="Koudetat logo"></a>
                 <h4 class="resume-list__block-title">Koudetat</h4>
                 <p class="resume-list__block-date">janv. 2014 - may 2014</p>
+                <div class="resume-list__block-description"><p>Awesome!</p></div>
             </div>
             <div class="resume-list__block" data-twitter="https://twitter.com/Ensimag">
                 <span class="anchor-trick" id="ensimag"></span>
                 <a class="resume-list__block-logo" href="http://ensimag.grenoble-inp.fr" target="_blank"><img src="assets/img/logos/ensimag.png" alt="Ensimag logo"></a>
                 <h4 class="resume-list__block-title">ENSIMAG</h4>
                 <p class="resume-list__block-date">2010 - 2011</p>
-                <p>Special year</p>
+                <div class="resume-list__block-description"><p>Special year</p></div>
             </div>
             <div class="resume-list__block" data-twitter="https://twitter.com/Phelma_ecole">
                 <span class="anchor-trick" id="phelma"></span>
                 <a class="resume-list__block-logo" href="http://phelma.grenoble-inp.fr" target="_blank"><img src="assets/img/logos/phelma.jpg" alt="Phelma logo"></a>
                 <h4 class="resume-list__block-title">PHELMA</h4>
                 <p class="resume-list__block-date">2008 - 2010</p>
-                <p>Micro-electronics</p>
+                <div class="resume-list__block-description"><p>Micro-electronics</p></div>
             </div>
             <div class="resume-list__block">
                 <span class="anchor-trick" id="massena"></span>
                 <a class="resume-list__block-logo" href="http://www.lycee-massena.fr/les-cpge" target="_blank"><img src="assets/img/logos/massena.png" alt="Massena logo"></a>
                 <h4 class="resume-list__block-title">Massena Prepa</h4>
                 <p class="resume-list__block-date">2006 - 2008</p>
-                <p>PCSI and PC*</p>
+                <div class="resume-list__block-description"><p>Special year</p></div><p>PCSI and PC*</p></div>
             </div>
         </div>
         <div class="col-md-12 d-flex justify-content-center flex-wrap">
@@ -598,7 +599,7 @@ menus:
                     <div class="post-cards__card">
                         <div class="post-cards__img"><img src="{{post.banner_1_1 | default: '/assets/img/default/blog_banner_1_1.jpg'}}" alt="article banner"></div>
                         <div class="post-cards__info">
-                            <p class="post-cards__date">{{post.date | date: "%B %-d, %Y"}}</p>
+                            <p class="post-cards__date" datetime="{{page.date | date_to_xmlschema}}">{{post.date | date: "%B %-d, %Y"}}</p>
                             <h3 class="post-cards_title">{{post.title}}</h3>
                             <div class="post-cards_description">{{post.excerpt | strip_html | truncatewords: 30}}</div>
                         </div>

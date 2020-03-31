@@ -4,6 +4,14 @@ $(function () {
     // enable Bootstrap tooltips for tags with attribute
     $('[data-toggle="tooltip"]').tooltip();
 
+    $('.js-back').click(function (e) {
+        if(document.referrer && document.referrer !== window.location.href) {
+            e.preventDefault();
+            window.history.go(-1);
+            window.location.href = document.referrer;
+        }
+    });
+
     // enable Bootstrap carousels
     $('.carousel').each(function () {
         var $elt = $(this);

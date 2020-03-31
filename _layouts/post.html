@@ -89,14 +89,13 @@ menus:
 <header class="background blog-header" style="background-image: url(/assets/img/texture.jpg)"></header>
 <!--Header-->
 
-
 <!--Article-->
 <div class="container">
     <div class="article">
         <div class="row">
             <div class="col-md-12">
                 <div class="d-flex justify-content-between align-items-center">
-                    <a class="article__back-link" href="/"><i class="fas fa-arrow-left" aria-hidden="true"></i>Back</a>
+                    <a href="/" class="article__back-link js-back"><i class="fas fa-arrow-left" aria-hidden="true"></i>Back</a>
                     <p class="article__share mb-0">
                         <a><i class="fab fa-twitter"></i></a>
                         <a><i class="fab fa-linkedin"></i></a>
@@ -106,7 +105,7 @@ menus:
                 <article itemscope itemtype="http://schema.org/BlogPosting">
                     <header>
                         <h1 class="article__title" itemprop="name headline">{{page.title}}</h1>
-                        <p class="article_date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{page.date | date: "%B %-d, %Y"}}</p>
+                        <p class="article_date" datetime="{{page.date | date_to_xmlschema}}" itemprop="datePublished">{{page.date | date: "%B %-d, %Y"}}</p>
                         {% if author %}
                         <p itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{author.name}}</span></p>
                         {% endif %}

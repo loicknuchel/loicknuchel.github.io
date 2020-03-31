@@ -1,0 +1,121 @@
+@import "variables";
+
+button {
+  cursor: pointer;
+}
+
+/* trick to make anchor scroll works with fixed header */
+.anchor-trick {
+  display: block;
+  position: relative;
+  top: -100px; /* 70px for header + 30px for padding */
+  visibility: hidden;
+}
+
+.gray-on-hover:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+.tags li a {
+  color: inherit;
+}
+
+.btn-material {
+  text-transform: uppercase;
+  color: #555;
+  border: 1px solid #f1f1f1;
+  border-radius: 0;
+  padding: 1rem 1.2rem;
+
+  &:hover, &:focus {
+    color: #555;
+    -webkit-box-shadow: 0 1px 31px rgba(0, 0, 0, .09);
+    -moz-box-shadow: 0 1px 31px rgba(0, 0, 0, .09);
+    box-shadow: 0 1px 31px rgba(0, 0, 0, .09);
+  }
+}
+
+.menu, .mobile-menu {
+  a.no-underscore:hover:after {
+    content: none;
+  }
+
+  a.hero {
+    border: 2px solid #fff;
+    padding: 10px 15px;
+  }
+}
+
+.vertical {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.twitter-tweet {
+  margin-bottom: $default-spacing !important;
+}
+
+/* un-rendered tweet: twitter widgets will insert <twitter-widget> instead of <blockquote> */
+blockquote.twitter-tweet {
+  position: relative;
+  max-width: 500px;
+  padding: $default-spacing;
+  border: 1px solid #e1e8ed;
+  border-radius: 5px;
+  font: normal normal 16px/1.2 Helvetica, Roboto, "Segoe UI", Calibri, sans-serif;
+  color: #1c2022;
+
+  a {
+    position: absolute;
+    top: 20px;
+    right: 21px;
+    font-size: 18px;
+    color: #1da1f2;
+  }
+
+  img {
+    float: left;
+    height: 36px;
+    margin-right: 9px;
+    border-radius: 50%;
+  }
+
+  .name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 700;
+  }
+
+  .screenName {
+    font-size: 14px;
+    color: #697882;
+  }
+
+  p {
+    margin: 11px 0 0 0;
+    line-height: 1.4;
+  }
+}
+
+.slideshare-embed {
+  margin-bottom: $default-spacing;
+
+  .iframe-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 60.2%; /* aspect ratio to keep (height / width), this one is nice for 16:9 as a toolbar increase height */
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  }
+}
