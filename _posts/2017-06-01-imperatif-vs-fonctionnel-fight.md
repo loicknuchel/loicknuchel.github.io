@@ -7,7 +7,7 @@ banner_2_1:  /assets/img/posts/2017-06-01/imperatif-vs-fonctionnel-fight_2_1.jpg
 banner_21_9: /assets/img/posts/2017-06-01/imperatif-vs-fonctionnel-fight_21_9.jpg
 author:      loic
 categories:  [coding]
-tags:        [functional programming, JavaScript, Scala]
+tags:        [functional programming, javascript, scala]
 ---
 
 Salut ! Ca fait un moment que je n'ai plus écrit d'articles ici mais je compte bien m'y remettre avec pas mal de choses sur la programmation fonctionnelle et Scala <i class="emoji winking-face"></i>

@@ -57,7 +57,7 @@ le nombre de bugs / temps de debug dans votre application.
 
 La seule question qui reste est : **comment le faire** ? Et surtout sans alourdir/complexifier votre code !
 
-### Play Framework & Scala for the win !
+## Play Framework & Scala for the win !
 
 Étant loin d'être un expert, je vous présente simplement la solution que j'ai mise en place sur le backend de [SalooN](https://github.com/saloonapp/saloon-backend){:target="_blank"}.
 Il y a potentiellement mieux (je suis preneur si c'est le cas).
@@ -229,7 +229,7 @@ et surtout diminuer drastiquement la probabilité de bugs dûs à des erreurs d'
 Autre petite anecdote : dans le processus, j'ai trouvé 2 autres endroits où je m'étais emmêlé les pinceaux avec les IDs. 
 Donc soit je suis vraiment pas doué (ce qui est bien possible !). Soit vous feriez bien de checker vos app <i class="emoji winking-face"></i>
 
-### Is this real life ?
+## Is this real life ?
 
 ![Theory land](/assets/img/posts/2015-09-01/theory-land.jpg){:.pull-right}
 Comme souvent, les articles de blog montrent tous les avantages mais sans nécessairement évoquer d'éventuels subtilités de mise en oeuvre ou passages un peu moins friendly.
@@ -267,7 +267,7 @@ J'ai donc maintenant un `def favorite(itemType: String, itemId: GenericId)` qui 
 On pourrait pousser le vice en créant un `ItemId` qui serait compatible (conversions implicites) qu'avec les ID acceptables.
 À voir à l'usage... Mais je n'y suis pas encore <i class="emoji winking-face"></i>
 
-### Take Away
+## Take Away
 
 Un des objectifs est de répéter cette opération au moins pour tous vos IDs, voire pour un certain nombre de champs assez génériques 
 (Email, FirstName, LastName, FullName, Avatar...) afin de garantir une vraie cohérence dans le code. 
@@ -363,7 +363,7 @@ Si vous voyez des moyens de faire mieux, je suis preneur <i class="emoji smile">
 Comme piste d'amélioration, la fonction `build()` pourrait renvoyer un `Either` au lieu d'une `Option` et on pourrait ajouter des messages d'erreur custom pour 
 les différents mappers... À voir à l'usage...
 
-### Bilan
+## Bilan
 
 Côté bilan, il faudra voir un peu plus sur le long terme. Mais pour avoir refactoré l'ensemble de mon application, 
 je trouve que l'ensemble du code est bien plus clair (le type portant déjà une information sur l'objet, 
