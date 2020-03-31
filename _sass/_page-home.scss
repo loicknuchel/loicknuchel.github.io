@@ -6,6 +6,13 @@
 
 .resume-list {
   .resume-list__block {
+    position: relative;
+
+    &:before {
+      top: 3px;
+      left: -7px;
+    }
+
     .resume-list__block-title {
       margin-bottom: 0;
     }
