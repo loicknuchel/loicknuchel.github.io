@@ -21,6 +21,7 @@ menus:
     <meta name="description" content="Gospeak.io founder and conference speaker, I focus on software craft and team alignment">
     <meta name="og:description" content="Gospeak.io founder and conference speaker, I focus on software craft and team alignment">
     <meta name="og:url" content="{{page.url | absolute_url}}">
+    <link rel="canonical" href="{{page.url | absolute_url}}">
 
     <meta name="twitter:card" content="summary">
     <meta name="og:image" content="{{'/assets/img/avatar.jpg' | absolute_url}}">
@@ -592,7 +593,7 @@ menus:
     <div class="row post-cards">
         {% for post in site.posts limit:3 %}
         <div class="col-md-4">
-            <a href="{{post.id}}">
+            <a href="{{post.url}}">
                 <div class="post-cards__card">
                     <div class="post-cards__img"><img src="{{post.banner_1_1 | default: '/assets/img/default/blog_banner_1_1.jpg'}}" alt="article banner"></div>
                     <div class="post-cards__info">

@@ -1,5 +1,7 @@
 exclude: ['.idea']
 
+permalink: /blog/:categories/:year/:month/:day/:title
+
 hireme: true
 
 collections:

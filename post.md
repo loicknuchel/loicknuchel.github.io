@@ -206,6 +206,62 @@ Emojis works use `<i class="emoji $name"></i>` (see [full list](https://unicode.
     <i class="emoji part-alternation-mark" title="part-alternation-mark" data-toggle="tooltip"></i>
 </p>
 
+And you can also use [font-awesome](https://fontawesome.com/icons?m=free){:target="_blank"} :
+
+<p style="font-size: 2em; line-height: 1.2;">
+    <i class="fas fa-address-book" title="fas fa-address-book" data-toggle="tooltip"></i>
+    <i class="fas fa-address-card" title="fas fa-address-card" data-toggle="tooltip"></i>
+    <i class="fas fa-at" title="fas fa-at" data-toggle="tooltip"></i>
+    <i class="fas fa-bell" title="fas fa-bell" data-toggle="tooltip"></i>
+    <i class="fas fa-bolt" title="fas fa-bolt" data-toggle="tooltip"></i>
+    <i class="fas fa-book" title="fas fa-book" data-toggle="tooltip"></i>
+    <i class="fas fa-book-reader" title="fas fa-book-reader" data-toggle="tooltip"></i>
+    <i class="fas fa-bookmark" title="fas fa-bookmark" data-toggle="tooltip"></i>
+    <i class="fas fa-bug" title="fas fa-bug" data-toggle="tooltip"></i>
+    <i class="fas fa-bullhorn" title="fas fa-bullhorn" data-toggle="tooltip"></i>
+    <i class="fas fa-bullseye" title="fas fa-bullseye" data-toggle="tooltip"></i>
+    <i class="fas fa-calendar-day" title="fas fa-calendar-day" data-toggle="tooltip"></i>
+    <i class="fas fa-chalkboard-teacher" title="fas fa-chalkboard-teacher" data-toggle="tooltip"></i>
+    <i class="fas fa-check" title="fas fa-check" data-toggle="tooltip"></i>
+    <i class="fas fa-chart-pie" title="fas fa-chart-pie" data-toggle="tooltip"></i>
+    <i class="fas fa-code" title="fas fa-code" data-toggle="tooltip"></i>
+    <i class="fas fa-code-branch" title="fas fa-code-branch" data-toggle="tooltip"></i>
+    <i class="fas fa-comment" title="fas fa-comment" data-toggle="tooltip"></i>
+    <i class="fab fa-dev" title="fab fa-dev" data-toggle="tooltip"></i>
+    <i class="fas fa-exclamation-triangle" title="fas fa-exclamation-triangle" data-toggle="tooltip"></i>
+    <i class="fas fa-eye" title="fas fa-eye" data-toggle="tooltip"></i>
+    <i class="fas fa-flag" title="fas fa-flag" data-toggle="tooltip"></i>
+    <i class="fas fa-gem" title="fas fa-gem" data-toggle="tooltip"></i>
+    <i class="fas fa-gift" title="fas fa-gift" data-toggle="tooltip"></i>
+    <i class="fas fa-hashtag" title="fas fa-hashtag" data-toggle="tooltip"></i>
+    <i class="fas fa-heart" title="fas fa-heart" data-toggle="tooltip"></i>
+    <i class="fas fa-id-badge" title="fas fa-id-badge" data-toggle="tooltip"></i>
+    <i class="fas fa-info-circle" title="fas fa-info-circle" data-toggle="tooltip"></i>
+    <i class="fas fa-laptop-code" title="fas fa-laptop-code" data-toggle="tooltip"></i>
+    <i class="fas fa-layer-group" title="fas fa-layer-group" data-toggle="tooltip"></i>
+    <i class="fas fa-lightbulb" title="fas fa-lightbulb" data-toggle="tooltip"></i>
+    <i class="fas fa-magic" title="fas fa-magic" data-toggle="tooltip"></i>
+    <i class="fas fa-map-marked-alt" title="fas fa-map-marked-alt" data-toggle="tooltip"></i>
+    <i class="fas fa-medal" title="fas fa-medal" data-toggle="tooltip"></i>
+    <i class="fas fa-microphone" title="fas fa-microphone" data-toggle="tooltip"></i>
+    <i class="fas fa-play" title="fas fa-play" data-toggle="tooltip"></i>
+    <i class="fas fa-portrait" title="fas fa-portrait" data-toggle="tooltip"></i>
+    <i class="fas fa-poo" title="fas fa-poo" data-toggle="tooltip"></i>
+    <i class="fas fa-poll" title="fas fa-poll" data-toggle="tooltip"></i>
+    <i class="fas fa-question-circle" title="fas fa-question-circle" data-toggle="tooltip"></i>
+    <i class="fas fa-quote-right" title="fas fa-quote-right" data-toggle="tooltip"></i>
+    <i class="fas fa-signature" title="fas fa-signature" data-toggle="tooltip"></i>
+    <i class="fas fa-star" title="fas fa-star" data-toggle="tooltip"></i>
+    <i class="fas fa-tag" title="fas fa-tag" data-toggle="tooltip"></i>
+    <i class="fas fa-terminal" title="fas fa-terminal" data-toggle="tooltip"></i>
+    <i class="fas fa-thumbs-up" title="fas fa-thumbs-up" data-toggle="tooltip"></i>
+    <i class="fas fa-tint" title="fas fa-tint" data-toggle="tooltip"></i>
+    <i class="fas fa-trophy" title="fas fa-trophy" data-toggle="tooltip"></i>
+    <i class="fas fa-user-circle" title="fas fa-user-circle" data-toggle="tooltip"></i>
+    <i class="fas fa-video" title="fas fa-video" data-toggle="tooltip"></i>
+    <i class="fab fa-youtube" title="fab fa-youtube" data-toggle="tooltip"></i>
+</p>
+
 You can use lists, with nested lists :
 
 - item 1

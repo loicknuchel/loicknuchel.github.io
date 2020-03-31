@@ -15,7 +15,7 @@ carousel:
     - {url: "/assets/img/posts/2015-04-18/chti-jug-coding_16_9.jpg"}
 ---
 
-Tout d’abord, un grand merci à Julien Jakubowski qui m’a proposé de faire ce talk au Ch’ti JUG <i class="emoji smile"></i>
+Tout d’abord, un grand merci à [Julien Jakubowski](https://twitter.com/jak78){:target="_blank"} qui m’a proposé de faire ce talk au Ch’ti JUG <i class="emoji smile"></i>
 
 Pour une fois, j’ai décidé de mettre de côté la partie UI de Ionic Framework pour plus me focaliser sur les autres aspects du framework
 et notamment l’ensemble d’outils qu’ils proposent et qui facilitent vraiment la vie lorsque l’on travaille sur des applications Cordova.

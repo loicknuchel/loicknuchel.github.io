@@ -2,7 +2,7 @@
 layout: default
 menus:
     - {name: Home, link: "/"}
-    - {name: Other posts, link: "#posts"}
+    - {name: Related posts, link: "#posts"}
     - {name: Contact, link: "#contact"}
 ---
 {% assign author = site.data.people[page.author] | default: site.data.people.loic %}
@@ -17,7 +17,8 @@ menus:
     <meta name="og:title" content="{{page.title | truncate: 51}} - {{author.name}} &#x1F468;&#x200D;&#x1F4BB;">
     <meta name="description" content="{{page.excerpt | strip_html | truncate: 200}}">
     <meta name="og:description" content="{{page.excerpt | strip_html | truncate: 200}}">
-    <meta name="og:url" content="{{page.id | absolute_url}}">
+    <meta name="og:url" content="{{page.url | absolute_url}}">
+    <link rel="canonical" href="{{page.url | absolute_url}}">
 
     {% if page.banner_2_1 %}
     <meta name="twitter:card" content="summary_large_image">
@@ -139,12 +140,12 @@ menus:
 <!--Article-->
 
 
-<!--Other Posts-->
+<!--Related Posts-->
 <section class="container section">
     <span class="anchor-trick" id="posts"></span>
     <div class="row">
         <div class="col-md-12">
-            <h2 class="section__title" data-typing-effect="90%">Other Posts_</h2>
+            <h2 class="section__title" data-typing-effect="90%">Related Posts_</h2>
         </div>
     </div>
     <div class="row posts">
@@ -152,7 +153,7 @@ menus:
         {% for post in page.related %}
         <div class="col-md-5 mr-auto">
             <div class="posts__item">
-                <a href="{{post.id}}">
+                <a href="{{post.url}}">
                     <h3 class="posts__title">{{post.title}}</h3>
                     <p class="posts__description">{{post.excerpt | strip_html | truncatewords: 30}}</p>
                 </a>
@@ -163,7 +164,7 @@ menus:
         {% for post in site.related_posts %}
         <div class="col-md-5 mr-auto">
             <div class="posts__item">
-                <a href="{{post.id}}">
+                <a href="{{post.url}}">
                     <h3 class="posts__title">{{post.title}}</h3>
                     <p class="posts__description">{{post.excerpt | strip_html | truncatewords: 30}}</p>
                 </a>
@@ -182,7 +183,7 @@ menus:
         {% endif %}
     </div>
 </section>
-<!--Other Posts-->
+<!--Related Posts-->
 
 {% include contact-section.html %}
 {% include scripts.html %}
