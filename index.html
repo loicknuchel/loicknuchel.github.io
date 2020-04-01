@@ -1,5 +1,8 @@
 ---
-layout: default
+layout:  default
+type:    profile
+title:   Loïc Knuchel &#x1F468;&#x200D;&#x1F4BB; Scala developer & trainer, Gospeak founder, conference speaker and Meetup organizer
+excerpt: Gospeak.io founder and conference speaker, I focus on software craft and team alignment
 menus:
     - {name: Hello, link: "#hello"}
     - {name: Resume, link: "#resume"}
@@ -8,77 +11,7 @@ menus:
     - {name: Blog, link: "#blog"}
     - {name: Contact, link: "#contact"}
 ---
-{% assign author = site.data.people.loic %}
-<head>
-    <meta name="og:type" content="profile">
-    <meta name="og:locale" content="en_US">
-    <meta name="twitter:site" content="@loicknuchel">
-    <meta name="twitter:creator" content="{{author.twitter}}">
-    <meta name="author" content="{{author.name}}">
-
-    <title>Loïc Knuchel &#x1F468;&#x200D;&#x1F4BB; Scala developer & trainer, Gospeak founder, conference speaker and Meetup organizer</title>
-    <meta name="og:title" content="Loïc Knuchel &#x1F468;&#x200D;&#x1F4BB; Scala developer & trainer, Gospeak founder, speaker...">
-    <meta name="description" content="Gospeak.io founder and conference speaker, I focus on software craft and team alignment">
-    <meta name="og:description" content="Gospeak.io founder and conference speaker, I focus on software craft and team alignment">
-    <meta name="og:url" content="{{page.url | absolute_url}}">
-    <link rel="canonical" href="{{page.url | absolute_url}}">
-
-    <meta name="twitter:card" content="summary">
-    <meta name="og:image" content="{{author.avatar | absolute_url}}">
-
-    {% include common-metas.html %}
-    {% include styles.html %}
-    {% if jekyll.environment == 'production' %}
-        {% include analytics.html %}
-    {% endif %}
-</head>
-<body>
-<!--Menu-->
-<div class="menu">
-    <div class="container">
-        <div class="row">
-            <div class="menu__wrapper d-none d-lg-block col-md-12">
-                <nav class="d-flex justify-content-between align-items-center">
-                    <ul>
-                        {% for menu in page.menus %}
-                        <li><a href="{{menu.link}}">{{menu.name}}</a></li>
-                        {% endfor %}
-                    </ul>
-                    {% if site.hireme %}
-                    <ul>
-                        <li><a href="#hire-me" class="hero no-underscore">Hire me <i class="emoji party-popper"></i></a></li>
-                    </ul>
-                    {% endif %}
-                </nav>
-            </div>
-            <div class="menu__wrapper col-md-12 d-lg-none">
-                <button type="button" class="menu__mobile-button">
-                    <span><i class="fas fa-bars" aria-hidden="true"></i></span>
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="mobile-menu d-lg-none">
-    <div class="container">
-        <div class="mobile-menu__close">
-            <span><i class="mdi mdi-close" aria-hidden="true"></i></span>
-        </div>
-        <nav class="mobile-menu__wrapper">
-            <ul>
-                {% for menu in page.menus %}
-                <li><a href="{{menu.link}}">{{menu.name}}</a></li>
-                {% endfor %}
-            </ul>
-            {% if site.hireme %}
-            <ul>
-                <li><a href="#hire-me" class="hero no-underscore">Hire me <i class="emoji party-popper"></i></a></li>
-            </ul>
-            {% endif %}
-        </nav>
-    </div>
-</div>
-<!--Menu-->
+{% include menu.html menus = page.menus %}
 
 <!--Header-->
 <header id="hello" class="main-header" style="background-image: url(assets/img/bg_header.jpg)">
@@ -616,5 +549,3 @@ menus:
 <!--Blog-->
 
 {% include contact-section.html %}
-{% include scripts.html %}
-</body>

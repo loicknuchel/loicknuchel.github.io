@@ -1,123 +1,31 @@
 ---
-layout:      default
-title:       Loïc Knuchel' Blog
-description: Coding, Functional programming & Startup
-menus:
-    - {name: Home, link: "/"}
-    - {name: Contact, link: "#contact"}
+layout:  page
+title:   Loïc Knuchel' Blog &#x1F468;&#x200D;&#x1F4BB;
+excerpt: Coding, Functional programming & Startup
 ---
-{% assign author = site.data.people.loic %}
-<head>
-    <title>{{page.title}} &#x1F468;&#x200D;&#x1F4BB;</title>
-    <meta name="description" content="{{page.description}}">
-    <meta name="author" content="{{author.name}}">
-    <link rel="canonical" href="{{page.url | absolute_url}}">
-
-    <meta property="og:site_name" content="{{page.title}} &#x1F468;&#x200D;&#x1F4BB;">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="{{page.locale | default: 'en_US'}}">
-    <meta property="og:title" content="{{page.title}} &#x1F468;&#x200D;&#x1F4BB;">
-    <meta property="og:description" content="{{page.description}}">
-    <meta property="og:url" content="{{page.url | absolute_url}}">
-    <meta property="og:image" content="{{author.avatar | absolute_url}}">
-
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="{{page.title}} &#x1F468;&#x200D;&#x1F4BB;">
-    <meta name="twitter:description" content="{{page.description}}">
-    <meta name="twitter:url" content="{{page.url | absolute_url}}">
-    <meta name="twitter:site" content="@loicknuchel">
-    <meta name="twitter:creator" content="{{author.twitter}}">
-
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400">
-
-    {% include common-metas.html %}
-    {% include styles.html %}
-    {% if jekyll.environment == 'production' %}
-        {% include analytics.html %}
-    {% endif %}
-</head>
-<body>
-
-<!--Menu-->
-<div class="menu">
-    <div class="container">
-        <div class="row">
-            <div class="menu__wrapper d-none d-lg-block col-md-12">
-                <nav class="d-flex justify-content-between align-items-center">
-                    <ul>
-                        {% for menu in page.menus %}
-                        <li><a href="{{menu.link}}">{{menu.name}}</a></li>
-                        {% endfor %}
-                    </ul>
-                    {% if site.hireme %}
-                    <ul>
-                        <li><a href="/#hire-me" class="hero no-underscore">Hire me <i class="emoji party-popper"></i></a></li>
-                    </ul>
-                    {% endif %}
-                </nav>
-            </div>
-            <div class="menu__wrapper col-md-12 d-lg-none">
-                <div class="menu__mobile-button">
-                    <span><i class="fas fa-bars" aria-hidden="true"></i></span>
-                </div>
-            </div>
-        </div>
+<div class="sheet__header">
+    <div class="vertical">
+        <h1 class="page-title">{{page.title}}</h1>
+        <h2 class="page-description">{{page.excerpt}}</h2>
     </div>
 </div>
-<div class="mobile-menu d-lg-none">
-    <div class="container">
-        <div class="mobile-menu__close">
-            <span><i class="mdi mdi-close" aria-hidden="true"></i></span>
-        </div>
-        <nav class="mobile-menu__wrapper">
-            <ul>
-                {% for menu in page.menus %}
-                <li><a href="{{menu.link}}">{{menu.name}}</a></li>
-                {% endfor %}
-            </ul>
-            {% if site.hireme %}
-            <ul>
-                <li><a href="/#hire-me" class="hero no-underscore">Hire me <i class="emoji party-popper"></i></a></li>
-            </ul>
-            {% endif %}
-        </nav>
-    </div>
-</div>
-<!--Menu-->
-
-<!--Header-->
-<header class="background blog-header" style="background-image: url(/assets/img/texture.jpg)"></header>
-<!--Header-->
-
-<!--Post list-->
-<div class="container">
+<div class="sheet_content">
     <div class="post-list">
-        <div class="post-list__header">
-            <div class="vertical">
-                <h1 class="page-title">{{page.title}}</h1>
-                <h2 class="page-description">{{page.description}}</h2>
-            </div>
-        </div>
-        {% for post in site.posts %}
-        {% assign author = site.data.people[post.author] | default: site.data.people.loic %}
-        <article class="post">
-            <header class="post-header"><h2 class="post-title"><a href="{{post.url}}">{{post.title}}</a></h2></header>
-            <section class="post-excerpt"><p>{{post.excerpt | strip_html | truncatewords: 30}} »</p></section>
-            <footer class="post-meta">
-                <a href="#"><img class="author-thumb" src="{{author.avatar}}" alt="{{author.name}} avatar"> {{author.name}}</a> on
-                <span class="tags">
-                    {%- for tag in post.tags -%}
-                    <a href="#" class="tag">{{tag}}</a>
-                    {%- endfor -%}
-                </span>
-                <time class="post-date" datetime="{{post.date | date_to_xmlschema}}">{{post.date | date: "%B %-d, %Y"}}</time>
-            </footer>
-        </article>
-        {% endfor %}
+    {% for post in site.posts %}
+    {% assign author = site.data.people[post.author] | default: site.data.people.loic %}
+    <article class="post">
+        <header class="post-header"><h2 class="post-title"><a href="{{post.url}}">{{post.title}}</a></h2></header>
+        <section class="post-excerpt"><p>{{post.excerpt | strip_html | truncatewords: 30}} »</p></section>
+        <footer class="post-meta">
+            <a href="#"><img class="author-thumb" src="{{author.avatar}}" alt="{{author.name}} avatar"> {{author.name}}</a> on
+            <span class="tags">
+                {%- for tag in post.tags -%}
+                <a href="/blog/tags#{{tag | slugify}}" class="tag">{{tag}}</a>
+                {%- endfor -%}
+            </span>
+            <time class="post-date" datetime="{{post.date | date_to_xmlschema}}">{{post.date | date: "%B %-d, %Y"}}</time>
+        </footer>
+    </article>
+    {% endfor %}
     </div>
 </div>
-<!--Post list-->
-
-{% include contact-section.html %}
-{% include scripts.html %}
-</body>

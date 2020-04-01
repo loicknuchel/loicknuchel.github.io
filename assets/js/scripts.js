@@ -30,7 +30,9 @@ $(function () {
     // scroll to anchor: smooth scroll + menu offset
     $('a[href^="#"]').click(function () {
         var $target = $($(this).attr('href'));
-        $('html, body').animate({scrollTop: $target.offset().top}, 800);
+        if(!$target.hasAttribute('instant-scroll')) {
+            $('html, body').animate({scrollTop: $target.offset().top}, 800);
+        }
     });
 
     // fix menu on top

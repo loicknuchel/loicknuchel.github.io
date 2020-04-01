@@ -1,0 +1,42 @@
+---
+layout:  page
+title:   Categories
+---
+<div class="sheet__header">
+    <div class="vertical">
+        <h1 class="page-title">{{page.title}}</h1>
+    </div>
+</div>
+<div class="sheet_content">
+    {% assign sorted_categories = site.categories | sort %}
+
+    <div class="tag-cloud">
+        {% for category in sorted_categories %}
+        <a href="#{{category[0] | slugify}}" instant-scroll style="font-size: {{category[1].size | times: 5 | plus: 15}}px">{{category[0]}}</a>
+        {% endfor %}
+    </div>
+
+    <div class="post-list">
+    {% for category in sorted_categories %}
+        <div id="{{category[0] | slugify}}" class="tag-content">
+            <h2 class="tag-title"><i class="emoji shield"></i> {{category[0]}} ({{category[1].size}})</h2>
+            {% for post in category[1] %}
+            {% assign author = site.data.people[post.author] | default: site.data.people.loic %}
+            <article class="post">
+                <header class="post-header"><h2 class="post-title"><a href="{{post.url}}">{{post.title}}</a></h2></header>
+                <section class="post-excerpt"><p>{{post.excerpt | strip_html | truncatewords: 30}} »</p></section>
+                <footer class="post-meta">
+                    <a href="#"><img class="author-thumb" src="{{author.avatar}}" alt="{{author.name}} avatar"> {{author.name}}</a> on
+                    <span class="tags">
+                    {%- for tag in post.tags -%}
+                    <a href="/blog/tags#{{tag | slugify}}" instant-scroll class="tag">{{tag}}</a>
+                    {%- endfor -%}
+                </span>
+                    <time class="post-date" datetime="{{post.date | date_to_xmlschema}}">{{post.date | date: "%B %-d, %Y"}}</time>
+                </footer>
+            </article>
+            {% endfor %}
+        </div>
+    {% endfor %}
+    </div>
+</div>

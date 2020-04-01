@@ -1,6 +1,10 @@
 @import "variables";
 
 .article {
+  box-shadow: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+
   .article__title {
     font-size: 1em;
   }

@@ -1,89 +1,14 @@
 ---
 layout: default
+type:   article
 menus:
     - {name: Home, link: "/"}
+    - {name: Blog, link: "/blog"}
     - {name: Related posts, link: "#posts"}
     - {name: Contact, link: "#contact"}
 ---
-{% assign author = site.data.people[page.author] | default: site.data.people.loic %}
-<head>
-    <meta name="og:type" content="article">
-    <meta name="og:locale" content="{{page.locale | default: 'en_US'}}">
-    <meta name="twitter:site" content="@loicknuchel">
-    <meta name="twitter:creator" content="{{author.twitter}}">
-    <meta name="author" content="{{author.name}}">
-
-    <title>{{page.title}} - {{author.name}} &#x1F468;&#x200D;&#x1F4BB;</title>
-    <meta name="og:title" content="{{page.title | truncate: 51}} - {{author.name}} &#x1F468;&#x200D;&#x1F4BB;">
-    <meta name="description" content="{{page.excerpt | strip_html | truncate: 200}}">
-    <meta name="og:description" content="{{page.excerpt | strip_html | truncate: 200}}">
-    <meta name="og:url" content="{{page.url | absolute_url}}">
-    <link rel="canonical" href="{{page.url | absolute_url}}">
-
-    {% if page.banner_2_1 %}
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="og:image" content="{{page.banner_2_1 | absolute_url}}">
-    {% elsif site.banner_1_1 %}
-    <meta name="twitter:card" content="summary">
-    <meta name="og:image" content="{{page.banner_1_1 | absolute_url}}">
-    {% else %}
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="og:image" content="{{'/assets/img/default/blog_banner_2_1.jpg' | absolute_url}}">
-    {% endif %}
-
-    {% include common-metas.html %}
-    {% include styles.html %}
-    {% if jekyll.environment == 'production' %}
-        {% include analytics.html %}
-    {% endif %}
-</head>
-<body>
-<!--Menu-->
-<div class="menu">
-    <div class="container">
-        <div class="row">
-            <div class="menu__wrapper d-none d-lg-block col-md-12">
-                <nav class="d-flex justify-content-between align-items-center">
-                    <ul>
-                        {% for menu in layout.menus %}
-                        <li><a href="{{menu.link}}">{{menu.name}}</a></li>
-                        {% endfor %}
-                    </ul>
-                    {% if site.hireme %}
-                    <ul>
-                        <li><a href="/#hire-me" class="hero no-underscore">Hire me <i class="emoji party-popper"></i></a></li>
-                    </ul>
-                    {% endif %}
-                </nav>
-            </div>
-            <div class="menu__wrapper col-md-12 d-lg-none">
-                <div class="menu__mobile-button">
-                    <span><i class="fas fa-bars" aria-hidden="true"></i></span>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="mobile-menu d-lg-none">
-    <div class="container">
-        <div class="mobile-menu__close">
-            <span><i class="mdi mdi-close" aria-hidden="true"></i></span>
-        </div>
-        <nav class="mobile-menu__wrapper">
-            <ul>
-                {% for menu in layout.menus %}
-                <li><a href="{{menu.link}}">{{menu.name}}</a></li>
-                {% endfor %}
-            </ul>
-            {% if site.hireme %}
-            <ul>
-                <li><a href="/#hire-me" class="hero no-underscore">Hire me <i class="emoji party-popper"></i></a></li>
-            </ul>
-            {% endif %}
-        </nav>
-    </div>
-</div>
-<!--Menu-->
+{%- assign author = site.data.people[page.author] | default: site.data.people.loic -%}
+{% include menu.html menus = layout.menus %}
 
 <!--Header-->
 <header class="background blog-header" style="background-image: url(/assets/img/texture.jpg)"></header>
@@ -91,53 +16,50 @@ menus:
 
 <!--Article-->
 <div class="container">
+    <div class="sheet">
     <div class="article">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="d-flex justify-content-between align-items-center">
-                    <a href="/" class="article__back-link js-back"><i class="fas fa-arrow-left" aria-hidden="true"></i>Back</a>
-                    <p class="article__share mb-0">
-                        <a><i class="fab fa-twitter"></i></a>
-                        <a><i class="fab fa-linkedin"></i></a>
-                        <a><i class="fab fa-facebook-square"></i></a>
-                    </p>
-                </div>
-                <article itemscope itemtype="http://schema.org/BlogPosting">
-                    <header>
-                        <h1 class="article__title" itemprop="name headline">{{page.title}}</h1>
-                        <p class="article_date" datetime="{{page.date | date_to_xmlschema}}" itemprop="datePublished">{{page.date | date: "%B %-d, %Y"}}</p>
-                        {% if author %}
-                        <p itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{author.name}}</span></p>
-                        {% endif %}
-                        {% if page.banner_21_9 %}
-                        <p><img class="full-width" src="{{page.banner_21_9}}" alt="{{page.title}} banner"></p>
-                        {% endif %}
-                    </header>
-                    <div itemprop="articleBody">
-                        {{content}}
-                    </div>
-                    <a class="u-url" href="{{page.url | relative_url}}" hidden></a>
-                </article>
-                <div>
-                    Tags:
-                    <ul class="tags" style="display: inline-block; margin-bottom: 20px">
-                        {% for tag in page.tags %}
-                        <li><a href="#">{{tag}}</a></li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <p class="article__share">
-                    Share this post:
-                    <a><i class="fab fa-twitter"></i></a>
-                    <a><i class="fab fa-linkedin"></i></a>
-                    <a><i class="fab fa-facebook-square"></i></a>
-                </p>
-            </div>
+        <div class="d-flex justify-content-between align-items-center">
+            <a href="/" class="article__back-link js-back"><i class="fas fa-arrow-left" aria-hidden="true"></i>Back</a>
+            <p class="article__share mb-0">
+                <a><i class="fab fa-twitter"></i></a>
+                <a><i class="fab fa-linkedin"></i></a>
+                <a><i class="fab fa-facebook-square"></i></a>
+            </p>
         </div>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+            <header>
+                <h1 class="article__title" itemprop="name headline">{{page.title}}</h1>
+                <p class="article_date" datetime="{{page.date | date_to_xmlschema}}" itemprop="datePublished">{{page.date | date: "%B %-d, %Y"}}</p>
+                {% if author %}
+                <p itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{author.name}}</span></p>
+                {% endif %}
+                {% if page.banner_21_9 %}
+                <p><img class="full-width" src="{{page.banner_21_9}}" alt="{{page.title}} banner"></p>
+                {% endif %}
+            </header>
+            <div itemprop="articleBody">
+                {{content}}
+            </div>
+            <a class="u-url" href="{{page.url | relative_url}}" hidden></a>
+        </article>
+        <div>
+            Tags:
+            <ul class="tags" style="display: inline-block; margin-bottom: 20px">
+                {% for tag in page.tags %}
+                <li><a href="/blog/tags#{{tag | slugify}}">{{tag}}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <p class="article__share">
+            Share this post:
+            <a><i class="fab fa-twitter"></i></a>
+            <a><i class="fab fa-linkedin"></i></a>
+            <a><i class="fab fa-facebook-square"></i></a>
+        </p>
+    </div>
     </div>
 </div>
 <!--Article-->
-
 
 <!--Related Posts-->
 <section class="container section">
@@ -185,5 +107,3 @@ menus:
 <!--Related Posts-->
 
 {% include contact-section.html %}
-{% include scripts.html %}
-</body>

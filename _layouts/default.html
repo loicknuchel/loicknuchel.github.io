@@ -1,4 +1,74 @@
 <!DOCTYPE html>
-<html lang="en" prefix="og: http://ogp.me/ns#">
+{% assign author = site.data.people[page.author] | default: site.data.people.loic %}
+{%- if page.title contains author.name -%}
+    {% assign meta-title = page.title | truncate: 90 %}
+{%- else -%}
+    {% assign meta-title = page.title | truncate: 51 | append: ' - ' | append: author.name | append: ' &#x1F468;&#x200D;&#x1F4BB;' %}
+{%- endif -%}
+{%- assign meta-description = page.excerpt | strip_html | strip_newlines | strip | truncate: 200 -%}
+<html lang="{{page.locale | default: 'en_US' | truncate: 2, ''}}" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{meta-title}}</title>
+    <meta name="description" content="{{meta-description}}">
+    <meta name="author" content="{{author.name}}">
+    <link rel="canonical" href="{{page.url | absolute_url}}">
+
+    <meta property="og:type" content="{{page.type | default: layout.type | default: 'website'}}">
+    <meta property="og:locale" content="{{page.locale | default: 'en_US'}}">
+    <meta property="og:title" content="{{meta-title}}">
+    <meta property="og:description" content="{{meta-description}}">
+    <meta property="og:url" content="{{page.url | absolute_url}}">
+    {% if page.banner_2_1 %}<meta property="og:image" content="{{page.banner_2_1 | absolute_url}}">{% else %}<meta property="og:image" content="{{page.banner_1_1 | default: author.avatar | absolute_url}}">{% endif %}
+
+    {% if page.banner_2_1 %}<meta name="twitter:card" content="summary_large_image">{% else %}<meta name="twitter:card" content="summary">{% endif %}
+    <meta name="twitter:title" content="{{meta-title}}">
+    <meta name="twitter:description" content="{{meta-description}}">
+    <meta name="twitter:url" content="{{page.url | absolute_url}}">
+    <meta name="twitter:site" content="@loicknuchel">
+    <meta name="twitter:creator" content="{{author.twitter}}">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Inconsolata">
+    <link rel="stylesheet" type="text/css" href="/assets/css/fontawesome-5.12.1-all.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/theme.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#6d56c1">
+    <meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#6d56c1">
+
+    {% if jekyll.environment == 'production' %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-44862027-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-44862027-2');
+    </script>
+    {% endif %}
+</head>
+<body>
 {{content}}
+{% include scripts.html %}
+</body>
 </html>
