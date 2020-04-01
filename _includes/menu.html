@@ -10,9 +10,11 @@
                         {% endfor %}
                     </ul>
                     {% if site.hireme %}
-                    <ul>
-                        <li><a href="#hire-me" class="hero no-underscore">Hire me <i class="emoji party-popper"></i></a></li>
-                    </ul>
+                        {% if page.url == '/' %}
+                            <ul><li><a href="#hire-me" class="hero no-underscore">Hire me <i class="emoji party-popper"></i></a></li></ul>
+                        {% else %}
+                            <ul><li><a href="/#hire-me" class="hero no-underscore">Hire me <i class="emoji party-popper"></i></a></li></ul>
+                        {% endif %}
                     {% endif %}
                 </nav>
             </div>
@@ -36,9 +38,11 @@
                 {% endfor %}
             </ul>
             {% if site.hireme %}
-            <ul>
-                <li><a href="#hire-me" class="hero no-underscore">Hire me <i class="emoji party-popper"></i></a></li>
-            </ul>
+                {% if page.url == '/' %}
+                    <ul><li><a href="#hire-me" class="hero no-underscore">Hire me <i class="emoji party-popper"></i></a></li></ul>
+                {% else %}
+                    <ul><li><a href="/#hire-me" class="hero no-underscore">Hire me <i class="emoji party-popper"></i></a></li></ul>
+                {% endif %}
             {% endif %}
         </nav>
     </div>

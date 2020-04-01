@@ -28,11 +28,9 @@ $(function () {
     });
 
     // scroll to anchor: smooth scroll + menu offset
-    $('a[href^="#"]').click(function () {
+    $('a[href^="#"]:not([instant-scroll])').click(function () {
         var $target = $($(this).attr('href'));
-        if(!$target.hasAttribute('instant-scroll')) {
-            $('html, body').animate({scrollTop: $target.offset().top}, 800);
-        }
+        $('html, body').animate({scrollTop: $target.offset().top}, 800);
     });
 
     // fix menu on top

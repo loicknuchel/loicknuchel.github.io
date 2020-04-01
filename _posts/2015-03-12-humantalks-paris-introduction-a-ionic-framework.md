@@ -24,7 +24,7 @@ Bref, très de bavardages, voici mes slides et la vidéo :
 
 {% include embed-slideshare.html code="oKDCMgdjnStYMJ" url="https://www.slideshare.net/loicknuchel/ionic-humantalks-11032015" title="Ionic HumanTalks - 11/03/2015" %}
 
-Pour ceux qui voudraient aller un peu plus loin, je vous conseille bien sur [mes articles sur le sujet](/blog/tags/ionic-framework) mais aussi :
+Pour ceux qui voudraient aller un peu plus loin, je vous conseille bien sur [mes articles sur le sujet](/blog/tags#ionic-framework) mais aussi :
 
 - L'[annonce de Ionic 1.0](https://www.youtube.com/watch?v=wvr11fvCeu4){:target="_blank"} à la ng-conf
 - [Ionic et Angular 2](https://blog.ionicframework.com/angular-2-ionic/){:target="_blank"}
