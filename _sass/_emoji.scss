@@ -2,7 +2,7 @@
 .emoji {
   font-style: inherit;
 
-  &.grinning-face:before { content: '\01F600'; }
+  &.grinning-face:before, &.happy:before { content: '\01F600'; }
   &.grinning-face-with-big-eyes:before { content: '\01F603'; }
   &.grinning-face-with-smiling-eyes:before { content: '\01F604'; }
   &.beaming-face-with-smiling-eyes:before { content: '\01F601'; }
@@ -53,7 +53,7 @@
   &.partying-face:before { content: '\01f973'; }
   &.smiling-face-with-sunglasses:before { content: '\01f60e'; }
   &.nerd-face:before, &.geek:before { content: '\01f913'; }
-  &.slightly-frowning-face:before { content: '\01F641'; }
+  &.slightly-frowning-face:before, &.sad:before { content: '\01F641'; }
   &.face-with-open-mouth:before { content: '\01f62e'; }
   &.sad-but-relieved-face:before { content: '\01f625'; }
   &.crying-face:before { content: '\01f622'; }

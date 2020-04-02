@@ -10,7 +10,7 @@ categories:  [coding]
 tags:        [functional programming, javascript, scala]
 ---
 
-Salut ! Ca fait un moment que je n'ai plus écrit d'articles ici mais je compte bien m'y remettre avec pas mal de choses sur la programmation fonctionnelle et Scala <i class="emoji winking-face"></i>
+Salut ! Ca fait un moment que je n'ai plus écrit d'articles ici mais je compte bien m'y remettre avec pas mal de choses sur la programmation fonctionnelle et Scala <i class="emoji wink"></i>
 
 Il y a quelques jours j'ai participé à [NCrafts](https://ncrafts.io){:target="_blank"} et en particulier au workshop 
 **[Playing with projections](https://github.com/michelgrootjans/playing_with_projections){:target="_blank"}** de [Michel Grootjans](https://twitter.com/michelgrootjans){:target="_blank"}
@@ -20,7 +20,7 @@ Pour cela, on se base sur les événements d'une application où des joueurs peu
 créer des quiz puis y répondre ([schéma global des événements](https://github.com/michelgrootjans/playing_with_projections/wiki){:target="_blank"}).<br>
 Mais, dans cet article, je vais détourner son but et m'en servir pour comparer le style impératif et fonctionnel en essayant d'avoir 
 le code le plus clair et intuitif à chaque fois (au passage, si vous voyez des améliorations je suis preneur ^^).<br>
-Et le tout en JavaScript <i class="emoji slightly-frowning-face"></i> puisque c'est le langage que nous avions choisi lors du workshop...
+Et le tout en JavaScript <i class="emoji sad"></i> puisque c'est le langage que nous avions choisi lors du workshop...
 
 Bon, commençons très simple, la première tâche est de déterminer le nombre total d'inscriptions. Pour cela, il suffit de compter les événements `PlayerHasRegistered`,
 le code est donc plutôt trivial.
@@ -248,7 +248,7 @@ def registeredPlayersPerMonth(events: Stream[Event]): Stream[RegisteredPlayers] 
 Bref, le code change très peu (y compris entre JavaScript et Scala) alors qu'on a des exécutions très différentes.
 
 De plus, on voit bien que beaucoup de bugs / fautes d'inattention peuvent se glisser dans le code impératif alors que le code fonctionnel, 
-reste bien plus concis, clair et bien moins sujet à erreurs; et ce, d'autant plus si on bénéficie d'un bon système de types <i class="emoji winking-face"></i><br>
+reste bien plus concis, clair et bien moins sujet à erreurs; et ce, d'autant plus si on bénéficie d'un bon système de types <i class="emoji wink"></i><br>
 Essayez d'introduire un bug dans le code Scala qui ne soit pas identifié par le compilateur...
 
 On a principalement vu ici les fonctions de chaînage sur les collections et c'est clairement celles-ci qui m'ont fait accrocher à la programmation fonctionnelle 

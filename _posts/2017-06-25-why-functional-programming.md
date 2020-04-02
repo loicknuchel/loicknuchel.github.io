@@ -11,7 +11,7 @@ tags:        [functional programming, software craft]
 
 Lately I discussed a lot about software engineering and advocated (as usual) for typed functional programming among other things. 
 I noticed that I talked a lot about what and how but not so much about why, especially from a high level view. 
-So this article is here to step back from our daily coding tasks and draw the big picture of software engineering as I see it; and for once, in english <i class="emoji winking-face"></i>
+So this article is here to step back from our daily coding tasks and draw the big picture of software engineering as I see it; and for once, in english <i class="emoji wink"></i>
 
 As a starting point, I would say that our industry is still pretty young and it evolved a lot over the years. 
 From a very experimental field to a dominant one (which impacts everybody daily life and has created world biggest companies). 
@@ -49,7 +49,7 @@ So, why these results ? Are we all bad developers ? I don't think so !<br>
 I think things have evolved and what worked not so bad years ago starts to crack and urge us to find new way of building software. 
 The actual number one task of a developer is managing the complexity of the application to not let it evolve in an horrible monster that nobody can/want control. 
 Today, the number one answer I see is stacking developers and hoping it will work... 
-Which will not, obviously, because complexity and maintenance costs grow exponentially while work done by adding more people evolves logarithmically <i class="emoji slightly-frowning-face"></i><br>
+Which will not, obviously, because complexity and maintenance costs grow exponentially while work done by adding more people evolves logarithmically <i class="emoji sad"></i><br>
 And contrary to what you may think, this problem is quite old as it was nicely highlighted by Dijkstra in... 1972 !<br>
 
 <figure>
@@ -83,7 +83,7 @@ I can also add **living documentation** as good practice which encourage doing c
 
 As a conclusion I would say that we have to learn, a lot, 
 not only about new shinny frameworks but also and more importantly about how to design application to easily handle complexity and changes. 
-So now the time has come to level up, learning how to do our job well and ride the digital revolution <i class="emoji winking-face"></i>
+So now the time has come to level up, learning how to do our job well and ride the digital revolution <i class="emoji wink"></i>
 
 ![Happy Homer Simpson](/assets/img/posts/2017-06-25/happy.jpg)
 

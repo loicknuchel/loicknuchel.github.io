@@ -31,8 +31,15 @@ h1 is reserved for the page title
 
 Emojis works use `<i class="emoji $name"></i>` (see [full list](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"}) :
 
+Most used: <span style="font-size: 2em; line-height: 1.2;">
+    <i class="emoji smile" title="smile" data-toggle="tooltip"></i>
+    <i class="emoji happy" title="happy" data-toggle="tooltip"></i>
+    <i class="emoji wink" title="wink" data-toggle="tooltip"></i>
+    <i class="emoji sad" title="sad" data-toggle="tooltip"></i>
+</span>
+
 <p style="font-size: 2em; line-height: 1.2;">
-    <i class="emoji grinning-face" title="grinning-face" data-toggle="tooltip"></i>
+    <i class="emoji grinning-face" title="grinning-face / happy" data-toggle="tooltip"></i>
     <i class="emoji grinning-face-with-big-eyes" title="grinning-face-with-big-eyes" data-toggle="tooltip"></i>
     <i class="emoji grinning-face-with-smiling-eyes" title="grinning-face-with-smiling-eyes" data-toggle="tooltip"></i>
     <i class="emoji beaming-face-with-smiling-eyes" title="beaming-face-with-smiling-eyes" data-toggle="tooltip"></i>
@@ -80,7 +87,7 @@ Emojis works use `<i class="emoji $name"></i>` (see [full list](https://unicode.
     <i class="emoji partying-face" title="partying-face" data-toggle="tooltip"></i>
     <i class="emoji smiling-face-with-sunglasses" title="smiling-face-with-sunglasses" data-toggle="tooltip"></i>
     <i class="emoji nerd-face" title="nerd-face / geek" data-toggle="tooltip"></i>
-    <i class="emoji slightly-frowning-face" title="slightly-frowning-face" data-toggle="tooltip"></i>
+    <i class="emoji slightly-frowning-face" title="slightly-frowning-face / sad" data-toggle="tooltip"></i>
     <i class="emoji face-with-open-mouth" title="face-with-open-mouth" data-toggle="tooltip"></i>
     <i class="emoji sad-but-relieved-face" title="sad-but-relieved-face" data-toggle="tooltip"></i>
     <i class="emoji crying-face" title="crying-face" data-toggle="tooltip"></i>
