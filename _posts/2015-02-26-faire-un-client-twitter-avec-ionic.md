@@ -1,9 +1,9 @@
 ---
 layout:      post
 title:       Faire un client Twitter avec Ionic
-banner_1_1:  /assets/img/posts/2015-02-26/faire-un-client-twitter-avec-ionic_1_1.jpg
-banner_2_1:  /assets/img/posts/2015-02-26/faire-un-client-twitter-avec-ionic_2_1.jpg
-banner_21_9: /assets/img/posts/2015-02-26/faire-un-client-twitter-avec-ionic_21_9.jpg
+banner_1_1:  /assets/posts/2015/02/26/faire-un-client-twitter-avec-ionic_1_1.jpg
+banner_2_1:  /assets/posts/2015/02/26/faire-un-client-twitter-avec-ionic_2_1.jpg
+banner_21_9: /assets/posts/2015/02/26/faire-un-client-twitter-avec-ionic_21_9.jpg
 author:      loic
 categories:  [coding]
 tags:        [ionic framework, cordova, mobile, angular, tutoriel]
@@ -171,7 +171,7 @@ Dans *app.html* :
 </ion-view>
 ```
 
-![Résultat de l'étape 2](/assets/img/posts/2015-02-26/step2.png){:.pull-right}
+![Résultat de l'étape 2](/assets/posts/2015/02/26/step2.png){:.pull-right}
 Dans la partie JavaScript, rien de bien étonnant pour qui connaît un peu Angular.
 On crée un service avec une fonction (*getTwitts()*) qui renvoie un tableau de twitts dans une promise (ce sera asynchrone par la suite...).<br>
 <br>
@@ -195,7 +195,7 @@ Si vous êtes perdu, passez voir [github](https://github.com/loicknuchel/blog-tw
 
 ## Etape 3 : Récupérer plus de twitts
 
-![Résultat de l'étape 3](/assets/img/posts/2015-02-26/step3.png){:.pull-left}
+![Résultat de l'étape 3](/assets/posts/2015/02/26/step3.png){:.pull-left}
 Bon, afficher une liste de twitts c’est bien, mais on voudrait aussi pouvoir lire les nouveaux twitts et les twitts passés...
 Heureusement, Ionic nous fournit deux directives pour ça : `<ion-refresher>` ([doc](https://ionicframework.com/docs/api/refresher){:target="_blank"})
 et `<ion-infinite-scroll>` ([doc](https://ionicframework.com/docs/api/infinite-scroll){:target="_blank"}). Voyons comment les utiliser...<br>
@@ -284,7 +284,7 @@ On vient donc de créer en quelques lignes, une liste infinie avec un pull-to-re
 Le code de cette étape est une fois de plus accessible sur
 [github](https://github.com/loicknuchel/blog-twitter-app/tree/2478140d7e38116c7ec66432b57f9c5bab2d6e29){:target="_blank"} si nécessaire.
 
-Voici l’[application android générée](/assets/img/posts/2015-02-26/ionic-twitter-app-step1.apk) et son aperçu actuel :
+Voici l’[application android générée](/assets/posts/2015/02/26/ionic-twitter-app-step1.apk) et son aperçu actuel :
 
 <div style="position: relative; margin-bottom: 20px;">
     <img src="http://ionicframework.com/img/phone-case.png" 

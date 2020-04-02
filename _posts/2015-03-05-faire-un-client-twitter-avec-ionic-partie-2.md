@@ -1,9 +1,9 @@
 ---
 layout:      post
 title:       Faire un client Twitter avec Ionic – partie 2
-banner_1_1:  /assets/img/posts/2015-03-05/faire-un-client-twitter-avec-ionic-partie-2_1_1.jpg
-banner_2_1:  /assets/img/posts/2015-03-05/faire-un-client-twitter-avec-ionic-partie-2_2_1.jpg
-banner_21_9: /assets/img/posts/2015-03-05/faire-un-client-twitter-avec-ionic-partie-2_21_9.jpg
+banner_1_1:  /assets/posts/2015/03/05/faire-un-client-twitter-avec-ionic-partie-2_1_1.jpg
+banner_2_1:  /assets/posts/2015/03/05/faire-un-client-twitter-avec-ionic-partie-2_2_1.jpg
+banner_21_9: /assets/posts/2015/03/05/faire-un-client-twitter-avec-ionic-partie-2_21_9.jpg
 author:      loic
 categories:  [coding]
 tags:        [ionic framework, cordova, mobile, angular, tutoriel]
@@ -322,7 +322,7 @@ Pour terminer, n’oubliez pas d’ajouter les nouvelles dépendances aux contr�
 
 Voir le code de cette étape sur [gihub](https://github.com/loicknuchel/blog-twitter-app/tree/a6f8e59abcba81ca58da579de8f1b5fe4bd21424).
 
-Voici l’[application android générée](/assets/img/posts/2015-03-05/ionic-twitter-app-step2.apk) et son aperçu actuel :
+Voici l’[application android générée](/assets/posts/2015/03/05/ionic-twitter-app-step2.apk) et son aperçu actuel :
 
 <div style="position: relative; margin-bottom: 20px;">
     <img src="http://ionicframework.com/img/phone-case.png" 

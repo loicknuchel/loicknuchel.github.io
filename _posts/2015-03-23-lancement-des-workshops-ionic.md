@@ -1,9 +1,9 @@
 ---
 layout:      post
 title:       Lancement des Workshops Ionic
-banner_1_1:  /assets/img/posts/2015-03-23/lancement-des-workshops-ionic_1_1.jpg
-banner_2_1:  /assets/img/posts/2015-03-23/lancement-des-workshops-ionic_2_1.jpg
-banner_21_9: /assets/img/posts/2015-03-23/lancement-des-workshops-ionic_21_9.jpg
+banner_1_1:  /assets/posts/2015/03/23/lancement-des-workshops-ionic_1_1.jpg
+banner_2_1:  /assets/posts/2015/03/23/lancement-des-workshops-ionic_2_1.jpg
+banner_21_9: /assets/posts/2015/03/23/lancement-des-workshops-ionic_21_9.jpg
 author:      loic
 categories:  [coding]
 tags:        [ionic framework, mobile, workshop]
@@ -24,7 +24,7 @@ La communauté est très active et je pense que des ateliers pratiques pourraien
 ou aux personnes plus avancées d'échanger sur des sujets plus spécifiques (test, plugin particulier, performances, design...).
 
 <figure>
-  <img src="/assets/img/posts/2015-03-23/ionic-trends.png" alt="Ionic google trends">
+  <img src="/assets/posts/2015/03/23/ionic-trends.png" alt="Ionic google trends">
   <figcaption>Recherches Google de "Ionic framework"</figcaption>
 </figure>
 
@@ -41,4 +41,4 @@ Profitez-en, c'est ouvert et collaboratif !!!
 
 PS: merci à [Matthieu Segret](https://twitter.com/MatthieuSegret){:target="_blank"} pour les discussions qui m'ont inspiré cet événement <i class="emoji wink"></i>
 
-![Coding geek](/assets/img/posts/2015-03-23/coding-geek.jpg)
+![Coding geek](/assets/posts/2015/03/23/coding-geek.jpg)

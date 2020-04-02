@@ -1,9 +1,9 @@
 ---
 layout:      post
 title:       Publier son application Cordova sur Google Play
-banner_1_1:  /assets/img/posts/2015-03-26/publier-son-application-cordova-sur-google-play_1_1.jpg
-banner_2_1:  /assets/img/posts/2015-03-26/publier-son-application-cordova-sur-google-play_2_1.jpg
-banner_21_9: /assets/img/posts/2015-03-26/publier-son-application-cordova-sur-google-play_21_9.jpg
+banner_1_1:  /assets/posts/2015/03/26/publier-son-application-cordova-sur-google-play_1_1.jpg
+banner_2_1:  /assets/posts/2015/03/26/publier-son-application-cordova-sur-google-play_2_1.jpg
+banner_21_9: /assets/posts/2015/03/26/publier-son-application-cordova-sur-google-play_21_9.jpg
 author:      loic
 categories:  [coding]
 tags:        [cordova, android, mobile]
@@ -23,7 +23,7 @@ mieux vaut créer un compte gmail et un compte Google Developer spécifiques à 
 Une fois connecté avec le compte gmail, rendez-vous sur : [play.google.com/apps/publish](https://play.google.com/apps/publish){:target="_blank"}
 et suivez les étapes de création. Le paiement peut prendre jusqu'à 48h pour être validé, donc pense à t'y prendre un peu à l'avance.
 
-![Play store screen](/assets/img/posts/2015-03-26/play-store-screen.png){:.pull-right}
+![Play store screen](/assets/posts/2015/03/26/play-store-screen.png){:.pull-right}
 Clique ensuite sur "Publier une application Android sur Google Play" et remplis la fiche du store. Les éléments importants sont la description et
 la description courte ainsi que les screenshots de l'application. Tu dois aussi fournir le logo (512x512px), au moins une image promotionnelle (1024x500px) et
 bien évidemment l'apk de l'application signé. L'image promotionnelle (1024x500px) sera visible sur le store mobile en haut de la fiche de l'application.<br>

@@ -2,9 +2,9 @@
 layout:      post
 locale:      fr_FR
 title:       Éviter toujours plus de bugs grâce au typage
-banner_1_1:  /assets/img/posts/2015-09-01/eviter-toujours-plus-de-bugs-grace-au-typage_1_1.jpg
-banner_2_1:  /assets/img/posts/2015-09-01/eviter-toujours-plus-de-bugs-grace-au-typage_2_1.jpg
-banner_21_9: /assets/img/posts/2015-09-01/eviter-toujours-plus-de-bugs-grace-au-typage_21_9.jpg
+banner_1_1:  /assets/posts/2015/09/01/eviter-toujours-plus-de-bugs-grace-au-typage_1_1.jpg
+banner_2_1:  /assets/posts/2015/09/01/eviter-toujours-plus-de-bugs-grace-au-typage_2_1.jpg
+banner_21_9: /assets/posts/2015/09/01/eviter-toujours-plus-de-bugs-grace-au-typage_21_9.jpg
 author:      loic
 categories:  [coding]
 tags:        [bug free, play framework, scala, typage, value classe]
@@ -17,7 +17,7 @@ Ceux qui me connaissent savent que je suis un grand fan des langages typés, de 
 Tout simplement parce qu'ils permettent de coder de manière concise tout en évitant un grand nombre de bugs que nous, 
 développeurs distraits, avons l'habitude de laisser derrière nous <i class="emoji wink"></i>
 
-![Static typing](/assets/img/posts/2015-09-01/static-typing-lesson.jpg)
+![Static typing](/assets/posts/2015/09/01/static-typing-lesson.jpg)
 
 Habituellement je fais références aux `Option`, `Future`, `Try`, `Either`... mais la semaine dernière j'ai eu quelques soucis dans mon code qui m'ont fait réfléchir 
 et m'ont décidés à pousser encore un peu plus dans ce sens. Voici un exemple :
@@ -50,7 +50,7 @@ Mais les effets peuvent être ravageurs et difficiles à identifier. Par exemple
 - Inverser deux champs dans une fonction (ex : Nom / Prénom d'un utilisateur) => en fonction de où et quand l'utilisateur a été créé/modifié, il aura ce problème qui n'est pas évident à identifier et impossible à corriger après coup <i class="emoji sad"></i>
 - ...
 
-![Dynamic typing](/assets/img/posts/2015-09-01/dynamic-typing.jpg)
+![Dynamic typing](/assets/posts/2015/09/01/dynamic-typing.jpg)
 
 Bref, je crois que le problème est assez clair et j'espère que vous êtes aussi convaincus que moi que corriger ça fera drastiquement diminuer 
 le nombre de bugs / temps de debug dans votre application.
@@ -173,7 +173,7 @@ avec une `String` vide (`List("")`) au lieu d'une liste vide (`List()`).
 Aucun bug n'était visible dans l'application mais j'aurais pu avoir des statistiques fausses (si je compte le nombre de speakers en comptant les IDs) 
 ou d'autres joyeusetés !!! Merci les types !!!*
 
-![Always fail](/assets/img/posts/2015-09-01/always-fail.gif)
+![Always fail](/assets/posts/2015/09/01/always-fail.gif)
 
 Prochaine étape : les formulaires. Si vous utilisez les formulaires Play vous devriez avoir quelque chose du genre :
 
@@ -231,7 +231,7 @@ Donc soit je suis vraiment pas doué (ce qui est bien possible !). Soit vous fer
 
 ## Is this real life ?
 
-![Theory land](/assets/img/posts/2015-09-01/theory-land.jpg){:.pull-right}
+![Theory land](/assets/posts/2015/09/01/theory-land.jpg){:.pull-right}
 Comme souvent, les articles de blog montrent tous les avantages mais sans nécessairement évoquer d'éventuels subtilités de mise en oeuvre ou passages un peu moins friendly.
 Comme je viens de migrer tout le backend de SalooN, voici quelques problèmes supplémentaires que j'ai dû adresser.
 
@@ -380,4 +380,4 @@ J'espère que cet article vous aura été bénéfique et que vous y avez appris 
 En tous cas, moi, je suis très content d'avoir eu l'occasion d'avancer un peu plus sur mes connaissances de Play framework (qui est très puissant !) et 
 de pouvoir toujours plus typer mes applications <i class="emoji happy"></i>
 
-![Baby coder](/assets/img/posts/2015-09-01/baby-coder.png)
+![Baby coder](/assets/posts/2015/09/01/baby-coder.png)

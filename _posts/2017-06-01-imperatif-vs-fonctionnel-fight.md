@@ -2,9 +2,9 @@
 layout:      post
 locale:      fr_FR
 title:       "Impératif vs Fonctionnel : Fight !"
-banner_1_1:  /assets/img/posts/2017-06-01/imperatif-vs-fonctionnel-fight_1_1.jpg
-banner_2_1:  /assets/img/posts/2017-06-01/imperatif-vs-fonctionnel-fight_2_1.jpg
-banner_21_9: /assets/img/posts/2017-06-01/imperatif-vs-fonctionnel-fight_21_9.jpg
+banner_1_1:  /assets/posts/2017/06/01/imperatif-vs-fonctionnel-fight_1_1.jpg
+banner_2_1:  /assets/posts/2017/06/01/imperatif-vs-fonctionnel-fight_2_1.jpg
+banner_21_9: /assets/posts/2017/06/01/imperatif-vs-fonctionnel-fight_21_9.jpg
 author:      loic
 categories:  [coding]
 tags:        [functional programming, javascript, scala]
@@ -255,7 +255,7 @@ On a principalement vu ici les fonctions de chaînage sur les collections et c'e
 mais ce n'est qu'un petit bout pour démarrer... Je pense que ces quelques exemples ont bien illustré mon point mais j'aimerais beaucoup avoir votre avis 
 sur ce que vous en avez pensé...
 
-![Scala vs Java](/assets/img/posts/2017-06-01/scala-vs-java.png)
+![Scala vs Java](/assets/posts/2017/06/01/scala-vs-java.png)
 
 Pour ceux qui le souhaitent, voici l'implémentation complète des challenges basiques du workshop en 
 [fonctionnel](https://github.com/loicknuchel/playing_with_projections/blob/add-js-solutions/js/solutions/lkn-projections-fun.js){:target="_blank"} et en 

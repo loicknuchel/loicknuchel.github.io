@@ -1,15 +1,15 @@
 ---
 layout:      post
 title:       Découvrir Ionic Framework
-banner_1_1:  /assets/img/posts/2015-01-26/decouvrir-ionic-framework_1_1.jpg
-banner_2_1:  /assets/img/posts/2015-01-26/decouvrir-ionic-framework_2_1.jpg
-banner_21_9: /assets/img/posts/2015-01-26/decouvrir-ionic-framework_21_9.jpg
+banner_1_1:  /assets/posts/2015/01/26/decouvrir-ionic-framework_1_1.jpg
+banner_2_1:  /assets/posts/2015/01/26/decouvrir-ionic-framework_2_1.jpg
+banner_21_9: /assets/posts/2015/01/26/decouvrir-ionic-framework_21_9.jpg
 author:      loic
 categories:  [coding]
 tags:        [ionic framework, cordova, mobile, angular]
 ---
 
-![Ionic list](/assets/img/posts/2015-01-26/ionic_list.png){:.pull-right}
+![Ionic list](/assets/posts/2015/01/26/ionic_list.png){:.pull-right}
 Un an sans aucun article <i class="emoji sad"></i> C’est plutôt long mais c’est ce qui arrive lorsque l’on monte sa startup...
 Je profite donc d’un moment de calme pour vous présenter le framework que j’ai le plus utilisé en 2014 : [Ionic Framework](https://ionicframework.com){:target="_blank"}.<br>
 <br>
@@ -36,7 +36,7 @@ ainsi que les [applications construites avec Ionic](https://showcase.ionicframew
 
 ## Le renouveau des applications hybrides
 
-![Ionic card](/assets/img/posts/2015-01-26/ionic_card.png){:.pull-left}
+![Ionic card](/assets/posts/2015/01/26/ionic_card.png){:.pull-left}
 Cordova n’est pas une nouvelle technologie. Elle a vu le jour en 2009 et en 2011 je connaissais des personnes qui développaient déjà avec.
 Autant dire qu’à l’échelle du mobile, cette plateforme a toujours été présente (la sortie d’Android 2.3 date de 2010 !).<br>
 <br>

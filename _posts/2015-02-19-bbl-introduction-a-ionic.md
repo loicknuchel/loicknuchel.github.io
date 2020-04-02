@@ -1,9 +1,9 @@
 ---
 layout:      post
-title:       Introduction à Ionic Framework – BBL 19/02/2015
-banner_1_1:  /assets/img/posts/2015-02-19/talk-introduction-a-ionic-bbl_1_1.jpg
-banner_2_1:  /assets/img/posts/2015-02-19/talk-introduction-a-ionic-bbl_2_1.jpg
-banner_21_9: /assets/img/posts/2015-02-19/talk-introduction-a-ionic-bbl_21_9.jpg
+title:       BBL introduction à Ionic Framework
+banner_1_1:  /assets/posts/2015/02/19/bbl-introduction-a-ionic_1_1.jpg
+banner_2_1:  /assets/posts/2015/02/19/bbl-introduction-a-ionic_2_1.jpg
+banner_21_9: /assets/posts/2015/02/19/bbl-introduction-a-ionic_21_9.jpg
 author:      loic
 categories:  [coding]
 tags:        [ionic framework, cordova, mobile, angular, BBL]
@@ -17,7 +17,7 @@ d’améliorer ses présentations et son aisance à l’oral et, avant tout, de 
 En tant que freelance, il me semble nécessaire de réserver du temps pour la veille technologique et les BBL en font 
 clairement parti : présenter un sujet, c’est avant tout se former à fond, synthétiser et restituer ses connaissances.
 
-![](/assets/img/posts/2015-02-19/bbl-ionic.jpg)
+![](/assets/posts/2015/02/19/bbl-ionic.jpg)
 
 Si Ionic Framework vous intéresse ou que vous avez envie d’échanger dessus, n’hésitez pas à [me contacter](#contact) pour que je vienne faire un BBL chez vous.
 Je peux vous proposer une introduction à Ionic (s’adresse à des participants ne connaissant pas Ionic, voire Cordova et AngularJS),

@@ -1,9 +1,9 @@
 ---
 layout:      post
 title:       Créer un plugin cordova
-banner_1_1:  /assets/img/posts/2015-03-20/creer-un-plugin-cordova_1_1.jpg
-banner_2_1:  /assets/img/posts/2015-03-20/creer-un-plugin-cordova_2_1.jpg
-banner_21_9: /assets/img/posts/2015-03-20/creer-un-plugin-cordova_21_9.jpg
+banner_1_1:  /assets/posts/2015/03/20/creer-un-plugin-cordova_1_1.jpg
+banner_2_1:  /assets/posts/2015/03/20/creer-un-plugin-cordova_2_1.jpg
+banner_21_9: /assets/posts/2015/03/20/creer-un-plugin-cordova_21_9.jpg
 author:      loic
 categories:  [coding]
 tags:        [cordova, phonegap, hybride, mobile, tutoriel]
@@ -41,7 +41,7 @@ Pour cela il suffit de modifier le `<ion-content>` dans le **www/index.html** et
 });
 ```
 
-![JavaScript alert](/assets/img/posts/2015-03-20/javascript-alert.png){:.pull-right}
+![JavaScript alert](/assets/posts/2015/03/20/javascript-alert.png){:.pull-right}
 Un petit coup de `ionic run` et BOOM, voilà notre application !!!<br>
 <br>
 Vous remarquerez que le *alert()* affiché est plutôt moche et n'est pas dans le style Android. C'est ce que nous allons changer !
@@ -237,7 +237,7 @@ Pour tester tout ça dans notre application, il faut supprimer puis ajouter à n
 $ ionic plugin remove com.example.cordova.alert && ionic plugin add ../cordova-alert-plugin/ && ionic run
 ```
 
-![Android native alert](/assets/img/posts/2015-03-20/android-alert.png){:.pull-left}
+![Android native alert](/assets/posts/2015/03/20/android-alert.png){:.pull-left}
 TADAAAAA !!!<br>
 <br>
 Et voici une *alert()* bien plus sympa !!!<br>

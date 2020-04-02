@@ -2,17 +2,17 @@
 layout:      post
 locale:      fr_FR
 title:       Ch'ti JUG, le développement mobile hybride sort du bois
-banner_1_1:  /assets/img/posts/2015-04-18/chti-jug-le-developpement-mobile-hybride-sort-du-bois_1_1.jpg
-banner_2_1:  /assets/img/posts/2015-04-18/chti-jug-le-developpement-mobile-hybride-sort-du-bois_2_1.jpg
-banner_21_9: /assets/img/posts/2015-04-18/chti-jug-le-developpement-mobile-hybride-sort-du-bois_21_9.jpg
+banner_1_1:  /assets/posts/2015/04/18/chti-jug-le-developpement-mobile-hybride-sort-du-bois_1_1.jpg
+banner_2_1:  /assets/posts/2015/04/18/chti-jug-le-developpement-mobile-hybride-sort-du-bois_2_1.jpg
+banner_21_9: /assets/posts/2015/04/18/chti-jug-le-developpement-mobile-hybride-sort-du-bois_21_9.jpg
 author:      loic
 categories:  [coding]
 tags:        [ch'ti jug, ionic framework, cordova, angular, mobile, talk]
 carousel:
-    - {url: "/assets/img/posts/2015-04-18/chti-jug-audience_16_9.jpg"}
-    - {url: "/assets/img/posts/2015-04-18/chti-jug-intro_16_9.jpg"}
-    - {url: "/assets/img/posts/2015-04-18/chti-jug-ionic_16_9.jpg"}
-    - {url: "/assets/img/posts/2015-04-18/chti-jug-coding_16_9.jpg"}
+    - {url: "/assets/posts/2015/04/18/chti-jug-audience_16_9.jpg"}
+    - {url: "/assets/posts/2015/04/18/chti-jug-intro_16_9.jpg"}
+    - {url: "/assets/posts/2015/04/18/chti-jug-ionic_16_9.jpg"}
+    - {url: "/assets/posts/2015/04/18/chti-jug-coding_16_9.jpg"}
 ---
 
 Tout d'abord, un grand merci à [Julien Jakubowski](https://twitter.com/jak78){:target="_blank"} qui m'a proposé de faire ce talk au Ch'ti JUG <i class="emoji smile"></i>
