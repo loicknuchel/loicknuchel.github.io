@@ -1,0 +1,46 @@
+package org.knuchel.playground
+
+object RegLinS {
+  def main(args: Array[String]) {
+    val trainData = List((10, 12000), (13, 125000), (16, 120000), (16, 130000), (19, 200000), (21, 200000), (22, 161000), (23, 152000),
+      (26, 188600), (28, 225000), (30, 234000), (31, 215000), (34, 285000), (36, 295000), (40, 285000), (41, 298000), (44, 335000),
+      (44, 335000), (50, 349000), (50, 388000), (51, 420000), (57, 525000), (60, 530000), (63, 449900), (64, 449000), (65, 470000),
+      (66, 565000), (73, 540000), (74, 345000), (75, 420000), (75, 475000), (75, 475000), (76, 464000), (81, 628000), (81, 567000),
+      (85, 469000), (85, 599000), (87, 565000), (89, 577000), (91, 504000), (96, 680000), (100, 520000), (123, 910000),
+      (154, 1150000), (160, 1100000));
+    val formatedData = trainData.map(t => (t._1.toDouble, t._2.toDouble));
+    val predictor = train(formatedData);
+    println(predictor)
+
+    println("prediction for 55 : " + predictor.makePrediction(55d));
+    println("prediction for 400 : " + predictor.makePrediction(400d));
+    println("prediction for -1 : " + predictor.makePrediction(-1d));
+  }
+
+  def train(trainData: List[(Double, Double)]) = {
+    // y = a*x+b
+    var avgX, avgY = 0d;
+    for (data <- trainData) {
+      avgX += data._1;
+      avgY += data._2;
+    }
+    avgX = avgX / trainData.length
+    avgY = avgY / trainData.length
+
+    var avgXX, avgYY, avgXY = 0d;
+    for (data <- trainData) {
+      avgXX += (data._1 - avgX) * (data._1 - avgX);
+      avgYY += (data._2 - avgY) * (data._2 - avgY);
+      avgXY += (data._1 - avgX) * (data._2 - avgY);
+    }
+    val a = avgXY / avgXX;
+    val b = avgY - a * avgX;
+
+    new Predictor(a, b)
+  }
+
+  class Predictor(a: Double, b: Double) {
+    def makePrediction(x: Double) = a * x + b
+    override def toString = "Predictor[y = " + a + " * x + " + b + "]"
+  }
+}

@@ -1,0 +1,80 @@
+package org.knuchel.playground;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class RegLinJava {
+	public static void main(String[] args) {
+		double rawData[][] = { { 10, 12000 }, { 13, 125000 }, { 16, 120000 }, { 16, 130000 }, { 19, 200000 }, { 21, 200000 }, { 22, 161000 }, { 23, 152000 },
+				{ 26, 188600 }, { 28, 225000 }, { 30, 234000 }, { 31, 215000 }, { 34, 285000 }, { 36, 295000 }, { 40, 285000 }, { 41, 298000 }, { 44, 335000 },
+				{ 44, 335000 }, { 50, 349000 }, { 50, 388000 }, { 51, 420000 }, { 57, 525000 }, { 60, 530000 }, { 63, 449900 }, { 64, 449000 }, { 65, 470000 },
+				{ 66, 565000 }, { 73, 540000 }, { 74, 345000 }, { 75, 420000 }, { 75, 475000 }, { 75, 475000 }, { 76, 464000 }, { 81, 628000 }, { 81, 567000 },
+				{ 85, 469000 }, { 85, 599000 }, { 87, 565000 }, { 89, 577000 }, { 91, 504000 }, { 96, 680000 }, { 100, 520000 }, { 123, 910000 },
+				{ 154, 1150000 }, { 160, 1100000 } };
+		List<Data> formatedData = format(rawData);
+		Predictor predictor = train(formatedData);
+		System.out.println(predictor);
+
+		System.out.println("prediction for 55 : " + predictor.makePrediction(55d));
+		System.out.println("prediction for 400 : " + predictor.makePrediction(400d));
+		System.out.println("prediction for -1 : " + predictor.makePrediction(-1d));
+	}
+
+	public static Predictor train(List<Data> trainData) {
+		// y = a*x+b
+		Double avgX = 0d, avgY = 0d;
+		for (Data data : trainData) {
+			avgX += data.x;
+			avgY += data.y;
+		}
+		avgX = avgX / trainData.size();
+		avgY = avgY / trainData.size();
+
+		Double avgXX = 0d, avgYY = 0d, avgXY = 0d;
+		for (Data data : trainData) {
+			avgXX += (data.x - avgX) * (data.x - avgX);
+			avgYY += (data.y - avgY) * (data.y - avgY);
+			avgXY += (data.x - avgX) * (data.y - avgY);
+		}
+		Double a = avgXY / avgXX;
+		Double b = avgY - a * avgX;
+
+		return new Predictor(a, b);
+	}
+
+	public static List<Data> format(double rawData[][]) {
+		List<Data> data = new ArrayList<Data>();
+		for (double[] d : rawData) {
+			data.add(new Data(d[0], d[1]));
+		}
+		return data;
+	}
+
+	static class Data {
+		public Double x;
+		public Double y;
+
+		public Data(Double x, Double y) {
+			this.x = x;
+			this.y = y;
+		}
+	}
+
+	static class Predictor {
+		public Double a;
+		public Double b;
+
+		public Predictor(Double a, Double b) {
+			this.a = a;
+			this.b = b;
+		}
+
+		public Double makePrediction(Double x) {
+			return a * x + b;
+		}
+
+		public String toString() {
+			return "Predictor[y = " + a + " * x + " + b + "]";
+		}
+	}
+}

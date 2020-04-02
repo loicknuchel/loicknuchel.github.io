@@ -6,7 +6,7 @@ banner_2_1:  /assets/posts/2015/02/26/faire-un-client-twitter-avec-ionic_2_1.jpg
 banner_21_9: /assets/posts/2015/02/26/faire-un-client-twitter-avec-ionic_21_9.jpg
 author:      loic
 categories:  [coding]
-tags:        [ionic framework, cordova, mobile, angular, tutoriel]
+tags:        [ionic framework, cordova, mobile, angular, tutorial]
 ---
 
 Si vous avez lu mes précédents articles, vous savez maintenant que je suis plutôt fan de [Ionic](https://ionicframework.com){:target="_blank"}
