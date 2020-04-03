@@ -1,7 +1,7 @@
 ---
 layout:      post
 locale:      fr_FR
-kind:        code
+icon:        ticket
 title:       Utilisez ReactiveMongo avec Play framework 2.2
 banner_1_1:  /assets/posts/2014/01/30/utilisez-reactivemongo-avec-play-framework-2-2_1_1.jpg
 banner_2_1:  /assets/posts/2014/01/30/utilisez-reactivemongo-avec-play-framework-2-2_2_1.jpg

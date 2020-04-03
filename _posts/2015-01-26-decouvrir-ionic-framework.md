@@ -1,7 +1,7 @@
 ---
 layout:      post
 locale:      fr_FR
-kind:        idea
+icon:        gem-stone
 title:       Découvrir Ionic Framework
 banner_1_1:  /assets/posts/2015/01/26/decouvrir-ionic-framework_1_1.jpg
 banner_2_1:  /assets/posts/2015/01/26/decouvrir-ionic-framework_2_1.jpg

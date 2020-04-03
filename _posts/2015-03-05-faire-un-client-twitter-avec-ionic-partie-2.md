@@ -1,7 +1,7 @@
 ---
 layout:      post
 locale:      fr_FR
-kind:        mobile
+icon:        rocket
 title:       Faire un client Twitter avec Ionic - partie 2
 banner_1_1:  /assets/posts/2015/03/05/faire-un-client-twitter-avec-ionic-partie-2_1_1.jpg
 banner_2_1:  /assets/posts/2015/03/05/faire-un-client-twitter-avec-ionic-partie-2_2_1.jpg

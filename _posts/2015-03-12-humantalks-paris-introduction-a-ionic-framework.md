@@ -1,7 +1,7 @@
 ---
 layout:      post
 locale:      fr_FR
-kind:        talk
+icon:        man-student
 title:       HumanTalks Paris, Introduction à Ionic Framework
 banner_1_1:  /assets/posts/2015/03/12/humantalks-paris-introduction-a-ionic-framework_1_1.jpg
 banner_2_1:  /assets/posts/2015/03/12/humantalks-paris-introduction-a-ionic-framework_2_1.jpg

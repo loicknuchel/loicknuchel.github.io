@@ -1,7 +1,7 @@
 ---
 layout:      post
 locale:      en_US
-kind:        code
+icon:        
 title:       How to write code that smells good
 banner_1_1:  /assets/posts/2015/09/01/eviter-toujours-plus-de-bugs-grace-au-typage_1_1.jpg
 banner_2_1:  /assets/posts/2015/09/01/eviter-toujours-plus-de-bugs-grace-au-typage_2_1.jpg

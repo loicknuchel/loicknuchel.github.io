@@ -1,7 +1,7 @@
 ---
 layout:      post
 locale:      fr_FR
-kind:        announcement
+icon:        studio-microphone
 title:       Je suis bagger
 banner_1_1:  /assets/posts/2013/12/06/je-suis-bagger_1_1.jpg
 banner_2_1:  /assets/posts/2013/12/06/je-suis-bagger_2_1.jpg

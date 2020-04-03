@@ -1,7 +1,7 @@
 ---
 layout:      post
 locale:      fr_FR
-kind:        code
+icon:        hundred
 title:       Publier son application Cordova sur Google Play
 banner_1_1:  /assets/posts/2015/03/26/publier-son-application-cordova-sur-google-play_1_1.jpg
 banner_2_1:  /assets/posts/2015/03/26/publier-son-application-cordova-sur-google-play_2_1.jpg

@@ -1,7 +1,7 @@
 ---
 layout:      post
 locale:      en_US
-kind:        code
+icon:        idea
 title:       Why functional programming ?
 banner_1_1:  /assets/posts/2017/06/25/why-functional-programming_1_1.jpg
 banner_2_1:  /assets/posts/2017/06/25/why-functional-programming_2_1.jpg

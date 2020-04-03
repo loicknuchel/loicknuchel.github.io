@@ -1,7 +1,7 @@
 ---
 layout:      post
 locale:      fr_FR
-kind:        code
+icon:        fight
 title:       "Impératif vs Fonctionnel : Fight !"
 banner_1_1:  /assets/posts/2017/06/01/imperatif-vs-fonctionnel-fight_1_1.jpg
 banner_2_1:  /assets/posts/2017/06/01/imperatif-vs-fonctionnel-fight_2_1.jpg

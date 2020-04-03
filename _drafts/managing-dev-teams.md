@@ -1,7 +1,7 @@
 ---
 layout:      post
 locale:      en_US
-kind:        management
+icon:        
 title:       Managing dev teams
 banner_1_1:  
 banner_2_1:  

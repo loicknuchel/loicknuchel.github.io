@@ -76,10 +76,10 @@
   &.purple-heart:before { content: '\01f49c'; }
   &.black-heart:before { content: '\01f5a4'; }
   &.white-heart:before { content: '\01f90d'; }
-  &.hundred-points:before { content: '\01f4af'; }
+  &.hundred-points:before, &.hundred:before { content: '\01f4af'; }
   &.collision:before { content: '\01f4a5'; }
   &.bomb:before { content: '\01f4a3'; }
-  &.speech-balloon:before { content: '\01f4ac'; }
+  &.speech-balloon:before, &.speak:before { content: '\01f4ac'; }
   &.left-speech-bubble:before { content: '\01f5e8'; }
   &.right-anger-bubble:before { content: '\01f5ef'; }
   &.thought-balloon:before { content: '\01f4ad'; }
@@ -115,6 +115,7 @@
   &.man-supervillain:before { content: '\01f9b9\0200d\02642\0fe0f'; }
   &.woman-supervillain:before { content: '\01f9b9\0200d\02640\0fe0f'; }
   &.speaking-head:before { content: '\01f5e3'; }
+  &.bug:before { content: '\01F41B'; }
   &.pizza:before { content: '\01f355'; }
   &.popcorn:before { content: '\01f37f'; }
   &.cookie:before { content: '\01f36a'; }
@@ -181,6 +182,8 @@
   &.locked:before { content: '\01f512'; }
   &.unlocked:before { content: '\01f513'; }
   &.key:before { content: '\01f511'; }
+  &.dagger:before, &.fight:before { content: '\01F5E1'; }
+  &.crossed-swords:before { content: '\02694'; }
   &.shield:before { content: '\01f6e1'; }
   &.link:before { content: '\01f517'; }
   &.test-tube:before, &.experiment:before { content: '\01f9ea'; }

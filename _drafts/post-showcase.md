@@ -1,7 +1,7 @@
 ---
 layout:      post
 locale:      en_US                                 # optional, default: en_US, values: en_US, fr_FR
-kind:        draft                                 # optional, default: article, emoji in front of the article title
+icon:        draft                                 # optional, default: article, emoji in front of the article title
 title:       A showcase post for demo              # optional, default: post file name
 banner_1_1:  https://via.placeholder.com/350       # optional, default: /assets/img/default/blog_banner_1_1.jpg, for lists & twitter summary card
 banner_2_1:  https://via.placeholder.com/600x300   # optional, for twitter summary_large_image card
@@ -39,6 +39,8 @@ Alias: <span style="font-size: 2em; line-height: 1.2;">
     <i class="emoji wink" title="wink" data-toggle="tooltip"></i>
     <i class="emoji geek" title="geek" data-toggle="tooltip"></i>
     <i class="emoji sad" title="sad" data-toggle="tooltip"></i>
+    <i class="emoji hundred" title="hundred" data-toggle="tooltip"></i>
+    <i class="emoji speak" title="speak" data-toggle="tooltip"></i>
     <i class="emoji tech" title="tech" data-toggle="tooltip"></i>
     <i class="emoji startup" title="startup" data-toggle="tooltip"></i>
     <i class="emoji management" title="management" data-toggle="tooltip"></i>
@@ -50,6 +52,7 @@ Alias: <span style="font-size: 2em; line-height: 1.2;">
     <i class="emoji article" title="article" data-toggle="tooltip"></i>
     <i class="emoji draft" title="draft" data-toggle="tooltip"></i>
     <i class="emoji event" title="event" data-toggle="tooltip"></i>
+    <i class="emoji fight" title="fight" data-toggle="tooltip"></i>
     <i class="emoji experiment" title="experiment" data-toggle="tooltip"></i>
 </span>
 
@@ -164,6 +167,7 @@ Alias: <span style="font-size: 2em; line-height: 1.2;">
     <i class="emoji man-supervillain" title="man-supervillain" data-toggle="tooltip"></i>
     <i class="emoji woman-supervillain" title="woman-supervillain" data-toggle="tooltip"></i>
     <i class="emoji speaking-head" title="speaking-head" data-toggle="tooltip"></i>
+    <i class="emoji bug" title="bug" data-toggle="tooltip"></i>
     <i class="emoji pizza" title="pizza" data-toggle="tooltip"></i>
     <i class="emoji popcorn" title="popcorn" data-toggle="tooltip"></i>
     <i class="emoji cookie" title="cookie" data-toggle="tooltip"></i>
@@ -229,6 +233,8 @@ Alias: <span style="font-size: 2em; line-height: 1.2;">
     <i class="emoji locked" title="locked" data-toggle="tooltip"></i>
     <i class="emoji unlocked" title="unlocked" data-toggle="tooltip"></i>
     <i class="emoji key" title="key" data-toggle="tooltip"></i>
+    <i class="emoji dagger" title="dagger" data-toggle="tooltip"></i>
+    <i class="emoji crossed-swords" title="crossed-swords" data-toggle="tooltip"></i>
     <i class="emoji shield" title="shield" data-toggle="tooltip"></i>
     <i class="emoji link" title="link" data-toggle="tooltip"></i>
     <i class="emoji test-tube" title="test-tube" data-toggle="tooltip"></i>

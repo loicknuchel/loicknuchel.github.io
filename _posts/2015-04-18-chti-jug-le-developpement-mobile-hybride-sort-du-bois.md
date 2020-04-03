@@ -1,7 +1,7 @@
 ---
 layout:      post
 locale:      fr_FR
-kind:        talk
+icon:        mobile
 title:       Ch'ti JUG, le développement mobile hybride sort du bois
 banner_1_1:  /assets/posts/2015/04/18/chti-jug-le-developpement-mobile-hybride-sort-du-bois_1_1.jpg
 banner_2_1:  /assets/posts/2015/04/18/chti-jug-le-developpement-mobile-hybride-sort-du-bois_2_1.jpg

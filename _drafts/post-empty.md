@@ -1,7 +1,7 @@
 ---
 layout:      post
 locale:      en_US
-kind:        draft
+icon:        draft
 title:       An empty post to get started
 banner_1_1:  
 banner_2_1:  

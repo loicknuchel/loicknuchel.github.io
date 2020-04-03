@@ -1,7 +1,7 @@
 ---
 layout:      post
 locale:      fr_FR
-kind:        announcement
+icon:        tech
 title:       Lancement des Workshops Ionic
 banner_1_1:  /assets/posts/2015/03/23/lancement-des-workshops-ionic_1_1.jpg
 banner_2_1:  /assets/posts/2015/03/23/lancement-des-workshops-ionic_2_1.jpg

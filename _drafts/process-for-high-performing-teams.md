@@ -1,7 +1,7 @@
 ---
 layout:      post
 locale:      en_US
-kind:        management
+icon:        
 title:       Process for high performing teams
 banner_1_1:  
 banner_2_1:  
