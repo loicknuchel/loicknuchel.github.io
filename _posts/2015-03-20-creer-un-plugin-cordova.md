@@ -119,7 +119,7 @@ $ ionic plugin list
 
 Normalement vous devriez voir une ligne similaire à :
 
-```
+```console
 com.example.cordova.alert 0.0.1 "Alert Plugin"
 ```
 
@@ -241,7 +241,7 @@ $ ionic plugin remove com.example.cordova.alert && ionic plugin add ../cordova-a
 TADAAAAA !!!<br>
 <br>
 Et voici une *alert()* bien plus sympa !!!<br>
-<br>
+
 Et le truc super cool, c'est que si vous publiez votre plugin sur github (par exemple), n'importe qui pourra l'ajouter à son projet en faisant simplement :
 
 ```console

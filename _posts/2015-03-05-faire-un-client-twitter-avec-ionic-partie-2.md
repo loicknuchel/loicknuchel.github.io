@@ -1,6 +1,6 @@
 ---
 layout:      post
-title:       Faire un client Twitter avec Ionic – partie 2
+title:       Faire un client Twitter avec Ionic - partie 2
 banner_1_1:  /assets/posts/2015/03/05/faire-un-client-twitter-avec-ionic-partie-2_1_1.jpg
 banner_2_1:  /assets/posts/2015/03/05/faire-un-client-twitter-avec-ionic-partie-2_2_1.jpg
 banner_21_9: /assets/posts/2015/03/05/faire-un-client-twitter-avec-ionic-partie-2_21_9.jpg
@@ -13,8 +13,8 @@ Visiblement la [première partie]({% post_url 2015-02-26-faire-un-client-twitter
 
 ## Etape 4 : Publier un twitt
 
-On va maintenant vouloir créer ses propre twitts. Pour cela je vous propose d’utiliser un modal ([doc](https://ionicframework.com/docs/api/modal){:target="_blank"}).
-Mais commençons par le début. Pour twitter, il nous faut un compte. Nous allons donc créer un service qui nous renverra l’utilisateur actuel dans *services.js* :
+On va maintenant vouloir créer ses propre twitts. Pour cela je vous propose d'utiliser un modal ([doc](https://ionicframework.com/docs/api/modal){:target="_blank"}).
+Mais commençons par le début. Pour twitter, il nous faut un compte. Nous allons donc créer un service qui nous renverra l'utilisateur actuel dans *services.js* :
 
 ```js
 .factory('UserSrv', function($q){
@@ -29,7 +29,7 @@ Mais commençons par le début. Pour twitter, il nous faut un compte. Nous allon
 })
 ```
 
-Une fois de plus on mock les données pour avoir juste ce qu’il nous faut et avancer.
+Une fois de plus on mock les données pour avoir juste ce qu'il nous faut et avancer.
 
 Ensuite, notre *TwittSrv* doit implémenter une nouvelle fonction : *sendTwitt(twitt)*.
 Rien de plus simple, il suffit d'ajouter dans *services.js* :
@@ -48,13 +48,13 @@ function sendTwitt(twitt){
 }
 ```
 
-Ici on prend le twitt créé par l’utilisation (il y a uniquement le contenu), on lui rajoute l’utilisateur actuel et on le renvoie.
+Ici on prend le twitt créé par l'utilisation (il y a uniquement le contenu), on lui rajoute l'utilisateur actuel et on le renvoie.
 Dans une application réelle, on enverrait tout simplement ces données à twitter et lui nous renverrait le twitt créé.
 Bien sûr il ne faut pas oublier de 1/ déclarer cette fonction dans le service et 2/ ajouter le *UserSrv* en dépendance de notre service *TwittSrv*
 (tout comme *$q* et *$timeout*). Voilà pour la partie "backend" <i class="emoji smile"></i>
 
 Pour créer un Modal avec Ionic, il nous fait faire appel à un service particulier : *$ionicModal*.
-Il y aura 3 actions en lien avec le modal : l’ouvrir (pour écrire un nouveau twitt), le fermer (si on ne veut plus twitter) et le fermer en envoyant le twitt rédigé.
+Il y aura 3 actions en lien avec le modal : l'ouvrir (pour écrire un nouveau twitt), le fermer (si on ne veut plus twitter) et le fermer en envoyant le twitt rédigé.
 On ajoute donc à *controllers.js* :
 
 ```js
@@ -85,10 +85,10 @@ $scope.$on('$destroy', function(){
 });
 ```
 
-Le modal sera créé à partir d’un template de vue (qu’on créera juste après) et on lui passe le scope afin qu’il puisse communiquer avec le contrôleur.
-On stocke l’objet retourné afin de pouvoir agir dessus (*show()* et *hide()* notamment). Le reste du code est relativement simple.
-A noter simplement qu’il faut bien supprimer le modal lorsqu’on ne souhaite plus l’utiliser (lorsque le contrôleur est détruit par exemple).
-Ici encore, n’oubliez pas d’ajouter *$ionicModal* comme dépendance du contrôleur.
+Le modal sera créé à partir d'un template de vue (qu'on créera juste après) et on lui passe le scope afin qu'il puisse communiquer avec le contrôleur.
+On stocke l'objet retourné afin de pouvoir agir dessus (*show()* et *hide()* notamment). Le reste du code est relativement simple.
+A noter simplement qu'il faut bien supprimer le modal lorsqu'on ne souhaite plus l'utiliser (lorsque le contrôleur est détruit par exemple).
+Ici encore, n'oubliez pas d'ajouter *$ionicModal* comme dépendance du contrôleur.
 
 Le template du modal est une simple vue mais avec la directive `<ion-modal-view>`. On crée donc *views/partials/new-twitt-modal.html* :
 
@@ -127,7 +127,7 @@ On va maintenant simplement ajouter quelques styles à notre compter de caractè
 }
 ```
 
-Bien sûr, toujours aucun moyen de créer un nouveau twitt depuis l’application, corrigeons ça avec un bouton dans le header de *views/app.html* :
+Bien sûr, toujours aucun moyen de créer un nouveau twitt depuis l'application, corrigeons ça avec un bouton dans le header de *views/app.html* :
 
 ```html
 <div class="buttons">
@@ -141,8 +141,8 @@ Voir le code de cette étape sur [github](https://github.com/loicknuchel/blog-tw
 
 ## Etape 5 : Navigation avec des onglets (tabs)
 
-L’application commence à être fonctionnelle mais si on veut rajouter de nouvelles choses il va falloir mettre en place une navigation un peu mieux.
-Il y a, en général, il y a deux options pour la navigation principale : des onglets ou un menu de côté. Commençons par les onglets, comme sur l’application twitter officielle.
+L'application commence à être fonctionnelle mais si on veut rajouter de nouvelles choses il va falloir mettre en place une navigation un peu mieux.
+Il y a, en général, il y a deux options pour la navigation principale : des onglets ou un menu de côté. Commençons par les onglets, comme sur l'application twitter officielle.
 
 Avec Ionic, les tabs ([doc](https://ionicframework.com/docs/api/tabs){:target="_blank"}) fonctionnent avec une vue parente qui définit les tabs, et des vues enfants.
 Grâce à *ui-router*, il sera très simple de définir ce type de routes dans *app.js* :
@@ -189,10 +189,10 @@ Grâce à *ui-router*, il sera très simple de définir ce type de routes dans *
 ```
 
 Comme vous pouvez le constater, on possède maintenant un état parent (*tabs*) et des états fils (*tabs.twitts*, *tabs.notifications*, *tabs.profil*).
-Notre état parent est défini comme abstrait pour qu’on ne puisse pas y accéder (ça n’aurais pas vraiment de sens...).
+Notre état parent est défini comme abstrait pour qu'on ne puisse pas y accéder (ça n'aurais pas vraiment de sens...).
 Chaque état fils a son propre contrôleur avec sa propre vue.
 Notez aussi que chaque état fils doit spécifier dans quelle sous-vue il doit être injecté (*twitts-tab*, *notifications-tab* ou *profil-tab*).
-Ces noms doivent correspondre à ceux qu’on a fixés dans notre vue *tabs.html*. D’ailleurs, puisqu’on en parle, la voici :
+Ces noms doivent correspondre à ceux qu'on a fixés dans notre vue *tabs.html*. D'ailleurs, puisqu'on en parle, la voici :
 
 ```html
 <ion-tabs class="tabs-striped tabs-top tabs-color-calm">
@@ -211,13 +211,13 @@ Ces noms doivent correspondre à ceux qu’on a fixés dans notre vue *tabs.html
 ```
 
 Encore une fois, les directives Ionic nous rendent vraiment la vie plus facile !
-Le `<ion-tabs>` permet d’indiquer qu’on souhaite utiliser des tabs et de les configurer. Ensuite, chaque `<ion-tab>` correspond à une tab.
-On leur définit un nom (title), les icônes à utiliser (en fonction de si elle sont actives ou pas) ainsi que l’état sur lequel se rendre lorsqu’on clique dessus.
-A l’intérieur de celui-ci, on y met les vues souhaitées.
-Comme il y en a plusieurs, il faut les nommer pour que ui-router sache ce qu’il doit inclure et à quel endroit (cf les routes).
+Le `<ion-tabs>` permet d'indiquer qu'on souhaite utiliser des tabs et de les configurer. Ensuite, chaque `<ion-tab>` correspond à une tab.
+On leur définit un nom (title), les icônes à utiliser (en fonction de si elle sont actives ou pas) ainsi que l'état sur lequel se rendre lorsqu'on clique dessus.
+A l'intérieur de celui-ci, on y met les vues souhaitées.
+Comme il y en a plusieurs, il faut les nommer pour que ui-router sache ce qu'il doit inclure et à quel endroit (cf les routes).
 
 Enfin, il faut créer les contrôleurs et vues associées.
-On va renommer le contrôleur *AppCtrl* en *TwittsCtrl* ainsi que la vue *app.html* en *twitts.html* (pour correspondre à l’état *tabs.twitts*).
+On va renommer le contrôleur *AppCtrl* en *TwittsCtrl* ainsi que la vue *app.html* en *twitts.html* (pour correspondre à l'état *tabs.twitts*).
 On va ensuite créer trois contrôleurs vide dans *controllers.js* :
 
 ```js
@@ -232,7 +232,7 @@ On va ensuite créer trois contrôleurs vide dans *controllers.js* :
 })
 ```
 
-Et les vues *notifications.html* et *profile.html* avec un minimum d’éléments :
+Et les vues *notifications.html* et *profile.html* avec un minimum d'éléments :
 
 ```html
 <ion-view>
@@ -262,18 +262,18 @@ Voir le code de cette étape sur [gihub](https://github.com/loicknuchel/blog-twi
 
 ## Etape 6 : La navigation secondaire
 
-Parfois, une navigation secondaire peut s’avérer intéressante. Notamment lorsqu’on choisi des tabs comme navigation principale, on ne souhaite pas en inclure trop.
-Une manière habituelle de régler ce problème est d’ajouter un bouton avec une liste déroulante d’options.
+Parfois, une navigation secondaire peut s'avérer intéressante. Notamment lorsqu'on choisi des tabs comme navigation principale, on ne souhaite pas en inclure trop.
+Une manière habituelle de régler ce problème est d'ajouter un bouton avec une liste déroulante d'options.
 Et ça tombe bien, Ionic a un composant parfait pour ça : le Popover ([doc](https://ionicframework.com/docs/api/popover){:target="_blank"}).
 
 Commençons par ajouter un bouton "more" à droite dans le header. En général, on met une icône avec "...".
-Pour cela il suffit d’ajouter notre nouveau bouton juste après celui qui nous permet de créer un nouveau twitt dans *twitts.html* :
+Pour cela il suffit d'ajouter notre nouveau bouton juste après celui qui nous permet de créer un nouveau twitt dans *twitts.html* :
 
 ```html
 <button class="button button-icon ion-more" ng-click="popover.show($event)"></button>
 ```
 
-On peut noter qu’au click, on affiche la popover, c’est donc maintenant que nous allons la créer.
+On peut noter qu'au click, on affiche la popover, c'est donc maintenant que nous allons la créer.
 Pour cela, Ionic nous fournit un service particulier : *$ionicPopover*, que l'on peut utiliser dans le *TwittsCtrl* dans *controllers.js*.
 
 ```js
@@ -284,8 +284,8 @@ $ionicPopover.fromTemplateUrl('views/partials/menu-popover.html', {
 });
 ```
 
-Son utilisation est très similaire au modal, on fourni un template avec les *$scope* souhaité et on récupère l’objet popover
-que l’on met dans le *$scope* pour y accéder depuis la vue (notamment pour l’activer: *popover.show($event)*).
+Son utilisation est très similaire au modal, on fourni un template avec les *$scope* souhaité et on récupère l'objet popover
+que l'on met dans le *$scope* pour y accéder depuis la vue (notamment pour l'activer: *popover.show($event)*).
 Comme le modal, la popover est une vue à part entière que l'on peut mettre dans *menu-popover.html* par exemple :
 
 ```html
@@ -306,8 +306,8 @@ Comme le modal, la popover est une vue à part entière que l'on peut mettre dan
 ```
 
 Comme pour le modal, il faut utiliser une directive de vue spéciale `<ion-popover-view>`. Le reste de la vue est maintenant relativement classique.
-A noter que pour que la popover se referme au click, j’ai rajouter un *popover.hide()* sur l’ensemble de la liste.
-Par ailleurs, comme sur l’application twitter officielle, le premier élément de la liste affiche le compte utilisateur.
+A noter que pour que la popover se referme au click, j'ai rajouter un *popover.hide()* sur l'ensemble de la liste.
+Par ailleurs, comme sur l'application twitter officielle, le premier élément de la liste affiche le compte utilisateur.
 Il faut donc mettre notre utilisateur courant dans le *$scope* pour *TabsCtrl* dans *controllers.js* :
 
 ```js
@@ -316,13 +316,13 @@ UserSrv.getUser().then(function(user){
 });
 ```
 
-L’idéal  est de le mettre dans le *$scope* du contrôleur *TabsCtrl* afin qu’il soit accessible dans toutes les vues de l’application
+L'idéal  est de le mettre dans le *$scope* du contrôleur *TabsCtrl* afin qu'il soit accessible dans toutes les vues de l'application
 (le *$scope* est hérité dans les contrôleurs fils).
-Pour terminer, n’oubliez pas d’ajouter les nouvelles dépendances aux contrôleurs *TwittsCtrl* et *TabsCtrl* : *$ionicPopover* et *UserSrv* <i class="emoji smile"></i>
+Pour terminer, n'oubliez pas d'ajouter les nouvelles dépendances aux contrôleurs *TwittsCtrl* et *TabsCtrl* : *$ionicPopover* et *UserSrv* <i class="emoji smile"></i>
 
 Voir le code de cette étape sur [gihub](https://github.com/loicknuchel/blog-twitter-app/tree/a6f8e59abcba81ca58da579de8f1b5fe4bd21424).
 
-Voici l’[application android générée](/assets/posts/2015/03/05/ionic-twitter-app-step2.apk) et son aperçu actuel :
+Voici l'[application android générée](/assets/posts/2015/03/05/ionic-twitter-app-step2.apk) et son aperçu actuel :
 
 <div style="position: relative; margin-bottom: 20px;">
     <img src="http://ionicframework.com/img/phone-case.png" 

@@ -13,7 +13,7 @@ Après avoir lu un certain nombre de tutoriaux sur [Scala](https://www.scala-lan
 et [MongoDB](https://www.mongodb.com){:target="_blank"} ([ici](https://blog.knoldus.com/design-forms-in-play2-0-using-scala-and-mongodb){:target="_blank"},
 [ici](https://neelkanthsachdeva.wordpress.com/2012/08/02/working-with-play-framework-using-scala-and-mongodb){:target="_blank"}, 
 [ici](https://jaredrosoff.wordpress.com/2011/05/25/getting-started-with-play-framework-scala-and-casbah){:target="_blank"}...)
-et regardé pas mal de [projets sur github](https://github.com/search?q=scala+play+mongo){:target="_blank"}, je me suis rendu compte qu’ils étaient tous vieux
+et regardé pas mal de [projets sur github](https://github.com/search?q=scala+play+mongo){:target="_blank"}, je me suis rendu compte qu'ils étaient tous vieux
 et ne correspondaient plus aux versions actuelles. Voici donc, encore un autre tutoriel sur ces technologies mais avec des versions actualisées. Nous voici donc partis avec :
 
 - Scala 2.10.2
@@ -21,7 +21,7 @@ et ne correspondaient plus aux versions actuelles. Voici donc, encore un autre t
 - MongoDB 2.4.8
 - Salat 1.4.0
 
-Le but de cet article va être de construire une application simple. Si vous ne n’avez pas déjà tout installé, c’est le moment de le faire :
+Le but de cet article va être de construire une application simple. Si vous ne n'avez pas déjà tout installé, c'est le moment de le faire :
 [install MongoDB](https://docs.mongodb.com/manual/installation){:target="_blank"}, [install Play](https://www.playframework.com/documentation/2.2.x/Installing){:target="_blank"},
 [install Scala](https://www.scala-lang.org/download){:target="_blank"}.
 
@@ -33,13 +33,13 @@ play new playScalaMongoSample
 
 ![Create play app](/assets/posts/2014/01/23/create_play_app.png)
 
-Pour démarrer notre application, il suffit alors d’aller dans le dossier de l’application et de lancer le serveur : `cd playScalaMongoSample/`
+Pour démarrer notre application, il suffit alors d'aller dans le dossier de l'application et de lancer le serveur : `cd playScalaMongoSample/`
 puis `play` pour accéder à la console sbt et enfin de lancer le serveur avec la commande `run`.
 
 ![Create play app](/assets/posts/2014/01/23/play_run.png)
 
 Bravo ! Votre application fonctionne !!! Maintenant, rendez-vous sur votre application : [localhost:9000](http://localhost:9000/){:target="_blank"}.
-Vous devriez voir la page d’accueil de Play :
+Vous devriez voir la page d'accueil de Play :
 
 ![Create play app](/assets/posts/2014/01/23/play_hello_page.png)
 
@@ -80,7 +80,7 @@ mongodb.default.db="crud"
 
 Le paramètre `mongodb.default.db` détermine le nom de la base qui sera utilisée dans MongoDB.
 
-## Troisième étape : Ajoutez les routes de l’application
+## Troisième étape : Ajoutez les routes de l'application
 
 Pour cela on va mettre un place un simple CRUD (Create Read Update Delete) basé sur MongoDB.
 
@@ -91,11 +91,12 @@ Pour cela commençons par créer les différentes routes qui seront utilisées. 
 GET    /users                       controllers.CRUDApp.users
 POST   /users                       controllers.CRUDApp.newUser
 POST   /users/:username/delete      controllers.CRUDApp.deleteUser(username: String)
+
 ```
 
 ## Quatrième étape : Créez vos modèles
 
-Pour fonctionner et se connecter à la base de données, salat à besoin d’un contexte (`MongoContext.scala`) que nous allons créer dans le dossier `app/models` :
+Pour fonctionner et se connecter à la base de données, salat à besoin d'un contexte (`MongoContext.scala`) que nous allons créer dans le dossier `app/models` :
 
 ```scala
 package models
@@ -151,7 +152,7 @@ object User extends ModelCompanion[User, ObjectId] {
 
 ## Cinquième étape : Codez le contrôleur
 
-On peut maintenant commencer à coder le contrôleur CRUDApp qui va effectuer l’ensemble des actions prévues :
+On peut maintenant commencer à coder le contrôleur CRUDApp qui va effectuer l'ensemble des actions prévues :
 
 ```scala
 package controllers
@@ -186,9 +187,9 @@ object CRUDApp extends Controller {
 }
 ```
 
-## Sixième étape : Ajoutez l’interface
+## Sixième étape : Ajoutez l'interface
 
-Maintenant que la logique est terminée, il faut tout simplement ajouter l’interface graphique.
+Maintenant que la logique est terminée, il faut tout simplement ajouter l'interface graphique.
 Pour cela, il nous faudra simplement créer `CRUD.scala.html` dans le dossier `app/views/` :
 
 ```play2template
@@ -222,8 +223,8 @@ Pour cela, il nous faudra simplement créer `CRUD.scala.html` dans le dossier `a
 
 Votre application est maintenant prête !!!
 
-Pour la tester, commencez par démarrer MongoDB sur votre machine, puis, à partir du répertoire principal de l’application
-lancez la commande `play` puis `run` et rendez-vous à l’adresse [localhost:9000/users](http://localhost:9000/users){:target="_blank"}.
+Pour la tester, commencez par démarrer MongoDB sur votre machine, puis, à partir du répertoire principal de l'application
+lancez la commande `play` puis `run` et rendez-vous à l'adresse [localhost:9000/users](http://localhost:9000/users){:target="_blank"}.
 
 Normalement vous devriez avoir un écran comme celui-ci :
 
@@ -235,16 +236,16 @@ Si vous avez oublié de démarrer votre base MongoDB, vous aurez une erreur comm
 
 ![Play error missing database](/assets/posts/2014/01/23/play_no_db.png)
 
-Dans ce cas, il faut arrêter l’application, démarrer MongoDB et démarrer à nouveau votre application.
+Dans ce cas, il faut arrêter l'application, démarrer MongoDB et démarrer à nouveau votre application.
 
-Voilà ! J’espère que cette petite mise en bouche vous aura fait partir du bon pied <i class="emoji smile"></i>
+Voilà ! J'espère que cette petite mise en bouche vous aura fait partir du bon pied <i class="emoji smile"></i>
 
-Pour les "flemmards", vous pouvez directement télécharger l’[archive du projet](/assets/posts/2014/01/23/playScalaMongoSample.rar).
+Pour les "flemmards", vous pouvez directement télécharger l'[archive du projet](/assets/posts/2014/01/23/playScalaMongoSample.rar).
 
-Pour ceux qui veulent partir directement d’une application intégrant les composants de base,
-j’ai créé un projet de démarrage librement accessible sur github : [github.com/loicknuchel/play-starter](https://github.com/loicknuchel/play-starter){:target="_blank"}
+Pour ceux qui veulent partir directement d'une application intégrant les composants de base,
+j'ai créé un projet de démarrage librement accessible sur github : [github.com/loicknuchel/play-starter](https://github.com/loicknuchel/play-starter){:target="_blank"}
 
-## What’s next
+## What's next
 
 Pour ceux qui veullent aller un peu plus loin,
 je conseille le workshop buyme de Scala.io : [github.com/workshop-buyme/buyme/wiki](https://github.com/workshop-buyme/buyme/wiki){:target="_blank"}

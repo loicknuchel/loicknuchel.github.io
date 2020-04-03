@@ -27,7 +27,7 @@ le code est donc plutôt trivial.
 
 Avec le style impératif il faut donc juste un `for` et un `if` :
 
-```javascript
+```js
 const registeredPlayers = events => {
     let count = 0;
     for(let i=0; i<events.length; i++) {
@@ -41,7 +41,7 @@ const registeredPlayers = events => {
 
 Du côté fonctionnel, encore plus simple, un simple `filter` fait l'affaire :
 
-```javascript
+```js
 const registeredPlayers = events => {
     return events.filter(e => e.type === 'PlayerHasRegistered').length;
 };
@@ -54,7 +54,7 @@ Bien sûr, il faut connaître la fonction `filter` mais elle est très simple et
 Pour ceux qui ne la connaitraient pas, elle créée simplement un nouveau tableau à partir de l'ancien en conservant uniquement les éléments
 pour lesquels la fonction passée en paramètre renvoi `true`. Si elle n'existait pas en JavaScript, on pourrait la coder très simplement :
 
-```javascript
+```js
 Array.prototype.filter = function(func /* prend un élément en renvoi un booléen */) {
     const res = [];
     for(let i=0; i<this.length; i++) {
@@ -78,7 +78,7 @@ Enfin, on peut noter que la fonction `filter` prends une autre fonction en param
 Passons maintenant à l'étape suivante, nous voulons faire la même chose mais pour chaque mois et renvoyer une tableau avec le mois et le nombre d'inscriptions.
 On ne peut donc plus se contenter d'un simple compteur :
 
-```javascript
+```js
 const registeredPlayersPerMonth = events => {
     const monthCount = {};
     for(let i=0; i<events.length; i++) {
@@ -107,7 +107,7 @@ Lire et comprendre le code est déjà beaucoup moins évident et on imagine faci
 
 Du côté fonctionnel en revanche le code se complexifie très peu :
 
-```javascript
+```js
 const registeredPlayersPerMonth = events => {
     return events
         .filter(e => e.type === 'PlayerHasRegistered')
@@ -122,7 +122,7 @@ On commence aussi à voir que le style impératif est susceptible d'accueillir b
 
 Bon, je dois quand même avouer qu'il manque encore en JavaScript certaines fonctions de base que j'ai dû rajouter :
 
-```javascript
+```js
 Array.prototype.groupBy = function(func /* T => string */) {
     const res = {};
     this.map(e => {
@@ -146,7 +146,7 @@ Nous venons de résoudre les deux premiers challenges du workshop et on a bien v
 Voyons ce que ça peut donner avec le challenge suivant... On doit lister les 10 quiz les plus populaires avec leur id, nom et nombre de fois qu'ils ont été joués.<br>
 Regardons d'abord le code fonctionnel cette fois-ci :
 
-```javascript
+```js
 const popularQuizs = events => {
     const createdQuizs = events.filter(e => e.type === 'QuizWasCreated').groupBy(e => e.payload.quiz_id);
     const startedGames = events.filter(e => e.type === 'GameWasStarted').groupBy(e => e.payload.game_id);
@@ -171,7 +171,7 @@ Plutôt direct, non ?
 
 Je vous laisse comparer avec la version impérative :
 
-```javascript
+```js
 const popularQuizs = events => {
     const gameToQuiz = {};
     const quizToName = {};
@@ -223,6 +223,7 @@ def registeredPlayersPerMonth(events: List[Event]): List[RegisteredPlayers] =
       .collect { case e: PlayerHasRegistered => e }
       .groupBy(getYearMonth)
       .map { case (month, monthEvents) => RegisteredPlayers(month, monthEvents.length) }.toList
+
 ```
 
 Si on souhaite paralléliser les traitements, il suffit d'ajouter `.par` :
@@ -233,6 +234,7 @@ def registeredPlayersPerMonth(events: List[Event]): List[RegisteredPlayers] =
       .collect { case e: PlayerHasRegistered => e }
       .groupBy(getYearMonth)
       .map { case (month, monthEvents) => RegisteredPlayers(month, monthEvents.length) }.toList
+
 ```
 
 Ou pour rendre l'exécution lazy, on remplace simplement les `List` par des `Stream` :
@@ -243,6 +245,7 @@ def registeredPlayersPerMonth(events: Stream[Event]): Stream[RegisteredPlayers] 
       .collect { case e: PlayerHasRegistered => e }
       .groupBy(getYearMonth)
       .map { case (month, monthEvents) => RegisteredPlayers(month, monthEvents.length) }.toStream
+
 ```
 
 Bref, le code change très peu (y compris entre JavaScript et Scala) alors qu'on a des exécutions très différentes.

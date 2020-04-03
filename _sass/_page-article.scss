@@ -25,12 +25,14 @@
 
     &.pull-right {
       float: right;
+      max-width: 50%;
       margin-left: $default-spacing;
       margin-bottom: $default-spacing;
     }
 
     &.pull-left {
       float: left;
+      max-width: 50%;
       margin-right: $default-spacing;
       margin-bottom: $default-spacing;
     }

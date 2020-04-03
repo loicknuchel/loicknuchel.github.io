@@ -14,11 +14,11 @@ et que ce framework permet de faire de bonnes applications très facilement et r
 
 Je vous propose donc de faire le tour des composants Ionic en créant un client twitter.
 
-C’est parti !
+C'est parti !
 
 ## Installation
 
-Si vous ne l’avez pas déjà fait, installez [node.js](https://nodejs.org){:target="_blank"}. Puis Cordova et Ionic :
+Si vous ne l'avez pas déjà fait, installez [node.js](https://nodejs.org){:target="_blank"}. Puis Cordova et Ionic :
 
 ```console
 $ sudo npm install -g cordova ionic
@@ -36,36 +36,36 @@ et le lancer dans votre navigateur :
 $ cd twitter-app/ && ionic serve
 ```
 
-Pensez à redimensionner votre navigateur aux dimensions d’un téléphone, par exemple 384×525 (Nexus 4).
-Vous pouvez aussi visualiser les styles Android et iOS en simultané en utilisant l’option –lab : `ionic serve --lab`
+Pensez à redimensionner votre navigateur aux dimensions d'un téléphone, par exemple 384x525 (Nexus 4).
+Vous pouvez aussi visualiser les styles Android et iOS en simultané en utilisant l'option --lab : `ionic serve --lab`
 (ou en ajoutant */ionic-lab* à la fin de votre url <i class="emoji wink"></i>).
 
-Pour l’installer sur votre téléphone, il faudra installer le sdk
+Pour l'installer sur votre téléphone, il faudra installer le sdk
 [Android](https://cordova.apache.org/docs/en/3.3.0/guide/platforms/android/index.html#Android%20Platform%20Guide){:target="_blank"}
 ou [iOS](https://cordova.apache.org/docs/en/3.3.0/guide/platforms/ios/index.html#iOS%20Platform%20Guide){:target="_blank"},
-ajouter la plateforme souhaitée et compiler l’application :
+ajouter la plateforme souhaitée et compiler l'application :
 
 ```console
 $ ionic platform add [android/ios]
 $ ionic run [android/ios]
 ```
 
-Si vous rencontrez des difficultés, n’hésitez pas à consulter le [Getting Started](https://ionicframework.com/getting-started){:target="_blank"} de Ionic,
+Si vous rencontrez des difficultés, n'hésitez pas à consulter le [Getting Started](https://ionicframework.com/getting-started){:target="_blank"} de Ionic,
 laisser un commentaire ici ou aller faire un tour sur le [forum Ionic](https://forum.ionicframework.com){:target="_blank"}.
 
-## Structure de l’application
+## Structure de l'application
 
 Si vous regardez les fichiers générés par votre ligne de commande, vous trouverez :
 
-- Un dossier **hooks/** : permet d’exécuter des tâches pendant le build cordova (usage avancé)
+- Un dossier **hooks/** : permet d'exécuter des tâches pendant le build cordova (usage avancé)
 - Un dossier **platforms/** (si vous avez ajouté une plateforme) : il contient les fichiers générés par la compilation et notamment
 le .apk pour Android (*platforms/android/ant-build/CordovaApp-debug.apk*)
 - Un dossier **plugins/** : contenant les plugins cordova relatifs au projet
 - Un dossier **scss/** : utilisé seulement si on active sass sur le projet
 - Un dossier **www/** : qui contient tout le code de notre application
-- Un fichier **config.xml** : qui permet de configurer cordova lors du build. Notamment, le nom de l’application et son package.
+- Un fichier **config.xml** : qui permet de configurer cordova lors du build. Notamment, le nom de l'application et son package.
 
-Dans le dossier **www/** vous trouverez la structure standard d’une application front-end et notamment le index.html qui est notre fichier principal.
+Dans le dossier **www/** vous trouverez la structure standard d'une application front-end et notamment le index.html qui est notre fichier principal.
 
 ## Etape 1 : Structurer un peu le projet
 
@@ -101,15 +101,15 @@ angular.module('app')
 });
 ```
 
-J’en ai aussi profité pour supprimer quelques commentaires et changer le nom de l’application angular "starter" en "app".
+J'en ai aussi profité pour supprimer quelques commentaires et changer le nom de l'application angular "starter" en "app".
 
-L’application doit maintenant afficher une belle page blanche ! Si vous êtes un peu perdu, jetez un œil à
+L'application doit maintenant afficher une belle page blanche ! Si vous êtes un peu perdu, jetez un œil à
 [mon code sur github](https://github.com/loicknuchel/blog-twitter-app/tree/d4379a92efe9bc1ab4f4228e175cbff04e420948){:target="_blank"} <i class="emoji smile"></i>
 
 ## Etape 2 : Créer une liste de twitts
 
 Comme tout bon client twitter, il nous faut un feed de twitts. Pour cela nous allons créer un service qui nous renverra les twitts à afficher
-(fake pour l’instant) puis le markup html nécessaire pour les afficher.
+(fake pour l'instant) puis le markup html nécessaire pour les afficher.
 
 Dans *services.js* :
 
@@ -125,7 +125,7 @@ angular.module('app')
     {user: {id: 'raymondcamden', name: 'Raymond Camden', avatar: 'https://pbs.twimg.com/profile_images/378800000568876933/2da22327d055cbf8e0502c3f22888fef_bigger.jpeg'}, content: 'Good list of @Ionicframework resources: https://github.com/Alexintosh/Awesome-Ionic', url: 'https://twitter.com/raymondcamden/status/568424487693082625'},
     {user: {id: 'nraboy', name: 'Nic Raboy', avatar: 'https://pbs.twimg.com/profile_images/2653730816/5da4d8fb72352c715bbaffe07e56270e_bigger.jpeg'}, content: 'Use the native device calendar in your Android and iOS @IonicFramework mobile app using #ngCordova. https://blog.nraboy.com/2015/02/using-native-device-calendar-ionic-framework/ #appdev RT', url: 'https://twitter.com/nraboy/status/568438200198258689'},
     {user: {id: 'devgirlFL', name: 'Holly Schinsky', avatar: 'https://pbs.twimg.com/profile_images/378800000664886768/5aa49c1cded0317a887cae28f5d80cd7_bigger.jpeg'}, content: 'What to expect in @Ionicframework 1.0: https://medium.com/@saniyusuf/looking-forward-to-ionic-v1-0-ionic-io-tools-6cb8e76e29c3 via @saniyusuf', url: 'https://twitter.com/devgirlFL/status/563673910424928256'},
-    {user: {id: 'maxlynch', name: 'Max Lynch', avatar: 'https://pbs.twimg.com/profile_images/546942133496995840/k7JAxvgq_bigger.jpeg'}, content: 'Awesome new Ionic course from @GoThinkster "Mastering Ionic - Learn to Build & Deploy Native Speed HTML5 Based Apps” https://thinkster.io/ionic-framework-tutorial/', url: 'https://twitter.com/maxlynch/status/568097163131006976'},
+    {user: {id: 'maxlynch', name: 'Max Lynch', avatar: 'https://pbs.twimg.com/profile_images/546942133496995840/k7JAxvgq_bigger.jpeg'}, content: 'Awesome new Ionic course from @GoThinkster "Mastering Ionic - Learn to Build & Deploy Native Speed HTML5 Based Apps" https://thinkster.io/ionic-framework-tutorial/', url: 'https://twitter.com/maxlynch/status/568097163131006976'},
     {user: {id: 'asdvaughan', name: 'Andrew Vaughan', avatar: 'https://pbs.twimg.com/profile_images/519532575031713792/Fm4zj2Zm_bigger.jpeg'}, content: 'Ionic Framework Demo - Matt Stauffer: https://www.youtube.com/watch?v=nh9EARpk-dc via @YouTube Great framework setup demo and api consumption!', url: 'https://twitter.com/asdvaughan/status/566103487281635328'}
   ];
  
@@ -176,13 +176,13 @@ Dans la partie JavaScript, rien de bien étonnant pour qui connaît un peu Angul
 On crée un service avec une fonction (*getTwitts()*) qui renvoie un tableau de twitts dans une promise (ce sera asynchrone par la suite...).<br>
 <br>
 Le contrôleur utilise le service pour récupérer les twitts et les mettre dans le *$scope*
-(celui-ci est disponible dans la vue liée au contrôleur, ci qui nous permettra d’accéder aux twitts dans le HTML).<br>
+(celui-ci est disponible dans la vue liée au contrôleur, ci qui nous permettra d'accéder aux twitts dans le HTML).<br>
 <br>
 Dans la vue, nous utilisons plusieurs directives angular issues de Ionic.
-Tout d’abord le `<ion-view>` ([doc](http://ionicframework.com/docs/api/directive/ionView){:target="_blank"}) qui définit une "vue".
-C’est dans cette vue que nous pourrons placer nos éléments.
+Tout d'abord le `<ion-view>` ([doc](http://ionicframework.com/docs/api/directive/ionView){:target="_blank"}) qui définit une "vue".
+C'est dans cette vue que nous pourrons placer nos éléments.
 Ensuite, le `<ion-header-bar>` ([doc](https://ionicframework.com/docs/api/header){:target="_blank"}) définit un header,
-celui-ci en fixé en haut de l’application et peut comporter des boutons d’action.
+celui-ci en fixé en haut de l'application et peut comporter des boutons d'action.
 Enfin, le `<ion-content>` ([doc](https://ionicframework.com/docs/api/content){:target="_blank"}) est le contenu principal de la vue.
 Celui-ci est scrollable et prend toute la hauteur restante de la vue.<br>
 <br>
@@ -196,15 +196,15 @@ Si vous êtes perdu, passez voir [github](https://github.com/loicknuchel/blog-tw
 ## Etape 3 : Récupérer plus de twitts
 
 ![Résultat de l'étape 3](/assets/posts/2015/02/26/step3.png){:.pull-left}
-Bon, afficher une liste de twitts c’est bien, mais on voudrait aussi pouvoir lire les nouveaux twitts et les twitts passés...
+Bon, afficher une liste de twitts c'est bien, mais on voudrait aussi pouvoir lire les nouveaux twitts et les twitts passés...
 Heureusement, Ionic nous fournit deux directives pour ça : `<ion-refresher>` ([doc](https://ionicframework.com/docs/api/refresher){:target="_blank"})
 et `<ion-infinite-scroll>` ([doc](https://ionicframework.com/docs/api/infinite-scroll){:target="_blank"}). Voyons comment les utiliser...<br>
 <br>
 Commençons par le pull-to-refresh :<br>
 <br>
 On ajoute la fonction *getNewTwitts()* dans le service *TwittSrv* pour récupérer les nouveaux twitts. Cette fonction renverra, pour le moment,
-seulement un tableau de 1 twitt aléatoire au bout de 500 milli-secondes. Ne pas oublier d’ajouter $timeout comme dépendance au service
-et de rajouter la nouvelle fonction dans l’objet retourné par le service (pour qu’elle soit accessible par le contrôleur).
+seulement un tableau de 1 twitt aléatoire au bout de 500 milli-secondes. Ne pas oublier d'ajouter $timeout comme dépendance au service
+et de rajouter la nouvelle fonction dans l'objet retourné par le service (pour qu'elle soit accessible par le contrôleur).
 
 Dans *services.js* :
 
@@ -219,7 +219,7 @@ function getNewTwitts(){
 }
 ```
 
-On ajoute ensuite une fonction *doRefresh()* au contrôleur qui permettra d’ajouter les nouveaux twitts dans le DOM. Dans *controller.js* :
+On ajoute ensuite une fonction *doRefresh()* au contrôleur qui permettra d'ajouter les nouveaux twitts dans le DOM. Dans *controller.js* :
 
 ```js
 $scope.doRefresh = function(){
@@ -233,7 +233,7 @@ $scope.doRefresh = function(){
 ```
 
 Cette fonction récupère simplement les nouveaux twitts et les ajoute au début du tableau de twitts.
-A noter qu’il faut envoyer l’événement '*scroll.refreshComplete*' lorsque l’on a terminé pour que le loader disparaisse.
+A noter qu'il faut envoyer l'événement '*scroll.refreshComplete*' lorsque l'on a terminé pour que le loader disparaisse.
 
 Et enfin, on ajoute tout simplement la directive `<ion-refresher>` au dessus de sa liste dans *app.html* :
 
@@ -241,7 +241,7 @@ Et enfin, on ajoute tout simplement la directive `<ion-refresher>` au dessus de 
 <ion-refresher pulling-text="Pull to refresh..." on-refresh="doRefresh()"></ion-refresher>
 ```
 
-C’est elle qui fait tout le job ! C’est pas beau ça ???
+C'est elle qui fait tout le job ! C'est pas beau ça ???
 
 Pour la fonction infinite-scroll, les choses sont très similaires dans *services.js* :
 
@@ -273,18 +273,18 @@ $scope.loadMore = function(){
 ```
 
 Le `<ion-infinite-scroll>` est à ajouter en fin de liste dans *app.html*.
-Lorsqu’on arrive en bas, la fonction *loadMore()* sera appelée pour charger des twitts plus anciens.
+Lorsqu'on arrive en bas, la fonction *loadMore()* sera appelée pour charger des twitts plus anciens.
 
 ```html
 <ion-infinite-scroll on-infinite="loadMore()" distance="1%"></ion-infinite-scroll>
 ```
 
-On vient donc de créer en quelques lignes, une liste infinie avec un pull-to-refresh. Heureusement qu’il y a Ionic pour ça <i class="emoji wink"></i>
+On vient donc de créer en quelques lignes, une liste infinie avec un pull-to-refresh. Heureusement qu'il y a Ionic pour ça <i class="emoji wink"></i>
 
 Le code de cette étape est une fois de plus accessible sur
 [github](https://github.com/loicknuchel/blog-twitter-app/tree/2478140d7e38116c7ec66432b57f9c5bab2d6e29){:target="_blank"} si nécessaire.
 
-Voici l’[application android générée](/assets/posts/2015/02/26/ionic-twitter-app-step1.apk) et son aperçu actuel :
+Voici l'[application android générée](/assets/posts/2015/02/26/ionic-twitter-app-step1.apk) et son aperçu actuel :
 
 <div style="position: relative; margin-bottom: 20px;">
     <img src="http://ionicframework.com/img/phone-case.png" 
@@ -295,6 +295,6 @@ Voici l’[application android générée](/assets/posts/2015/02/26/ionic-twitte
         style="width: 328px; height: 576px; border: none; position: absolute; top: 100px; left: 50%; margin-left: -164px;"></iframe>
 </div>
 
-Je vais m’arrêter là pour ce premier article.
+Je vais m'arrêter là pour ce premier article.
 Vous pourrez bientôt [lire la suite]({% post_url 2015-03-05-faire-un-client-twitter-avec-ionic-partie-2 %}) et découvrir un peu plus Ionic...
 Stay tuned !

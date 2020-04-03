@@ -8,11 +8,51 @@
   color: #B72E29;
 }
 
+.language-java,
+.language-scala,
+.language-javascript,
+.language-js,
+.language-html,
+.language-css,
+.language-hocon,
+.language-play2htmlrouting,
+.language-play2template,
+.language-bash,
+.language-xml,
+.language-console,
+.language-error {
+  display: block;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    color: #ccc;
+    padding-left: 5px;
+  }
+}
+
+.language-java::after { content: 'Java'; }
+.language-scala::after { content: 'Scala'; }
+.language-javascript::after, .language-js::after { content: 'JavaScript'; }
+.language-html::after { content: 'HTML'; }
+.language-css::after { content: 'CSS'; }
+.language-hocon::after { content: 'HOCON'; }
+.language-play2htmlrouting::after { content: 'Play routes'; }
+.language-play2template::after { content: 'Twirl'; }
+.language-bash::after { content: 'Bash'; }
+.language-xml::after { content: 'XML'; }
+.language-console::after { content: 'Console'; }
+.language-error::after { content: 'Error'; }
+
 .highlight {
   background: #fff;
 
   .highlighter-rouge & {
     background: #eef;
+    font-size: 16px;
+    padding-left: 5px;
   }
 
   .c     { color: #998; font-style: italic } // Comment
