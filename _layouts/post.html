@@ -71,36 +71,31 @@ menus:
     </div>
     <div class="row posts">
         {% if page.related %}
-        {% for post in page.related %}
-        <div class="col-md-5 mr-auto">
-            <div class="posts__item">
-                <a href="{{post.url}}">
-                    <h3 class="posts__title">{{post.title}}</h3>
-                    <p class="posts__description">{{post.excerpt | strip_html | truncatewords: 30}}</p>
-                </a>
-            </div>
-        </div>
-        {% endfor %}
-        {% elsif site.related_posts %}
-        {% for post in site.related_posts %}
-        <div class="col-md-5 mr-auto">
-            <div class="posts__item">
-                <a href="{{post.url}}">
-                    <h3 class="posts__title">{{post.title}}</h3>
-                    <p class="posts__description">{{post.excerpt | strip_html | truncatewords: 30}}</p>
-                </a>
-            </div>
-        </div>
-        {% endfor %}
+            {% for rel in page.related %}
+                {% for post in site.posts %}
+                    {% if post.slug == rel %}
+                        <div class="col-md-5 mr-auto">
+                            <div class="posts__item">
+                                <a href="{{post.url}}">
+                                    <h3 class="posts__title">{{post.title}}</h3>
+                                    <p class="posts__description">{{post.excerpt | strip_html | truncatewords: 30}}</p>
+                                </a>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
         {% else %}
-        <div class="col-md-5 mr-auto">
-            <div class="posts__item">
-                <a href="/">
-                    <h3 class="posts__title">Loïc Knuchel CV</h3>
-                    <p class="posts__description"></p>
-                </a>
-            </div>
-        </div>
+            {% for post in site.related_posts %}
+                <div class="col-md-5 mr-auto">
+                    <div class="posts__item">
+                        <a href="{{post.url}}">
+                            <h3 class="posts__title">{{post.title}}</h3>
+                            <p class="posts__description">{{post.excerpt | strip_html | truncatewords: 30}}</p>
+                        </a>
+                    </div>
+                </div>
+            {% endfor %}
         {% endif %}
     </div>
 </section>

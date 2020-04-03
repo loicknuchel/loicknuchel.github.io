@@ -1,11 +1,13 @@
 ---
 layout:      post
+locale:      fr_FR
+kind:        mobile
 title:       Faire un client Twitter avec Ionic
 banner_1_1:  /assets/posts/2015/02/26/faire-un-client-twitter-avec-ionic_1_1.jpg
 banner_2_1:  /assets/posts/2015/02/26/faire-un-client-twitter-avec-ionic_2_1.jpg
 banner_21_9: /assets/posts/2015/02/26/faire-un-client-twitter-avec-ionic_21_9.jpg
 author:      loic
-categories:  [coding]
+categories:  [tech, code]
 tags:        [ionic framework, cordova, mobile, angular, tutorial]
 ---
 

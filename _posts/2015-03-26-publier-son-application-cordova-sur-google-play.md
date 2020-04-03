@@ -1,11 +1,13 @@
 ---
 layout:      post
+locale:      fr_FR
+kind:        code
 title:       Publier son application Cordova sur Google Play
 banner_1_1:  /assets/posts/2015/03/26/publier-son-application-cordova-sur-google-play_1_1.jpg
 banner_2_1:  /assets/posts/2015/03/26/publier-son-application-cordova-sur-google-play_2_1.jpg
 banner_21_9: /assets/posts/2015/03/26/publier-son-application-cordova-sur-google-play_21_9.jpg
 author:      loic
-categories:  [coding]
+categories:  [tech, code]
 tags:        [cordova, android, mobile]
 ---
 

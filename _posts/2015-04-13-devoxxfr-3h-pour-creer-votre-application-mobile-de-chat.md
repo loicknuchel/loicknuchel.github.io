@@ -1,11 +1,13 @@
 ---
 layout:      post
+locale:      fr_FR
+kind:        talk
 title:       DevoxxFr, 3h pour créer votre application mobile de chat
 banner_1_1:  /assets/posts/2015/04/13/devoxxfr-3h-pour-creer-votre-application-mobile-de-chat_1_1.jpg
 banner_2_1:  /assets/posts/2015/04/13/devoxxfr-3h-pour-creer-votre-application-mobile-de-chat_2_1.jpg
 banner_21_9: /assets/posts/2015/04/13/devoxxfr-3h-pour-creer-votre-application-mobile-de-chat_21_9.jpg
 author:      loic
-categories:  [coding]
+categories:  [tech, speaker]
 tags:        [devoxxfr, ionic framework, talk, workshop]
 ---
 

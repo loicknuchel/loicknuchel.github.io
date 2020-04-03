@@ -1,0 +1,22 @@
+---
+layout:  page
+title:   List banners of posts
+excerpt: This is a "check" page, not a user page
+---
+<div class="sheet__header">
+    <div class="vertical">
+        <h1 class="page-title">{{page.title}}</h1>
+        <h2 class="page-description">{{page.excerpt}}</h2>
+    </div>
+</div>
+<div class="sheet_content">
+    {% for post in site.posts %}
+    {% assign author = site.data.people[post.author] | default: site.data.people.loic %}
+    <div style="margin-bottom: 20px">
+        <b>{{post.title}}</b><br>
+        <img src="{{post.banner_1_1 | default: '/assets/img/default/blog_banner_1_1.jpg'}}" alt="banner 1x1" title="banner 1x1" style="height: 150px">
+        <img src="{{post.banner_2_1 | default: '/assets/img/default/blog_banner_2_1.jpg'}}" alt="banner 2x1" title="banner 2x1" style="height: 150px">
+        <img src="{{post.banner_21_9 | default: '/assets/img/default/blog_banner_21_9.jpg'}}" alt="banner 21x9" title="banner 21x9" style="height: 150px">
+    </div>
+    {% endfor %}
+</div>

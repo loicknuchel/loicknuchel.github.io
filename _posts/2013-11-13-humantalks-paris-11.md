@@ -1,11 +1,13 @@
 ---
 layout:      post
+locale:      fr_FR
+kind:        event
 title:       "HumanTalks Paris #11"
 banner_1_1:  /assets/posts/2013/11/13/humantalks-paris-11_1_1.jpg
 banner_2_1:  /assets/posts/2013/11/13/humantalks-paris-11_2_1.jpg
 banner_21_9: /assets/posts/2013/11/13/humantalks-paris-11_21_9.jpg
 author:      loic
-categories:  [coding]
+categories:  [tech, event]
 tags:        [humantalks, design, gestion de projet, open source, programmation fonctionnelle]
 ---
 

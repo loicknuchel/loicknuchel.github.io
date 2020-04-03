@@ -1,11 +1,13 @@
 ---
 layout:      post
+locale:      fr_FR
+kind:        mobile
 title:       Faire un client Twitter avec Ionic - partie 2
 banner_1_1:  /assets/posts/2015/03/05/faire-un-client-twitter-avec-ionic-partie-2_1_1.jpg
 banner_2_1:  /assets/posts/2015/03/05/faire-un-client-twitter-avec-ionic-partie-2_2_1.jpg
 banner_21_9: /assets/posts/2015/03/05/faire-un-client-twitter-avec-ionic-partie-2_21_9.jpg
 author:      loic
-categories:  [coding]
+categories:  [tech, code]
 tags:        [ionic framework, cordova, mobile, angular, tutorial]
 ---
 
@@ -101,7 +103,7 @@ Le template du modal est une simple vue mais avec la directive `<ion-modal-view>
   <ion-content>
     <div class="list">
       <label class="item item-input item-floating-label">
-        <small class="counter" ng-class="{assertive: twitt.content.length > 140, muted: !(twitt.content.length > 140)}">{{140-twitt.content.length}}</small>
+        <small class="counter" ng-class="{assertive: twitt.content.length > 140, muted: !(twitt.content.length > 140)}">{%raw%}{{140-twitt.content.length}}{%endraw%}</small>
         <span class="input-label">What's new ?</span>
         <textarea rows="5" placeholder="What's new ?" ng-model="twitt.content"></textarea>
       </label>

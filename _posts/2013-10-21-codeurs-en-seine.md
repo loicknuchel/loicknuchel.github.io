@@ -1,11 +1,13 @@
 ---
 layout:      post
+locale:      fr_FR
+kind:        event
 title:       Codeurs en Seine 2013
 banner_1_1:  /assets/posts/2013/10/21/codeurs-en-seine_1_1.jpg
 banner_2_1:  /assets/posts/2013/10/21/codeurs-en-seine_2_1.jpg
 banner_21_9: /assets/posts/2013/10/21/codeurs-en-seine_21_9.jpg
 author:      loic
-categories:  [coding]
+categories:  [tech, event]
 tags:        [codeurs en seine, continuous delivery, design, lean startup, software craftsmanship]
 ---
 

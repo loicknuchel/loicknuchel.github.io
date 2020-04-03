@@ -1,11 +1,13 @@
 ---
 layout:      post
+locale:      en_US
+kind:        code
 title:       Why functional programming ?
 banner_1_1:  /assets/posts/2017/06/25/why-functional-programming_1_1.jpg
 banner_2_1:  /assets/posts/2017/06/25/why-functional-programming_2_1.jpg
 banner_21_9: /assets/posts/2017/06/25/why-functional-programming_21_9.jpg
 author:      loic
-categories:  [coding]
+categories:  [tech, craft]
 tags:        [functional programming, software craft]
 ---
 

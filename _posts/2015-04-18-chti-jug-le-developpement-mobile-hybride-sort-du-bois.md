@@ -1,12 +1,13 @@
 ---
 layout:      post
 locale:      fr_FR
+kind:        talk
 title:       Ch'ti JUG, le développement mobile hybride sort du bois
 banner_1_1:  /assets/posts/2015/04/18/chti-jug-le-developpement-mobile-hybride-sort-du-bois_1_1.jpg
 banner_2_1:  /assets/posts/2015/04/18/chti-jug-le-developpement-mobile-hybride-sort-du-bois_2_1.jpg
 banner_21_9: /assets/posts/2015/04/18/chti-jug-le-developpement-mobile-hybride-sort-du-bois_21_9.jpg
 author:      loic
-categories:  [coding]
+categories:  [tech, speaker]
 tags:        [ch'ti jug, ionic framework, cordova, angular, mobile, talk]
 carousel:
     - {url: "/assets/posts/2015/04/18/chti-jug-audience_16_9.jpg"}

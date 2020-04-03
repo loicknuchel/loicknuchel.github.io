@@ -1,11 +1,13 @@
 ---
 layout:      post
+locale:      fr_FR
+kind:        announcement
 title:       Hello world !
 banner_1_1:  /assets/posts/2013/10/15/hello-world_1_1.jpg
 banner_2_1:  /assets/posts/2013/10/15/hello-world_2_1.jpg
 banner_21_9: /assets/posts/2013/10/15/hello-world_21_9.jpg
 author:      loic
-categories:  [coding]
+categories:  []
 tags:        [hello, loic knuchel, meta]
 ---
 

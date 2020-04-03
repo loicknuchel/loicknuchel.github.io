@@ -1,11 +1,13 @@
 ---
 layout:      post
+locale:      fr_FR
+kind:        code
 title:       "JavaToScala : syntaxe et concepts"
 banner_1_1:  /assets/posts/2013/11/08/javatoscala-syntaxe-et-concepts_1_1.jpg
 banner_2_1:  /assets/posts/2013/11/08/javatoscala-syntaxe-et-concepts_2_1.jpg
 banner_21_9: /assets/posts/2013/11/08/javatoscala-syntaxe-et-concepts_21_9.jpg
 author:      loic
-categories:  [coding]
+categories:  [tech, code]
 tags:        [bbl, scala, java, recommender system]
 ---
 

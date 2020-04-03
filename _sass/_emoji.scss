@@ -121,7 +121,9 @@
   &.beer-mug:before { content: '\01f37a'; }
   &.clinking-beer-mugs:before { content: '\01f37b'; }
   &.police-car-light:before { content: '\01f6a8'; }
-  &.rocket:before { content: '\01f680'; }
+  &.rocket:before, &.startup:before { content: '\01f680'; }
+  &.hourglass-done:before { content: '\0231B'; }
+  &.hourglass-not-done:before { content: '\023F3'; }
   &.star:before { content: '\02b50'; }
   &.glowing-star:before { content: '\01f31f'; }
   &.high-voltage:before { content: '\026a1'; }
@@ -137,44 +139,60 @@
   &.first-place-medal:before { content: '\01f947'; }
   &.second-place-medal:before { content: '\01f948'; }
   &.third-place-medal:before { content: '\01f949'; }
-  &.direct-hit:before { content: '\01f3af'; }
+  &.direct-hit:before, &.management:before { content: '\01f3af'; }
   &.slot-machine:before { content: '\01f3b0'; }
   &.game-die:before { content: '\01f3b2'; }
   &.heart-suit:before { content: '\02665'; }
   &.gem-stone:before { content: '\01f48e'; }
-  &.loudspeaker:before { content: '\01f4e2'; }
+  &.loudspeaker:before, &.announcement:before { content: '\01f4e2'; }
   &.megaphone:before { content: '\01f4e3'; }
   &.bell:before { content: '\01f514'; }
   &.studio-microphone:before { content: '\01f399'; }
-  &.microphone:before { content: '\01f3a4'; }
+  &.microphone:before, &.talk:before { content: '\01f3a4'; }
   &.headphone:before { content: '\01f3a7'; }
-  &.mobile-phone:before { content: '\01f4f1'; }
-  &.laptop:before { content: '\01f4bb'; }
+  &.mobile-phone:before, &.mobile:before { content: '\01f4f1'; }
+  &.laptop:before, &.code:before { content: '\01f4bb'; }
   &.desktop-computer:before { content: '\01f5a5'; }
   &.keyboard:before { content: '\02328'; }
   &.floppy-disk:before { content: '\01f4be'; }
   &.magnifying-glass-tilted-left:before { content: '\01f50d'; }
-  &.light-bulb:before { content: '\01f4a1'; }
+  &.light-bulb:before, &.idea:before { content: '\01f4a1'; }
+  &.closed-book:before { content: '\01F4D5'; }
+  &.open-book:before { content: '\01F4D6'; }
+  &.green-book:before { content: '\01F4D7'; }
   &.blue-book:before { content: '\01f4d8'; }
-  &.page-with-curl:before { content: '\01f4c3'; }
+  &.orange-book:before { content: '\01F4D9'; }
+  &.books:before { content: '\01F4DA'; }
+  &.page-with-curl:before, &.article:before { content: '\01f4c3'; }
   &.bookmark:before { content: '\01f516'; }
   &.label:before { content: '\01f3f7'; }
   &.money-bag:before { content: '\01f4b0'; }
   &.dollar-banknote:before { content: '\01f4b5'; }
   &.euro-banknote:before { content: '\01f4b6'; }
+  &.receipt:before { content: '\01F9FE'; }
   &.envelope:before { content: '\02709'; }
-  &.calendar:before { content: '\01f4c5'; }
+  &.memo:before, &.draft:before { content: '\01F4DD'; }
+  &.calendar:before, &.event:before { content: '\01f4c5'; }
   &.tear-off-calendar:before { content: '\01f4c6'; }
   &.spiral-calendar:before { content: '\01f5d3'; }
+  &.chart-increasing:before { content: '\01F4C8'; }
+  &.chart-decreasing:before { content: '\01F4C9'; }
+  &.bar-chart:before { content: '\01F4CA'; }
   &.locked:before { content: '\01f512'; }
   &.unlocked:before { content: '\01f513'; }
   &.key:before { content: '\01f511'; }
   &.shield:before { content: '\01f6e1'; }
   &.link:before { content: '\01f517'; }
-  &.test-tube:before { content: '\01f9ea'; }
+  &.test-tube:before, &.experiment:before { content: '\01f9ea'; }
   &.warning:before { content: '\026a0'; }
   &.double-exclamation-mark:before { content: '\0203c'; }
   &.check-mark:before { content: '\02714'; }
   &.cross-mark:before { content: '\0274c'; }
   &.part-alternation-mark:before { content: '\0303d'; }
+
+  &.article {
+    margin: 0;
+    padding: 0;
+    background: none;
+  }
 }

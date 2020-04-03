@@ -1,16 +1,17 @@
 ---
 layout:      post
-locale:      fr_FR                                   # optional, default: en_US, values: en_US, fr_FR
-title:       A sample post to showcase possibilities # optional, default: post file name
-banner_1_1:  https://via.placeholder.com/350         # optional, default: /assets/img/default/blog_banner_1_1.jpg, for lists & twitter summary card
-banner_2_1:  https://via.placeholder.com/600x300     # optional, for twitter summary_large_image card
-banner_21_9: https://via.placeholder.com/1024x439    # optional, for article banner (no banner shown if not present)
-author:      loic                                    # optional, default to loic (names in `_data/people.json`)
-categories:  [sample]                                # optional, recommended one but can be multiple
+locale:      en_US                                 # optional, default: en_US, values: en_US, fr_FR
+kind:        draft                                 # optional, default: article, emoji in front of the article title
+title:       A showcase post for demo              # optional, default: post file name
+banner_1_1:  https://via.placeholder.com/350       # optional, default: /assets/img/default/blog_banner_1_1.jpg, for lists & twitter summary card
+banner_2_1:  https://via.placeholder.com/600x300   # optional, for twitter summary_large_image card
+banner_21_9: https://via.placeholder.com/1024x439  # optional, for article banner (no banner shown if not present)
+author:      loic                                  # optional, default to loic (names in `_data/people.json`)
+categories:  [sample]                              # optional, recommended one but can be multiple
 tags:        [getting started, reminder]
-related:                                             # optional, if not set jekyll will add some automatically
-    - {id: "/coding/2017/06/01/imperatif-vs-fonctionnel-fight", title: "Impératif vs Fonctionnel : Fight !", excerpt: "Salut ! Ca fait un moment que je n'ai plus écrit d'articles ici mais je compte bien m'y remettre avec pas mal de choses sur la programmation fonctionnelle et Scala"}
-    - {id: "/coding/2015/09/01/eviter-toujours-plus-de-bugs-grace-au-typage", title: "Éviter toujours plus de bugs grâce au typage", excerpt: "Ceux qui me connaissent savent que je suis un grand fan des langages typés, de programmation fonctionnelle et de Scala. Pourquoi ?"}
+related:                                           # optional, if not set jekyll will add some automatically
+    - imperatif-vs-fonctionnel-fight
+    - eviter-toujours-plus-de-bugs-grace-au-typage
 ---
 
 This sample post is here to showcase `post` possibilities and make sure design is not broken.
@@ -31,25 +32,39 @@ h1 is reserved for the page title
 
 Emojis works use `<i class="emoji $name"></i>` (see [full list](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"}) :
 
-Most used: <span style="font-size: 2em; line-height: 1.2;">
-    <i class="emoji smile" title="smile" data-toggle="tooltip"></i>
+Alias: <span style="font-size: 2em; line-height: 1.2;">
     <i class="emoji happy" title="happy" data-toggle="tooltip"></i>
+    <i class="emoji laugh" title="laugh" data-toggle="tooltip"></i>
+    <i class="emoji smile" title="smile" data-toggle="tooltip"></i>
     <i class="emoji wink" title="wink" data-toggle="tooltip"></i>
+    <i class="emoji geek" title="geek" data-toggle="tooltip"></i>
     <i class="emoji sad" title="sad" data-toggle="tooltip"></i>
+    <i class="emoji tech" title="tech" data-toggle="tooltip"></i>
+    <i class="emoji startup" title="startup" data-toggle="tooltip"></i>
+    <i class="emoji management" title="management" data-toggle="tooltip"></i>
+    <i class="emoji announcement" title="announcement" data-toggle="tooltip"></i>
+    <i class="emoji talk" title="talk" data-toggle="tooltip"></i>
+    <i class="emoji mobile" title="mobile" data-toggle="tooltip"></i>
+    <i class="emoji code" title="code" data-toggle="tooltip"></i>
+    <i class="emoji idea" title="idea" data-toggle="tooltip"></i>
+    <i class="emoji article" title="article" data-toggle="tooltip"></i>
+    <i class="emoji draft" title="draft" data-toggle="tooltip"></i>
+    <i class="emoji event" title="event" data-toggle="tooltip"></i>
+    <i class="emoji experiment" title="experiment" data-toggle="tooltip"></i>
 </span>
 
 <p style="font-size: 2em; line-height: 1.2;">
-    <i class="emoji grinning-face" title="grinning-face / happy" data-toggle="tooltip"></i>
+    <i class="emoji grinning-face" title="grinning-face" data-toggle="tooltip"></i>
     <i class="emoji grinning-face-with-big-eyes" title="grinning-face-with-big-eyes" data-toggle="tooltip"></i>
     <i class="emoji grinning-face-with-smiling-eyes" title="grinning-face-with-smiling-eyes" data-toggle="tooltip"></i>
     <i class="emoji beaming-face-with-smiling-eyes" title="beaming-face-with-smiling-eyes" data-toggle="tooltip"></i>
     <i class="emoji grinning-squinting-face" title="grinning-squinting-face" data-toggle="tooltip"></i>
     <i class="emoji grinning-face-with-sweat" title="grinning-face-with-sweat" data-toggle="tooltip"></i>
-    <i class="emoji rolling-on-the-floor-laughing" title="rolling-on-the-floor-laughing / laugh" data-toggle="tooltip"></i>
+    <i class="emoji rolling-on-the-floor-laughing" title="rolling-on-the-floor-laughing" data-toggle="tooltip"></i>
     <i class="emoji face-with-tears-of-joy" title="face-with-tears-of-joy" data-toggle="tooltip"></i>
-    <i class="emoji slightly-smiling-face" title="slightly-smiling-face / smile" data-toggle="tooltip"></i>
+    <i class="emoji slightly-smiling-face" title="slightly-smiling-face" data-toggle="tooltip"></i>
     <i class="emoji upside-down-face" title="upside-down-face" data-toggle="tooltip"></i>
-    <i class="emoji winking-face" title="winking-face / wink" data-toggle="tooltip"></i>
+    <i class="emoji winking-face" title="winking-face" data-toggle="tooltip"></i>
     <i class="emoji smiling-face-with-smiling-eyes" title="smiling-face-with-smiling-eyes" data-toggle="tooltip"></i>
     <i class="emoji smiling-face-with-halo" title="smiling-face-with-halo" data-toggle="tooltip"></i>
     <i class="emoji smiling-face-with-hearts" title="smiling-face-with-hearts" data-toggle="tooltip"></i>
@@ -86,8 +101,8 @@ Most used: <span style="font-size: 2em; line-height: 1.2;">
     <i class="emoji face-vomiting" title="face-vomiting" data-toggle="tooltip"></i>
     <i class="emoji partying-face" title="partying-face" data-toggle="tooltip"></i>
     <i class="emoji smiling-face-with-sunglasses" title="smiling-face-with-sunglasses" data-toggle="tooltip"></i>
-    <i class="emoji nerd-face" title="nerd-face / geek" data-toggle="tooltip"></i>
-    <i class="emoji slightly-frowning-face" title="slightly-frowning-face / sad" data-toggle="tooltip"></i>
+    <i class="emoji nerd-face" title="nerd-face" data-toggle="tooltip"></i>
+    <i class="emoji slightly-frowning-face" title="slightly-frowning-face" data-toggle="tooltip"></i>
     <i class="emoji face-with-open-mouth" title="face-with-open-mouth" data-toggle="tooltip"></i>
     <i class="emoji sad-but-relieved-face" title="sad-but-relieved-face" data-toggle="tooltip"></i>
     <i class="emoji crying-face" title="crying-face" data-toggle="tooltip"></i>
@@ -140,7 +155,7 @@ Most used: <span style="font-size: 2em; line-height: 1.2;">
     <i class="emoji woman-office-worker" title="woman-office-worker" data-toggle="tooltip"></i>
     <i class="emoji man-scientist" title="man-scientist" data-toggle="tooltip"></i>
     <i class="emoji woman-scientist" title="woman-scientist" data-toggle="tooltip"></i>
-    <i class="emoji man-technologist" title="man-technologist / tech" data-toggle="tooltip"></i>
+    <i class="emoji man-technologist" title="man-technologist" data-toggle="tooltip"></i>
     <i class="emoji woman-technologist" title="woman-technologist" data-toggle="tooltip"></i>
     <i class="emoji man-singer" title="man-singer" data-toggle="tooltip"></i>
     <i class="emoji woman-singer" title="woman-singer" data-toggle="tooltip"></i>
@@ -156,6 +171,8 @@ Most used: <span style="font-size: 2em; line-height: 1.2;">
     <i class="emoji clinking-beer-mugs" title="clinking-beer-mugs" data-toggle="tooltip"></i>
     <i class="emoji police-car-light" title="police-car-light" data-toggle="tooltip"></i>
     <i class="emoji rocket" title="rocket" data-toggle="tooltip"></i>
+    <i class="emoji hourglass-done" title="hourglass-done" data-toggle="tooltip"></i>
+    <i class="emoji hourglass-not-done" title="hourglass-not-done" data-toggle="tooltip"></i>
     <i class="emoji star" title="star" data-toggle="tooltip"></i>
     <i class="emoji glowing-star" title="glowing-star" data-toggle="tooltip"></i>
     <i class="emoji high-voltage" title="high-voltage" data-toggle="tooltip"></i>
@@ -189,7 +206,12 @@ Most used: <span style="font-size: 2em; line-height: 1.2;">
     <i class="emoji floppy-disk" title="floppy-disk" data-toggle="tooltip"></i>
     <i class="emoji magnifying-glass-tilted-left" title="magnifying-glass-tilted-left" data-toggle="tooltip"></i>
     <i class="emoji light-bulb" title="light-bulb" data-toggle="tooltip"></i>
+    <i class="emoji closed-book" title="closed-book" data-toggle="tooltip"></i>
+    <i class="emoji open-book" title="open-book" data-toggle="tooltip"></i>
+    <i class="emoji green-book" title="green-book" data-toggle="tooltip"></i>
     <i class="emoji blue-book" title="blue-book" data-toggle="tooltip"></i>
+    <i class="emoji orange-book" title="orange-book" data-toggle="tooltip"></i>
+    <i class="emoji books" title="books" data-toggle="tooltip"></i>
     <i class="emoji page-with-curl" title="page-with-curl" data-toggle="tooltip"></i>
     <i class="emoji bookmark" title="bookmark" data-toggle="tooltip"></i>
     <i class="emoji label" title="label" data-toggle="tooltip"></i>
@@ -197,9 +219,13 @@ Most used: <span style="font-size: 2em; line-height: 1.2;">
     <i class="emoji dollar-banknote" title="dollar-banknote" data-toggle="tooltip"></i>
     <i class="emoji euro-banknote" title="euro-banknote" data-toggle="tooltip"></i>
     <i class="emoji envelope" title="envelope" data-toggle="tooltip"></i>
+    <i class="emoji memo" title="memo" data-toggle="tooltip"></i>
     <i class="emoji calendar" title="calendar" data-toggle="tooltip"></i>
     <i class="emoji tear-off-calendar" title="tear-off-calendar" data-toggle="tooltip"></i>
     <i class="emoji spiral-calendar" title="spiral-calendar" data-toggle="tooltip"></i>
+    <i class="emoji chart-increasing" title="chart-increasing" data-toggle="tooltip"></i>
+    <i class="emoji chart-decreasing" title="chart-decreasing" data-toggle="tooltip"></i>
+    <i class="emoji bar-chart" title="bar-chart" data-toggle="tooltip"></i>
     <i class="emoji locked" title="locked" data-toggle="tooltip"></i>
     <i class="emoji unlocked" title="unlocked" data-toggle="tooltip"></i>
     <i class="emoji key" title="key" data-toggle="tooltip"></i>

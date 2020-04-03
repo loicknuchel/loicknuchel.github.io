@@ -1,11 +1,13 @@
 ---
 layout:      post
+locale:      fr_FR
+kind:        announcement
 title:       Lancement des Workshops Ionic
 banner_1_1:  /assets/posts/2015/03/23/lancement-des-workshops-ionic_1_1.jpg
 banner_2_1:  /assets/posts/2015/03/23/lancement-des-workshops-ionic_2_1.jpg
 banner_21_9: /assets/posts/2015/03/23/lancement-des-workshops-ionic_21_9.jpg
 author:      loic
-categories:  [coding]
+categories:  [tech, event]
 tags:        [ionic framework, mobile, workshop]
 ---
 
