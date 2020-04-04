@@ -193,6 +193,9 @@ Alias: <span style="font-size: 2em; line-height: 1.2;">
     <i class="emoji second-place-medal" title="second-place-medal" data-toggle="tooltip"></i>
     <i class="emoji third-place-medal" title="third-place-medal" data-toggle="tooltip"></i>
     <i class="emoji direct-hit" title="direct-hit" data-toggle="tooltip"></i>
+    <i class="emoji crystal-ball" title="crystal-ball" data-toggle="tooltip"></i>
+    <i class="emoji video-game" title="video-game" data-toggle="tooltip"></i>
+    <i class="emoji joystick" title="joystick" data-toggle="tooltip"></i>
     <i class="emoji slot-machine" title="slot-machine" data-toggle="tooltip"></i>
     <i class="emoji game-die" title="game-die" data-toggle="tooltip"></i>
     <i class="emoji heart-suit" title="heart-suit" data-toggle="tooltip"></i>
@@ -230,9 +233,17 @@ Alias: <span style="font-size: 2em; line-height: 1.2;">
     <i class="emoji chart-increasing" title="chart-increasing" data-toggle="tooltip"></i>
     <i class="emoji chart-decreasing" title="chart-decreasing" data-toggle="tooltip"></i>
     <i class="emoji bar-chart" title="bar-chart" data-toggle="tooltip"></i>
+    <i class="emoji pushpin" title="pushpin" data-toggle="tooltip"></i>
+    <i class="emoji round-pushpin" title="round-pushpin" data-toggle="tooltip"></i>
+    <i class="emoji paperclip" title="paperclip" data-toggle="tooltip"></i>
     <i class="emoji locked" title="locked" data-toggle="tooltip"></i>
     <i class="emoji unlocked" title="unlocked" data-toggle="tooltip"></i>
     <i class="emoji key" title="key" data-toggle="tooltip"></i>
+    <i class="emoji hammer" title="hammer" data-toggle="tooltip"></i>
+    <i class="emoji axe" title="axe" data-toggle="tooltip"></i>
+    <i class="emoji pick" title="pick" data-toggle="tooltip"></i>
+    <i class="emoji hammer-and-pick" title="hammer-and-pick" data-toggle="tooltip"></i>
+    <i class="emoji hammer-and-wrench" title="hammer-and-wrench" data-toggle="tooltip"></i>
     <i class="emoji dagger" title="dagger" data-toggle="tooltip"></i>
     <i class="emoji crossed-swords" title="crossed-swords" data-toggle="tooltip"></i>
     <i class="emoji shield" title="shield" data-toggle="tooltip"></i>
@@ -279,6 +290,7 @@ And you can also use [font-awesome](https://fontawesome.com/icons?m=free){:targe
     <i class="fas fa-laptop-code" title="fas fa-laptop-code" data-toggle="tooltip"></i>
     <i class="fas fa-layer-group" title="fas fa-layer-group" data-toggle="tooltip"></i>
     <i class="fas fa-lightbulb" title="fas fa-lightbulb" data-toggle="tooltip"></i>
+    <i class="fas fa-link" title="fas fa-link" data-toggle="tooltip"></i>
     <i class="fas fa-magic" title="fas fa-magic" data-toggle="tooltip"></i>
     <i class="fas fa-map-marked-alt" title="fas fa-map-marked-alt" data-toggle="tooltip"></i>
     <i class="fas fa-medal" title="fas fa-medal" data-toggle="tooltip"></i>

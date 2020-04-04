@@ -141,6 +141,9 @@
   &.second-place-medal:before { content: '\01f948'; }
   &.third-place-medal:before { content: '\01f949'; }
   &.direct-hit:before, &.management:before { content: '\01f3af'; }
+  &.crystal-ball:before { content: '\01F52E'; }
+  &.video-game:before { content: '\01F3AE'; }
+  &.joystick:before { content: '\01F579'; }
   &.slot-machine:before { content: '\01f3b0'; }
   &.game-die:before { content: '\01f3b2'; }
   &.heart-suit:before { content: '\02665'; }
@@ -179,9 +182,17 @@
   &.chart-increasing:before { content: '\01F4C8'; }
   &.chart-decreasing:before { content: '\01F4C9'; }
   &.bar-chart:before { content: '\01F4CA'; }
+  &.pushpin:before { content: '\01f4cc'; }
+  &.round-pushpin:before { content: '\01f4cd'; }
+  &.paperclip:before { content: '\01f4ce'; }
   &.locked:before { content: '\01f512'; }
   &.unlocked:before { content: '\01f513'; }
   &.key:before { content: '\01f511'; }
+  &.hammer:before { content: '\01f528'; }
+  &.axe:before { content: '\01fa93'; }
+  &.pick:before { content: '\026cf'; }
+  &.hammer-and-pick:before { content: '\02692'; }
+  &.hammer-and-wrench:before { content: '\01f6e0'; }
   &.dagger:before, &.fight:before { content: '\01F5E1'; }
   &.crossed-swords:before { content: '\02694'; }
   &.shield:before { content: '\01f6e1'; }

@@ -1,7 +1,7 @@
 ---
 layout:      post
 locale:      fr_FR
-icon:        calendar
+icon:        spiral-calendar
 title:       "HumanTalks Paris #10"
 banner_1_1:  /assets/posts/2013/10/16/humantalks-paris-10_1_1.jpg
 banner_2_1:  /assets/posts/2013/10/16/humantalks-paris-10_2_1.jpg
