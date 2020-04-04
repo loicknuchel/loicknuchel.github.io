@@ -1,3 +1,8 @@
+/* unstyle github emoji */
+img.emoji {
+  display: inline !important;
+}
+
 /* from https://unicode.org/emoji/charts/full-emoji-list.html */
 .emoji {
   font-style: inherit;

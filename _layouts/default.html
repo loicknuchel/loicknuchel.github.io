@@ -17,6 +17,7 @@
     <meta name="author" content="{{author.name}}">
     <link rel="canonical" href="{{page.url | absolute_url}}">
 
+    <meta property="og:site_name" content="Loïc Knuchel">
     <meta property="og:type" content="{{page.type | default: layout.type | default: 'website'}}">
     <meta property="og:locale" content="{{page.locale | default: 'en_US'}}">
     <meta property="og:title" content="{{meta-title}}">
@@ -55,6 +56,8 @@
     <meta name="msapplication-TileColor" content="#6d56c1">
     <meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#6d56c1">
+
+    {% feed_meta %}
 
     {% if jekyll.environment == 'production' %}
     <!-- Global site tag (gtag.js) - Google Analytics -->

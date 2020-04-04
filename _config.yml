@@ -1,5 +1,10 @@
 exclude: ['.idea']
 
+url: "https://loicknuchel.fr"
+plugins:
+  - jemoji
+  - jekyll-sitemap
+
 permalink: /blog/:categories/:year/:month/:day/:title
 
 hireme: true

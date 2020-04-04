@@ -256,6 +256,11 @@ Alias: <span style="font-size: 2em; line-height: 1.2;">
     <i class="emoji part-alternation-mark" title="part-alternation-mark" data-toggle="tooltip"></i>
 </p>
 
+And also [github emoji](https://www.webfx.com/tools/emoji-cheat-sheet){:target="_blank"} :
+
+:trollface:
+:octocat:
+
 And you can also use [font-awesome](https://fontawesome.com/icons?m=free){:target="_blank"} :
 
 <p style="font-size: 2em; line-height: 1.2;">

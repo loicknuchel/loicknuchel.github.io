@@ -11,7 +11,7 @@ categories:  [tech, talk]
 tags:        [javanex, talk, web, front-end, javascript]
 ---
 
-Le tout premier atelier du pôle [JavaNex]({% post_url 2012-06-05-lancement-du-blog-javanex %}) s’est déroulé le mardi 15 mai 2012 (avant son lancement officiel!).
+Le tout premier atelier du pôle [JavaNex]({% post_url 2012-06-05-lancement-du-blog-javanex %}) s'est déroulé le mardi 15 mai 2012 (avant son lancement officiel!).
 Il portait sur le développement front-end pour les développeurs Java.
 
 Les principaux sujets abordés étaient :
@@ -23,4 +23,4 @@ Les principaux sujets abordés étaient :
 - le JavaScript avec [jQuery](https://jquery.com){:target="_blank"}
 - la structuration du JavaScript avec [require.js](https://requirejs.org){:target="_blank"}
 
-Vous pouvez télécharger l’[archive (.rar)](/assets/posts/2012/05/15/front-end-web-tools.rar) de la présentation et les ressources évoquées.
+Vous pouvez télécharger l'[archive (.rar)](/assets/posts/2012/05/15/front-end-web-tools.rar) de la présentation et les ressources évoquées.
