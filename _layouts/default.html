@@ -32,6 +32,35 @@
     <meta name="twitter:site" content="@loicknuchel">
     <meta name="twitter:creator" content="{{author.twitter}}">
 
+    <script type="application/ld+json" data-type="Organization">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "{{site.url}}",
+            "logo": "{{site.logo | absolute_url}}"
+        }
+    </script>
+    {% if page.layout == 'post' %}
+    <script type="application/ld+json" data-type="NewsArticle">
+        {
+            "@context": "https://schema.org",
+            "@type": "NewsArticle",
+            "mainEntityOfPage": {"@type": "WebPage", "@id": "{{site.url}}"},
+            "author": {"@type": "Person", "name": "{{author.name}}"},
+            "publisher": {"@type": "Organization", "name": "{{site.title}}", "logo": {"@type": "ImageObject", "url": "{{site.logo | absolute_url}}"}},
+            "headline": "{{page.title}}",
+            "description": "{{meta-description}}",
+            "image": [
+                "{% if page.banner_1_1 %}{{page.banner_1_1 | absolute_url}}{% else %}{{'/assets/img/default/blog_banner_1_1.jpg' | absolute_url}}{% endif %}",
+                "{% if page.banner_2_1 %}{{page.banner_2_1 | absolute_url}}{% else %}{{'/assets/img/default/blog_banner_2_1.jpg' | absolute_url}}{% endif %}",
+                "{% if page.banner_21_9 %}{{page.banner_21_9 | absolute_url}}{% else %}{{'/assets/img/default/blog_banner_21_9.jpg' | absolute_url}}{% endif %}"
+            ],
+            "datePublished": "{{page.date | date_to_xmlschema}}",
+            "dateModified": "{{page.last_modified_at | default: page.date | date_to_xmlschema}}"
+        }
+    </script>
+    {% endif %}
+
     <link rel="stylesheet" type="text/css" href="//cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Inconsolata">

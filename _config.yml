@@ -1,5 +1,7 @@
 exclude: ['.idea']
 
+title: "Loïc Knuchel"
+logo: "/assets/img/avatar.jpg"
 url: "https://loicknuchel.fr"
 plugins:
   - jemoji
