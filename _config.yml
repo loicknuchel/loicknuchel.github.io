@@ -1,15 +1,8 @@
-exclude: ['.idea']
-
+url: "https://loicknuchel.fr"
 title: "Loïc Knuchel"
 logo: "/assets/img/avatar.jpg"
-url: "https://loicknuchel.fr"
-plugins:
-  - jemoji
-  - jekyll-sitemap
-
-permalink: /blog/:categories/:year/:month/:day/:title
-
 hireme: true
+permalink: /blog/:year/:month/:day/:title
 
 collections:
   work_experiences:
@@ -21,3 +14,16 @@ collections:
     logo: true
     twitter: true
     tags: true
+
+plugins:
+  - jemoji
+  - jekyll-sitemap
+
+defaults:
+  - # jekyll-sitemap config
+    scope:
+      path: "v1"
+    values:
+      sitemap: false
+
+exclude: ['.idea']

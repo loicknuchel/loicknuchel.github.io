@@ -68,6 +68,20 @@ menus:
                 onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
                 title="Share on Facebook" data-toggle="tooltip"><i class="fab fa-facebook-square"></i></a>
         </p>
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = '{{page.url | absolute_url}}';
+                this.page.identifier = '{{page.id}}';
+            };
+            (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://loicknuchel.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
     </div>
 </div>
