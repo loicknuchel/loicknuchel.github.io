@@ -4,8 +4,8 @@ slug:     cookers
 name:     Cookers
 duration: feb. 2014 - janv. 2015, 1 year
 website:  http://cookers.mystrikingly.com
-logo:     assets/img/logos/cookers.png
-twitter:  https://twitter.com/cookersapp
+logo:     /assets/img/logos/cookers.png
+twitter:  cookersapp
 tags:     [Startup founder, Retail, Scala, Play framework, AngularJS, Ionic framework]
 ---
 

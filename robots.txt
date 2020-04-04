@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /v1/
+Disallow: /post-pics
+Disallow: /404
+Sitemap: /sitemap.xml

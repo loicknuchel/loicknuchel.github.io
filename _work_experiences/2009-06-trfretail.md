@@ -4,8 +4,8 @@ slug:     trfretail
 name:     TRF Retail
 duration: june 2009 - nov. 2011, 1 year and 3 months
 website:  https://www.trfretail.com
-logo:     assets/img/logos/trf-retail.jpg
-twitter:  https://twitter.com/TRFRetail
+logo:     /assets/img/logos/trf-retail.jpg
+twitter:  TRFRetail
 tags:     [PHP/MySQL developer, C developer, jQuery, Startup]
 ---
 

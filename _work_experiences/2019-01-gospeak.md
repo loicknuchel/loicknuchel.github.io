@@ -4,8 +4,8 @@ slug:     gospeak
 name:     Gospeak
 duration: janv. 2019 - now
 website:  https://gospeak.io
-logo:     assets/img/logos/gospeak.jpg
-twitter:  https://twitter.com/gospeak_io
+logo:     /assets/img/logos/gospeak.jpg
+twitter:  gospeak_io
 tags:     [Startup founder]
 ---
 

@@ -4,8 +4,8 @@ slug:     stimshop
 name:     Stimshop
 duration: apr. 2015, 4 days
 website:  http://www.stimshop.com
-logo:     assets/img/logos/stimshop.jpg
-twitter:  https://twitter.com/STIMSHOP
+logo:     /assets/img/logos/stimshop.jpg
+twitter:  STIMSHOP
 tags:     [Mobile developer, Ionic framework, AngularJS, Freelance]
 ---
 

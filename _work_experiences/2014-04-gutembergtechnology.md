@@ -4,8 +4,8 @@ slug:     gutenbergtechnology
 name:     Gutenberg Technology
 duration: apr. 2014 - may 2014, 2 months
 website:  https://www.gutenberg-technology.com
-logo:     assets/img/logos/gutenberg-technology.jpg
-twitter:  https://twitter.com/GutenbergTech
+logo:     /assets/img/logos/gutenberg-technology.jpg
+twitter:  GutenbergTech
 tags:     [Front-end developer, Node.js, AngularJS, Freelance]
 ---
 

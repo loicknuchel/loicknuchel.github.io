@@ -2,11 +2,11 @@
   "loic": {
     "name": "Loïc Knuchel",
     "avatar": "/assets/img/avatar.jpg",
-    "twitter": "@loicknuchel"
+    "twitter": "loicknuchel"
   },
   "john": {
     "name": "John Doe",
     "avatar": "/assets/img/twitter-anonymous.jpg",
-    "twitter": "@johndoe"
+    "twitter": "johndoe"
   }
 }

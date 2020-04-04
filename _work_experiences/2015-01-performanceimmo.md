@@ -4,8 +4,8 @@ slug:     performanceimmo
 name:     Performance IMMO
 duration: janv. 2015 - mars 2015, 3 months
 website:  https://www.performance-immo.com
-logo:     assets/img/logos/performance-immo.jpg
-twitter:  https://twitter.com/performance_imm
+logo:     /assets/img/logos/performance-immo.jpg
+twitter:  performance_imm
 tags:     [Scala developer, Scala, Play framework, Elastic search, PostgreSQL, Freelance]
 ---
 

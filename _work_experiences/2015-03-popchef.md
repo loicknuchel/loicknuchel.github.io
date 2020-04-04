@@ -4,8 +4,8 @@ slug:     popchef
 name:     Popchef
 duration: mars 2015, 3 days
 website:  https://popchef.com
-logo:     assets/img/logos/popchef.jpg
-twitter:  https://twitter.com/popchef
+logo:     /assets/img/logos/popchef.jpg
+twitter:  popchef
 tags:     [Mobile developer, Ionic framework, AngularJS, Freelance]
 ---
 

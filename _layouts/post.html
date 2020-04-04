@@ -42,6 +42,7 @@ menus:
             </div>
             <a class="u-url" href="{{page.url | relative_url}}" hidden></a>
         </article>
+        {% if page.tags > 0 %}
         <div>
             Tags:
             <ul class="tags" style="display: inline-block; margin-bottom: 20px">
@@ -50,11 +51,18 @@ menus:
                 {% endfor %}
             </ul>
         </div>
-        <p class="article__share">
+        {% endif %}
+        <p class="article__share social">
             Share this post:
-            <a><i class="fab fa-twitter"></i></a>
-            <a><i class="fab fa-linkedin"></i></a>
-            <a><i class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com/intent/tweet?text={{page.title}}&url={{page.url | absolute_url}}&via={{author.twitter}}&related=loicknuchel"
+               onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+               title="Share on Twitter" data-toggle="tooltip"><i class="fab fa-twitter"></i></a>
+            <a  href="https://www.linkedin.com/shareArticle?mini=true&url={{page.url | absolute_url}}&title={{page.title}}&summary={{page.excerpt | strip_html | strip_newlines | strip}}&source={{site.title}}"
+                onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+                title="Share on LinkedIn" data-toggle="tooltip"><i class="fab fa-linkedin"></i></a>
+            <a  href="https://www.facebook.com/sharer/sharer.php?u={{page.url | absolute_url}}"
+                onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+                title="Share on Facebook" data-toggle="tooltip"><i class="fab fa-facebook-square"></i></a>
         </p>
     </div>
     </div>
