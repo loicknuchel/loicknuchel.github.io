@@ -29,12 +29,12 @@ menus:
         <article itemscope itemtype="http://schema.org/BlogPosting">
             <header>
                 <h1 class="article__title" itemprop="name headline">{{page.title}}</h1>
-                <p class="article_date" datetime="{{page.date | date_to_xmlschema}}" itemprop="datePublished">{{page.date | date: "%B %-d, %Y"}}</p>
+                <p class="article_date" itemprop="datePublished dateModified" datetime="{{page.date | date_to_xmlschema}}">{{page.date | date: "%B %-d, %Y"}}</p>
                 {% if author %}
                 <p itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{author.name}}</span></p>
                 {% endif %}
                 {% if page.banner_21_9 %}
-                <p><img class="full-width" src="{{page.banner_21_9}}" alt="{{page.title}} banner"></p>
+                <p><img class="full-width" src="{{page.banner_21_9}}" alt="{{page.title}} banner" itemprop="image"></p>
                 {% endif %}
             </header>
             <div itemprop="articleBody">
