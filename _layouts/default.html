@@ -10,11 +10,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>{{meta-title}}</title>
     <meta name="description" content="{{meta-description}}">
     <meta name="author" content="{{author.name}}">
+    <meta name="keywords" content="Loïc Knuchel,Scala,Developer,Tech lead,Functional programming">
+    <meta name="robots" content="index, follow">
+    {% if page.noindex %}<meta name="robots" content="noindex">{% else %}<meta name="robots" content="index, follow">{% endif %}
     <link rel="canonical" href="{{page.url | absolute_url}}">
 
     <meta property="og:site_name" content="Loïc Knuchel">
@@ -23,8 +26,9 @@
     <meta property="og:title" content="{{meta-title}}">
     <meta property="og:description" content="{{meta-description}}">
     <meta property="og:url" content="{{page.url | absolute_url}}">
-    {% if page.banner_2_1 %}<meta property="og:image" content="{{page.banner_2_1 | absolute_url}}">{% else %}<meta property="og:image" content="{{page.banner_1_1 | default: author.avatar | absolute_url}}">{% endif %}
+    <meta property="og:image" content="{{page.banner_2_1 | default: page.banner_1_1 | default: author.avatar | absolute_url}}">
 
+    <meta property="twitter:image" content="{{page.banner_2_1 | default: page.banner_1_1 | default: author.avatar | absolute_url}}">
     {% if page.banner_2_1 %}<meta name="twitter:card" content="summary_large_image">{% else %}<meta name="twitter:card" content="summary">{% endif %}
     <meta name="twitter:title" content="{{meta-title}}">
     <meta name="twitter:description" content="{{meta-description}}">
@@ -97,17 +101,6 @@
     <meta name="msapplication-TileColor" content="#6d56c1">
     <meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#6d56c1">
-
-    {% if jekyll.environment == 'production' %}
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-44862027-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-44862027-2');
-    </script>
-    {% endif %}
 </head>
 <body>
     {{content}}
@@ -119,5 +112,15 @@
     <script src="/assets/js/mbclicker.min.js"></script>
     <script src="/assets/js/scripts.js"></script>
     <script src="https://platform.twitter.com/widgets.js" charset="utf-8" async></script>
+    {% if jekyll.environment == 'production' %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-44862027-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-44862027-2');
+    </script>
+    {% endif %}
 </body>
 </html>

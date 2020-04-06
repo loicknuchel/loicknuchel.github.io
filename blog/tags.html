@@ -12,7 +12,7 @@ title:   Tags
 
     <div class="tag-cloud">
         {% for tag in sorted_tags %}
-        <a href="#{{tag[0] | slugify}}" instant-scroll style="font-size: {{tag[1].size | times: 5 | plus: 15}}px">{{tag[0]}}</a>
+        <a href="#{{tag[0] | slugify}}" instant-scroll style="font-size: {{tag[1].size | times: 5 | plus: 15}}px; line-height: {{tag[1].size | times: 5 | plus: 15}}px;">{{tag[0]}}</a>
         {% endfor %}
     </div>
 

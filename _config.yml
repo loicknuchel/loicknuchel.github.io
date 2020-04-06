@@ -1,6 +1,7 @@
 url: "https://loicknuchel.fr"
 title: "Loïc Knuchel"
 logo: "/assets/img/avatar.jpg"
+twitter: "loicknuchel"
 hireme: true
 permalink: /blog/:year/:month/:day/:title
 

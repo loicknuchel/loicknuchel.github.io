@@ -71,16 +71,16 @@ Voici comment commence la fraude (page 51 et suivantes) :
 > aux ambitions encore plus démesurées que le précédent, puisqu'il rêve d'un complexe encore plus grand, à six millions de dollars.
 >
 > Acte 1 : la caisse déniche sans difficulté un appraiser qui lui certifie une évaluation du complexe, déjà construit dans les conditions que l'on connaît,
-> au prix désormais de cinq millions de dollars.
+> au prix désormais de cinq millions de dollars.<br>
 > Acte 2 : la caisse propose au second promoteur un prêt de six millions de dollars à condition qu'il achète son complexe commercial en déshérence
-> pour le prix évalué par l'expert véreux, soit cinq millions de dollars.
+> pour le prix évalué par l'expert véreux, soit cinq millions de dollars.<br>
 > Acte 3 : la caisse prête au promoteur ses six millions de dollars pour qu'il achète son immeuble.
 > Sur l'emprunt qu'elle accorde au promoteur,
 > elle va imputer l'apport personnel que le promoteur est censé verser - il n'a donc même pas besoin de débourser un centime - ainsi que les échéances
 > couvrant deux années de remboursement. Pour que les choses soient bien claires :
 > non seulement le second promoteur n'a pas versé un seul dollar pour le rachat du complexe commercial vide d'occupants et de clients,
 > mais la banque a inclut dans son prêt deux années de remboursement de ce même prêt et donc elle se rembourse avec son propre argent...
-> Qui dit mieux ?
+> Qui dit mieux ?<br>
 > Acte 4 : les comptables entrent en action, ils vont maintenant habiller la combine pour transformer une perte pharaonique en gain fabuleux.
 >
 > Nos magiciens vont s'y prendre de la manière suivant : les trois millions prêtés au premier promoteur apparaissent en charge,

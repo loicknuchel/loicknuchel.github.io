@@ -108,6 +108,10 @@
     border-left: .25em solid #dfe2e5;
     color: #6a737d;
 
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+
     blockquote {
       display: block;
       padding: 0;
@@ -123,6 +127,14 @@
         display: inline;
       }
     }
+  }
+
+  blockquote.big-quote {
+    border-left: none;
+    padding-left: 40px;
+    color: #a4a4a4;
+    font-size: 1.235em;
+    font-style: italic;
   }
 
   .carousel {

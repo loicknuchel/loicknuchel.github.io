@@ -21,14 +21,7 @@ menus:
         <div class="d-flex justify-content-between align-items-center">
             <a href="/" class="article__back-link js-back"><i class="fas fa-arrow-left" aria-hidden="true"></i>Back</a>
             <p class="article__share social mb-0">
-                <a href="https://twitter.com/intent/tweet?text={{page.title}}&url={{page.url | absolute_url}}&via={{author.twitter}}&related=loicknuchel"
-                   title="Share on Twitter" data-toggle="tooltip"><i class="fab fa-twitter"></i></a>
-                <a  href="https://www.linkedin.com/shareArticle?mini=true&url={{page.url | absolute_url}}&title={{page.title}}&summary={{page.excerpt | strip_html | strip_newlines | strip}}&source={{site.title}}"
-                    onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-                    title="Share on LinkedIn" data-toggle="tooltip"><i class="fab fa-linkedin"></i></a>
-                <a  href="https://www.facebook.com/sharer/sharer.php?u={{page.url | absolute_url}}"
-                    onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-                    title="Share on Facebook" data-toggle="tooltip"><i class="fab fa-facebook-square"></i></a>
+                {% include social-share-buttons.html url=page.url text=page.title summary=page.excerpt twitter=author.twitter %}
             </p>
         </div>
         <article itemscope itemtype="http://schema.org/BlogPosting">
@@ -59,14 +52,7 @@ menus:
         {% endif %}
         <p class="article__share social">
             Share this post:
-            <a href="https://twitter.com/intent/tweet?text={{page.title}}&url={{page.url | absolute_url}}&via={{author.twitter}}&related=loicknuchel"
-               title="Share on Twitter" data-toggle="tooltip"><i class="fab fa-twitter"></i></a>
-            <a  href="https://www.linkedin.com/shareArticle?mini=true&url={{page.url | absolute_url}}&title={{page.title}}&summary={{page.excerpt | strip_html | strip_newlines | strip}}&source={{site.title}}"
-                onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-                title="Share on LinkedIn" data-toggle="tooltip"><i class="fab fa-linkedin"></i></a>
-            <a  href="https://www.facebook.com/sharer/sharer.php?u={{page.url | absolute_url}}"
-                onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-                title="Share on Facebook" data-toggle="tooltip"><i class="fab fa-facebook-square"></i></a>
+            {% include social-share-buttons.html url=page.url text=page.title summary=page.excerpt twitter=author.twitter %}
         </p>
         <div id="disqus_thread"></div>
         <script>
