@@ -7,36 +7,35 @@ title:   Categories
         <h1 class="page-title">{{page.title}}</h1>
     </div>
 </div>
-<div class="sheet_content">
+<div class="sheet__content post-categories">
     {% assign sorted_categories = site.categories | sort %}
-
-    <div class="tag-cloud">
+    <div class="section-cloud">
         {% for category in sorted_categories %}
         <a href="#{{category[0] | slugify}}" instant-scroll style="font-size: {{category[1].size | times: 5 | plus: 15}}px; line-height: {{category[1].size | times: 5 | plus: 15}}px;">{{category[0]}}</a>
         {% endfor %}
     </div>
 
-    <div class="post-list">
     {% for category in sorted_categories %}
-        <div id="{{category[0] | slugify}}" class="tag-content">
+        <div id="{{category[0] | slugify}}" class="category-section">
             <h2 class="tag-title"><i class="emoji shield"></i> {{category[0]}} ({{category[1].size}})</h2>
-            {% for post in category[1] %}
-            {% assign author = site.data.people[post.author] | default: site.data.people.loic %}
-            <article class="post">
-                <header class="post-header"><h2 class="post-title"><a href="{{post.url}}">{{post.title}}</a></h2></header>
-                <section class="post-excerpt"><p>{{post.excerpt | strip_html | truncatewords: 30}} »</p></section>
-                <footer class="post-meta">
-                    <a href="#"><img class="author-thumb" src="{{author.avatar}}" alt="{{author.name}} avatar"> {{author.name}}</a> on
-                    <span class="tags">
-                    {%- for tag in post.tags -%}
-                    <a href="/blog/tags#{{tag | slugify}}" instant-scroll class="tag">{{tag}}</a>
-                    {%- endfor -%}
-                </span>
-                    <time class="post-date" datetime="{{post.date | date_to_xmlschema}}">{{post.date | date: "%B %-d, %Y"}}</time>
-                </footer>
-            </article>
-            {% endfor %}
+            <div class="post-list">
+                {% for post in category[1] %}
+                {% assign author = site.data.people[post.author] | default: site.data.people.loic %}
+                <article class="post">
+                    <h2 class="post-title"><a href="{{post.url}}"><i class="emoji {{post.icon | default: 'article'}}"></i> {{post.title}}</a></h2>
+                    <section class="post-excerpt"><p>{{post.excerpt | strip_html | truncatewords: 30}} »</p></section>
+                    <footer class="post-meta">
+                        <span class="post-author"><img src="{{author.avatar}}" alt="{{author.name}} avatar"> {{author.name}}</span> on
+                        <span class="tags">
+                            {%- for tag in post.tags -%}
+                            <a href="/blog/tags#{{tag | slugify}}" instant-scroll class="tag">{{tag}}</a>
+                            {%- endfor -%}
+                        </span>
+                        <time class="post-date">{{post.date | date: "%B %-d, %Y"}}</time>
+                    </footer>
+                </article>
+                {% endfor %}
+            </div>
         </div>
     {% endfor %}
-    </div>
 </div>

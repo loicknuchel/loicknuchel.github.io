@@ -1,0 +1,164 @@
+@import "variables";
+
+p, h1, h2, h3, h4, h5, h6 {
+  clear: both;
+}
+
+img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  max-height: 500px;
+
+  &.full-width {
+    width: 100%;
+  }
+
+  &.pull-right {
+    float: right;
+    max-width: 50%;
+    margin-left: $default-spacing;
+    margin-bottom: $default-spacing;
+  }
+
+  &.pull-left {
+    float: left;
+    max-width: 50%;
+    margin-right: $default-spacing;
+    margin-bottom: $default-spacing;
+  }
+
+  &.w-100 {
+    width: 100px;
+  }
+
+  &.w-200 {
+    width: 200px;
+  }
+
+  &.w-300 {
+    width: 300px;
+  }
+
+  &.w-400 {
+    width: 400px;
+  }
+
+  &.w-500 {
+    width: 500px;
+  }
+
+  &.w-600 {
+    width: 600px;
+  }
+}
+
+figure figcaption {
+  color: #999;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Roboto Mono,monospace;
+  font-style: italic;
+  margin-top: $default-spacing;
+}
+
+strong {
+  color: #333;
+}
+
+ol, ul {
+  list-style: inside;
+  margin-bottom: $default-spacing;
+
+  ol, ul {
+    margin-bottom: 0;
+    padding-left: $default-spacing;
+  }
+}
+
+table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  margin-bottom: $default-spacing;
+  border-spacing: 0;
+  border-collapse: collapse;
+
+  tr {
+    background-color: #fff;
+    border-top: 1px solid #c6cbd1;
+  }
+
+  tr:nth-child(2n) {
+    background-color: #f6f8fa;
+  }
+
+  th, td {
+    padding: 6px 13px;
+    border: 1px solid #dfe2e5;
+  }
+
+  th {
+    font-weight: 600;
+  }
+}
+
+blockquote:not(.twitter-tweet) {
+  padding: 0 1em;
+  border-left: .25em solid #dfe2e5;
+  color: #6a737d;
+
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+
+  blockquote {
+    display: block;
+    padding: 0;
+    border: none;
+    font-size: 80%;
+    color: #868e96;
+
+    &:before {
+      content: "\2014 \00A0"
+    }
+
+    p {
+      display: inline;
+    }
+  }
+}
+
+blockquote.big-quote {
+  border-left: none;
+  padding-left: 40px;
+  color: #a4a4a4;
+  font-size: 1.235em;
+  font-style: italic;
+}
+
+.carousel {
+  margin-bottom: $default-spacing;
+
+  .carousel-control-prev {
+    background: rgba(0, 0, 0, 0.1);
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0, 0, 0, 0.7)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+    background: -ms-linear-gradient(left, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=1);
+  }
+
+  .carousel-control-next {
+    background: rgba(0, 0, 0, 0.1);
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.7)));
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+    background: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=1);
+  }
+}

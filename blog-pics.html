@@ -10,7 +10,7 @@ sitemap: false
         <h2 class="page-description">{{page.excerpt}}</h2>
     </div>
 </div>
-<div class="sheet_content">
+<div class="sheet__content">
     {% for post in site.posts %}
     {% assign author = site.data.people[post.author] | default: site.data.people.loic %}
     <div style="margin-bottom: 20px">
