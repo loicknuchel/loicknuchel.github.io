@@ -1,15 +1,6 @@
 @import "variables";
 
-p, h1, h2, h3, h4, h5, h6 {
-  clear: both;
-}
-
 img {
-  display: block;
-  margin: auto;
-  max-width: 100%;
-  max-height: 500px;
-
   &.full-width {
     width: 100%;
   }

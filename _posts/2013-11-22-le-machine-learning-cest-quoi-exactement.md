@@ -6,6 +6,7 @@ title:       Le machine learning, c'est quoi exactement ?
 banner_1_1:  /assets/posts/2013/11/22/le-machine-learning-cest-quoi-exactement_1_1.jpg
 banner_2_1:  /assets/posts/2013/11/22/le-machine-learning-cest-quoi-exactement_2_1.jpg
 banner_21_9: /assets/posts/2013/11/22/le-machine-learning-cest-quoi-exactement_21_9.jpg
+banner_3_1:  /assets/posts/2013/11/22/le-machine-learning-cest-quoi-exactement_3_1.jpg
 author:      loic
 categories:  [tech, code]
 tags:        [machine learning, vulgarisation, régression, classification, overfitting]

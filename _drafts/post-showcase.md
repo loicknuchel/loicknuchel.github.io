@@ -6,6 +6,7 @@ title:       A showcase post for demo              # optional, default: post fil
 banner_1_1:  https://via.placeholder.com/350       # optional, default: /assets/img/default/blog_banner_1_1.jpg, for lists & twitter summary card
 banner_2_1:  https://via.placeholder.com/600x300   # optional, for twitter summary_large_image card
 banner_21_9: https://via.placeholder.com/1024x439  # optional, for article banner (no banner shown if not present)
+banner_3_1:  https://via.placeholder.com/1110x369  # optional, for article banner (no banner shown if not present)
 author:      loic                                  # optional, default to loic (names in `_data/people.json`)
 categories:  [sample]                              # optional, recommended one but can be multiple
 tags:        [getting started, reminder]

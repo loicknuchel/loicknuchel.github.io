@@ -6,6 +6,7 @@ title:       Créer un plugin cordova
 banner_1_1:  /assets/posts/2015/03/20/creer-un-plugin-cordova_1_1.jpg
 banner_2_1:  /assets/posts/2015/03/20/creer-un-plugin-cordova_2_1.jpg
 banner_21_9: /assets/posts/2015/03/20/creer-un-plugin-cordova_21_9.jpg
+banner_3_1:  /assets/posts/2015/03/20/creer-un-plugin-cordova_3_1.jpg
 author:      loic
 categories:  [tech, code]
 tags:        [cordova, phonegap, hybride, mobile, tutorial]

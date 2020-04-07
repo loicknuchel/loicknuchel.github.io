@@ -6,6 +6,7 @@ title:       Votre application Scala, Play 2 et MongoDB en six étapes
 banner_1_1:  /assets/posts/2014/01/23/votre-application-scala-play-2-et-mongodb-en-six-etapes_1_1.jpg
 banner_2_1:  /assets/posts/2014/01/23/votre-application-scala-play-2-et-mongodb-en-six-etapes_2_1.jpg
 banner_21_9: /assets/posts/2014/01/23/votre-application-scala-play-2-et-mongodb-en-six-etapes_21_9.jpg
+banner_3_1:  /assets/posts/2014/01/23/votre-application-scala-play-2-et-mongodb-en-six-etapes_3_1.jpg
 author:      loic
 categories:  [tech, code]
 tags:        [play framework, mongodb, scala, tutorial]

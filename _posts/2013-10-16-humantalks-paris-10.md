@@ -6,6 +6,7 @@ title:       "HumanTalks Paris #10"
 banner_1_1:  /assets/posts/2013/10/16/humantalks-paris-10_1_1.jpg
 banner_2_1:  /assets/posts/2013/10/16/humantalks-paris-10_2_1.jpg
 banner_21_9: /assets/posts/2013/10/16/humantalks-paris-10_21_9.jpg
+banner_3_1:  /assets/posts/2013/10/16/humantalks-paris-10_3_1.jpg
 author:      loic
 categories:  [tech, event]
 tags:        [humantalks, les femmes dans la tech, sécurité informatique, api, nao]

@@ -6,6 +6,7 @@ title:       "HumanTalks Paris #11"
 banner_1_1:  /assets/posts/2013/11/13/humantalks-paris-11_1_1.jpg
 banner_2_1:  /assets/posts/2013/11/13/humantalks-paris-11_2_1.jpg
 banner_21_9: /assets/posts/2013/11/13/humantalks-paris-11_21_9.jpg
+banner_3_1:  /assets/posts/2013/11/13/humantalks-paris-11_3_1.jpg
 author:      loic
 categories:  [tech, event]
 tags:        [humantalks, design, gestion de projet, open source, programmation fonctionnelle]
@@ -31,7 +32,7 @@ Ori nous a sorti le grand show, le point culminant ayant été la référence au
 [[vidéo](https://www.youtube.com/watch?v=Gt8LV5qmpg8){:target="_blank"}]
 
 [![Massil Nait Mouloud talk](/assets/posts/2013/11/13/massil-nait-mouloud.jpeg){:.pull-left.w-300}](https://gospeak.io/groups/humantalks-paris/talks/c36e0858-e2e7-48fd-a587-94d2f675ff5c){:target="_blank"}
-[Massil Nait Mouloud](https://twitter.com/nmassyl){:target="_blank"}} est ensuite intervenu sur les langages fonctionnels.
+[Massil Nait Mouloud](https://twitter.com/nmassyl){:target="_blank"} est ensuite intervenu sur les langages fonctionnels.
 Il a retracé l'origine de la programmation fonctionnelle et a dressé le tableau des pours et des contres de cette approche en se basant sur l'exemple de Haskell.
 Son talk, très intéressant, était très technique et parfois un peu difficile à appréhender, surtout pour les moins techniques d'entre nous qui ont dû un peu décrocher.
 Pour ma part, j'apprécierais de le voir à nouveau mais avec un temps de présentation un peu plus long.

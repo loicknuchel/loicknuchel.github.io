@@ -6,6 +6,7 @@ title:       Lancement des Workshops Ionic
 banner_1_1:  /assets/posts/2015/03/23/lancement-des-workshops-ionic_1_1.jpg
 banner_2_1:  /assets/posts/2015/03/23/lancement-des-workshops-ionic_2_1.jpg
 banner_21_9: /assets/posts/2015/03/23/lancement-des-workshops-ionic_21_9.jpg
+banner_3_1:  /assets/posts/2015/03/23/lancement-des-workshops-ionic_3_1.jpg
 author:      loic
 categories:  [tech, event]
 tags:        [ionic framework, mobile, workshop]

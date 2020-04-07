@@ -6,6 +6,7 @@ title:       Je suis bagger
 banner_1_1:  /assets/posts/2013/12/06/je-suis-bagger_1_1.jpg
 banner_2_1:  /assets/posts/2013/12/06/je-suis-bagger_2_1.jpg
 banner_21_9: /assets/posts/2013/12/06/je-suis-bagger_21_9.jpg
+banner_3_1:  /assets/posts/2013/12/06/je-suis-bagger_3_1.jpg
 author:      loic
 categories:  [tech, speaker]
 tags:        [bbl, scala, java, recommender system]

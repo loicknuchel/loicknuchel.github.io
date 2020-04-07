@@ -6,6 +6,7 @@ title:       Éviter toujours plus de bugs grâce au typage
 banner_1_1:  /assets/posts/2015/09/01/eviter-toujours-plus-de-bugs-grace-au-typage_1_1.jpg
 banner_2_1:  /assets/posts/2015/09/01/eviter-toujours-plus-de-bugs-grace-au-typage_2_1.jpg
 banner_21_9: /assets/posts/2015/09/01/eviter-toujours-plus-de-bugs-grace-au-typage_21_9.jpg
+banner_3_1:  /assets/posts/2015/09/01/eviter-toujours-plus-de-bugs-grace-au-typage_3_1.jpg
 author:      loic
 categories:  [tech, craft]
 tags:        [bug free, play framework, scala, typage, value classe]

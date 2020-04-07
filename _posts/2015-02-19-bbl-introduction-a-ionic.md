@@ -6,6 +6,7 @@ title:       BBL introduction à Ionic Framework
 banner_1_1:  /assets/posts/2015/02/19/bbl-introduction-a-ionic_1_1.jpg
 banner_2_1:  /assets/posts/2015/02/19/bbl-introduction-a-ionic_2_1.jpg
 banner_21_9: /assets/posts/2015/02/19/bbl-introduction-a-ionic_21_9.jpg
+banner_3_1:  /assets/posts/2015/02/19/bbl-introduction-a-ionic_3_1.jpg
 author:      loic
 categories:  [tech, speaker]
 tags:        [ionic framework, cordova, mobile, angular, BBL]

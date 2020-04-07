@@ -19,7 +19,7 @@ button {
   transition: .8s;
 }
 
-.tags li a, .social a {
+a.no-style, .tags li a, .social a {
   color: inherit;
 }
 
@@ -161,5 +161,11 @@ blockquote.twitter-tweet {
       height: 100%;
       border: 0;
     }
+  }
+}
+
+.contacts__social {
+  ul {
+    list-style: none;
   }
 }

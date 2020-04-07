@@ -6,6 +6,7 @@ title:       Découvrir Ionic Framework
 banner_1_1:  /assets/posts/2015/01/26/decouvrir-ionic-framework_1_1.jpg
 banner_2_1:  /assets/posts/2015/01/26/decouvrir-ionic-framework_2_1.jpg
 banner_21_9: /assets/posts/2015/01/26/decouvrir-ionic-framework_21_9.jpg
+banner_3_1:  /assets/posts/2015/01/26/decouvrir-ionic-framework_3_1.jpg
 author:      loic
 categories:  [tech]
 tags:        [ionic framework, cordova, mobile, angular]

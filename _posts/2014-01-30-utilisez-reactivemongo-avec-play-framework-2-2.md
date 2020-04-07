@@ -6,6 +6,7 @@ title:       Utilisez ReactiveMongo avec Play framework 2.2
 banner_1_1:  /assets/posts/2014/01/30/utilisez-reactivemongo-avec-play-framework-2-2_1_1.jpg
 banner_2_1:  /assets/posts/2014/01/30/utilisez-reactivemongo-avec-play-framework-2-2_2_1.jpg
 banner_21_9: /assets/posts/2014/01/30/utilisez-reactivemongo-avec-play-framework-2-2_21_9.jpg
+banner_3_1:  /assets/posts/2014/01/30/utilisez-reactivemongo-avec-play-framework-2-2_3_1.jpg
 author:      loic
 categories:  [tech, code]
 tags:        [play framework, mongodb, scala, tutorial]

@@ -37,12 +37,13 @@
 
     .tags {
       margin-top: 14px;
+      margin-bottom: 0;
     }
   }
 }
 
 .techno {
-  margin: $default-spacing;
+  margin: 20px;
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 0 3px rgba(134, 72, 219, .2);

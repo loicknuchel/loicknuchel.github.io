@@ -3,9 +3,10 @@ layout:      post
 locale:      en_US
 icon:        draft
 title:       How to write code that smells good
-banner_1_1:  /assets/posts/2015/09/01/eviter-toujours-plus-de-bugs-grace-au-typage_1_1.jpg
-banner_2_1:  /assets/posts/2015/09/01/eviter-toujours-plus-de-bugs-grace-au-typage_2_1.jpg
-banner_21_9: /assets/posts/2015/09/01/eviter-toujours-plus-de-bugs-grace-au-typage_21_9.jpg
+banner_1_1:  
+banner_2_1:  
+banner_21_9: 
+banner_3_1:  
 author:      loic
 categories:  [tech, craft]
 tags:        []
