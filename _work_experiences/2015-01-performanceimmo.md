@@ -1,6 +1,5 @@
 ---
-date:     2015-01-01 00:00:00 +0100
-slug:     performanceimmo
+date:     2015-01-01
 name:     Performance IMMO
 duration: janv. 2015 - mars 2015, 3 months
 website:  https://www.performance-immo.com

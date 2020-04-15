@@ -32,17 +32,17 @@ menus:
                     </dl>
                 </div>
                 <p class="personal-profile__social">
-                    <a href="https://twitter.com/loicknuchel" target="_blank" title="Twitter" data-toggle="tooltip"><i class="fab fa-twitter"></i></a>
                     <a href="https://linkedin.com/in/loicknuchel" target="_blank" title="LinkedIn" data-toggle="tooltip"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/loicknuchel" target="_blank" title="Twitter" data-toggle="tooltip"><i class="fab fa-twitter"></i></a>
                     <a href="https://github.com/loicknuchel" target="_blank" title="Github" data-toggle="tooltip"><i class="fab fa-github"></i></a>
-                    <a href="https://slideshare.net/loicknuchel" target="_blank" title="SlideShare" data-toggle="tooltip"><i class="fab fa-slideshare"></i></a>
                     <a href="https://gospeak.io/speakers/loicknuchel" target="_blank" title="Gospeak" data-toggle="tooltip"><i class="fas fa-microphone"></i></a>
+                    <a href="https://slideshare.net/loicknuchel" target="_blank" title="SlideShare" data-toggle="tooltip"><i class="fab fa-slideshare"></i></a>
+                    <a href="https://twitch.tv/loicknu" target="_blank" title="Twitch" data-toggle="tooltip"><i class="fab fa-twitch"></i></a>
                     <a href="http://www.brownbaglunch.fr/baggers.html#loic-knuchel" target="_blank" title="Brown Bag Lunch" data-toggle="tooltip"><i class="fas fa-cookie-bite"></i></a>
                     <a href="https://www.malt.fr/profile/loicknuchel" target="_blank" title="Malt" data-toggle="tooltip"><i class="fas fa-hashtag"></i></a>
                     <!--<a href="#" target="_blank" title="Blog" data-toggle="tooltip"><i class="fas fa-comment"></i></i></a>
                     <a href="#" target="_blank" title="dev.to" data-toggle="tooltip"><i class="fab fa-dev"></i></a>
-                    <a href="#" target="_blank" title="Medium" data-toggle="tooltip"><i class="fab fa-medium"></i></a>
-                    <a href="#" target="_blank" title="Twitch" data-toggle="tooltip"><i class="fab fa-twitch"></i></a>-->
+                    <a href="#" target="_blank" title="Medium" data-toggle="tooltip"><i class="fab fa-medium"></i></a>-->
                 </p>
             </div>
         </div>
@@ -82,7 +82,13 @@ menus:
             <div class="col-lg-10">
                 <h2 class="section__title" data-typing-effect="90%">Hire me_</h2>
                 <p class="mb-0">
-                    I'm looking for a new job!
+                    You are lucky, I'm just looking for new challenges and opportunities <i class="emoji party-popper"></i><br>
+                    As a software craftsman I always seek to build <b>robust software and engineering practices</b>.
+                    Mainly using functional programming and static types but also knowledge sharing and continuous improvement.<br>
+                    Therefore I'm looking to <b>help organizations build a strong engineering culture</b> to deliver valuable software iteratively.
+                    I truly believe that high speed is achieved with best quality and professionalism.<br>
+                    If you have such needs, do not hesitate to <a href="#contact">contact me</a>.
+                    Even if just for a chat : I might be able to help you, at least with some advices or connecting you with my network.
                 </p>
             </div>
         </div>
@@ -104,20 +110,18 @@ menus:
                 But I do not limit myself to the code, I always wanted to understand business goals and since I have found <i><b>Domain Driven Design</b></i> I have tools for that.
             </p>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12 section__resume resume-list">
+        <div class="col-lg-12 resume-list">
             <h3 class="resume-list_title">Employment</h3>
             {% assign sorted_work_experiences = site.work_experiences | sort: 'date' | reverse %}
             {% for exp in sorted_work_experiences %}
             <div class="resume-list__block" data-twitter="{{exp.twitter}}">
-                <span class="anchor-trick" id="{{exp.slug}}"></span>
+                <span class="anchor-trick" id="{{exp.name | slugify}}"></span>
                 <a class="resume-list__block-logo" href="{{exp.website}}" target="_blank"><img src="{{exp.logo}}" alt="{{exp.name}} logo"></a>
-                <div data-toggle="collapse" href="#{{exp.slug}}-collapse">
+                <div data-toggle="collapse" href="#{{exp.name | slugify}}-collapse">
                     <h4 class="resume-list__block-title">{{exp.name}}</h4>
                     <p class="resume-list__block-date">{{exp.duration}}</p>
                 </div>
-                <div class="collapse show" id="{{exp.slug}}-collapse">
+                <div class="collapse show" id="{{exp.name | slugify}}-collapse">
                     <div class="resume-list__block-description">{{exp.content | markdownify}}</div>
                     <ul class="tags">
                         {% for tag in exp.tags %}
@@ -130,140 +134,135 @@ menus:
         </div>
         <div class="col-lg-10">
             <p class="section__description">
-                You are still here??? <i><b>Awesome!</b></i> So I suppose you like reading things here.<br>
-                Here are a few thoughts about all of my experiences:<br>
-                - Networking is really important, but you need a pretext for doing it. For that, freelancing and launching a startup are awesome.
-                I saw myself quite lazy about it when I was in a full time contract. I lost a big part of my network when I was very comfortable at Criteo.<br>
-                - Paradoxically, some of less promising experiences were the most interesting ones and some awesome experiences on paper turned pretty bad.
-                Maybe when the expectations a low you can be happier. Or maybe when the competence gap is big, you can make awesome things.<br>
-                Un podcast sur mon parcours: <a href="https://anchor.fm/parcoursdev/episodes/Parcours-de-Loc-Knuchel--dveloppeur-Scala-et-Technical-Leader-ea72m0">Parcours Dev</a><br>
-                TODO
+                Are you still there??? <i><b>Awesome!</b></i><br>
+                So I suppose you like reading things here. So let me have some thoughts about all theses experiences.<br>
+                One thing that really intrigue me it's that many experiences I was really excited about were disappointing
+                and some (rare) where I didn't expect much were fascinating. I think expectations can modify the perception but also,
+                when people think they are really good, they have trouble accepting improvement suggestions and always find excuses to continue in their comfort zone.
+                People in bad situations, on the contrary, may better welcome new ideas and have more willingness to experiment them.<br>
+                On my side, I found that it's way more satisfying to improve a situation (whatever the starting point is) than not being able to do it.
             </p>
         </div>
-        <div class="col-md-12 section__resume resume-list">
+        <div class="col-lg-12 resume-list">
             <h3 class="resume-list_title">Education</h3>
             <div class="resume-list__block" data-twitter="https://twitter.com/_Koudetat">
                 <span class="anchor-trick" id="koudetat"></span>
                 <a class="resume-list__block-logo" href="https://www.koudetat.co" target="_blank"><img src="assets/img/logos/koudetat.jpg" alt="Koudetat logo"></a>
-                <h4 class="resume-list__block-title">Koudetat</h4>
-                <p class="resume-list__block-date">janv. 2014 - may 2014</p>
-                <div class="resume-list__block-description"><p>Awesome!</p></div>
+                <div data-toggle="collapse" href="#koudetat-collapse">
+                    <h4 class="resume-list__block-title">Koudetat</h4>
+                    <p class="resume-list__block-date">janv. 2014 - may 2014</p>
+                </div>
+                <div class="resume-list__block-description collapse show" id="koudetat-collapse">
+                    Learn the basic you needs to launch a startup, a 5 month training by <a href="https://www.thefamily.co" target="_blank">TheFamily</a>.<br>
+                    Awesome training, alongside their <a href="https://www.youtube.com/user/Startupfood" target="_blank">YouTube videos</a> it teach you many counter-intuitive
+                    things about entrepreneurship and startups. But beware, you will never be the same! And working in old fashioned corps can be harder after that...
+                </div>
             </div>
             <div class="resume-list__block" data-twitter="https://twitter.com/Ensimag">
                 <span class="anchor-trick" id="ensimag"></span>
                 <a class="resume-list__block-logo" href="http://ensimag.grenoble-inp.fr" target="_blank"><img src="assets/img/logos/ensimag.png" alt="Ensimag logo"></a>
-                <h4 class="resume-list__block-title">ENSIMAG</h4>
-                <p class="resume-list__block-date">2010 - 2011</p>
-                <div class="resume-list__block-description"><p>Special year</p></div>
+                <div data-toggle="collapse" href="#ensimag-collapse">
+                    <h4 class="resume-list__block-title">ENSIMAG</h4>
+                    <p class="resume-list__block-date">2010 - 2011</p>
+                </div>
+                <div class="resume-list__block-description collapse show" id="ensimag-collapse">
+                    <b>Phelma</b> being in the <a href="http://www.grenoble-inp.fr" target="_blank">INPG group</a>, I could move for my last year to <b>Ensimag</b> for a special year.
+                    This was a chance for me learn some academic programming principles such as language theory, OS basics or networking.<br>
+                    This year teach the core curriculum of the three years at <b>Ensimag</b>.<br>
+                    The most memorable project was to write a working operating system in assembly language.<br>
+                    With my previous years at <b>Phelma</b> I had the chance to learn from every level of computers:
+                    <ul>
+                        <li>silicon properties (material physics): what is a semi-conductor and how to build a transistor</li>
+                        <li>micro-electronics: combine transistors to build logic gates</li>
+                        <li>system architecture: build a micro-processor from logic gates</li>
+                        <li>operating systems: use CPU operations to launch and manage programs</li>
+                        <li>software engineering: build programs <i class="emoji party-popper"></i></li>
+                    </ul>
+                    I'm very grateful to these two school which gave me a such wide training.
+                    Even if it does not have many applications in my daily life/work, I believe it helps me better understand what I'm working with every day.
+                </div>
             </div>
             <div class="resume-list__block" data-twitter="https://twitter.com/Phelma_ecole">
                 <span class="anchor-trick" id="phelma"></span>
                 <a class="resume-list__block-logo" href="http://phelma.grenoble-inp.fr" target="_blank"><img src="assets/img/logos/phelma.jpg" alt="Phelma logo"></a>
-                <h4 class="resume-list__block-title">PHELMA</h4>
-                <p class="resume-list__block-date">2008 - 2010</p>
-                <div class="resume-list__block-description"><p>Micro-electronics</p></div>
+                <div data-toggle="collapse" href="#phelma-collapse">
+                    <h4 class="resume-list__block-title">PHELMA</h4>
+                    <p class="resume-list__block-date">2008 - 2010</p>
+                </div>
+                <div class="resume-list__block-description collapse show" id="phelma-collapse">
+                    I wanted to work on nano-technologies, so I choosed the only engineering school with a white room.<br>
+                    Of course, plans changed, I discovered that fundamental physics are not as fun as I expected and discovered software engineering!<br>
+                    But before to switch fully to programming, I tested an internship to <a href="#omiino">Omiino</a> to experiement real micro-electronics.<br>
+                    I'm quite happy with this way because it allows me to learn things I would never know otherwise.
+                    I designed and made a micro-chip (ASIC) in a white room; and now I keep my wafer preciously.<br>
+                    I also built a micro-processor using VHDL, a micro-electronic language. From the logic gates to basic CPU operations!
+                </div>
             </div>
             <div class="resume-list__block">
                 <span class="anchor-trick" id="massena"></span>
                 <a class="resume-list__block-logo" href="http://www.lycee-massena.fr/les-cpge" target="_blank"><img src="assets/img/logos/massena.png" alt="Massena logo"></a>
-                <h4 class="resume-list__block-title">Massena Prepa</h4>
-                <p class="resume-list__block-date">2006 - 2008</p>
-                <div class="resume-list__block-description"><p>Special year</p></div><p>PCSI and PC*</p></div>
+                <div data-toggle="collapse" href="#massena-collapse">
+                    <h4 class="resume-list__block-title">Massena Prepa</h4>
+                    <p class="resume-list__block-date">2006 - 2008</p>
+                </div>
+                <p class="resume-list__block-description collapse show" id="massena-collapse">
+                    I was the first one in my entourage to consider a preparatory class so it was a bit scary.
+                    And advices from guidance counselor or teachers were not very reassuring...<br>
+                    So I choosed Massena which had a good reputation on studying ambiance. And I must say I was not disappointed <i class="emoji smile"></i><br>
+                    Teachers were very supportive as well as other students. So I can do my PCSI and then PC* in good conditions.
+                    And I remember these two years as good ones!
+                </p>
             </div>
-        <div class="col-md-12 d-flex justify-content-center flex-wrap">
-            {% for techno in site.data.technos %}
-            <a href="{{techno.link}}" target="_blank" class="techno gray-on-hover" title="{{techno.name}}" data-toggle="tooltip">
-                <img class="" src="{{techno.logo}}" alt="{{techno.name}} logo">
-            </a>
-            {% endfor %}
+        </div>
+        <div class="col-lg-12 resume-list">
+            <h3 class="resume-list_title">Technologies</h3>
+            <div class="d-flex justify-content-center flex-wrap">
+                {% for techno in site.data.technos %}
+                <a href="{{techno.link}}" target="_blank" class="techno gray-on-hover" title="{{techno.name}}" data-toggle="tooltip">
+                    <img class="" src="{{techno.logo}}" alt="{{techno.name}} logo">
+                </a>
+                {% endfor %}
+            </div>
         </div>
     </div>
-    <!--<div class="row section__resume progress-list js-progress-list">
+    <!--<div class="row progress-list js-progress-list">
         <div class="col-md-12">
             <h3 class="progress-list__title">General skills</h3>
         </div>
         <div class="col-md-5 mr-auto">
             <div class="progress-list__skill">
-                <p>
-                    <span class="progress-list__skill-title">html5</span>
-                    <span class="progress-list__skill-value">80%</span>
-                </p>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
-                    </div>
-                </div>
+                <p><span class="progress-list__skill-title">html5</span><span class="progress-list__skill-value">80%</span></p>
+                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div></div>
             </div>
             <div class="progress-list__skill">
-                <p>
-                    <span class="progress-list__skill-title">css3</span>
-                    <span class="progress-list__skill-value">70%</span>
-                </p>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                    </div>
-                </div>
+                <p><span class="progress-list__skill-title">css3</span><span class="progress-list__skill-value">70%</span></p>
+                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div></div>
             </div>
             <div class="progress-list__skill">
-                <p>
-                    <span class="progress-list__skill-title">java script</span>
-                    <span class="progress-list__skill-value">90%</span>
-                </p>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                    </div>
-                </div>
+                <p><span class="progress-list__skill-title">java script</span><span class="progress-list__skill-value">90%</span></p>
+                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
             </div>
             <div class="progress-list__skill">
-                <p>
-                    <span class="progress-list__skill-title">jquery</span>
-                    <span class="progress-list__skill-value">80%</span>
-                </p>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                    </div>
-                </div>
+                <p><span class="progress-list__skill-title">jquery</span><span class="progress-list__skill-value">80%</span></p>
+                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div></div>
             </div>
         </div>
         <div class="col-md-5 mr-auto">
             <div class="progress-list__skill">
-                <p>
-                    <span class="progress-list__skill-title">bootstrap 3</span>
-                    <span class="progress-list__skill-value">80%</span>
-                </p>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                    </div>
-                </div>
+                <p><span class="progress-list__skill-title">bootstrap 3</span><span class="progress-list__skill-value">80%</span></p>
+                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div></div>
             </div>
             <div class="progress-list__skill">
-                <p>
-                    <span class="progress-list__skill-title">grunt</span>
-                    <span class="progress-list__skill-value">60%</span>
-                </p>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                    </div>
-                </div>
+                <p><span class="progress-list__skill-title">grunt</span><span class="progress-list__skill-value">60%</span></p>
+                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div></div>
             </div>
             <div class="progress-list__skill">
-                <p>
-                    <span class="progress-list__skill-title">git</span>
-                    <span class="progress-list__skill-value">90%</span>
-                </p>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                    </div>
-                </div>
+                <p><span class="progress-list__skill-title">git</span><span class="progress-list__skill-value">90%</span></p>
+                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
             </div>
             <div class="progress-list__skill">
-                <p>
-                    <span class="progress-list__skill-title">adobe photoshop</span>
-                    <span class="progress-list__skill-value">80%</span>
-                </p>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                    </div>
-                </div>
+                <p><span class="progress-list__skill-title">adobe photoshop</span><span class="progress-list__skill-value">80%</span></p>
+                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div></div>
             </div>
         </div>
     </div>-->

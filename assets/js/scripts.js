@@ -145,7 +145,7 @@ $(function () {
     });
 
     // ajax contact form
-    $('form.contact-form').submit(function (e) {
+    /* $('form.contact-form').submit(function (e) {
         e.preventDefault();
         var $form = $(this);
         var data = {};
@@ -166,5 +166,5 @@ $(function () {
             }
         };
         $.ajax(opts);
-    });
+    }); */
 });

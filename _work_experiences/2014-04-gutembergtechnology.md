@@ -1,6 +1,5 @@
 ---
-date:     2014-04-01 00:00:00 +0100
-slug:     gutenbergtechnology
+date:     2014-04-01
 name:     Gutenberg Technology
 duration: apr. 2014 - may 2014, 2 months
 website:  https://www.gutenberg-technology.com

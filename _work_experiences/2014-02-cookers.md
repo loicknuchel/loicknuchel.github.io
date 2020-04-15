@@ -1,6 +1,5 @@
 ---
-date:     2014-02-01 00:00:00 +0100
-slug:     cookers
+date:     2014-02-01
 name:     Cookers
 duration: feb. 2014 - janv. 2015, 1 year
 website:  http://cookers.mystrikingly.com
@@ -13,7 +12,7 @@ During my 6 month personal training on **Scala**, **Play framework**, **machine 
 I discovered **TheFamily** and their [youtube channel](https://www.youtube.com/user/Startupfood){:target="_blank"}.
 When they launched [Koudetat](#koudetat) I could not resist, I had to take this opportunity and launch my own startup.
 After a few classes I settle down for **Cookers**, an app to enhance customer experience in retail.
-I already knew the area a bit, had a few connections thanks to [TRF Retail](#trfretail) and food shopping was a daily struggle for me as it can be for many others.<br>
+I already knew the area a bit, had a few connections thanks to [TRF Retail](#trf-retail) and food shopping was a daily struggle for me as it can be for many others.<br>
 The idea was to build a nice self-scan experience using consumer smartphone. So he could build his shopping list at home based on basic recipes suggestions,
 make his shopping using the app as an assistant (lists, nutrition, recipe suggestions, promos...) and skip checkout lines to go out.
 

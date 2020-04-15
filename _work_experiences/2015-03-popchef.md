@@ -1,6 +1,5 @@
 ---
-date:     2015-03-02 00:00:00 +0100
-slug:     popchef
+date:     2015-03-02
 name:     Popchef
 duration: mars 2015, 3 days
 website:  https://popchef.com

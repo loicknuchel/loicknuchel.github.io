@@ -4,44 +4,6 @@ img {
   &.full-width {
     width: 100%;
   }
-
-  &.pull-right {
-    float: right;
-    max-width: 50%;
-    margin-left: $default-spacing;
-    margin-bottom: $default-spacing;
-  }
-
-  &.pull-left {
-    float: left;
-    max-width: 50%;
-    margin-right: $default-spacing;
-    margin-bottom: $default-spacing;
-  }
-
-  &.w-100 {
-    width: 100px;
-  }
-
-  &.w-200 {
-    width: 200px;
-  }
-
-  &.w-300 {
-    width: 300px;
-  }
-
-  &.w-400 {
-    width: 400px;
-  }
-
-  &.w-500 {
-    width: 500px;
-  }
-
-  &.w-600 {
-    width: 600px;
-  }
 }
 
 figure figcaption {

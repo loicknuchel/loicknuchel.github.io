@@ -1,6 +1,5 @@
 ---
-date:     2015-04-01 00:00:00 +0100
-slug:     stimshop
+date:     2015-04-01
 name:     Stimshop
 duration: apr. 2015, 4 days
 website:  http://www.stimshop.com
