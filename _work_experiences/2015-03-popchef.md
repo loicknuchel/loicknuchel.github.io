@@ -11,4 +11,4 @@ tags:     [Mobile developer, Ionic framework, AngularJS, Freelance]
 **Popchef** is a food delivery startup which was just launched and they needed an app for delivery men so they could get assigned to missions, 
 accept them, have directions and finalize them.
 
-With my Ionic experience, clear specifications and needed API in place, I could do it in only 3 days (from project creation to packaged apk). **It was awesome!!!**
+With my Ionic experience, clear specifications and the needed API in place, I could do it in only 3 days (from project creation to packaged apk). **It was awesome!!!**

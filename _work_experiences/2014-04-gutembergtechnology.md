@@ -8,7 +8,7 @@ twitter:  GutenbergTech
 tags:     [Front-end developer, Node.js, AngularJS, Freelance]
 ---
 
-Same as [Kpler](#kpler), I have done this mission during the launch of [Cookers](#cookers).
+Same as [Kpler](#kpler), I did this mission during the launch of [Cookers](#cookers).
 But this time it was to do a favor to a friend.
 
 I had to make a working prototype for an investor.

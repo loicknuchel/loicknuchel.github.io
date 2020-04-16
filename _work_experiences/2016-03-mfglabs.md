@@ -8,9 +8,9 @@ twitter:  mfg_labs
 tags:     [Scala developer]
 ---
 
-For this mission, I was looking into a opportunity to work on a serious Scala company. **MFG Labs** had a strong reputation about it and was ideal for me.
-This is the reason I didn't canceled it to extend my [Sidexa](#sidexa) experience ^^
+For this mission, I was looking into an opportunity to work on a serious Scala company. **MFG Labs** had a strong reputation about it and was ideal for me.
+This is the reason I didn't cancelled it to extend my [Sidexa](#sidexa) experience ^^
 
 I worked on the biggest project of the company, a multi publishing platform for publicity campaigns.
 
-Sadly, code quality were pretty low and I didn't succeed to make a point about it, so it decided to move on to a new high level Scala opportunity.
+Sadly, code quality was pretty low and I didn't succeed to make a point about it, so I decided to move on to a new high level Scala opportunity.

@@ -23,7 +23,7 @@ Our goal was to make a global experience, from ideas, to store and cooking with 
 We launched a recipe app with a shopping list and started negotiations with some retailers to work with them (Intermarché, Casino, Naturalia...) but we were not at the same pace (obviously!).
 We stopped after one year of intense work and learnings. We earned no money but it was really worth the time invested to develop an understanding
 of what is it to launch a business and have a much more open view than just the developer one.
-Meeting a lot of diverse people (other entrepreneurs, retailer directors, competition...) was also a big win and it makes me realize that networking
+Meeting a lot of various people (other entrepreneurs, retailer directors, competition...) was also a big win and it makes me realize that networking
 is key but you need a good reason to do it seriously (startup or freelance is <i class="far fa-smile-wink"></i>).
 
 All the code is open source, you can see it on [github.com/cookersapp](https://github.com/cookersapp){:target="_blank"}.
