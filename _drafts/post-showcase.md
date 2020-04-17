@@ -360,7 +360,8 @@ A here also!
 
 And even embed a twitt:
 
-{% include embed-tweet.html id="1242847901845524480" user="loicknuchel" name="Loïc Knuchel" content="Je découvre https://search.google.com/search-console<br>C'est sympa de voir les mots clés sur lesquels on remonte... Mais bon, pas encore assez de trafic sur https://gospeak.io ^^" %}
+{% include embed-tweet.html id="1242847901845524480" user="loicknuchel" name="Loïc Knuchel"
+    content="Je découvre https://search.google.com/search-console<br>C'est sympa de voir les mots clés sur lesquels on remonte... Mais bon, pas encore assez de trafic sur https://gospeak.io ^^" %}
 
 Images can be on their own block :
 

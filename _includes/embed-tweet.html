@@ -1,7 +1,8 @@
 <blockquote class="twitter-tweet">
     <a href="https://twitter.com/{{include.user}}/status/{{include.id}}" target="_blank"><i class="fab fa-twitter"></i></a>
-    <img src="/assets/img/twitter-anonymous.jpg" alt="anonymous twitter avatar">
+    <img class="avatar" src="/assets/img/twitter-anonymous.jpg" alt="anonymous twitter avatar">
     <div class="name">{{include.name}}</div>
     <small class="screenName">@{{include.user}}</small>
-    <p lang="en" dir="ltr">{{include.content}}</p>
+    <p dir="ltr">{{include.content}}</p>
+    {% if include.image %}<img src="{{include.image}}" alt="tweet media">{% endif %}
 </blockquote>

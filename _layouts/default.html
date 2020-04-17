@@ -60,7 +60,8 @@
             "image": [
                 "{% if page.banner_1_1 %}{{page.banner_1_1 | absolute_url}}{% else %}{{'/assets/img/default/blog_banner_1_1.jpg' | absolute_url}}{% endif %}",
                 "{% if page.banner_2_1 %}{{page.banner_2_1 | absolute_url}}{% else %}{{'/assets/img/default/blog_banner_2_1.jpg' | absolute_url}}{% endif %}",
-                "{% if page.banner_21_9 %}{{page.banner_21_9 | absolute_url}}{% else %}{{'/assets/img/default/blog_banner_21_9.jpg' | absolute_url}}{% endif %}"
+                "{% if page.banner_21_9 %}{{page.banner_21_9 | absolute_url}}{% else %}{{'/assets/img/default/blog_banner_21_9.jpg' | absolute_url}}{% endif %}",
+                "{% if page.banner_3_1 %}{{page.banner_3_1 | absolute_url}}{% else %}{{'/assets/img/default/blog_banner_3_1.jpg' | absolute_url}}{% endif %}"
             ],
             "datePublished": "{{page.date | date_to_xmlschema}}",
             "dateModified": "{{page.last_modified_at | default: page.date | date_to_xmlschema}}",

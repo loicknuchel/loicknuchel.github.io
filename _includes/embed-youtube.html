@@ -1,5 +1,8 @@
 <div class="youtube-embed">
     <div class="iframe-container" style="padding-top: {{include.ratio | default: 56.25}}%;">
-        <iframe src="https://www.youtube.com/embed/{{include.code}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/{{include.code}}{%- if include.time -%}?start={{include.time}}{%- endif -%}"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
     </div>
 </div>

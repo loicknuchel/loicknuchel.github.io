@@ -37,7 +37,8 @@ often having some shitty code supporting an approximately working application.
 The result is that at some point of the application life, we always propose a full-rewrite as we cannot manage to implement any new change without tremendous effort. 
 So we start over and create a very similar monster from scratch !
 
-{% include embed-tweet.html id="654710109214371841" user="malk_zameth" name="Romeu Moura" content="If you remake awful software from scratch without changing the culture that created it : you'll remake awful software" %}
+{% include embed-tweet.html id="654710109214371841" user="malk_zameth" name="Romeu Moura"
+    content="If you remake awful software from scratch without changing the culture that created it : you'll remake awful software" %}
 
 BTW, even if sometimes rewriting is the only way to move forward, we have to agree that it's a big failure as it screams that application went out of control
 just like the Frankenstein's creature (but the fault is not only to the developers's, it's to the whole company).
