@@ -54,6 +54,11 @@ a.no-style, .tags li a, .social a {
   vertical-align: middle;
 }
 
+.read-more {
+  overflow: hidden;
+  transition: max-height .3s ease-out;
+}
+
 .twitter-tweet {
   margin-bottom: $default-spacing !important;
 }

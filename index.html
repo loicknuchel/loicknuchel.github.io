@@ -57,7 +57,7 @@ menus:
         <div class="col-lg-10">
             <h2 class="section__title" data-typing-effect="90%">Hi_</h2>
             <p class="section__description">
-                I am software engineer, passionated about building reliable and maintainable app using functional programming and static types.
+                I am software engineer, passionate about building reliable and maintainable app using functional programming and static types.
                 Beyond code, I value collaboration and cross department synergies.
                 In addition to my daily job, I do a lot of things:
                 founded <b><a href="https://gospeak.io" target="_blank">Gospeak</a></b>,
@@ -123,7 +123,7 @@ menus:
                     <p class="resume-list__block-date">{{exp.duration}}</p>
                 </div>
                 <div class="collapse show" id="{{exp.name | slugify}}-collapse">
-                    <div class="resume-list__block-description">{{exp.content | markdownify}}</div>
+                    <div class="resume-list__block-description" read-more="180">{{exp.content | markdownify}}</div>
                     <ul class="tags">
                         {% for tag in exp.tags %}
                         <li>{{tag}}</li>
@@ -153,10 +153,12 @@ menus:
                     <h4 class="resume-list__block-title">Koudetat</h4>
                     <p class="resume-list__block-date">janv. 2014 - may 2014</p>
                 </div>
-                <div class="resume-list__block-description collapse show" id="koudetat-collapse">
-                    Learn the basic you need to launch a startup, a 5 month training by <a href="https://www.thefamily.co" target="_blank">TheFamily</a>.<br>
-                    Awesome training, alongside their <a href="https://www.youtube.com/user/Startupfood" target="_blank">YouTube videos</a> that teaches many counter-intuitive
-                    things about entrepreneurship and startups. But beware, you will never be the same! And working in old fashioned corps can be harder after that...
+                <div class="collapse show" id="koudetat-collapse">
+                    <div class="resume-list__block-description" read-more="180">
+                        Learn the basic you need to launch a startup, a 5 month training by <a href="https://www.thefamily.co" target="_blank">TheFamily</a>.<br>
+                        Awesome training, alongside their <a href="https://www.youtube.com/user/Startupfood" target="_blank">YouTube videos</a> that teaches many counter-intuitive
+                        things about entrepreneurship and startups. But beware, you will never be the same! And working in old fashioned corps can be harder after that...
+                    </div>
                 </div>
             </div>
             <div class="resume-list__block" data-twitter="https://twitter.com/Ensimag">
@@ -166,21 +168,23 @@ menus:
                     <h4 class="resume-list__block-title">ENSIMAG</h4>
                     <p class="resume-list__block-date">2010 - 2011</p>
                 </div>
-                <div class="resume-list__block-description collapse show" id="ensimag-collapse">
-                    <b>Phelma</b> being in the <a href="http://www.grenoble-inp.fr" target="_blank">INPG group</a>, I could move for my last year to <b>Ensimag</b> for a special year.
-                    This was a chance for me to learn some academic programming principles such as language theory, OS basics or networking.<br>
-                    This year actually teaches the core curriculum of the three years at <b>Ensimag</b>.<br>
-                    The most memorable project was to write a working operating system in assembly language.<br>
-                    With my previous years at <b>Phelma</b> I had the chance to learn from every level of computers:
-                    <ul>
-                        <li>silicon properties (material physics): what is a semi-conductor and how to build a transistor</li>
-                        <li>micro-electronics: combine transistors to build logic gates</li>
-                        <li>system architecture: build a micro-processor from logic gates</li>
-                        <li>operating systems: use CPU operations to launch and manage programs</li>
-                        <li>software engineering: build programs <i class="emoji party-popper"></i></li>
-                    </ul>
-                    I'm very grateful to these two schools that gave me a such wide training.
-                    Even if it does not have many applications in my daily life/work, I believe it helps me have a better understanding of what I'm working with every day.
+                <div class="collapse show" id="ensimag-collapse">
+                    <div class="resume-list__block-description" read-more="180">
+                        <b>Phelma</b> being in the <a href="http://www.grenoble-inp.fr" target="_blank">INPG group</a>, I could move for my last year to <b>Ensimag</b> for a special year.
+                        This was a chance for me to learn some academic programming principles such as language theory, OS basics or networking.<br>
+                        This year actually teaches the core curriculum of the three years at <b>Ensimag</b>.<br>
+                        The most memorable project was to write a working operating system in assembly language.<br>
+                        With my previous years at <b>Phelma</b> I had the chance to learn from every level of computers:
+                        <ul>
+                            <li>silicon properties (material physics): what is a semi-conductor and how to build a transistor</li>
+                            <li>micro-electronics: combine transistors to build logic gates</li>
+                            <li>system architecture: build a micro-processor from logic gates</li>
+                            <li>operating systems: use CPU operations to launch and manage programs</li>
+                            <li>software engineering: build programs <i class="emoji party-popper"></i></li>
+                        </ul>
+                        I'm very grateful to these two schools that gave me a such wide training.
+                        Even if it does not have many applications in my daily life/work, I believe it helps me have a better understanding of what I'm working with every day.
+                    </div>
                 </div>
             </div>
             <div class="resume-list__block" data-twitter="https://twitter.com/Phelma_ecole">
@@ -190,13 +194,15 @@ menus:
                     <h4 class="resume-list__block-title">PHELMA</h4>
                     <p class="resume-list__block-date">2008 - 2010</p>
                 </div>
-                <div class="resume-list__block-description collapse show" id="phelma-collapse">
-                    I wanted to work on nano-technologies, so I chose the only engineering school with a white room.<br>
-                    Of course, plans changed, I discovered that fundamental physics are not as fun as I expected and discovered software engineering!<br>
-                    But before to switch fully to programming, I tested an internship to <a href="#omiino">Omiino</a> to experiment real micro-electronics.<br>
-                    I'm quite happy with this way because it allowed me to learn things I would never have known otherwise.
-                    I designed and made a micro-chip (ASIC) in a white room; and now I keep my wafer preciously.<br>
-                    I also built a micro-processor using VHDL, a micro-electronic language, from the logic gates to basic CPU operations!
+                <div class="collapse show" id="phelma-collapse">
+                    <div class="resume-list__block-description" read-more="180">
+                        I wanted to work on nano-technologies, so I chose the only engineering school with a white room.<br>
+                        Of course, plans changed, I discovered that fundamental physics are not as fun as I expected and discovered software engineering!<br>
+                        But before to switch fully to programming, I tested an internship to <a href="#omiino">Omiino</a> to experiment real micro-electronics.<br>
+                        I'm quite happy with this way because it allowed me to learn things I would never have known otherwise.
+                        I designed and made a micro-chip (ASIC) in a white room; and now I keep my wafer preciously.<br>
+                        I also built a micro-processor using VHDL, a micro-electronic language, from the logic gates to basic CPU operations!
+                    </div>
                 </div>
             </div>
             <div class="resume-list__block">
@@ -206,13 +212,15 @@ menus:
                     <h4 class="resume-list__block-title">Massena Prepa</h4>
                     <p class="resume-list__block-date">2006 - 2008</p>
                 </div>
-                <p class="resume-list__block-description collapse show" id="massena-collapse">
-                    I was the first one in my entourage to consider a preparatory class so it was a bit scary.
-                    And advices from guidance counselor or teachers were not very reassuring...<br>
-                    So I choosed Massena which had a good reputation on studying ambiance. And I must say I was not disappointed <i class="emoji smile"></i><br>
-                    Teachers were very supportive as well as other students. Therefore I could do my PCSI and then PC* in good conditions.
-                    And I remember these two years as good ones!
-                </p>
+                <div class="collapse show" id="massena-collapse">
+                    <div class="resume-list__block-description" read-more="180">
+                        I was the first one in my entourage to consider a preparatory class so it was a bit scary.
+                        And advices from guidance counselor or teachers were not very reassuring...<br>
+                        So I choosed Massena which had a good reputation on studying ambiance. And I must say I was not disappointed <i class="emoji smile"></i><br>
+                        Teachers were very supportive as well as other students. Therefore I could do my PCSI and then PC* in good conditions.
+                        And I remember these two years as good ones!
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-lg-12 resume-list">

@@ -5,7 +5,7 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip();
 
     $('.js-back').click(function (e) {
-        if(document.referrer && document.referrer !== window.location.href) {
+        if (document.referrer && document.referrer !== window.location.href) {
             e.preventDefault();
             window.history.go(-1);
             window.location.href = document.referrer;
@@ -105,6 +105,29 @@ $(function () {
                 this.destroy();
             }
         });
+    });
+
+    // read more
+    $('[read-more]').each(function () {
+        var $elt = $(this);
+        var height = $elt.height();
+        var maxHeight = $elt.attr('read-more');
+        if (height > maxHeight) {
+            $elt.addClass('read-more');
+            $elt.css('max-height', maxHeight + 'px');
+            $elt.after('<a href="#">Read more</a>');
+            $elt.next().click(function (e) {
+                e.preventDefault();
+                var $btn = $(this);
+                if ($btn.text() === 'Read more') {
+                    $elt.css('max-height', height + 'px');
+                    $btn.text('Read less');
+                } else {
+                    $elt.css('max-height', maxHeight + 'px');
+                    $btn.text('Read more');
+                }
+            });
+        }
     });
 
     // animate progress-bar
