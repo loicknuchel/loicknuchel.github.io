@@ -18,7 +18,11 @@ banner_2_1: /assets/img/social-banner.jpg
             <h2 class="post-title"><a href="{{post.url}}"><i class="emoji {{post.icon | default: 'article'}}"></i> {{post.title}}</a></h2>
             <section class="post-excerpt">{{post.excerpt | strip_html | truncatewords: 30}} »</section>
             <footer class="post-meta">
+                {% if author.link %}
+                <a href="{{author.link}}" class="post-author"><img src="{{author.avatar}}" alt="{{author.name}} avatar"> {{author.name}}</a> on
+                {% else %}
                 <span class="post-author"><img src="{{author.avatar}}" alt="{{author.name}} avatar"> {{author.name}}</span> on
+                {% endif %}
                 <span class="tags">
                     {%- for tag in post.tags -%}
                     <a href="/blog/tags#{{tag | slugify}}" class="tag">{{tag}}</a>

@@ -23,9 +23,11 @@ menus:
             <div class="sheet__content">
                 <h1 class="post-title" itemprop="name headline">{{page.title}}</h1>
                 <div class="post-meta">
-                    <span class="post-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-                        <img src="{{author.avatar}}" alt="{{author.name}} avatar"> <span itemprop="name">{{author.name}}</span>
-                    </span> on
+                    {% if author.link %}
+                    <a href="{{author.link}}" class="post-author" itemprop="author" itemscope itemtype="http://schema.org/Person"><img src="{{author.avatar}}" alt="{{author.name}} avatar"> <span itemprop="name">{{author.name}}</span></a> on
+                    {% else %}
+                    <span class="post-author" itemprop="author" itemscope itemtype="http://schema.org/Person"><img src="{{author.avatar}}" alt="{{author.name}} avatar"> <span itemprop="name">{{author.name}}</span></span> on
+                    {% endif %}
                     <span class="tags">
                         {%- for tag in page.tags -%}
                         <a href="/blog/tags#{{tag | slugify}}" class="tag">{{tag}}</a>
