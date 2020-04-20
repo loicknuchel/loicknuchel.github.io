@@ -8,10 +8,17 @@ sitemap: false
 <h1>{{page.title}}</h1>
 <h2>{{page.excerpt}}</h2>
 
+<div style="font-size: 25px; line-height: 25px; margin: 20px;">
+    Used icons:
+    {% for post in site.posts %}
+    <i class="emoji {{post.icon | default: 'article'}}" title="{{post.title}}" data-toggle="tooltip"></i>
+    {% endfor %}
+</div>
+
 {% for post in site.posts %}
 {% assign author = site.data.people[post.author] | default: site.data.people.loic %}
 <div style="margin-bottom: 20px">
-    <b><a href="{{post.url}}" class="no-style">{{post.title}}</a></b><br>
+    <b><a href="{{post.url}}" class="no-style"><i class="emoji {{post.icon | default: 'article'}}"></i> {{post.title}}</a></b><br>
     <img src="{{post.banner_1_1 | default: '/assets/img/default/blog_banner_1_1.jpg'}}" alt="banner 1x1" title="banner 1x1" style="height: 200px; display: inline">
     <img src="{{post.banner_2_1 | default: '/assets/img/default/blog_banner_2_1.jpg'}}" alt="banner 2x1" title="banner 2x1" style="height: 200px; display: inline">
     <img src="{{post.banner_21_9 | default: '/assets/img/default/blog_banner_21_9.jpg'}}" alt="banner 21x9" title="banner 21x9" style="height: 200px; display: inline">

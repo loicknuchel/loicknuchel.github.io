@@ -113,23 +113,46 @@ img.emoji {
   &.woman-scientist:before { content: '\01f469\0200d\01f52c'; }
   &.man-technologist:before, &.tech:before { content: '\01f468\0200d\01f4bb'; }
   &.woman-technologist:before { content: '\01f469\0200d\01f4bb'; }
-  &.man-singer:before { content: '\01f468\0200d\01f3a4'; }
+  &.man-singer:before, &.speaking:before { content: '\01f468\0200d\01f3a4'; }
   &.woman-singer:before { content: '\01f469\0200d\01f3a4'; }
+  &.police-officer:before { content: '\01f46e'; }
+  &.man-police-officer:before { content: '\01f46e\0200d\02642\0fe0f'; }
+  &.woman-police-officer:before { content: '\01f46e\0200d\02640\0fe0f'; }
   &.man-superhero:before { content: '\01f9b8\0200d\02642\0fe0f'; }
   &.woman-superhero:before { content: '\01f9b8\0200d\02640\0fe0f'; }
   &.man-supervillain:before { content: '\01f9b9\0200d\02642\0fe0f'; }
   &.woman-supervillain:before { content: '\01f9b9\0200d\02640\0fe0f'; }
+  &.family-man-woman-girl-boy:before, &.group:before { content: '\01f468\0200d\01f469\0200d\01f467\0200d\01f466'; }
   &.speaking-head:before { content: '\01f5e3'; }
   &.bug:before { content: '\01F41B'; }
+  &.lady-beetle:before, &.bug-alt:before { content: '\01f41e'; }
+  &.spider-web:before { content: '\01f578'; }
+  &.microbe:before { content: '\01f9a0'; }
+  &.seedling:before { content: '\01f331'; }
+  &.palm-tree:before { content: '\01f334'; }
+  &.cactus:before { content: '\01f335'; }
+  &.four-leaf-clover:before { content: '\01f340'; }
   &.pizza:before { content: '\01f355'; }
   &.popcorn:before { content: '\01f37f'; }
   &.cookie:before { content: '\01f36a'; }
+  &.pie:before { content: '\01f967'; }
+  &.hot-beverage:before, &.coffee:before { content: '\02615'; }
+  &.bottle-with-popping-cork:before { content: '\01f37e'; }
+  &.wine-glass:before { content: '\01f377'; }
+  &.cocktail-glass:before { content: '\01f378'; }
+  &.tropical-drink:before { content: '\01f379'; }
   &.beer-mug:before { content: '\01f37a'; }
   &.clinking-beer-mugs:before { content: '\01f37b'; }
+  &.railway-track:before { content: '\01f6e4'; }
   &.police-car-light:before { content: '\01f6a8'; }
   &.rocket:before, &.startup:before { content: '\01f680'; }
+  &.luggage:before { content: '\01f9f3'; }
   &.hourglass-done:before { content: '\0231B'; }
   &.hourglass-not-done:before { content: '\023F3'; }
+  &.new-moon:before { content: '\01f311'; }
+  &.waxing-crescent-moon:before { content: '\01f312'; }
+  &.first-quarter-moon:before { content: '\01f313'; }
+  &.last-quarter-moon:before { content: '\01f317'; }
   &.star:before { content: '\02b50'; }
   &.glowing-star:before { content: '\01f31f'; }
   &.high-voltage:before { content: '\026a1'; }
@@ -150,8 +173,16 @@ img.emoji {
   &.video-game:before { content: '\01F3AE'; }
   &.joystick:before { content: '\01F579'; }
   &.slot-machine:before { content: '\01f3b0'; }
-  &.game-die:before { content: '\01f3b2'; }
+  &.game-die:before, &.random:before { content: '\01f3b2'; }
   &.heart-suit:before { content: '\02665'; }
+  &.performing-arts:before, &.happy-sad:before { content: '\01f3ad'; }
+  &.artist-palette:before { content: '\01f3a8'; }
+  &.glasses:before { content: '\01f453'; }
+  &.sunglasses:before { content: '\01f576'; }
+  &.crown:before { content: '\01f451'; }
+  &.top-hat:before { content: '\01f3a9'; }
+  &.graduation-cap:before { content: '\01f393'; }
+  &.billed-cap:before { content: '\01f9e2'; }
   &.gem-stone:before { content: '\01f48e'; }
   &.loudspeaker:before, &.announcement:before { content: '\01f4e2'; }
   &.megaphone:before { content: '\01f4e3'; }
@@ -201,13 +232,21 @@ img.emoji {
   &.dagger:before, &.fight:before { content: '\01F5E1'; }
   &.crossed-swords:before { content: '\02694'; }
   &.shield:before { content: '\01f6e1'; }
+  &.balance-scale:before { content: '\02696'; }
   &.link:before { content: '\01f517'; }
   &.test-tube:before, &.experiment:before { content: '\01f9ea'; }
+  &.dna:before { content: '\01f9ec'; }
+  &.microscope:before { content: '\01f52c'; }
+  &.telescope:before { content: '\01f52d'; }
+  &.roll-of-paper:before { content: '\01f9fb'; }
   &.warning:before { content: '\026a0'; }
   &.double-exclamation-mark:before { content: '\0203c'; }
   &.check-mark:before { content: '\02714'; }
   &.cross-mark:before { content: '\0274c'; }
   &.part-alternation-mark:before { content: '\0303d'; }
+  &.purple-circle:before { content: '\01f7e3'; }
+  &.purple-square:before { content: '\01f7ea'; }
+  &.pirate-flag:before { content: '\01f3f4\0200d\02620\0fe0f'; }
 
   &.article {
     margin: 0;

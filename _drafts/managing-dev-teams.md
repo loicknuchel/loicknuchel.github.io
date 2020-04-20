@@ -1,7 +1,7 @@
 ---
 layout:      post
 locale:      en_US
-icon:        draft
+icon:        management
 title:       Managing dev teams
 banner_1_1:  
 banner_2_1:  

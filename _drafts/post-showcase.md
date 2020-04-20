@@ -43,8 +43,14 @@ Alias: <span style="font-size: 2em; line-height: 1.2;">
     <i class="emoji hundred" title="hundred" data-toggle="tooltip"></i>
     <i class="emoji speak" title="speak" data-toggle="tooltip"></i>
     <i class="emoji tech" title="tech" data-toggle="tooltip"></i>
+    <i class="emoji speaking" title="speaking" data-toggle="tooltip"></i>
+    <i class="emoji group" title="group" data-toggle="tooltip"></i>
+    <i class="emoji bug-alt" title="bug-alt" data-toggle="tooltip"></i>
+    <i class="emoji coffee" title="coffee" data-toggle="tooltip"></i>
     <i class="emoji startup" title="startup" data-toggle="tooltip"></i>
     <i class="emoji management" title="management" data-toggle="tooltip"></i>
+    <i class="emoji random" title="random" data-toggle="tooltip"></i>
+    <i class="emoji happy-sad" title="happy-sad" data-toggle="tooltip"></i>
     <i class="emoji announcement" title="announcement" data-toggle="tooltip"></i>
     <i class="emoji talk" title="talk" data-toggle="tooltip"></i>
     <i class="emoji mobile" title="mobile" data-toggle="tooltip"></i>
@@ -163,21 +169,44 @@ Alias: <span style="font-size: 2em; line-height: 1.2;">
     <i class="emoji woman-technologist" title="woman-technologist" data-toggle="tooltip"></i>
     <i class="emoji man-singer" title="man-singer" data-toggle="tooltip"></i>
     <i class="emoji woman-singer" title="woman-singer" data-toggle="tooltip"></i>
+    <i class="emoji police-officer" title="police-officer" data-toggle="tooltip"></i>
+    <i class="emoji man-police-officer" title="man-police-officer" data-toggle="tooltip"></i>
+    <i class="emoji woman-police-officer" title="woman-police-officer" data-toggle="tooltip"></i>
     <i class="emoji man-superhero" title="man-superhero" data-toggle="tooltip"></i>
     <i class="emoji woman-superhero" title="woman-superhero" data-toggle="tooltip"></i>
     <i class="emoji man-supervillain" title="man-supervillain" data-toggle="tooltip"></i>
     <i class="emoji woman-supervillain" title="woman-supervillain" data-toggle="tooltip"></i>
+    <i class="emoji family-man-woman-girl-boy" title="family-man-woman-girl-boy" data-toggle="tooltip"></i>
     <i class="emoji speaking-head" title="speaking-head" data-toggle="tooltip"></i>
     <i class="emoji bug" title="bug" data-toggle="tooltip"></i>
+    <i class="emoji lady-beetle" title="lady-beetle" data-toggle="tooltip"></i>
+    <i class="emoji spider-web" title="spider-web" data-toggle="tooltip"></i>
+    <i class="emoji microbe" title="microbe" data-toggle="tooltip"></i>
+    <i class="emoji seedling" title="seedling" data-toggle="tooltip"></i>
+    <i class="emoji palm-tree" title="palm-tree" data-toggle="tooltip"></i>
+    <i class="emoji cactus" title="cactus" data-toggle="tooltip"></i>
+    <i class="emoji four-leaf-clover" title="four-leaf-clover" data-toggle="tooltip"></i>
     <i class="emoji pizza" title="pizza" data-toggle="tooltip"></i>
     <i class="emoji popcorn" title="popcorn" data-toggle="tooltip"></i>
     <i class="emoji cookie" title="cookie" data-toggle="tooltip"></i>
+    <i class="emoji pie" title="pie" data-toggle="tooltip"></i>
+    <i class="emoji hot-beverage" title="hot-beverage" data-toggle="tooltip"></i>
+    <i class="emoji bottle-with-popping-cork" title="bottle-with-popping-cork" data-toggle="tooltip"></i>
+    <i class="emoji wine-glass" title="wine-glass" data-toggle="tooltip"></i>
+    <i class="emoji cocktail-glass" title="cocktail-glass" data-toggle="tooltip"></i>
+    <i class="emoji tropical-drink" title="tropical-drink" data-toggle="tooltip"></i>
     <i class="emoji beer-mug" title="beer-mug" data-toggle="tooltip"></i>
     <i class="emoji clinking-beer-mugs" title="clinking-beer-mugs" data-toggle="tooltip"></i>
+    <i class="emoji railway-track" title="railway-track" data-toggle="tooltip"></i>
     <i class="emoji police-car-light" title="police-car-light" data-toggle="tooltip"></i>
     <i class="emoji rocket" title="rocket" data-toggle="tooltip"></i>
+    <i class="emoji luggage" title="luggage" data-toggle="tooltip"></i>
     <i class="emoji hourglass-done" title="hourglass-done" data-toggle="tooltip"></i>
     <i class="emoji hourglass-not-done" title="hourglass-not-done" data-toggle="tooltip"></i>
+    <i class="emoji new-moon" title="new-moon" data-toggle="tooltip"></i>
+    <i class="emoji waxing-crescent-moon" title="waxing-crescent-moon" data-toggle="tooltip"></i>
+    <i class="emoji first-quarter-moon" title="first-quarter-moon" data-toggle="tooltip"></i>
+    <i class="emoji last-quarter-moon" title="last-quarter-moon" data-toggle="tooltip"></i>
     <i class="emoji star" title="star" data-toggle="tooltip"></i>
     <i class="emoji glowing-star" title="glowing-star" data-toggle="tooltip"></i>
     <i class="emoji high-voltage" title="high-voltage" data-toggle="tooltip"></i>
@@ -200,6 +229,14 @@ Alias: <span style="font-size: 2em; line-height: 1.2;">
     <i class="emoji slot-machine" title="slot-machine" data-toggle="tooltip"></i>
     <i class="emoji game-die" title="game-die" data-toggle="tooltip"></i>
     <i class="emoji heart-suit" title="heart-suit" data-toggle="tooltip"></i>
+    <i class="emoji performing-arts" title="performing-arts" data-toggle="tooltip"></i>
+    <i class="emoji artist-palette" title="artist-palette" data-toggle="tooltip"></i>
+    <i class="emoji glasses" title="glasses" data-toggle="tooltip"></i>
+    <i class="emoji sunglasses" title="sunglasses" data-toggle="tooltip"></i>
+    <i class="emoji crown" title="crown" data-toggle="tooltip"></i>
+    <i class="emoji top-hat" title="top-hat" data-toggle="tooltip"></i>
+    <i class="emoji graduation-cap" title="graduation-cap" data-toggle="tooltip"></i>
+    <i class="emoji billed-cap" title="billed-cap" data-toggle="tooltip"></i>
     <i class="emoji gem-stone" title="gem-stone" data-toggle="tooltip"></i>
     <i class="emoji loudspeaker" title="loudspeaker" data-toggle="tooltip"></i>
     <i class="emoji megaphone" title="megaphone" data-toggle="tooltip"></i>
@@ -248,13 +285,21 @@ Alias: <span style="font-size: 2em; line-height: 1.2;">
     <i class="emoji dagger" title="dagger" data-toggle="tooltip"></i>
     <i class="emoji crossed-swords" title="crossed-swords" data-toggle="tooltip"></i>
     <i class="emoji shield" title="shield" data-toggle="tooltip"></i>
+    <i class="emoji balance-scale" title="balance-scale" data-toggle="tooltip"></i>
     <i class="emoji link" title="link" data-toggle="tooltip"></i>
     <i class="emoji test-tube" title="test-tube" data-toggle="tooltip"></i>
+    <i class="emoji dna" title="dna" data-toggle="tooltip"></i>
+    <i class="emoji microscope" title="microscope" data-toggle="tooltip"></i>
+    <i class="emoji telescope" title="telescope" data-toggle="tooltip"></i>
+    <i class="emoji roll-of-paper" title="roll-of-paper" data-toggle="tooltip"></i>
     <i class="emoji warning" title="warning" data-toggle="tooltip"></i>
     <i class="emoji double-exclamation-mark" title="double-exclamation-mark" data-toggle="tooltip"></i>
     <i class="emoji check-mark" title="check-mark" data-toggle="tooltip"></i>
     <i class="emoji cross-mark" title="cross-mark" data-toggle="tooltip"></i>
     <i class="emoji part-alternation-mark" title="part-alternation-mark" data-toggle="tooltip"></i>
+    <i class="emoji purple-circle" title="purple-circle" data-toggle="tooltip"></i>
+    <i class="emoji purple-square" title="purple-square" data-toggle="tooltip"></i>
+    <i class="emoji pirate-flag" title="pirate-flag" data-toggle="tooltip"></i>
 </p>
 
 And also [github emoji](https://www.webfx.com/tools/emoji-cheat-sheet){:target="_blank"} :

@@ -1,12 +1,12 @@
 ---
 layout:      post
 locale:      en_US
-icon:        draft
+icon:        pie
 title:       How to write code that smells good
-banner_1_1:  
-banner_2_1:  
-banner_21_9: 
-banner_3_1:  
+banner_1_1:  /assets/posts/2020/04/xy/how-to-write-code-that-smells-good_1_1.jpg
+banner_2_1:  /assets/posts/2020/04/xy/how-to-write-code-that-smells-good_2_1.jpg
+banner_21_9: /assets/posts/2020/04/xy/how-to-write-code-that-smells-good_21_9.jpg
+banner_3_1:  /assets/posts/2020/04/xy/how-to-write-code-that-smells-good_3_1.jpg
 author:      loic
 categories:  [tech, craft]
 tags:        []
