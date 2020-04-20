@@ -1,18 +1,19 @@
 'use strict';
 
 $(function () {
-    // enable Bootstrap tooltips for tags with attribute
-    $('[data-toggle="tooltip"]').tooltip();
-
-    $('.js-back').click(function (e) {
-        if (document.referrer && document.referrer !== window.location.href) {
+    // display cookie popup
+    if (localStorage.getItem('analytics-accept') === 'accepted') {
+        $('#analytics-toast').remove();
+    } else {
+        $('#analytics-toast a').click(function (e) {
             e.preventDefault();
-            window.history.go(-1);
-            window.location.href = document.referrer;
-        }
-    });
+            localStorage.setItem('analytics-accept', 'accepted');
+        });
+    }
 
-    // enable Bootstrap carousels
+    // enable Bootstrap components: tooltip, toast & carousel
+    $('[data-toggle="tooltip"]').tooltip();
+    $('.toast').toast('show');
     $('.carousel').each(function () {
         var $elt = $(this);
         $elt.carousel({
