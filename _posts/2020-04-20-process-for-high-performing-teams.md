@@ -3,10 +3,10 @@ layout:      post
 locale:      en_US
 icon:        chart-increasing
 title:       Process for high performing teams
-banner_1_1:  /assets/posts/2020/04/17/process-for-high-performing-teams_1_1.jpg
-banner_2_1:  /assets/posts/2020/04/17/process-for-high-performing-teams_2_1.jpg
-banner_21_9: /assets/posts/2020/04/17/process-for-high-performing-teams_21_9.jpg
-banner_3_1:  /assets/posts/2020/04/17/process-for-high-performing-teams_3_1.jpg
+banner_1_1:  /assets/posts/2020/04/20/process-for-high-performing-teams_1_1.jpg
+banner_2_1:  /assets/posts/2020/04/20/process-for-high-performing-teams_2_1.jpg
+banner_21_9: /assets/posts/2020/04/20/process-for-high-performing-teams_21_9.jpg
+banner_3_1:  /assets/posts/2020/04/20/process-for-high-performing-teams_3_1.jpg
 author:      loic
 categories:  [tech, management]
 tags:        [team process, continuous improvement, mob programming, coding dojo]
@@ -26,14 +26,14 @@ Train, try, fail & improve are the basic principles of performance improvement, 
 In this article I will list some practices a tech team can do and should take the time to do to improve week after week.
 It takes time and energy but the key idea is learning and sharing knowledge all together so people can align themselves and share a common culture and understanding.
 
-![Travel illustration](/assets/posts/2020/04/17/travel.jpg){:.pull-right}
+![Travel illustration](/assets/posts/2020/04/20/travel.jpg){:.pull-right}
 - [Watching talks](#watching-talks)
 - [Internal talks](#internal-talks)
 - [Coding katas](#coding-katas)
 - [Mob programming](#mob-programming)
 - [Bug fix demo](#bug-fix-demo)
-- [20% tech dept](#20-tech-dept)
-- [Open bar for public speaking](#open-bar-for-public-speaking)
+- [Technical backlog](#technical-backlog)
+- [Public speaking open bar](#public-speaking-open-bar)
 - [Final thoughts](#final-thoughts)
 
 ## Watching talks<a href="#watching-talks" class="fas fa-link"></a>
@@ -119,7 +119,7 @@ It's too easy to classify bugs as not important/interesting to escape this <i cl
 
 We tried it at Zeenea just a couple of times before we started a rush period so I don't have much feedback on it but I think it's quite promising.
 
-## 20% tech dept<a href="#20-tech-dept" class="fas fa-link"></a>
+## Technical backlog<a href="#technical-backlog" class="fas fa-link"></a>
 
 This is one of the most useful process we tried at Zeenea.
 Allowing the team to build its own backlog with no external constraint and investing 20% of its time into it.
@@ -132,12 +132,12 @@ In a team, having time to work on what seems important to developers but not pri
 
 {% include embed-tweet.html id="1250863316819415046" user="vincentdnl" name="Vincent Déniel"
     content="A drawing I made today: technical debt (or more likely a rotten codebase), explained to non-technical people!"
-    image="/assets/posts/2020/04/17/tech-dept.jpeg" %}
+    image="/assets/posts/2020/04/20/tech-dept.jpeg" %}
 
 As an example, at Zeenea it allowed us to re-write our data migration system so release needed much less preparation work and were much smoother.
 We also cleaned some dead code, finished un-finished refactorings and improved the code coherence.
 
-## Open bar for public speaking<a href="#open-bar-for-public-speaking" class="fas fa-link"></a>
+## Public speaking open bar<a href="#public-speaking-open-bar" class="fas fa-link"></a>
 
 Many companies allow developers to go to tech conferences a few times a year.
 Some of them try to send speakers as it increase brand image for developers and helps recruiting (among other things).
@@ -149,7 +149,7 @@ and the huge preparation work needed to prepare the talk.
 
 ## Final thoughts<a href="#final-thoughts" class="fas fa-link"></a>
 
-[![Accelerate book](/assets/posts/2020/04/17/accelerate-book.jpg){:.pull-right}](https://itrevolution.com/book/accelerate){:target="_blank"}
+[![Accelerate book](/assets/posts/2020/04/20/accelerate-book.jpg){:.pull-right}](https://itrevolution.com/book/accelerate){:target="_blank"}
 As said in introduction, finding ideas for continuous improvement is not a checklist to go through but a daily attention on what works and what doesn't, think and try new things.
 I hope theses ideas may help you but try your most crazy ideas and tell us in comment what you did find <i class="emoji wink"></i><br>
 <br>
