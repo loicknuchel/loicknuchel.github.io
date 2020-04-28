@@ -13,7 +13,7 @@ tags:        []
 ---
 
 [Gospeak](https://gospeak.io){:target="_blank"} is a side project I started a year ago to help meetup organizers in their daily tasks
-and make better events (as I’m myself a [HumanTalks Paris](https://www.meetup.com/fr-FR/HumanTalks-Paris){:target="_blank"} organizer). 
+and make better events (as I'm myself a [HumanTalks Paris](https://www.meetup.com/fr-FR/HumanTalks-Paris){:target="_blank"} organizer). 
 
 It has grown a lot since then and some people joined. We launched and the scope and ambitions had grown a lot (but this is for another article).
 
@@ -42,7 +42,7 @@ For the future we will try to expand them to remote (as it was asked), it will b
 I you are interested, you can join our group and if you have some experience with remote mob programming in Scala,
 I will be more than happy to hear some advices or tips to make them cool.
 
-These sessions are really great for onboarding new contributors, they don’t feel the pain to start in a huge codebase they don’t understand.
+These sessions are really great for onboarding new contributors, they don't feel the pain to start in a huge codebase they don't understand.
 They are also great for people to learn by experiencing different ways of doing things.
 But if we want people to stay more than a few sessions, we have to build a clear understanding of our goal, share it openly and make people embracing it.
 This part has yet to be built and this will be one of our top objective for 2020.

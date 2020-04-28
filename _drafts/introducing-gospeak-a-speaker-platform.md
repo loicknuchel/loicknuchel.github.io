@@ -8,8 +8,13 @@ banner_2_1:  /assets/posts/2020/04/yz/introducing-gospeak-a-speaker-platform_2_1
 banner_21_9: /assets/posts/2020/04/yz/introducing-gospeak-a-speaker-platform_21_9.jpg
 banner_3_1:  /assets/posts/2020/04/yz/introducing-gospeak-a-speaker-platform_3_1.jpg
 author:      loic
-categories:  []
-tags:        []
+categories:  [startup, gospeak]
+tags:        [public speaking]
 ---
 
-Write your article here in markdown
+Several years ago, I joined [HumanTalks Paris](https://gospeak.io/groups/humantalks-paris){:target="_blank"} as an organizer.
+
+
+If you are a speaker, you know it can be difficult. From finding conferences to speak, submitting a proposal and 
+
+When you are a speaker, it 
