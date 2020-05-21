@@ -23,7 +23,7 @@ Seems strange? Yes it is. Now you may have some interrogations or objections. Le
 
 ## Why would I do mob programming ?
 
-I already talked about mob programming in my [Process for high performing teams]({% post_url 2020-04-20-process-for-high-performing-teams %}#mob-programming) article.
+I already talked about mob programming in my [Process for high performing teams]({% post_url 2020/2020-04-20-process-for-high-performing-teams %}#mob-programming) article.
 Having everyone together is an extraordinary opportunity for knowledge sharing, team building and, above all, critical thinking.
 This technique may answer multiple goals and could be adapted to them :
 

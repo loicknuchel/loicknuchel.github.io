@@ -47,7 +47,7 @@ do not neglect the old parts. But this doesn't mean we should spend all of our t
 As an example, I consider a good habit to refactor things every day but it should take less than 5 or 10% of my time in healthy environment.
 Project practices should make refactoring a no brainer and regression risk very low, whatever the refactoring is (extensive use of static types may be useful here ^^).
 And if a regression is found, it's a good opportunity to think again about a design or practice which would have avoided it,
-and doing a [bug fix demo]({% post_url 2020-04-20-process-for-high-performing-teams %}#bug-fix-demo) could help a bit more.
+and doing a [bug fix demo]({% post_url 2020/2020-04-20-process-for-high-performing-teams %}#bug-fix-demo) could help a bit more.
 As an example, constants defined at multiple places should be quickly eliminated when found.
 
 {% include tweet-quote.html quote="Changing any part of the software without causing bugs can be a good definition of a robust design" %}
