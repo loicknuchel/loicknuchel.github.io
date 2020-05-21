@@ -2,7 +2,7 @@ url: "https://loicknuchel.fr"
 title: "Loïc Knuchel"
 logo: "/assets/img/avatar.jpg"
 twitter: "loicknuchel"
-hireme: true
+hireme: false
 permalink: /blog/:year/:month/:day/:title
 
 collections:

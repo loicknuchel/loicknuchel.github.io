@@ -224,10 +224,12 @@ Alias: <span style="font-size: 2em; line-height: 1.2;">
     <i class="emoji third-place-medal" title="third-place-medal" data-toggle="tooltip"></i>
     <i class="emoji direct-hit" title="direct-hit" data-toggle="tooltip"></i>
     <i class="emoji crystal-ball" title="crystal-ball" data-toggle="tooltip"></i>
+    <i class="emoji magic-wand" title="magic-wand" data-toggle="tooltip"></i>
     <i class="emoji video-game" title="video-game" data-toggle="tooltip"></i>
     <i class="emoji joystick" title="joystick" data-toggle="tooltip"></i>
     <i class="emoji slot-machine" title="slot-machine" data-toggle="tooltip"></i>
     <i class="emoji game-die" title="game-die" data-toggle="tooltip"></i>
+    <i class="emoji puzzle-piece" title="puzzle-piece" data-toggle="tooltip"></i>
     <i class="emoji heart-suit" title="heart-suit" data-toggle="tooltip"></i>
     <i class="emoji performing-arts" title="performing-arts" data-toggle="tooltip"></i>
     <i class="emoji artist-palette" title="artist-palette" data-toggle="tooltip"></i>
@@ -304,8 +306,10 @@ Alias: <span style="font-size: 2em; line-height: 1.2;">
 
 And also [github emoji](https://www.webfx.com/tools/emoji-cheat-sheet){:target="_blank"} :
 
-:trollface:
-:octocat:
+<p style="font-size: 2em; line-height: 1.2;">
+    :trollface:
+    :octocat:
+</p>
 
 And you can also use [font-awesome](https://fontawesome.com/icons?m=free){:target="_blank"} :
 

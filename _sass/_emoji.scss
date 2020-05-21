@@ -170,10 +170,12 @@ img.emoji {
   &.third-place-medal:before { content: '\01f949'; }
   &.direct-hit:before, &.management:before { content: '\01f3af'; }
   &.crystal-ball:before { content: '\01F52E'; }
+  &.magic-wand:before { content: '\01fa84'; }
   &.video-game:before { content: '\01F3AE'; }
   &.joystick:before { content: '\01F579'; }
   &.slot-machine:before { content: '\01f3b0'; }
   &.game-die:before, &.random:before { content: '\01f3b2'; }
+  &.puzzle-piece:before { content: '\01f9e9'; }
   &.heart-suit:before { content: '\02665'; }
   &.performing-arts:before, &.happy-sad:before { content: '\01f3ad'; }
   &.artist-palette:before { content: '\01f3a8'; }

@@ -9,7 +9,7 @@ banner_21_9: /assets/posts/2013/10/21/codeurs-en-seine_21_9.jpg
 banner_3_1:  /assets/posts/2013/10/21/codeurs-en-seine_3_1.jpg
 author:      loic
 categories:  [tech, event]
-tags:        [codeurs en seine, continuous delivery, design, lean startup, software craftsmanship]
+tags:        [codeurs en seine, continuous delivery, design, lean startup, software craft]
 ---
 
 Jeudi 17 octobre, 5h15, mon réveil sonne. C'est le début d'une longue et passionnante journée à [Codeurs en Seine 2013](https://gospeak.io/events/ext/cfc9785a-50ca-4644-8f2f-43a9ce92b9cb){:target="_blank"} !

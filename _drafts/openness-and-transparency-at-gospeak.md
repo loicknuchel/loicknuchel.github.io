@@ -3,10 +3,10 @@ layout:      post
 locale:      en_US
 icon:        coffee
 title:       Openness & Transparency at Gospeak
-banner_1_1:  /assets/posts/2020/04/xz/openness-and-transparency-at-gospeak_1_1.jpg
-banner_2_1:  /assets/posts/2020/04/xz/openness-and-transparency-at-gospeak_2_1.jpg
-banner_21_9: /assets/posts/2020/04/xz/openness-and-transparency-at-gospeak_21_9.jpg
-banner_3_1:  /assets/posts/2020/04/xz/openness-and-transparency-at-gospeak_3_1.jpg
+banner_1_1:  /assets/posts/drafts/openness-and-transparency-at-gospeak/openness-and-transparency-at-gospeak_1_1.jpg
+banner_2_1:  /assets/posts/drafts/openness-and-transparency-at-gospeak/openness-and-transparency-at-gospeak_2_1.jpg
+banner_21_9: /assets/posts/drafts/openness-and-transparency-at-gospeak/openness-and-transparency-at-gospeak_21_9.jpg
+banner_3_1:  /assets/posts/drafts/openness-and-transparency-at-gospeak/openness-and-transparency-at-gospeak_3_1.jpg
 author:      loic
 categories:  [gospeak]
 tags:        []
