@@ -118,6 +118,7 @@ img.emoji {
   &.police-officer:before { content: '\01f46e'; }
   &.man-police-officer:before { content: '\01f46e\0200d\02642\0fe0f'; }
   &.woman-police-officer:before { content: '\01f46e\0200d\02640\0fe0f'; }
+  &.superhero:before { content: '\01f9b8'; }
   &.man-superhero:before { content: '\01f9b8\0200d\02642\0fe0f'; }
   &.woman-superhero:before { content: '\01f9b8\0200d\02640\0fe0f'; }
   &.man-supervillain:before { content: '\01f9b9\0200d\02642\0fe0f'; }
@@ -137,7 +138,7 @@ img.emoji {
   &.cookie:before { content: '\01f36a'; }
   &.pie:before { content: '\01f967'; }
   &.hot-beverage:before, &.coffee:before { content: '\02615'; }
-  &.bottle-with-popping-cork:before { content: '\01f37e'; }
+  &.bottle-with-popping-cork:before, &.champagne:before { content: '\01f37e'; }
   &.wine-glass:before { content: '\01f377'; }
   &.cocktail-glass:before { content: '\01f378'; }
   &.tropical-drink:before { content: '\01f379'; }
@@ -242,10 +243,25 @@ img.emoji {
   &.telescope:before { content: '\01f52d'; }
   &.roll-of-paper:before { content: '\01f9fb'; }
   &.warning:before { content: '\026a0'; }
+  &.arrow-up:before { content: '\02b06'; }
+  &.arrow-right:before { content: '\027a1'; }
+  &.arrow-down:before { content: '\02b07'; }
+  &.arrow-left:before { content: '\02b05'; }
   &.double-exclamation-mark:before { content: '\0203c'; }
   &.check-mark:before { content: '\02714'; }
   &.cross-mark:before { content: '\0274c'; }
   &.part-alternation-mark:before { content: '\0303d'; }
+  &.copyright:before { content: '\000a9'; }
+  &.registered:before { content: '\000ae'; }
+  &.trade-mark:before { content: '\02122'; }
+  &.cool:before { content: '\01f192'; }
+  &.free:before { content: '\01f193'; }
+  &.information:before { content: '\02139'; }
+  &.new:before { content: '\01f195'; }
+  &.ok:before { content: '\01f197'; }
+  &.sos:before { content: '\01f198'; }
+  &.up:before { content: '\01f199'; }
+  &.vs:before { content: '\01f19a'; }
   &.purple-circle:before { content: '\01f7e3'; }
   &.purple-square:before { content: '\01f7ea'; }
   &.pirate-flag:before { content: '\01f3f4\0200d\02620\0fe0f'; }

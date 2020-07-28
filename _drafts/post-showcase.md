@@ -47,6 +47,7 @@ Alias: <span style="font-size: 2em; line-height: 1.2;">
     <i class="emoji group" title="group" data-toggle="tooltip"></i>
     <i class="emoji bug-alt" title="bug-alt" data-toggle="tooltip"></i>
     <i class="emoji coffee" title="coffee" data-toggle="tooltip"></i>
+    <i class="emoji champagne" title="champagne" data-toggle="tooltip"></i>
     <i class="emoji startup" title="startup" data-toggle="tooltip"></i>
     <i class="emoji management" title="management" data-toggle="tooltip"></i>
     <i class="emoji random" title="random" data-toggle="tooltip"></i>
@@ -172,6 +173,7 @@ Alias: <span style="font-size: 2em; line-height: 1.2;">
     <i class="emoji police-officer" title="police-officer" data-toggle="tooltip"></i>
     <i class="emoji man-police-officer" title="man-police-officer" data-toggle="tooltip"></i>
     <i class="emoji woman-police-officer" title="woman-police-officer" data-toggle="tooltip"></i>
+    <i class="emoji superhero" title="superhero" data-toggle="tooltip"></i>
     <i class="emoji man-superhero" title="man-superhero" data-toggle="tooltip"></i>
     <i class="emoji woman-superhero" title="woman-superhero" data-toggle="tooltip"></i>
     <i class="emoji man-supervillain" title="man-supervillain" data-toggle="tooltip"></i>
@@ -295,10 +297,25 @@ Alias: <span style="font-size: 2em; line-height: 1.2;">
     <i class="emoji telescope" title="telescope" data-toggle="tooltip"></i>
     <i class="emoji roll-of-paper" title="roll-of-paper" data-toggle="tooltip"></i>
     <i class="emoji warning" title="warning" data-toggle="tooltip"></i>
+    <i class="emoji arrow-up" title="arrow-up" data-toggle="tooltip"></i>
+    <i class="emoji arrow-right" title="arrow-right" data-toggle="tooltip"></i>
+    <i class="emoji arrow-down" title="arrow-down" data-toggle="tooltip"></i>
+    <i class="emoji arrow-left" title="arrow-left" data-toggle="tooltip"></i>
     <i class="emoji double-exclamation-mark" title="double-exclamation-mark" data-toggle="tooltip"></i>
     <i class="emoji check-mark" title="check-mark" data-toggle="tooltip"></i>
     <i class="emoji cross-mark" title="cross-mark" data-toggle="tooltip"></i>
     <i class="emoji part-alternation-mark" title="part-alternation-mark" data-toggle="tooltip"></i>
+    <i class="emoji copyright" title="copyright" data-toggle="tooltip"></i>
+    <i class="emoji registered" title="registered" data-toggle="tooltip"></i>
+    <i class="emoji trade-mark" title="trade-mark" data-toggle="tooltip"></i>
+    <i class="emoji cool" title="cool" data-toggle="tooltip"></i>
+    <i class="emoji free" title="free" data-toggle="tooltip"></i>
+    <i class="emoji information" title="information" data-toggle="tooltip"></i>
+    <i class="emoji new" title="new" data-toggle="tooltip"></i>
+    <i class="emoji ok" title="ok" data-toggle="tooltip"></i>
+    <i class="emoji sos" title="sos" data-toggle="tooltip"></i>
+    <i class="emoji up" title="up" data-toggle="tooltip"></i>
+    <i class="emoji vs" title="vs" data-toggle="tooltip"></i>
     <i class="emoji purple-circle" title="purple-circle" data-toggle="tooltip"></i>
     <i class="emoji purple-square" title="purple-square" data-toggle="tooltip"></i>
     <i class="emoji pirate-flag" title="pirate-flag" data-toggle="tooltip"></i>

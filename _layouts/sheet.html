@@ -1,0 +1,24 @@
+---
+layout:  default
+type:    website
+menus:
+- {name: Home, link: "/"}
+- {name: Blog, link: "/blog"}
+- {name: Readme, link: "/readme"}
+- {name: Contact, link: "#contact"}
+---
+{% include menu.html menus = layout.menus %}
+
+<!--Header-->
+<header class="background blog-header" style="background-image: url(/assets/img/texture.jpg)"></header>
+<!--Header-->
+
+<!--Post list-->
+<div class="container">
+    <div class="sheet">
+        {{content}}
+    </div>
+</div>
+<!--Post list-->
+
+{% include contact-section.html %}
