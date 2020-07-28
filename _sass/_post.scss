@@ -175,6 +175,15 @@
         margin-bottom: $default-spacing;
       }
 
+      &.full-width {
+        max-width: initial;
+        max-height: initial;
+        width: 100%;
+        width: -moz-available; /* For Mozzila */
+        width: -webkit-fill-available; /* For Chrome */
+        width: stretch; /* Unprefixed */
+      }
+
       &.w-100 {
         width: 100px;
       }
