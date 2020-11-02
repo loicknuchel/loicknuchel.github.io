@@ -1,7 +1,7 @@
 ---
 date:     2009-06-01
 name:     TRF Retail
-duration: june 2009 - nov. 2011, 1 year and 3 months
+duration: june 2009 - nov. 2010, 1 year and 3 months
 website:  https://www.trfretail.com
 logo:     /assets/img/logos/trf-retail.jpg
 twitter:  TRFRetail
