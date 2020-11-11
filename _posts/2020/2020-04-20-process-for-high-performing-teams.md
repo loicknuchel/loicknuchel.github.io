@@ -10,6 +10,7 @@ banner_3_1:  /assets/posts/2020/process-for-high-performing-teams/banner_3_1.jpg
 author:      loic
 categories:  [tech, management]
 tags:        [team process, continuous improvement, mob programming, coding dojo]
+excerpt:     Every company want a high performing team. But, hiring good developers is not enough. Do you have the right process in place for this? Here are some ideas of what you can do to keep improving.
 ---
 
 High performing tech team is probably the dream of any tech manager, PO or even startup.

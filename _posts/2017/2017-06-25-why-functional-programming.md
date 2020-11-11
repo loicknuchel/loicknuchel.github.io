@@ -10,6 +10,7 @@ banner_3_1:  /assets/posts/2017/why-functional-programming/banner_3_1.jpg
 author:      loic
 categories:  [tech, craft]
 tags:        [functional programming, software craft]
+excerpt:     Functional programming is more and more trendy and start to find its way into mainstream languages. What is it and why it is so important?
 ---
 
 Lately I discussed a lot about software engineering and advocated (as usual) for typed functional programming among other things. 

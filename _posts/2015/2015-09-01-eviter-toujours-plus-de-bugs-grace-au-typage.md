@@ -10,6 +10,7 @@ banner_3_1:  /assets/posts/2015/eviter-toujours-plus-de-bugs-grace-au-typage/ban
 author:      loic
 categories:  [tech, craft]
 tags:        [bug free, play framework, scala, typage, value classe]
+excerpt:     Si tu penses que les types t'empêchent de coder, laisse moi tenter de te convaincre du contraire. Ils fixent de contraintes qui permettent de te libérer l'esprit et d'aller plus vite.
 ---
 
 > If debugging is the process of removing bugs, then programming must be the process of putting them in.

@@ -10,6 +10,7 @@ banner_3_1:  /assets/posts/2020/the-simplicity-paradox/banner_3_1.jpg
 author:      loic
 categories:  [tech]
 tags:        [software craft]
+excerpt:     It's harder to create simple things than complicated ones. This apparent paradox is deeply rooted in the software industry and most of developer work is to overcome it.
 ---
 
 The hard thing about software is the emerging complexity.

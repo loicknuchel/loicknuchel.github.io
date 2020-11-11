@@ -10,6 +10,7 @@ banner_3_1:  /assets/posts/2017/imperatif-vs-fonctionnel-fight/banner_3_1.jpg
 author:      loic
 categories:  [tech, code]
 tags:        [functional programming, javascript, scala]
+excerpt:     Tu as entendu parler de programmation fonctionnelle mais tu ne sais pas exactement ce que c'est? Bienvenu! Cet article rentre en pratique dans du code fonctionnel pour mieux le comprendre.
 ---
 
 Salut ! Ca fait un moment que je n'ai plus écrit d'articles ici mais je compte bien m'y remettre avec pas mal de choses sur la programmation fonctionnelle et Scala <i class="emoji wink"></i>

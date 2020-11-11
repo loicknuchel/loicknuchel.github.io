@@ -10,6 +10,7 @@ banner_3_1:  /assets/posts/2020/a-better-way-to-onboard-developers/banner_3_1.jp
 author:      loic
 categories:  [tech, management]
 tags:        [team process, continuous improvement, onboarding]
+excerpt:     Onboarding is a crucial step that can have a huge impact on future performance. But, it's often done on the side without much thinking. Let's dig into what is possible.
 ---
 
 ![baby ninja](/assets/posts/2020/a-better-way-to-onboard-developers/baby.jpeg){:.pull-right}
