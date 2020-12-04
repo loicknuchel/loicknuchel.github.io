@@ -127,24 +127,26 @@
   .post-content {
     margin-bottom: $default-spacing;
 
-    p, h1, h2, h3, h4, h5, h6 {
+    p, a, h1, h2, h3, h4, h5, h6 {
       clear: both;
       position: relative;
       z-index: 2;
     }
 
+    $header-size: 77px;
+
     /* to allow good anchor scroll */
     h1, h2, h3, h4, h5, h6 {
       position: relative;
       z-index: 1;
-      margin-top: -80px;
-      padding-top: 80px;
+      margin-top: -$header-size;
+      padding-top: $header-size;
 
       a[href^="#"] {
         visibility: hidden;
         position: absolute;
         left: -30px;
-        top: 85px;
+        top: $header-size+5;
         color: #ddd;
         font-size: 75%;
         text-decoration: none;
